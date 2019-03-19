@@ -77,7 +77,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<span class="returnvalue">GStrv</span>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-buildtime-modules-as-strv" title="modulemd_dependencies_get_buildtime_modules_as_strv ()">modulemd_dependencies_get_buildtime_modules_as_strv</a> <span class="c_punctuation">()</span>
@@ -85,7 +85,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<span class="returnvalue">GStrv</span>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-buildtime-streams-as-strv" title="modulemd_dependencies_get_buildtime_streams_as_strv ()">modulemd_dependencies_get_buildtime_streams_as_strv</a> <span class="c_punctuation">()</span>
@@ -109,7 +109,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<span class="returnvalue">GStrv</span>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-modules-as-strv" title="modulemd_dependencies_get_runtime_modules_as_strv ()">modulemd_dependencies_get_runtime_modules_as_strv</a> <span class="c_punctuation">()</span>
@@ -117,7 +117,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<span class="returnvalue">GStrv</span>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-streams-as-strv" title="modulemd_dependencies_get_runtime_streams_as_strv ()">modulemd_dependencies_get_runtime_streams_as_strv</a> <span class="c_punctuation">()</span>
@@ -156,7 +156,7 @@
 modulemd_dependencies_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-dependencies-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <span class="type">ModuleDependencies</span>. This object must be freed with <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p>A newly-allocated <span class="type">ModuleDependencies</span>. This object must be freed with <code class="function">g_object_unref()</code>. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
 <p class="since">Since: 2.0</p>
@@ -195,8 +195,8 @@ modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="mo
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_add_buildtime_stream
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module_stream</code></em>);</pre>
 <p>Add a single stream of a module that is required to build another dependent module. The matrix of streams and module names will be calculated by the build-system. If the provided module name is already present, the streams will be added (with deduplication).</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-add-buildtime-stream.parameters"></a><h4>Parameters</h4>
@@ -233,7 +233,7 @@ modulemd_dependencies_add_buildtime_stream
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_set_empty_buildtime_dependencies_for_module
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
 <p>Adds a module and inserts an empty list for it as buildtime dependency.</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-set-empty-buildtime-dependencies-for-module.parameters"></a><h4>Parameters</h4>
@@ -262,7 +262,7 @@ modulemd_dependencies_set_empty_buildtime_dependencies_for_module
 <hr>
 <div class="refsect2">
 <a name="modulemd-dependencies-get-buildtime-modules-as-strv"></a><h3>modulemd_dependencies_get_buildtime_modules_as_strv ()</h3>
-<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_buildtime_modules_as_strv
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_buildtime_modules]</span></p>
@@ -291,10 +291,10 @@ modulemd_dependencies_get_buildtime_modules_as_strv
 <hr>
 <div class="refsect2">
 <a name="modulemd-dependencies-get-buildtime-streams-as-strv"></a><h3>modulemd_dependencies_get_buildtime_streams_as_strv ()</h3>
-<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_buildtime_streams_as_strv
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module</code></em>);</pre>
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_buildtime_streams]</span></p>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-buildtime-streams-as-strv.parameters"></a><h4>Parameters</h4>
@@ -331,8 +331,8 @@ modulemd_dependencies_get_buildtime_streams_as_strv
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_add_runtime_stream
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module_stream</code></em>);</pre>
 <p>Adds a module and its stream that is required at runtime by a dependent module. The matrix of streams and module names will be calculated by the build-system. If the listed provided module name is already present, the streams will be added (with deduplication).</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-add-runtime-stream.parameters"></a><h4>Parameters</h4>
@@ -369,7 +369,7 @@ modulemd_dependencies_add_runtime_stream
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_set_empty_runtime_dependencies_for_module
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
 <p>Adds a module and inserts an empty list for it as runtime dependency.</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-set-empty-runtime-dependencies-for-module.parameters"></a><h4>Parameters</h4>
@@ -398,7 +398,7 @@ modulemd_dependencies_set_empty_runtime_dependencies_for_module
 <hr>
 <div class="refsect2">
 <a name="modulemd-dependencies-get-runtime-modules-as-strv"></a><h3>modulemd_dependencies_get_runtime_modules_as_strv ()</h3>
-<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_runtime_modules_as_strv
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_runtime_modules]</span></p>
@@ -427,10 +427,10 @@ modulemd_dependencies_get_runtime_modules_as_strv
 <hr>
 <div class="refsect2">
 <a name="modulemd-dependencies-get-runtime-streams-as-strv"></a><h3>modulemd_dependencies_get_runtime_streams_as_strv ()</h3>
-<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+<pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_runtime_streams_as_strv
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module</code></em>);</pre>
+                                <em class="parameter"><code>const <span class="type">gchar</span> *module</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_runtime_streams]</span></p>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-runtime-streams-as-strv.parameters"></a><h4>Parameters</h4>

@@ -192,7 +192,7 @@ object. </p>
 modulemd_module_index_merger_associate_index
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> *self</code></em>,
                                 <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *index</code></em>,
-                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> priority</code></em>);</pre>
+                                <em class="parameter"><code><span class="type">gint32</span> priority</code></em>);</pre>
 <p>Enqueues a <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> representing the parsed metadata from a
 repository into this <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> for merging and
 deduplication of other repositories.</p>
@@ -244,13 +244,13 @@ values are in the range of 0-1000. </p></td>
 <a name="modulemd-module-index-merger-resolve"></a><h3>modulemd_module_index_merger_resolve ()</h3>
 <pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
 modulemd_module_index_merger_resolve (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> *self</code></em>,
-                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                      <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>Merges all added <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects according to their priority.
 The logic of this merge is described in the Description of
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a>.</p>
 <p>Once this function has been called, the internal state of the
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> is undefined. The only valid action on it after
-that point is <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>.</p>
+that point is <code class="function">g_object_unref()</code>.</p>
 <div class="refsect3">
 <a name="modulemd-module-index-merger-resolve.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -267,7 +267,7 @@ that point is <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unr
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason for a failure to resolve the
+<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason for a failure to resolve the
 merges. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
 </tr>
