@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Defaults: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.ComponentRpm.html" title="Modulemd.ComponentRpm">
+<link rel="next" href="modulemd-2.0-Modulemd.DefaultsV1.html" title="Modulemd.DefaultsV1">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-ModulemdDefaults.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.ComponentRpm.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.DefaultsV1.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-ModulemdDefaults"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-ModulemdDefaults.top_of_page"></a>Modulemd.Defaults</span></h2>
+<p>Modulemd.Defaults — Parent class for Default documents.
+See <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1" title="ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> for a specific type.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-ModulemdDefaults.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-ModulemdDefaults.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-new" title="modulemd_defaults_new ()">modulemd_defaults_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-copy" title="modulemd_defaults_copy ()">modulemd_defaults_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-validate" title="modulemd_defaults_validate ()">modulemd_defaults_validate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-equals" title="modulemd_defaults_equals ()">modulemd_defaults_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-upgrade" title="modulemd_defaults_upgrade ()">modulemd_defaults_upgrade</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-get-module-name" title="modulemd_defaults_get_module_name ()">modulemd_defaults_get_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-get-mdversion" title="modulemd_defaults_get_mdversion ()">modulemd_defaults_get_mdversion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-set-modified" title="modulemd_defaults_set_modified ()">modulemd_defaults_set_modified</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-get-modified" title="modulemd_defaults_get_modified ()">modulemd_defaults_get_modified</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-ModulemdDefaults.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum">ModulemdDefaultsVersionEnum</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#MODULEMD-TYPE-DEFAULTS:CAPS" title="MODULEMD_TYPE_DEFAULTS">MODULEMD_TYPE_DEFAULTS</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaultsClass" title="struct ModulemdDefaultsClass">ModulemdDefaultsClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults">ModulemdDefaults</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-ModulemdDefaults.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-ModulemdDefaults.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-defaults-new"></a><h3>modulemd_defaults_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> version</code></em>,
+                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Create a new <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a>.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the defaults metadata to create</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to which these defaults apply</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-new.returns"></a><h4>Returns</h4>
+<p>a newly created <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> subtype of the
+requested version. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-copy"></a><h3>modulemd_defaults_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated copy of <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-validate"></a><h3>modulemd_defaults_validate ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_defaults_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-validate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-validate.returns"></a><h4>Returns</h4>
+<p> TRUE if validation passed, FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately if
+validation failed.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-equals"></a><h3>modulemd_defaults_equals ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_defaults_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self_1</code></em>,
+                          <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self_2</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self_1</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>self_2</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-equals.returns"></a><h4>Returns</h4>
+<p> TRUE if both self_1 and self_2 contain equal values, FALSE if they differed.</p>
+</div>
+<p class="since">Since: 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-upgrade"></a><h3>modulemd_defaults_upgrade ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_upgrade (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> mdversion</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-upgrade.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mdversion</p></td>
+<td class="parameter_description"><p>The version to upgrade to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an upgrade error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-upgrade.returns"></a><h4>Returns</h4>
+<p>A newly-allocated copy of <em class="parameter"><code>self</code></em>
+upgraded to the
+requested defaults version. NULL if the upgrade cannot be performed and sets
+<em class="parameter"><code>error</code></em>
+appropriately. This function does not modify <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-get-module-name"></a><h3>modulemd_defaults_get_module_name ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_defaults_get_module_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-get-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-get-module-name.returns"></a><h4>Returns</h4>
+<p>The name of the module to which these defaults
+apply. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-get-mdversion"></a><h3>modulemd_defaults_get_mdversion ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+modulemd_defaults_get_mdversion (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-get-mdversion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-get-mdversion.returns"></a><h4>Returns</h4>
+<p> The metadata version of this defaults object.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-modified"></a><h3>modulemd_defaults_set_modified ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_modified (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> modified</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-set-modified.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>modified</p></td>
+<td class="parameter_description"><p>The last modified time represented as a 64-bit integer
+(such as 201807011200). </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-get-modified"></a><h3>modulemd_defaults_get_modified ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+modulemd_defaults_get_modified (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-get-modified.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-get-modified.returns"></a><h4>Returns</h4>
+<p> The last modified time represented as a 64-bit integer
+(such as 201807011200)</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-ModulemdDefaults.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ModulemdDefaultsVersionEnum"></a><h3>enum ModulemdDefaultsVersionEnum</h3>
+<div class="refsect3">
+<a name="ModulemdDefaultsVersionEnum.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="MD-DEFAULTS-VERSION-ERROR:CAPS"></a>MD_DEFAULTS_VERSION_ERROR</p></td>
+<td class="enum_member_description">
+<p>Represents an error handling mdversion.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MD-DEFAULTS-VERSION-UNSET:CAPS"></a>MD_DEFAULTS_VERSION_UNSET</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MD-DEFAULTS-VERSION-ONE:CAPS"></a>MD_DEFAULTS_VERSION_ONE</p></td>
+<td class="enum_member_description">
+<p>Represents v1 of the <span class="type">Modulemd.Defaults</span> metadata
+format.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MD-DEFAULTS-VERSION-LATEST:CAPS"></a>MD_DEFAULTS_VERSION_LATEST</p></td>
+<td class="enum_member_description">
+<p>Represents the highest-supported version of the
+<span class="type">Modulemd.Defaults</span> metadata format.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-DEFAULTS:CAPS"></a><h3>MODULEMD_TYPE_DEFAULTS</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_DEFAULTS (modulemd_defaults_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdDefaultsClass"></a><h3>struct ModulemdDefaultsClass</h3>
+<pre class="programlisting">struct ModulemdDefaultsClass {
+  GObjectClass parent_class;
+
+  ModulemdDefaults *(*copy) (ModulemdDefaults *self);
+
+  gboolean (*validate) (ModulemdDefaults *self, GError **error);
+
+  guint64 (*get_mdversion) (ModulemdDefaults *self);
+
+  gboolean (*equals) (ModulemdDefaults *self_1, ModulemdDefaults *self_2);
+
+  /* Padding to allow adding up to 10 new virtual functions without
+   * breaking ABI. */
+  gpointer padding[10];
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdDefaults"></a><h3>ModulemdDefaults</h3>
+<pre class="programlisting">typedef struct _ModulemdDefaults ModulemdDefaults;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>
