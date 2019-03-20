@@ -62,7 +62,10 @@
     <keyword type="macro" name="MODULEMD_TYPE_BUILDOPTS" link="modulemd-2.0-Modulemd.Buildopts.html#MODULEMD-TYPE-BUILDOPTS:CAPS"/>
     <keyword type="struct" name="ModulemdBuildopts" link="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"/>
     <keyword type="function" name="modulemd_component_copy ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-copy" since="2.0"/>
-    <keyword type="function" name="modulemd_component_set_buildorder ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildorder"/>
+    <keyword type="function" name="modulemd_component_validate ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-validate" since="2.2"/>
+    <keyword type="function" name="modulemd_component_add_buildafter ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-add-buildafter" since="2.2"/>
+    <keyword type="function" name="modulemd_component_get_buildafter_as_strv ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildafter-as-strv" since="2.2"/>
+    <keyword type="function" name="modulemd_component_set_buildorder ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildorder" since="2.0"/>
     <keyword type="function" name="modulemd_component_get_buildorder ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildorder" since="2.0"/>
     <keyword type="function" name="modulemd_component_set_name ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-name" since="2.2"/>
     <keyword type="function" name="modulemd_component_get_name ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-name" since="2.0"/>
@@ -344,6 +347,9 @@
     <keyword type="struct" name="ModulemdTranslationEntry" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"/>
     <keyword type="function" name="modulemd_buildopts_parse_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_buildopts_emit_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-emit-yaml"/>
+    <keyword type="function" name="modulemd_component_parse_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildafter" since="2.2"/>
+    <keyword type="function" name="modulemd_component_has_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-has-buildafter" since="2.2"/>
+    <keyword type="function" name="modulemd_component_get_buildafter_internal ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-get-buildafter-internal" since="2.2"/>
     <keyword type="function" name="modulemd_component_emit_yaml_start ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-emit-yaml-start" since="2.0"/>
     <keyword type="function" name="modulemd_component_emit_yaml_buildorder ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-emit-yaml-buildorder" since="2.0"/>
     <keyword type="function" name="modulemd_component_module_parse_yaml ()" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html#modulemd-component-module-parse-yaml" since="2.0"/>
@@ -382,6 +388,7 @@
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_artifacts ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-rpm-artifacts"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-rpm-filters"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-dependencies"/>
+    <keyword type="function" name="modulemd_module_stream_validate_components ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-components"/>
     <keyword type="macro" name="STREAM_COPY_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET:CAPS"/>
     <keyword type="macro" name="STREAM_UPGRADE_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET:CAPS"/>
     <keyword type="macro" name="STREAM_COPY_IF_SET_WITH_LOCALE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET-WITH-LOCALE:CAPS"/>
