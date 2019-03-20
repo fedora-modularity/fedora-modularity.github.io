@@ -424,6 +424,7 @@
     <keyword type="function" name="modulemd_hash_table_deep_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-set-copy"/>
     <keyword type="function" name="modulemd_hash_table_deep_str_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-set-copy"/>
     <keyword type="function" name="modulemd_hash_table_deep_str_str_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-str-set-copy"/>
+    <keyword type="function" name="modulemd_hash_table_sets_are_equal_wrapper ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal-wrapper"/>
     <keyword type="function" name="modulemd_hash_table_sets_are_equal ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal"/>
     <keyword type="function" name="modulemd_hash_table_equals ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-equals"/>
     <keyword type="function" name="modulemd_strcmp_sort ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort"/>
