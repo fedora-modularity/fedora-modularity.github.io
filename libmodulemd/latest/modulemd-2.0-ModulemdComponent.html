@@ -80,6 +80,22 @@
 <span class="returnvalue">void</span>
 </td>
 <td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildonly" title="modulemd_component_set_buildonly ()">modulemd_component_set_buildonly</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildonly" title="modulemd_component_get_buildonly ()">modulemd_component_get_buildonly</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
 <a class="link" href="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildorder" title="modulemd_component_set_buildorder ()">modulemd_component_set_buildorder</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
@@ -294,6 +310,64 @@ modulemd_component_get_buildafter_as_strv
 <p>The set of component keys that this component
 depends upon. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-set-buildonly"></a><h3>modulemd_component_set_buildonly ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_component_set_buildonly (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>,
+                                  <em class="parameter"><code><span class="type">gboolean</span> buildonly</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-component-set-buildonly.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buildonly</p></td>
+<td class="parameter_description"><p>Whether this component is used only for building this module. If
+set to TRUE, the build system should add any artifacts produced by this
+component to the data.filters section of the output modulemd.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-get-buildonly"></a><h3>modulemd_component_get_buildonly ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_component_get_buildonly (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-component-get-buildonly.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-component-get-buildonly.returns"></a><h4>Returns</h4>
+<p> TRUE if this component is used only for building this module.</p>
 </div>
 <p class="since">Since: 2.2</p>
 </div>

@@ -65,6 +65,8 @@
     <keyword type="function" name="modulemd_component_validate ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-validate" since="2.2"/>
     <keyword type="function" name="modulemd_component_add_buildafter ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-add-buildafter" since="2.2"/>
     <keyword type="function" name="modulemd_component_get_buildafter_as_strv ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildafter-as-strv" since="2.2"/>
+    <keyword type="function" name="modulemd_component_set_buildonly ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildonly" since="2.2"/>
+    <keyword type="function" name="modulemd_component_get_buildonly ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildonly" since="2.2"/>
     <keyword type="function" name="modulemd_component_set_buildorder ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildorder" since="2.0"/>
     <keyword type="function" name="modulemd_component_get_buildorder ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildorder" since="2.0"/>
     <keyword type="function" name="modulemd_component_set_name ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-name" since="2.2"/>
@@ -349,10 +351,11 @@
     <keyword type="function" name="modulemd_buildopts_parse_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_buildopts_emit_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-emit-yaml"/>
     <keyword type="function" name="modulemd_component_parse_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildafter" since="2.2"/>
+    <keyword type="function" name="modulemd_component_parse_buildonly ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildonly" since="2.2"/>
     <keyword type="function" name="modulemd_component_has_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-has-buildafter" since="2.2"/>
     <keyword type="function" name="modulemd_component_get_buildafter_internal ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-get-buildafter-internal" since="2.2"/>
     <keyword type="function" name="modulemd_component_emit_yaml_start ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-emit-yaml-start" since="2.0"/>
-    <keyword type="function" name="modulemd_component_emit_yaml_buildorder ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-emit-yaml-buildorder" since="2.0"/>
+    <keyword type="function" name="modulemd_component_emit_yaml_build_common ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-emit-yaml-build-common" since="2.2"/>
     <keyword type="function" name="modulemd_component_module_parse_yaml ()" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html#modulemd-component-module-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_module_emit_yaml ()" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html#modulemd-component-module-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_parse_yaml ()" link="modulemd-2.0-Modulemd.ComponentRpm-(Private).html#modulemd-component-rpm-parse-yaml" since="2.0"/>
@@ -476,6 +479,7 @@
     <keyword type="function" name="mmd_emitter_strv ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-strv" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_date ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-date" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-string" since="2.0"/>
+    <keyword type="function" name="modulemd_yaml_parse_bool ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-bool" since="2.2"/>
     <keyword type="function" name="modulemd_yaml_parse_int64 ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-int64" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_uint64 ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-uint64" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_string_set ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-string-set" since="2.0"/>
