@@ -182,6 +182,24 @@ libmodulemd.</p>
 <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" title="MODULEMD_REPLACE_SET()">MODULEMD_REPLACE_SET</a><span class="c_punctuation">()</span>
 </td>
 </tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" title="MODULEMD_SETTER_GETTER_STRING_EXT()">MODULEMD_SETTER_GETTER_STRING_EXT</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" title="MODULEMD_SETTER_GETTER_STRING()">MODULEMD_SETTER_GETTER_STRING</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" title="MODULEMD_SETTER_GETTER_STRING_STATIC()">MODULEMD_SETTER_GETTER_STRING_STATIC</a><span class="c_punctuation">()</span>
+</td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -315,6 +333,24 @@ modulemd_validate_nevra (<em class="parameter"><code>const <span class="type">gc
 <div class="refsect2">
 <a name="MODULEMD-REPLACE-SET:CAPS"></a><h3>MODULEMD_REPLACE_SET()</h3>
 <pre class="programlisting">#define             MODULEMD_REPLACE_SET(_dest, _set)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING-EXT:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_EXT()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_EXT(                                    \
+              is_static, ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING(                                        \
+              ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_STATIC()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_STATIC(                                 \
+              ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
 </div>
 </div>
 <div class="refsect1">

@@ -200,6 +200,9 @@ appropriately if the YAML could not be emitted.</p>
 
   GHashTable *rpm_artifacts; /* string set */
 
+  /*  &lt; string, GHashTable &lt;string, Modulemd.RpmMapEntry&gt; &gt; */
+  GHashTable *rpm_artifact_map;
+
   GHashTable *rpm_filters; /* string set */
 
   GHashTable *servicelevels; /* &lt;string, Modulemd.ServiceLevel */
