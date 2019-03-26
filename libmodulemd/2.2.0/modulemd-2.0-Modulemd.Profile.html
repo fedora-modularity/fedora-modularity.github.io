@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Profile: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.ModuleStreamV2.html" title="Modulemd.ModuleStreamV2">
+<link rel="next" href="modulemd-2.0-Modulemd.RpmMapEntry.html" title="Modulemd.RpmMapEntry">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Profile.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.ModuleStreamV2.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.RpmMapEntry.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.Profile"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Profile.top_of_page"></a>Modulemd.Profile</span></h2>
+<p>Modulemd.Profile — Stores profile information for a module stream.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-equals" title="modulemd_profile_equals ()">modulemd_profile_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-new" title="modulemd_profile_new ()">modulemd_profile_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-copy" title="modulemd_profile_copy ()">modulemd_profile_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-get-name" title="modulemd_profile_get_name ()">modulemd_profile_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-set-description" title="modulemd_profile_set_description ()">modulemd_profile_set_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-get-description" title="modulemd_profile_get_description ()">modulemd_profile_get_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-add-rpm" title="modulemd_profile_add_rpm ()">modulemd_profile_add_rpm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-remove-rpm" title="modulemd_profile_remove_rpm ()">modulemd_profile_remove_rpm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> **
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-get-rpms-as-strv" title="modulemd_profile_get_rpms_as_strv ()">modulemd_profile_get_rpms_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#MODULEMD-TYPE-PROFILE:CAPS" title="MODULEMD_TYPE_PROFILE">MODULEMD_TYPE_PROFILE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile">ModulemdProfile</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-profile-equals"></a><h3>modulemd_profile_equals ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_profile_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self_1</code></em>,
+                         <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self_2</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self_1</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>self_2</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-equals.returns"></a><h4>Returns</h4>
+<p> TRUE if all elements of self_1 and self_2 are equal. FALSE, otherwise. </p>
+</div>
+<p class="since">Since: 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-new"></a><h3>modulemd_profile_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+modulemd_profile_new (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of this profile. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/not%20nullable"><span class="acronym">not nullable</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <span class="type">ModuleProfile</span>. This object must
+be freed with <code class="function">g_object_unref()</code>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-copy"></a><h3>modulemd_profile_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+modulemd_profile_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>);</pre>
+<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p>
+<div class="refsect3">
+<a name="modulemd-profile-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-copy.returns"></a><h4>Returns</h4>
+<p>a copied <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> object. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-get-name"></a><h3>modulemd_profile_get_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+modulemd_profile_get_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-get-name.returns"></a><h4>Returns</h4>
+<p>The name of this profile. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-set-description"></a><h3>modulemd_profile_set_description ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_profile_set_description (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *description</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-set-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>The description of this profile in the C locale. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-get-description"></a><h3>modulemd_profile_get_description ()</h3>
+<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+modulemd_profile_get_description (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *locale</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locale</p></td>
+<td class="parameter_description"><p>The name of the locale to use when translating
+the string. If NULL, it will determine the locale with a system call to
+setlocale(LC_MESSAGES, NULL) and return the that. If the caller wants the
+untranslated string, they should pass "C" for the locale. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-get-description.returns"></a><h4>Returns</h4>
+<p>The description of this profile translated into
+the language specified by the locale if it is available, otherwise it
+returns the C.UTF-8 original. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-add-rpm"></a><h3>modulemd_profile_add_rpm ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_profile_add_rpm (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>,
+                          <em class="parameter"><code>const <span class="type">gchar</span> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-add-rpm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>The name of a binary RPM that should be installed when this profile is
+selected for installation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-remove-rpm"></a><h3>modulemd_profile_remove_rpm ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_profile_remove_rpm (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>,
+                             <em class="parameter"><code>const <span class="type">gchar</span> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-remove-rpm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>The name of a binary RPM to remove from this profile.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-get-rpms-as-strv"></a><h3>modulemd_profile_get_rpms_as_strv ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> **
+modulemd_profile_get_rpms_as_strv (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_profile_get_rpms]</span></p>
+<div class="refsect3">
+<a name="modulemd-profile-get-rpms-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-get-rpms-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of binary RPMS that would be
+installed when this profile is selected for installation. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-PROFILE:CAPS"></a><h3>MODULEMD_TYPE_PROFILE</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_PROFILE (modulemd_profile_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdProfile"></a><h3>ModulemdProfile</h3>
+<pre class="programlisting">typedef struct _ModulemdProfile ModulemdProfile;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

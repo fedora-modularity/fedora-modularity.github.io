@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.ModuleIndex: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.Module.html" title="Modulemd.Module">
+<link rel="next" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html" title="Modulemd.ModuleIndexMerger">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ModuleIndex.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.Module.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.ModuleIndex"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.ModuleIndex.top_of_page"></a>Modulemd.ModuleIndex</span></h2>
+<p>Modulemd.ModuleIndex — The primary interface to dealing with repodata in the
+module metadata format.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new" title="modulemd_module_index_new ()">modulemd_module_index_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-file" title="modulemd_module_index_update_from_file ()">modulemd_module_index_update_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string" title="modulemd_module_index_update_from_string ()">modulemd_module_index_update_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-stream" title="modulemd_module_index_update_from_stream ()">modulemd_module_index_update_from_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-string" title="modulemd_module_index_dump_to_string ()">modulemd_module_index_dump_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-stream" title="modulemd_module_index_dump_to_stream ()">modulemd_module_index_dump_to_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GStrv</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module-names-as-strv" title="modulemd_module_index_get_module_names_as_strv ()">modulemd_module_index_get_module_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module" title="modulemd_module_index_get_module ()">modulemd_module_index_get_module</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-remove-module" title="modulemd_module_index_remove_module ()">modulemd_module_index_remove_module</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-module-stream" title="modulemd_module_index_add_module_stream ()">modulemd_module_index_add_module_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-defaults" title="modulemd_module_index_add_defaults ()">modulemd_module_index_add_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-translation" title="modulemd_module_index_add_translation ()">modulemd_module_index_add_translation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="returnvalue">ModulemdDefaultsVersionEnum</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" title="modulemd_module_index_get_defaults_mdversion ()">modulemd_module_index_get_defaults_mdversion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" title="modulemd_module_index_get_stream_mdversion ()">modulemd_module_index_get_stream_mdversion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-streams" title="modulemd_module_index_upgrade_streams ()">modulemd_module_index_upgrade_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()">modulemd_module_index_upgrade_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#MODULEMD-TYPE-MODULE-INDEX:CAPS" title="MODULEMD_TYPE_MODULE_INDEX">MODULEMD_TYPE_MODULE_INDEX</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex">ModulemdModuleIndex</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.description"></a><h2>Description</h2>
+<p>This object provides an interface to the complete metadata read from a
+repository or manually added to this object.</p>
+<p>NOTE: When adding or updating this object from YAML, all objects imported
+will be automatically upgraded to match the highest version of that object
+that is seen. This means that if the repository has a mix of
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2" title="ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects, the index will
+contain only <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2" title="ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>. You can check the versions the index
+upgraded to with the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" title="modulemd_module_index_get_stream_mdversion ()"><code class="function">modulemd_module_index_get_stream_mdversion()</code></a> and
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" title="modulemd_module_index_get_defaults_mdversion ()"><code class="function">modulemd_module_index_get_defaults_mdversion()</code></a>. If your application would
+prefer to always work with a particular stream or defaults version (such as
+to avoid extra branching logic), the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-streams" title="modulemd_module_index_upgrade_streams ()"><code class="function">modulemd_module_index_upgrade_streams()</code></a>
+and <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()"><code class="function">modulemd_module_index_upgrade_defaults()</code></a> functions can be used to force
+the contents of the index to upgrade to those versions.</p>
+<p>Interacting with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> is relatively simple. A common Python
+example for working with Fedora repodata might be (assuming the metadata has
+already been read into strings):</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">fedora_repo_index </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndex</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
+<span class="normal">fedora_repo_index</span><span class="symbol">.</span><span class="function">update_from_string</span><span class="symbol">(</span><span class="normal">fedora_modulemd</span><span class="symbol">)</span>
+
+<span class="preproc"># Get</span><span class="normal"> the list of all module names in the index</span>
+<span class="normal">module_names </span><span class="symbol">=</span><span class="normal"> fedora_repo_index</span><span class="symbol">.</span><span class="function">get_module_names</span><span class="symbol">()</span>
+
+<span class="preproc"># Retrieve</span><span class="normal"> information about a particular module from the index</span>
+<span class="normal">module </span><span class="symbol">=</span><span class="normal"> fedora_repo_index</span><span class="symbol">.</span><span class="function">get_module</span><span class="symbol">(</span><span class="string">'module_name'</span><span class="symbol">)</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>See the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a> documentation for details on retrieving information
+about specific modules, including how to get <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> information
+and retrieve individual <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> objects.</p>
+<p>See the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> documentation for details on merging
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects from separate repositories together.</p>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-module-index-new"></a><h3>modulemd_module_index_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+modulemd_module_index_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-file"></a><h3>modulemd_module_index_update_from_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_update_from_file
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *yaml_file</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> strict</code></em>,
+                                <em class="parameter"><code><span class="type">GPtrArray</span> **failures</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A YAML file containing the module metadata and other
+related information such as default streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
+See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo" title="ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocumentInfo][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A GError containing additional information if this function
+fails in a way that prevents program continuation. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-file.returns"></a><h4>Returns</h4>
+<p> TRUE if the update was successful. Returns FALSE and sets failures
+approriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
+if
+there was a fatal parse error.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-string"></a><h3>modulemd_module_index_update_from_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_update_from_string
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *yaml_string</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> strict</code></em>,
+                                <em class="parameter"><code><span class="type">GPtrArray</span> **failures</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A YAML string containing the module metadata and other
+related information such as default streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
+See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo" title="ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocumentInfo][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A GError containing additional information if this function
+fails in a way that prevents program continuation. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-string.returns"></a><h4>Returns</h4>
+<p> TRUE if the update was successful. Returns FALSE and sets failures
+approriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
+if
+there was a fatal parse error.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-stream"></a><h3>modulemd_module_index_update_from_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_update_from_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><span class="type">FILE</span> *yaml_stream</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> strict</code></em>,
+                                <em class="parameter"><code><span class="type">GPtrArray</span> **failures</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/skip"><span class="acronym">skip</span></a>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_stream</p></td>
+<td class="parameter_description"><p>A YAML stream containing the module metadata and other
+related information such as default streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
+See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo" title="ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocumentInfo][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A GError containing additional information if this function
+fails in a way that prevents program continuation. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if the update was successful. Returns FALSE and sets failures
+approriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
+if
+there was a fatal parse error.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-dump-to-string"></a><h3>modulemd_module_index_dump_to_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+modulemd_module_index_dump_to_string (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                      <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason the function failed, NULL if
+the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-string.returns"></a><h4>Returns</h4>
+<p>A YAML representation of the index as a string. In
+the event of an error, sets error appropriately and returns NULL. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-dump-to-stream"></a><h3>modulemd_module_index_dump_to_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_dump_to_stream (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                      <em class="parameter"><code><span class="type">FILE</span> *yaml_stream</code></em>,
+                                      <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/skip"><span class="acronym">skip</span></a>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_stream</p></td>
+<td class="parameter_description"><p>A stream to write the module metadata and other related
+information to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason the function failed, NULL if
+the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if written successfully, FALSE and sets error appropriately in
+the event of an error.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-module-names-as-strv"></a><h3>modulemd_module_index_get_module_names_as_strv ()</h3>
+<pre class="programlisting"><span class="returnvalue">GStrv</span>
+modulemd_module_index_get_module_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_index_get_module_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of string keys in this index. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-module"></a><h3>modulemd_module_index_get_module ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+modulemd_module_index_get_module (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The module name to look up in the index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module.returns"></a><h4>Returns</h4>
+<p>The <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a> object matching the provided
+module name or NULL if the key was not present in the index. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-remove-module"></a><h3>modulemd_module_index_remove_module ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_remove_module (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
+<p>Remove a module, including all of its streams, its defaults and its
+translations from a <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-remove-module.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to remove from the index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-remove-module.returns"></a><h4>Returns</h4>
+<p> TRUE if the module name was present in the index. FALSE if it was
+not.</p>
+</div>
+<p class="since">Since: 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-add-module-stream"></a><h3>modulemd_module_index_add_module_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_add_module_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> *stream</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Add a <span class="type">ModuleStream</span> to the <span class="type">ModuleIndex</span>. While being added, the
+<span class="type">ModuleStream</span> will be upgraded to MD_MODULESTREAM_VERSION_LATEST to ensure
+that merges done with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> will always occur between
+streams of the same version. If this upgrade cannot be performed, the
+function will return <em class="parameter"><code>error</code></em>
+ set appropriately.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-add-module-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> to add to the index. The stream added
+must have a module name and stream name set on it or it will be rejected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason the <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a>
+object could not be added or NULL if the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-add-module-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a> was added succesfully. If the stream
+already existed in the index, it will be replaced by the new one. On
+failure, returns FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-add-defaults"></a><h3>modulemd_module_index_add_defaults ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_add_defaults (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *defaults</code></em>,
+                                    <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-add-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>defaults</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object to add to the index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason the <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object
+could not be added or NULL if the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-add-defaults.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> was added succesfully. If the defaults
+already existed in the index, it will be replaced by the new one. On failure,
+returns FALSE and sets error approriately.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-add-translation"></a><h3>modulemd_module_index_add_translation ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_add_translation (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation" title="ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> *translation</code></em>,
+                                       <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-defaults-mdversion"></a><h3>modulemd_module_index_get_defaults_mdversion ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="returnvalue">ModulemdDefaultsVersionEnum</span></a>
+modulemd_module_index_get_defaults_mdversion
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-get-defaults-mdversion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-defaults-mdversion.returns"></a><h4>Returns</h4>
+<p> The metadata version of <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> in use for this index.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-stream-mdversion"></a><h3>modulemd_module_index_get_stream_mdversion ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
+modulemd_module_index_get_stream_mdversion
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-get-stream-mdversion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-stream-mdversion.returns"></a><h4>Returns</h4>
+<p> The metadata version of <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> in use for this
+index.</p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-upgrade-streams"></a><h3>modulemd_module_index_upgrade_streams ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_upgrade_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> mdversion</code></em>,
+                                       <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Upgrades all <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> objects in this index to <em class="parameter"><code>mdversion</code></em>
+ if
+they are not already at that version.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-upgrade-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mdversion</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> metadata version to upgrade to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> that contains information on why the index could
+not be upgraded in the event of an error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-upgrade-defaults"></a><h3>modulemd_module_index_upgrade_defaults ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_upgrade_defaults
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="type">ModulemdDefaultsVersionEnum</span></a> mdversion</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Upgrades all <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> objects in this index to <em class="parameter"><code>mdversion</code></em>
+ if they
+are not already at that version.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-upgrade-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mdversion</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> metadata version to upgrade to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> that contains information on why the index could
+not be upgraded in the event of an error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-MODULE-INDEX:CAPS"></a><h3>MODULEMD_TYPE_MODULE_INDEX</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_MODULE_INDEX (modulemd_module_index_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdModuleIndex"></a><h3>ModulemdModuleIndex</h3>
+<pre class="programlisting">typedef struct _ModulemdModuleIndex ModulemdModuleIndex;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>
