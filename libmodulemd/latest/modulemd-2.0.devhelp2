@@ -125,6 +125,7 @@
     <keyword type="macro" name="MODULEMD_TYPE_DEFAULTS_V1" link="modulemd-2.0-Modulemd.DefaultsV1.html#MODULEMD-TYPE-DEFAULTS-V1:CAPS"/>
     <keyword type="struct" name="ModulemdDefaultsV1" link="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"/>
     <keyword type="function" name="modulemd_dependencies_new ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-new" since="2.0"/>
+    <keyword type="function" name="modulemd_dependencies_equals ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-equals" since="2.2"/>
     <keyword type="function" name="modulemd_dependencies_copy ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-copy" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_add_buildtime_stream ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-add-buildtime-stream" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_set_empty_buildtime_dependencies_for_module ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-set-empty-buildtime-dependencies-for-module" since="2.0"/>
