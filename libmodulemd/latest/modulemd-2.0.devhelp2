@@ -63,6 +63,7 @@
     <keyword type="function" name="modulemd_buildopts_get_rpm_whitelist_as_strv ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_BUILDOPTS" link="modulemd-2.0-Modulemd.Buildopts.html#MODULEMD-TYPE-BUILDOPTS:CAPS"/>
     <keyword type="struct" name="ModulemdBuildopts" link="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"/>
+    <keyword type="function" name="modulemd_component_equals ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-equals" since="2.3"/>
     <keyword type="function" name="modulemd_component_copy ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-copy" since="2.0"/>
     <keyword type="function" name="modulemd_component_validate ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-validate" since="2.2"/>
     <keyword type="function" name="modulemd_component_add_buildafter ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-add-buildafter" since="2.2"/>
@@ -147,10 +148,12 @@
     <keyword type="function" name="modulemd_module_get_defaults ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-defaults" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE" link="modulemd-2.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS"/>
     <keyword type="struct" name="ModulemdModule" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule"/>
+    <keyword type="function" name="ModulemdReadHandler ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" since="2.3"/>
     <keyword type="function" name="modulemd_module_index_new ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_file ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-file" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_string ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-stream" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_update_from_custom ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-custom" since="2.3"/>
     <keyword type="function" name="modulemd_module_index_dump_to_string ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-string" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_dump_to_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_get_module_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module-names-as-strv" since="2.0"/>

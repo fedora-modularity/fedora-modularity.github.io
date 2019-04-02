@@ -45,6 +45,14 @@
 <tbody>
 <tr>
 <td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-ModulemdComponent.html#modulemd-component-equals" title="modulemd_component_equals ()">modulemd_component_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="returnvalue">ModulemdComponent</span></a> *
 </td>
 <td class="function_name">
@@ -175,6 +183,40 @@
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-ModulemdComponent.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-component-equals"></a><h3>modulemd_component_equals ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_component_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self_1</code></em>,
+                           <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self_2</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-component-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self_1</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>self_2</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-component-equals.returns"></a><h4>Returns</h4>
+<p> TRUE, if both the objects are equal. FALSE, otherwise</p>
+</div>
+<p class="since">Since: 2.3</p>
+</div>
+<hr>
 <div class="refsect2">
 <a name="modulemd-component-copy"></a><h3>modulemd_component_copy ()</h3>
 <pre class="programlisting"><a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="returnvalue">ModulemdComponent</span></a> *
@@ -596,6 +638,7 @@ modulemd_component_get_rationale (<em class="parameter"><code><a class="link" hr
   void (*set_name) (ModulemdComponent *self, const gchar *name);
   const gchar *(*get_name) (ModulemdComponent *self);
   gboolean (*validate) (ModulemdComponent *self, GError **error);
+  gboolean (*equals) (ModulemdComponent *self_1, ModulemdComponent *self_2);
 
   /* Padding to allow adding up to 8 new virtual functions without
    * breaking ABI. */

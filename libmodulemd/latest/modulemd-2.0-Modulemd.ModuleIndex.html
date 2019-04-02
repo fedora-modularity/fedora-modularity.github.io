@@ -46,6 +46,14 @@ module metadata format.</p>
 <tbody>
 <tr>
 <td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()">*ModulemdReadHandler</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
 </td>
 <td class="function_name">
@@ -74,6 +82,14 @@ module metadata format.</p>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-stream" title="modulemd_module_index_update_from_stream ()">modulemd_module_index_update_from_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-custom" title="modulemd_module_index_update_from_custom ()">modulemd_module_index_update_from_custom</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -246,6 +262,65 @@ and retrieve individual <a class="link" href="modulemd-2.0-ModulemdModuleStream.
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.ModuleIndex.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ModulemdReadHandler"></a><h3>ModulemdReadHandler ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+<span class="c_punctuation">(</span>*ModulemdReadHandler<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span> *data</code></em>,
+                        <em class="parameter"><code>unsigned <span class="type">char</span> *buffer</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> size</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> *size_read</code></em>);</pre>
+<p>The prototype of a read handler.</p>
+<p>The read handler is called when the parser needs to read more bytes from the
+source. The handler should write not more than <em class="parameter"><code>size</code></em>
+ bytes to the <em class="parameter"><code>buffer</code></em>
+.
+The number of written bytes should be set to the <em class="parameter"><code>size_read</code></em>
+ variable.</p>
+<p>This handler is identical to a
+<a class="ulink" href="https://github.com/yaml/libyaml/blob/master/include/yaml.h#L988" target="_top">yaml_read_handler_t</a>
+but is included here to avoid depending on yaml.h in modulemd headers.</p>
+<div class="refsect3">
+<a name="ModulemdReadHandler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A private pointer to the data being read. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/inout"><span class="acronym">inout</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>The buffer to write the data from the source. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of the buffer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size_read</p></td>
+<td class="parameter_description"><p>The actual number of bytes read from the source. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="ModulemdReadHandler.returns"></a><h4>Returns</h4>
+<p> On success, the handler must return 1. If the handler failed,
+the returned value must be 0.  On EOF, the handler must set the
+<em class="parameter"><code>size_read</code></em>
+to 0 and return 1.</p>
+</div>
+<p class="since">Since: 2.3</p>
+</div>
+<hr>
 <div class="refsect2">
 <a name="modulemd-module-index-new"></a><h3>modulemd_module_index_new ()</h3>
 <pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
@@ -437,6 +512,72 @@ if
 there was a fatal parse error.</p>
 </div>
 <p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-custom"></a><h3>modulemd_module_index_update_from_custom ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_update_from_custom
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()"><span class="type">ModulemdReadHandler</span></a> custom_read_fn</code></em>,
+                                <em class="parameter"><code><span class="type">void</span> *custom_pvt_data</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> strict</code></em>,
+                                <em class="parameter"><code><span class="type">GPtrArray</span> **failures</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/skip"><span class="acronym">skip</span></a>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-custom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_read_fn</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()"><span class="type">ModulemdReadHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_pvt_data</p></td>
+<td class="parameter_description"><p>The private data needed by the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()"><span class="type">ModulemdReadHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/inout"><span class="acronym">inout</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
+See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo" title="ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocumentInfo][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A GError containing additional information if this function
+fails in a way that prevents program continuation. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-custom.returns"></a><h4>Returns</h4>
+<p> TRUE if the update was successful. Returns FALSE and sets <em class="parameter"><code>failures</code></em>
+approriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
+if
+there was a fatal parse error.</p>
+</div>
+<p class="since">Since: 2.3</p>
 </div>
 <hr>
 <div class="refsect2">
