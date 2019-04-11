@@ -54,6 +54,14 @@ module metadata format.</p>
 </tr>
 <tr>
 <td class="function_type">
+<span class="returnvalue">gint</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()">*ModulemdWriteHandler</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
 </td>
 <td class="function_name">
@@ -106,6 +114,14 @@ module metadata format.</p>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-stream" title="modulemd_module_index_dump_to_stream ()">modulemd_module_index_dump_to_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-custom" title="modulemd_module_index_dump_to_custom ()">modulemd_module_index_dump_to_custom</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -317,6 +333,56 @@ but is included here to avoid depending on yaml.h in modulemd headers.</p>
 the returned value must be 0.  On EOF, the handler must set the
 <em class="parameter"><code>size_read</code></em>
 to 0 and return 1.</p>
+</div>
+<p class="since">Since: 2.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdWriteHandler"></a><h3>ModulemdWriteHandler ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint</span>
+<span class="c_punctuation">(</span>*ModulemdWriteHandler<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span> *data</code></em>,
+                         <em class="parameter"><code>unsigned <span class="type">char</span> *buffer</code></em>,
+                         <em class="parameter"><code><span class="type">size_t</span> size</code></em>);</pre>
+<p>The prototype of a write handler.</p>
+<p>The write handler is called when the emitter needs to flush the accumulated
+characters to the output.  The handler should write <em class="parameter"><code>size</code></em>
+ bytes of the
+<em class="parameter"><code>buffer</code></em>
+ to the output.</p>
+<p>This handler is identical to a
+<a class="ulink" href="https://github.com/yaml/libyaml/blob/master/include/yaml.h#L1478" target="_top">yaml_write_handler_t</a>
+but is included here to avoid depending on yaml.h in modulemd headers.</p>
+<div class="refsect3">
+<a name="ModulemdWriteHandler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A private pointer that includes the data source. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/inout"><span class="acronym">inout</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>The buffer with bytes to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of the buffer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="ModulemdWriteHandler.returns"></a><h4>Returns</h4>
+<p> On success, the handler must return 1. If the handler failed,
+the returned value must be 0.</p>
 </div>
 <p class="since">Since: 2.3</p>
 </div>
@@ -659,6 +725,56 @@ the function succeeded. </p></td>
 the event of an error.</p>
 </div>
 <p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-dump-to-custom"></a><h3>modulemd_module_index_dump_to_custom ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+modulemd_module_index_dump_to_custom (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()"><span class="type">ModulemdWriteHandler</span></a> custom_write_fn</code></em>,
+                                      <em class="parameter"><code><span class="type">void</span> *custom_pvt_data</code></em>,
+                                      <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/skip"><span class="acronym">skip</span></a>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-custom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_write_fn</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()"><span class="type">ModulemdWriteHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_pvt_data</p></td>
+<td class="parameter_description"><p>The private data needed by the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()"><span class="type">ModulemdWriteHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/inout"><span class="acronym">inout</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason the function failed, NULL if
+the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-custom.returns"></a><h4>Returns</h4>
+<p> TRUE if written successfully, FALSE and sets error appropriately in
+the event of an error.</p>
+</div>
+<p class="since">Since: 2.3</p>
 </div>
 <hr>
 <div class="refsect2">

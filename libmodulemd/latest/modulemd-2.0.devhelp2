@@ -149,6 +149,7 @@
     <keyword type="macro" name="MODULEMD_TYPE_MODULE" link="modulemd-2.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS"/>
     <keyword type="struct" name="ModulemdModule" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule"/>
     <keyword type="function" name="ModulemdReadHandler ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" since="2.3"/>
+    <keyword type="function" name="ModulemdWriteHandler ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" since="2.3"/>
     <keyword type="function" name="modulemd_module_index_new ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_file ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-file" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_string ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string" since="2.0"/>
@@ -156,6 +157,7 @@
     <keyword type="function" name="modulemd_module_index_update_from_custom ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-custom" since="2.3"/>
     <keyword type="function" name="modulemd_module_index_dump_to_string ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-string" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_dump_to_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-stream" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_dump_to_custom ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-custom" since="2.3"/>
     <keyword type="function" name="modulemd_module_index_get_module_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module-names-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_get_module ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_remove_module ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-remove-module" since="2.2"/>
