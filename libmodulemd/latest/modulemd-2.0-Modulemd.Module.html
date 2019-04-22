@@ -100,6 +100,20 @@
 </tr>
 <tr>
 <td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-NSVCA" title="modulemd_module_remove_streams_by_NSVCA ()">modulemd_module_remove_streams_by_NSVCA</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-name" title="modulemd_module_remove_streams_by_name()">modulemd_module_remove_streams_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
 </td>
 <td class="function_name">
@@ -401,6 +415,90 @@ exactly one <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#Modulem
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
 </div>
 <p class="since">Since: 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-remove-streams-by-NSVCA"></a><h3>modulemd_module_remove_streams_by_NSVCA ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_remove_streams_by_NSVCA
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *stream_name</code></em>,
+                                <em class="parameter"><code>const <span class="type">guint64</span> version</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *context</code></em>,
+                                <em class="parameter"><code>const <span class="type">gchar</span> *arch</code></em>);</pre>
+<p>Remove one or more <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> objects from this <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a>
+that match the provided parameters.</p>
+<div class="refsect3">
+<a name="modulemd-module-remove-streams-by-NSVCA.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to remove. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/not%20nullable"><span class="acronym">not nullable</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the stream to remove. If set to zero, matches all
+versions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the stream to remove. If NULL, matches
+all stream contexts. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>The processor architecture of the stream to remove. If
+NULL, matches all architectures. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-remove-streams-by-name"></a><h3>modulemd_module_remove_streams_by_name()</h3>
+<pre class="programlisting">#define             modulemd_module_remove_streams_by_name(self, stream_name)</pre>
+<p>Remove one or more <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> objects from this <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a>
+that match the provided stream name.</p>
+<div class="refsect3">
+<a name="modulemd-module-remove-streams-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to remove. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/not%20nullable"><span class="acronym">not nullable</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.3</p>
 </div>
 <hr>
 <div class="refsect2">

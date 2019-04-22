@@ -145,6 +145,8 @@
     <keyword type="function" name="modulemd_module_get_streams_by_stream_name_as_list ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-streams-by-stream-name-as-list" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_stream_by_NSVC ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVC" deprecated="2.2" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_stream_by_NSVCA ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVCA" since="2.2"/>
+    <keyword type="function" name="modulemd_module_remove_streams_by_NSVCA ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-NSVCA" since="2.3"/>
+    <keyword type="macro" name="modulemd_module_remove_streams_by_name()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-name" since="2.3"/>
     <keyword type="function" name="modulemd_module_get_defaults ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-defaults" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE" link="modulemd-2.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS"/>
     <keyword type="struct" name="ModulemdModule" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule"/>
