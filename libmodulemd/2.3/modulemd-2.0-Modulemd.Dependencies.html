@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Dependencies: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.DefaultsV1.html" title="Modulemd.DefaultsV1">
+<link rel="next" href="modulemd-2.0-Modulemd.Module.html" title="Modulemd.Module">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Dependencies.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.DefaultsV1.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.Module.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.Dependencies"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Dependencies.top_of_page"></a>Modulemd.Dependencies</span></h2>
+<p>Modulemd.Dependencies — Object to represent build-time and runtime dependencies of a module stream.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Dependencies.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Dependencies.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-new" title="modulemd_dependencies_new ()">modulemd_dependencies_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-equals" title="modulemd_dependencies_equals ()">modulemd_dependencies_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-copy" title="modulemd_dependencies_copy ()">modulemd_dependencies_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-add-buildtime-stream" title="modulemd_dependencies_add_buildtime_stream ()">modulemd_dependencies_add_buildtime_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-set-empty-buildtime-dependencies-for-module" title="modulemd_dependencies_set_empty_buildtime_dependencies_for_module ()">modulemd_dependencies_set_empty_buildtime_dependencies_for_module</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-buildtime-modules-as-strv" title="modulemd_dependencies_get_buildtime_modules_as_strv ()">modulemd_dependencies_get_buildtime_modules_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-buildtime-streams-as-strv" title="modulemd_dependencies_get_buildtime_streams_as_strv ()">modulemd_dependencies_get_buildtime_streams_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-add-runtime-stream" title="modulemd_dependencies_add_runtime_stream ()">modulemd_dependencies_add_runtime_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-set-empty-runtime-dependencies-for-module" title="modulemd_dependencies_set_empty_runtime_dependencies_for_module ()">modulemd_dependencies_set_empty_runtime_dependencies_for_module</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-modules-as-strv" title="modulemd_dependencies_get_runtime_modules_as_strv ()">modulemd_dependencies_get_runtime_modules_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-streams-as-strv" title="modulemd_dependencies_get_runtime_streams_as_strv ()">modulemd_dependencies_get_runtime_streams_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Dependencies.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#MODULEMD-TYPE-DEPENDENCIES:CAPS" title="MODULEMD_TYPE_DEPENDENCIES">MODULEMD_TYPE_DEPENDENCIES</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies">ModulemdDependencies</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Dependencies.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Dependencies.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-dependencies-new"></a><h3>modulemd_dependencies_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+modulemd_dependencies_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-dependencies-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <span class="type">ModuleDependencies</span>. This object must be freed with <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-equals"></a><h3>modulemd_dependencies_equals ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_dependencies_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_1</code></em>,
+                              <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_2</code></em>);</pre>
+<p>Check if self_1 and self_2 are equal objects</p>
+<div class="refsect3">
+<a name="modulemd-dependencies-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self_1</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>self_2</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-equals.returns"></a><h4>Returns</h4>
+<p> TRUE, if the're equal. FALSE, otherwise.</p>
+</div>
+<p class="since">Since: 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-copy"></a><h3>modulemd_dependencies_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p>
+<div class="refsect3">
+<a name="modulemd-dependencies-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-copy.returns"></a><h4>Returns</h4>
+<p>a copied <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-add-buildtime-stream"></a><h3>modulemd_dependencies_add_buildtime_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_dependencies_add_buildtime_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
+<p>Add a single stream of a module that is required to build another dependent module. The matrix of streams and module names will be calculated by the build-system. If the provided module name is already present, the streams will be added (with deduplication).</p>
+<div class="refsect3">
+<a name="modulemd-dependencies-add-buildtime-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to depend on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_stream</p></td>
+<td class="parameter_description"><p>The name of the module stream to depend on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-set-empty-buildtime-dependencies-for-module"></a><h3>modulemd_dependencies_set_empty_buildtime_dependencies_for_module ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_dependencies_set_empty_buildtime_dependencies_for_module
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Adds a module and inserts an empty list for it as buildtime dependency.</p>
+<div class="refsect3">
+<a name="modulemd-dependencies-set-empty-buildtime-dependencies-for-module.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <span class="type">ModuleDependencies</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to add dependencies on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-get-buildtime-modules-as-strv"></a><h3>modulemd_dependencies_get_buildtime_modules_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_dependencies_get_buildtime_modules_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_buildtime_modules]</span></p>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-buildtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of module names of build-time dependencies. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-get-buildtime-streams-as-strv"></a><h3>modulemd_dependencies_get_buildtime_streams_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_dependencies_get_buildtime_streams_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_buildtime_streams]</span></p>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-buildtime-streams-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module</p></td>
+<td class="parameter_description"><p>The name of the module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-buildtime-streams-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of module streams associated with the specified module that are required at build-time. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-add-runtime-stream"></a><h3>modulemd_dependencies_add_runtime_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_dependencies_add_runtime_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
+<p>Adds a module and its stream that is required at runtime by a dependent module. The matrix of streams and module names will be calculated by the build-system. If the listed provided module name is already present, the streams will be added (with deduplication).</p>
+<div class="refsect3">
+<a name="modulemd-dependencies-add-runtime-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to depend on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_stream</p></td>
+<td class="parameter_description"><p>The name of the module stream to depend on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-set-empty-runtime-dependencies-for-module"></a><h3>modulemd_dependencies_set_empty_runtime_dependencies_for_module ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_dependencies_set_empty_runtime_dependencies_for_module
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Adds a module and inserts an empty list for it as runtime dependency.</p>
+<div class="refsect3">
+<a name="modulemd-dependencies-set-empty-runtime-dependencies-for-module.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <span class="type">ModuleDependencies</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to add dependencies on.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-get-runtime-modules-as-strv"></a><h3>modulemd_dependencies_get_runtime_modules_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_dependencies_get_runtime_modules_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_runtime_modules]</span></p>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-runtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of module names of run-time dependencies. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dependencies-get-runtime-streams-as-strv"></a><h3>modulemd_dependencies_get_runtime_streams_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_dependencies_get_runtime_streams_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_runtime_streams]</span></p>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-runtime-streams-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module</p></td>
+<td class="parameter_description"><p>The name of the module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-get-runtime-streams-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of module streams associated with the specified module that are required at run-time. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Dependencies.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-DEPENDENCIES:CAPS"></a><h3>MODULEMD_TYPE_DEPENDENCIES</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_DEPENDENCIES (modulemd_dependencies_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdDependencies"></a><h3>ModulemdDependencies</h3>
+<pre class="programlisting">typedef struct _ModulemdDependencies ModulemdDependencies;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>
