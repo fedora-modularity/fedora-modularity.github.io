@@ -270,8 +270,10 @@ variables named 'module_name' and 'stream_name', respectively.</p>
 2
 3
 4
-5</pre></td>
+5
+6</pre></td>
         <td class="listing_code"><pre class="programlisting"><span class="normal">stream </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStream</span><span class="symbol">.</span><span class="function">read_file</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'/path/to/module_name.yaml'</span><span class="symbol">,</span>
+<span class="normal">                                          True</span><span class="symbol">,</span>
 <span class="normal">                                          module_name</span><span class="symbol">,</span>
 <span class="normal">                                          stream_name</span><span class="symbol">)</span>
 <span class="normal">v2_stream </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">upgrade</span><span class="symbol">(</span><span class="normal">Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStreamVersion</span><span class="symbol">.</span><span class="normal">TWO</span><span class="symbol">)</span>
