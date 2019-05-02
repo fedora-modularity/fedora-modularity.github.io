@@ -276,7 +276,7 @@ variables named 'module_name' and 'stream_name', respectively.</p>
 <span class="normal">                                          True</span><span class="symbol">,</span>
 <span class="normal">                                          module_name</span><span class="symbol">,</span>
 <span class="normal">                                          stream_name</span><span class="symbol">)</span>
-<span class="normal">v2_stream </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">upgrade</span><span class="symbol">(</span><span class="normal">Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStreamVersion</span><span class="symbol">.</span><span class="normal">TWO</span><span class="symbol">)</span>
+<span class="normal">v2_stream </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">upgrade</span><span class="symbol">(</span><span class="normal">Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStreamVersionEnum</span><span class="symbol">.</span><span class="normal">TWO</span><span class="symbol">)</span>
 <span class="normal">v2_stream</span><span class="symbol">.</span><span class="function">validate</span><span class="symbol">()</span></pre></td>
       </tr>
     </tbody>
@@ -289,6 +289,9 @@ from v1 metadata. This will allow us to avoid having to manage multiple
 code-paths and support only the latest we understand. After that, it calls
 <code class="function">validate()</code> to ensure that the content that was read in was valid both
 syntactically and referentially.</p>
+<p>Also available is <code class="literal">Modulemd.ModuleStreamVersionEnum.LATEST</code> which will
+always represent the highest-supported ModuleStream version. This may change
+at any time.</p>
 </div>
 </div>
 <div class="refsect1">
