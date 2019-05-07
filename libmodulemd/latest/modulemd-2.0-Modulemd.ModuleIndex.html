@@ -257,7 +257,7 @@ already been read into strings):</p>
 7
 8</pre></td>
         <td class="listing_code"><pre class="programlisting"><span class="normal">fedora_repo_index </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndex</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
-<span class="normal">fedora_repo_index</span><span class="symbol">.</span><span class="function">update_from_string</span><span class="symbol">(</span><span class="normal">fedora_modulemd</span><span class="symbol">)</span>
+<span class="normal">fedora_repo_index</span><span class="symbol">.</span><span class="function">update_from_string</span><span class="symbol">(</span><span class="normal">fedora_modulemd</span><span class="symbol">,</span><span class="normal"> True</span><span class="symbol">)</span>
 
 <span class="preproc"># Get</span><span class="normal"> the list of all module names in the index</span>
 <span class="normal">module_names </span><span class="symbol">=</span><span class="normal"> fedora_repo_index</span><span class="symbol">.</span><span class="function">get_module_names</span><span class="symbol">()</span>
