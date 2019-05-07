@@ -308,6 +308,8 @@
     <keyword type="function" name="modulemd_module_stream_v2_get_servicelevel_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-servicelevel-names-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_servicelevel ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-servicelevel" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_add_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-add-dependencies" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_clear_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-clear-dependencies" since="2.4"/>
+    <keyword type="function" name="modulemd_module_stream_v2_remove_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-remove-dependencies" since="2.4"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-dependencies"/>
     <keyword type="function" name="modulemd_module_stream_v2_set_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-set-xmd" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-xmd"/>
