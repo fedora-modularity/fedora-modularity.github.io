@@ -186,6 +186,7 @@
     <keyword type="function" name="modulemd_module_stream_read_file ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-read-file" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_read_string ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-read-string" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_read_stream ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-read-stream" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_equals ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-equals" since="2.3"/>
     <keyword type="function" name="modulemd_module_stream_copy ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-copy" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_upgrade ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-upgrade" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_validate ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-validate" since="2.0"/>
@@ -198,7 +199,7 @@
     <keyword type="function" name="modulemd_module_stream_get_context ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-context" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_set_arch ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-set-arch" since="2.2"/>
     <keyword type="function" name="modulemd_module_stream_get_arch ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-arch" since="2.2"/>
-    <keyword type="function" name="modulemd_module_stream_get_nsvc_as_string ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-nsvc-as-string" deprecated="2.2" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_nsvc_as_string ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-nsvc-as-string" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_get_NSVCA_as_string ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-NSVCA-as-string" since="2.2"/>
     <keyword type="function" name="modulemd_module_stream_depends_on_stream ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-depends-on-stream" since="2.1" stability="Unstable"/>
     <keyword type="function" name="modulemd_module_stream_build_depends_on_stream ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-build-depends-on-stream" since="2.1" stability="Unstable"/>
@@ -409,6 +410,7 @@
     <keyword type="function" name="modulemd_component_get_buildafter_internal ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-get-buildafter-internal" since="2.2"/>
     <keyword type="function" name="modulemd_component_emit_yaml_start ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-emit-yaml-start" since="2.0"/>
     <keyword type="function" name="modulemd_component_emit_yaml_build_common ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-emit-yaml-build-common" since="2.2"/>
+    <keyword type="function" name="modulemd_component_equals_wrapper ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_component_module_parse_yaml ()" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html#modulemd-component-module-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_module_emit_yaml ()" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html#modulemd-component-module-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_parse_yaml ()" link="modulemd-2.0-Modulemd.ComponentRpm-(Private).html#modulemd-component-rpm-parse-yaml" since="2.0"/>
@@ -461,10 +463,14 @@
     <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2"/>
     <keyword type="function" name="modulemd_profile_parse_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_emit_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml"/>
+    <keyword type="function" name="modulemd_profile_equals_wrapper ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_rpm_map_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-parse-yaml" since="2.2"/>
     <keyword type="function" name="modulemd_rpm_map_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-emit-yaml" since="2.2"/>
+    <keyword type="function" name="modulemd_rpm_map_entry_equals_wrapper ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-equals-wrapper" since="2.5"/>
+    <keyword type="function" name="modulemd_RpmMapEntry_hash_table_equals_wrapper ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-RpmMapEntry-hash-table-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_service_level_parse_yaml ()" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html#modulemd-service-level-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_service_level_emit_yaml ()" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html#modulemd-service-level-emit-yaml"/>
+    <keyword type="function" name="modulemd_service_level_equals_wrapper ()" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html#modulemd-service-level-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_subdocument_info_new ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-new" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_copy ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-copy" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_set_doctype ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-set-doctype" since="2.0"/>
