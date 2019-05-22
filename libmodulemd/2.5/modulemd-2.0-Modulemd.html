@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="next" href="modulemd-2.0-Modulemd.Buildopts.html" title="Modulemd.Buildopts">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.Buildopts.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.top_of_page"></a>Modulemd</span></h2>
+<p>Modulemd — User's Guide for libmodulemd</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.html#modulemd-get-version" title="modulemd_get_version ()">modulemd_get_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.description"></a><h2>Description</h2>
+<div class="refsect2">
+<a name="id-1.2.3.2.5.2"></a><h3>Working with repodata (DNF use-case)</h3>
+<p>The libmodulemd API provides a number of convenience tools for interacting
+with repodata (that is, streams of YAML that contains information on
+multiple streams, default data and translations). The documentation will use
+two repositories, called "fedora" and "updates" for demonstrative purposes.
+It will assume that the content of the YAML module metadata from those two
+repositories have been loaded into string variables "fedora_yaml" and
+"updates_yaml", respectively.</p>
+<p>First step is to load the metadata from these two repositories into
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects. This is done as follows:</p>
+<p>In C:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">fedora_index </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new">modulemd_module_index_new</a></span><span class="symbol">();</span>
+<span class="normal">ret </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string">modulemd_module_index_update_from_string</a></span><span class="symbol">(</span><span class="normal">fedora_index</span><span class="symbol">,</span>
+<span class="normal">                                               fedora_yaml</span><span class="symbol">,</span>
+<span class="normal">                                               </span><span class="symbol">&amp;</span><span class="normal">failures</span><span class="symbol">,</span>
+<span class="normal">                                               </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span>
+
+<span class="normal">updates_index </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new">modulemd_module_index_new</a></span><span class="symbol">();</span>
+<span class="normal">ret </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string">modulemd_module_index_update_from_string</a></span><span class="symbol">(</span><span class="normal">updates_index</span><span class="symbol">,</span>
+<span class="normal">                                               updates_yaml</span><span class="symbol">,</span>
+<span class="normal">                                               </span><span class="symbol">&amp;</span><span class="normal">failures</span><span class="symbol">,</span>
+<span class="normal">                                               </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>The <em class="parameter"><code>failures</code></em>
+ argument will return any subdocuments in the YAML stream
+that could not be parsed or validated successfully. In the event that the
+stream as a whole could not be parsed, <em class="parameter"><code>error</code></em>
+ will be set accordingly.</p>
+<p>In python:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">fedora_index </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndex</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
+<span class="normal">ret</span><span class="symbol">,</span><span class="normal"> failures </span><span class="symbol">=</span><span class="normal"> fedora_index</span><span class="symbol">.</span><span class="function">update_from_string</span><span class="symbol">(</span><span class="normal">fedora_yaml</span><span class="symbol">,</span><span class="normal"> True</span><span class="symbol">)</span>
+
+<span class="normal">fedora_index </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndex</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
+<span class="normal">ret</span><span class="symbol">,</span><span class="normal"> failures </span><span class="symbol">=</span><span class="normal"> updates_index</span><span class="symbol">.</span><span class="function">update_from_string</span><span class="symbol">(</span><span class="normal">updates_yaml</span><span class="symbol">,</span><span class="normal"> True</span><span class="symbol">)</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>Since it doesn't really make sense to view the contents from separate
+repositories in isolation (in most cases), the next step is to merge the
+two indexes into a combined one:</p>
+<p>In C:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">merger </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-new">modulemd_module_index_merger_new</a></span><span class="symbol">()</span>
+<span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-associate-index">modulemd_module_index_merger_associate_index</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merger</span><span class="symbol">,</span><span class="normal"> fedora_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">);</span>
+<span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-associate-index">modulemd_module_index_merger_associate_index</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merger</span><span class="symbol">,</span><span class="normal"> updates_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">);</span>
+
+<span class="normal">merged_index </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve">modulemd_module_index_merger_resolve</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merger</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>In Python:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">merger </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndexMerger</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
+
+<span class="normal">merger</span><span class="symbol">.</span><span class="function">associate_index</span><span class="symbol">(</span><span class="normal">fedora_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">)</span>
+<span class="normal">merger</span><span class="symbol">.</span><span class="function">associate_index</span><span class="symbol">(</span><span class="normal">updates_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">)</span>
+
+<span class="normal">merged_index </span><span class="symbol">=</span><span class="normal"> merger</span><span class="symbol">.</span><span class="function">resolve</span><span class="symbol">()</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>At this point, you now have either a complete view of the merged repodata,
+or else have received an error describing why the merge was unable to
+complete successfully. Additionally, it should be noted that the combined
+metadata in any <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> will have all of its component parts
+upgraded to match the highest version of those objects seen. So for example
+if the repodata has a mix of v1 and v2 <span class="type">ModuleStream</span> objects, the index will
+contain only v2 objects (with the v1 objects automatically upgraded
+internally).</p>
+<p>At this point, we can start operating on the retrieved data. This guide will
+give only a brief overview of the most common operations. See the API
+specification for a full list of information that can be retrieved.</p>
+<div class="refsect3">
+<a name="id-1.2.3.2.5.2.20"></a><h4>Discover the default stream for a particular module.</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">module </span><span class="symbol">=</span><span class="normal"> merged_index</span><span class="symbol">.</span><span class="function">get_module</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'modulename'</span><span class="symbol">)</span>
+<span class="normal">defaults </span><span class="symbol">=</span><span class="normal"> module</span><span class="symbol">.</span><span class="function">get_defaults</span><span class="symbol">()</span>
+<span class="function">print</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'Default stream for modulename is %s'</span><span class="normal"> </span><span class="symbol">%</span><span class="normal"> </span><span class="symbol">(</span>
+<span class="normal">       defaults</span><span class="symbol">.</span><span class="function">get_default_stream</span><span class="symbol">())</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.3.2.5.2.21"></a><h4>Get the list of RPMs defining the public API for a particular module NSVC</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">module </span><span class="symbol">=</span><span class="normal"> merged_index</span><span class="symbol">.</span><span class="function">get_module</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'modulename'</span><span class="symbol">)</span>
+<span class="normal">stream </span><span class="symbol">=</span><span class="normal"> module</span><span class="symbol">.</span><span class="function">get_stream_by_NSVC</span><span class="symbol">(</span><span class="string">'modulestream'</span><span class="symbol">,</span><span class="normal"> </span><span class="number">1</span><span class="symbol">,</span><span class="normal"> </span><span class="string">'deadbeef'</span><span class="symbol">)</span>
+<span class="normal">api_list </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">get_rpm_api</span><span class="symbol">()</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.3.2.5.2.22"></a><h4>Retrieve the modular runtime dependencies for a particular module NSVC</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">module </span><span class="symbol">=</span><span class="normal"> merged_index</span><span class="symbol">.</span><span class="function">get_module</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'modulename'</span><span class="symbol">)</span>
+<span class="normal">stream </span><span class="symbol">=</span><span class="normal"> module</span><span class="symbol">.</span><span class="function">get_stream_by_NSVC</span><span class="symbol">(</span><span class="string">'modulestream'</span><span class="symbol">,</span><span class="normal"> </span><span class="number">1</span><span class="symbol">,</span><span class="normal"> </span><span class="string">'deadbeef'</span><span class="symbol">)</span>
+<span class="normal">deps_list </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">get_dependencies</span><span class="symbol">()</span>
+
+<span class="keyword">for</span><span class="normal"> dep </span><span class="usertype">in</span><span class="normal"> deps_list</span><span class="symbol">:</span>
+<span class="normal">  depstream_list </span><span class="symbol">=</span><span class="normal"> dep</span><span class="symbol">.</span><span class="function">get_runtime_streams</span><span class="symbol">(</span><span class="string">'depstreamname'</span><span class="symbol">)</span>
+<span class="normal">  </span><span class="symbol">&lt;</span><span class="normal">do_stuff</span><span class="symbol">&gt;</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.3.2.5.3"></a><h3>Working with a single module stream (Packager/MBS use-case)</h3>
+<p>One limitation of the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> format is that it requires that
+all module streams loaded into it have both a name and a stream name. This
+however is not possible when dealing with streams such as a packager would
+be using (since the build-system auto-generates the module name and stream
+name from the git repository information. In this case, we need to work
+with a single module stream document at a time. For this, we will use the
+<a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> interface.</p>
+<p>This example will assume that the module name and stream name have already
+been determined from the repodata and that they are stored in string
+variables named 'module_name' and 'stream_name', respectively.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">stream </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStream</span><span class="symbol">.</span><span class="function">read_file</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'/path/to/module_name.yaml'</span><span class="symbol">,</span>
+<span class="normal">                                          True</span><span class="symbol">,</span>
+<span class="normal">                                          module_name</span><span class="symbol">,</span>
+<span class="normal">                                          stream_name</span><span class="symbol">)</span>
+<span class="normal">v2_stream </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">upgrade</span><span class="symbol">(</span><span class="normal">Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStreamVersionEnum</span><span class="symbol">.</span><span class="normal">TWO</span><span class="symbol">)</span>
+<span class="normal">v2_stream</span><span class="symbol">.</span><span class="function">validate</span><span class="symbol">()</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>In the example above, we upgraded the stream to v2, in case we were reading
+from v1 metadata. This will allow us to avoid having to manage multiple
+code-paths and support only the latest we understand. After that, it calls
+<code class="function">validate()</code> to ensure that the content that was read in was valid both
+syntactically and referentially.</p>
+<p>Also available is <code class="literal">Modulemd.ModuleStreamVersionEnum.LATEST</code> which will
+always represent the highest-supported ModuleStream version. This may change
+at any time.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-get-version"></a><h3>modulemd_get_version ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_get_version (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-get-version.returns"></a><h4>Returns</h4>
+<p>A string describing the version of libmodulemd. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

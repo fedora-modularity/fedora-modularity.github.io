@@ -1,0 +1,2633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.ModuleStreamV1: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-ModulemdModuleStream.html" title="Modulemd.ModuleStream">
+<link rel="next" href="modulemd-2.0-Modulemd.ModuleStreamV2.html" title="Modulemd.ModuleStreamV2">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ModuleStreamV1.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-ModulemdModuleStream.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.ModuleStreamV2.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.ModuleStreamV1"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.ModuleStreamV1.top_of_page"></a>Modulemd.ModuleStreamV1</span></h2>
+<p>Modulemd.ModuleStreamV1 — The data to represent a stream of a module as described
+by a modulemd YAML document of version 1.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStreamV1.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStreamV1.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="returnvalue">ModulemdModuleStreamV1</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-new" title="modulemd_module_stream_v1_new ()">modulemd_module_stream_v1_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-arch" title="modulemd_module_stream_v1_set_arch ()">modulemd_module_stream_v1_set_arch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-arch" title="modulemd_module_stream_v1_get_arch ()">modulemd_module_stream_v1_get_arch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-buildopts" title="modulemd_module_stream_v1_set_buildopts ()">modulemd_module_stream_v1_set_buildopts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts" title="ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-buildopts" title="modulemd_module_stream_v1_get_buildopts ()">modulemd_module_stream_v1_get_buildopts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-community" title="modulemd_module_stream_v1_set_community ()">modulemd_module_stream_v1_set_community</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-community" title="modulemd_module_stream_v1_get_community ()">modulemd_module_stream_v1_get_community</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-description" title="modulemd_module_stream_v1_set_description ()">modulemd_module_stream_v1_set_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-description" title="modulemd_module_stream_v1_get_description ()">modulemd_module_stream_v1_get_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-documentation" title="modulemd_module_stream_v1_set_documentation ()">modulemd_module_stream_v1_set_documentation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-documentation" title="modulemd_module_stream_v1_get_documentation ()">modulemd_module_stream_v1_get_documentation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-summary" title="modulemd_module_stream_v1_set_summary ()">modulemd_module_stream_v1_set_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-summary" title="modulemd_module_stream_v1_get_summary ()">modulemd_module_stream_v1_get_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-tracker" title="modulemd_module_stream_v1_set_tracker ()">modulemd_module_stream_v1_set_tracker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-tracker" title="modulemd_module_stream_v1_get_tracker ()">modulemd_module_stream_v1_get_tracker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-component" title="modulemd_module_stream_v1_add_component ()">modulemd_module_stream_v1_add_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-module-component" title="modulemd_module_stream_v1_remove_module_component ()">modulemd_module_stream_v1_remove_module_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-module-components" title="modulemd_module_stream_v1_clear_module_components ()">modulemd_module_stream_v1_clear_module_components</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-rpm-component" title="modulemd_module_stream_v1_remove_rpm_component ()">modulemd_module_stream_v1_remove_rpm_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-rpm-components" title="modulemd_module_stream_v1_clear_rpm_components ()">modulemd_module_stream_v1_clear_rpm_components</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-module-component-names-as-strv" title="modulemd_module_stream_v1_get_module_component_names_as_strv ()">modulemd_module_stream_v1_get_module_component_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-rpm-component-names-as-strv" title="modulemd_module_stream_v1_get_rpm_component_names_as_strv ()">modulemd_module_stream_v1_get_rpm_component_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule" title="ModulemdComponentModule"><span class="returnvalue">ModulemdComponentModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-module-component" title="modulemd_module_stream_v1_get_module_component ()">modulemd_module_stream_v1_get_module_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm" title="ModulemdComponentRpm"><span class="returnvalue">ModulemdComponentRpm</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-rpm-component" title="modulemd_module_stream_v1_get_rpm_component ()">modulemd_module_stream_v1_get_rpm_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-content-license" title="modulemd_module_stream_v1_add_content_license ()">modulemd_module_stream_v1_add_content_license</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-module-license" title="modulemd_module_stream_v1_add_module_license ()">modulemd_module_stream_v1_add_module_license</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-content-license" title="modulemd_module_stream_v1_remove_content_license ()">modulemd_module_stream_v1_remove_content_license</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-content-licenses" title="modulemd_module_stream_v1_clear_content_licenses ()">modulemd_module_stream_v1_clear_content_licenses</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-module-license" title="modulemd_module_stream_v1_remove_module_license ()">modulemd_module_stream_v1_remove_module_license</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-module-licenses" title="modulemd_module_stream_v1_clear_module_licenses ()">modulemd_module_stream_v1_clear_module_licenses</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-content-licenses-as-strv" title="modulemd_module_stream_v1_get_content_licenses_as_strv ()">modulemd_module_stream_v1_get_content_licenses_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-module-licenses-as-strv" title="modulemd_module_stream_v1_get_module_licenses_as_strv ()">modulemd_module_stream_v1_get_module_licenses_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-profile" title="modulemd_module_stream_v1_add_profile ()">modulemd_module_stream_v1_add_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-profiles" title="modulemd_module_stream_v1_clear_profiles ()">modulemd_module_stream_v1_clear_profiles</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-profile-names-as-strv" title="modulemd_module_stream_v1_get_profile_names_as_strv ()">modulemd_module_stream_v1_get_profile_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-profile" title="modulemd_module_stream_v1_get_profile ()">modulemd_module_stream_v1_get_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-rpm-api" title="modulemd_module_stream_v1_add_rpm_api ()">modulemd_module_stream_v1_add_rpm_api</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-rpm-api" title="modulemd_module_stream_v1_remove_rpm_api ()">modulemd_module_stream_v1_remove_rpm_api</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-rpm-api" title="modulemd_module_stream_v1_clear_rpm_api ()">modulemd_module_stream_v1_clear_rpm_api</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-rpm-api-as-strv" title="modulemd_module_stream_v1_get_rpm_api_as_strv ()">modulemd_module_stream_v1_get_rpm_api_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-rpm-artifact" title="modulemd_module_stream_v1_add_rpm_artifact ()">modulemd_module_stream_v1_add_rpm_artifact</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-rpm-artifact" title="modulemd_module_stream_v1_remove_rpm_artifact ()">modulemd_module_stream_v1_remove_rpm_artifact</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-rpm-artifacts" title="modulemd_module_stream_v1_clear_rpm_artifacts ()">modulemd_module_stream_v1_clear_rpm_artifacts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-rpm-artifacts-as-strv" title="modulemd_module_stream_v1_get_rpm_artifacts_as_strv ()">modulemd_module_stream_v1_get_rpm_artifacts_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-rpm-filter" title="modulemd_module_stream_v1_add_rpm_filter ()">modulemd_module_stream_v1_add_rpm_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-rpm-filter" title="modulemd_module_stream_v1_remove_rpm_filter ()">modulemd_module_stream_v1_remove_rpm_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-rpm-filters" title="modulemd_module_stream_v1_clear_rpm_filters ()">modulemd_module_stream_v1_clear_rpm_filters</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-rpm-filters-as-strv" title="modulemd_module_stream_v1_get_rpm_filters_as_strv ()">modulemd_module_stream_v1_get_rpm_filters_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-servicelevel" title="modulemd_module_stream_v1_add_servicelevel ()">modulemd_module_stream_v1_add_servicelevel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-servicelevels" title="modulemd_module_stream_v1_clear_servicelevels ()">modulemd_module_stream_v1_clear_servicelevels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-servicelevel-names-as-strv" title="modulemd_module_stream_v1_get_servicelevel_names_as_strv ()">modulemd_module_stream_v1_get_servicelevel_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-servicelevel" title="modulemd_module_stream_v1_get_servicelevel ()">modulemd_module_stream_v1_get_servicelevel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-eol" title="modulemd_module_stream_v1_set_eol ()">modulemd_module_stream_v1_set_eol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Date-and-Time-Functions.html#GDate"><span class="returnvalue">GDate</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-eol" title="modulemd_module_stream_v1_get_eol ()">modulemd_module_stream_v1_get_eol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-buildtime-requirement" title="modulemd_module_stream_v1_add_buildtime_requirement ()">modulemd_module_stream_v1_add_buildtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-runtime-requirement" title="modulemd_module_stream_v1_add_runtime_requirement ()">modulemd_module_stream_v1_add_runtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-buildtime-requirement" title="modulemd_module_stream_v1_remove_buildtime_requirement ()">modulemd_module_stream_v1_remove_buildtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-runtime-requirement" title="modulemd_module_stream_v1_remove_runtime_requirement ()">modulemd_module_stream_v1_remove_runtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-buildtime-requirements" title="modulemd_module_stream_v1_clear_buildtime_requirements ()">modulemd_module_stream_v1_clear_buildtime_requirements</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-runtime-requirements" title="modulemd_module_stream_v1_clear_runtime_requirements ()">modulemd_module_stream_v1_clear_runtime_requirements</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-buildtime-modules-as-strv" title="modulemd_module_stream_v1_get_buildtime_modules_as_strv ()">modulemd_module_stream_v1_get_buildtime_modules_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-runtime-modules-as-strv" title="modulemd_module_stream_v1_get_runtime_modules_as_strv ()">modulemd_module_stream_v1_get_runtime_modules_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-buildtime-requirement-stream" title="modulemd_module_stream_v1_get_buildtime_requirement_stream ()">modulemd_module_stream_v1_get_buildtime_requirement_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-runtime-requirement-stream" title="modulemd_module_stream_v1_get_runtime_requirement_stream ()">modulemd_module_stream_v1_get_runtime_requirement_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-xmd" title="modulemd_module_stream_v1_set_xmd ()">modulemd_module_stream_v1_set_xmd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-xmd" title="modulemd_module_stream_v1_get_xmd ()">modulemd_module_stream_v1_get_xmd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStreamV1.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#MODULEMD-TYPE-MODULE-STREAM-V1:CAPS" title="MODULEMD_TYPE_MODULE_STREAM_V1">MODULEMD_TYPE_MODULE_STREAM_V1</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1">ModulemdModuleStreamV1</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStreamV1.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStreamV1.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-new"></a><h3>modulemd_module_stream_v1_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="returnvalue">ModulemdModuleStreamV1</span></a> *
+modulemd_module_stream_v1_new (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                               <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_stream</p></td>
+<td class="parameter_description"><p>The name of this module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object,
+with the specified module and stream names, if provided. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-arch"></a><h3>modulemd_module_stream_v1_set_arch ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                    <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<p>Set the module artifact architecture.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-arch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>The module artifact architecture. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-arch"></a><h3>modulemd_module_stream_v1_get_arch ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-arch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-arch.returns"></a><h4>Returns</h4>
+<p>The module artifact architecture. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-buildopts"></a><h3>modulemd_module_stream_v1_set_buildopts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_buildopts
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts" title="ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *buildopts</code></em>);</pre>
+<p>Set build options for this module's components.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-buildopts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buildopts</p></td>
+<td class="parameter_description"><p>A <span class="type">ModulemdBuildOpts</span> object describing
+build options that apply globally to components in this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-buildopts"></a><h3>modulemd_module_stream_v1_get_buildopts ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts" title="ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+modulemd_module_stream_v1_get_buildopts
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-buildopts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-buildopts.returns"></a><h4>Returns</h4>
+<p>The build options for this module's components. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-community"></a><h3>modulemd_module_stream_v1_set_community ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_community
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *community</code></em>);</pre>
+<p>Set the module community website address.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-community.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>community</p></td>
+<td class="parameter_description"><p>The upstream community website for this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-community"></a><h3>modulemd_module_stream_v1_get_community ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_community
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-community.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-community.returns"></a><h4>Returns</h4>
+<p>The module community website address. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-description"></a><h3>modulemd_module_stream_v1_set_description ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_description
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);</pre>
+<p>Set the module description.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>The untranslated description of this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-description"></a><h3>modulemd_module_stream_v1_get_description ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_description
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *locale</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>locale</p></td>
+<td class="parameter_description"><p>The name of the locale to use when translating
+the string. If NULL, it will determine the locale with a system call to
+setlocale(LC_MESSAGES, NULL) and return the that. If the caller wants the
+untranslated string, they should pass "C" for the locale. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-description.returns"></a><h4>Returns</h4>
+<p>The module description, translated to the
+requested locale if available. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-documentation"></a><h3>modulemd_module_stream_v1_set_documentation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_documentation
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *documentation</code></em>);</pre>
+<p>Set the module documentation website address.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-documentation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>documentation</p></td>
+<td class="parameter_description"><p>The upstream documentation website for this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-documentation"></a><h3>modulemd_module_stream_v1_get_documentation ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_documentation
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-documentation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-documentation.returns"></a><h4>Returns</h4>
+<p>The module documentation website address. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-summary"></a><h3>modulemd_module_stream_v1_set_summary ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_summary (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *summary</code></em>);</pre>
+<p>Set the module summary.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-summary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>summary</p></td>
+<td class="parameter_description"><p>The untranslated summary of this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-summary"></a><h3>modulemd_module_stream_v1_get_summary ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_summary (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *locale</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-summary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>locale</p></td>
+<td class="parameter_description"><p>The name of the locale to use when translating
+the string. If NULL, it will determine the locale with a system call to
+setlocale(LC_MESSAGES, NULL) and return the that. If the caller wants the
+untranslated string, they should pass "C" for the locale. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-summary.returns"></a><h4>Returns</h4>
+<p>The module summary, translated to the requested
+locale if available. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-tracker"></a><h3>modulemd_module_stream_v1_set_tracker ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_tracker (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tracker</code></em>);</pre>
+<p>Set the module bug tracker website address.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-tracker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tracker</p></td>
+<td class="parameter_description"><p>The upstream bug tracker website for this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-tracker"></a><h3>modulemd_module_stream_v1_get_tracker ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_tracker (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-tracker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-tracker.returns"></a><h4>Returns</h4>
+<p>The module bug tracker website address. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-component"></a><h3>modulemd_module_stream_v1_add_component ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *component</code></em>);</pre>
+<p>Add a component definition to the module.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> to be added to this
+module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-module-component"></a><h3>modulemd_module_stream_v1_remove_module_component ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_module_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<p>Remove a component from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-module-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to remove from the module
+stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-module-components"></a><h3>modulemd_module_stream_v1_clear_module_components ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_module_components
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all module components from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-module-components.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-rpm-component"></a><h3>modulemd_module_stream_v1_remove_rpm_component ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_rpm_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<p>Remove a component from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-rpm-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to remove from the module
+stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-rpm-components"></a><h3>modulemd_module_stream_v1_clear_rpm_components ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_rpm_components
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all RPM components from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-rpm-components.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-module-component-names-as-strv"></a><h3>modulemd_module_stream_v1_get_module_component_names_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_module_component_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_module_component_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-module-component-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-module-component-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of module component names included
+in this stream. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-rpm-component-names-as-strv"></a><h3>modulemd_module_stream_v1_get_rpm_component_names_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_rpm_component_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_rpm_component_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-component-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-component-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of RPM component names included
+in this stream. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-module-component"></a><h3>modulemd_module_stream_v1_get_module_component ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule" title="ModulemdComponentModule"><span class="returnvalue">ModulemdComponentModule</span></a> *
+modulemd_module_stream_v1_get_module_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-module-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to retrieve. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-module-component.returns"></a><h4>Returns</h4>
+<p>The module component matching <em class="parameter"><code>component</code></em>
+name if
+it exists, else NULL. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-rpm-component"></a><h3>modulemd_module_stream_v1_get_rpm_component ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm" title="ModulemdComponentRpm"><span class="returnvalue">ModulemdComponentRpm</span></a> *
+modulemd_module_stream_v1_get_rpm_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to retrieve. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-component.returns"></a><h4>Returns</h4>
+<p>The RPM component matching <em class="parameter"><code>component</code></em>
+name if it
+exists, else NULL. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-content-license"></a><h3>modulemd_module_stream_v1_add_content_license ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_content_license
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *license</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-content-license.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>license</p></td>
+<td class="parameter_description"><p>A license under which one or more of the components of this
+module stream are distributed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-module-license"></a><h3>modulemd_module_stream_v1_add_module_license ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_module_license
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *license</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-module-license.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>license</p></td>
+<td class="parameter_description"><p>A license under which this module stream is distributed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-content-license"></a><h3>modulemd_module_stream_v1_remove_content_license ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_content_license
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *license</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-content-license.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>license</p></td>
+<td class="parameter_description"><p>A license to remove from the list. Has no effect if the
+license is not present. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-content-licenses"></a><h3>modulemd_module_stream_v1_clear_content_licenses ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_content_licenses
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all content licenses.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-content-licenses.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-module-license"></a><h3>modulemd_module_stream_v1_remove_module_license ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_module_license
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *license</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-module-license.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>license</p></td>
+<td class="parameter_description"><p>A license to remove from the list. Has no effect if the
+license is not present. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-module-licenses"></a><h3>modulemd_module_stream_v1_clear_module_licenses ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_module_licenses
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all module licenses.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-module-licenses.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-content-licenses-as-strv"></a><h3>modulemd_module_stream_v1_get_content_licenses_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_content_licenses_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_content_licenses]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-content-licenses-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-content-licenses-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of licenses under which one or
+more components of this module stream are released. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-module-licenses-as-strv"></a><h3>modulemd_module_stream_v1_get_module_licenses_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_module_licenses_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_module_licenses]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-module-licenses-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-module-licenses-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of licenses under which this
+module stream is released. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-profile"></a><h3>modulemd_module_stream_v1_add_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_profile (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> *profile</code></em>);</pre>
+<p>Adds a profile definition to this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="type">ModulemdProfile</span></a> for this module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-profiles"></a><h3>modulemd_module_stream_v1_clear_profiles ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_profiles
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Removes all profiles from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-profiles.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-profile-names-as-strv"></a><h3>modulemd_module_stream_v1_get_profile_names_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_profile_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_profile_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-profile-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-profile-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of profile names associated with
+this module stream. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-profile"></a><h3>modulemd_module_stream_v1_get_profile ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile" title="ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+modulemd_module_stream_v1_get_profile (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *profile_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile_name</p></td>
+<td class="parameter_description"><p>The name of a profile to retrieve. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-profile.returns"></a><h4>Returns</h4>
+<p>The requested profile definition if present in the
+module stream. NULL otherwise. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-rpm-api"></a><h3>modulemd_module_stream_v1_add_rpm_api ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_rpm_api (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-rpm-api.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>The name of a binary RPM present in this module that is
+considered stable public API. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-rpm-api"></a><h3>modulemd_module_stream_v1_remove_rpm_api ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_rpm_api
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-rpm-api.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>A binary RPM name to remove from the list of stable public API. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-rpm-api"></a><h3>modulemd_module_stream_v1_clear_rpm_api ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_rpm_api
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all RPMs from the list of stable public API.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-rpm-api.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-rpm-api-as-strv"></a><h3>modulemd_module_stream_v1_get_rpm_api_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_rpm_api_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_rpm_api]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-api-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-api-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of binary RPM names that forms
+the public API of this module stream. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-rpm-artifact"></a><h3>modulemd_module_stream_v1_add_rpm_artifact ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_rpm_artifact
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nevr</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-rpm-artifact.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nevr</p></td>
+<td class="parameter_description"><p>The NEVR of a binary RPM present in this module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-rpm-artifact"></a><h3>modulemd_module_stream_v1_remove_rpm_artifact ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_rpm_artifact
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nevr</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-rpm-artifact.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nevr</p></td>
+<td class="parameter_description"><p>An RPM NEVR to remove from the list of artifacts. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-rpm-artifacts"></a><h3>modulemd_module_stream_v1_clear_rpm_artifacts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_rpm_artifacts
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all RPM NEVRs from the list of artifacts</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-rpm-artifacts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-rpm-artifacts-as-strv"></a><h3>modulemd_module_stream_v1_get_rpm_artifacts_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_rpm_artifacts_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_rpm_artifacts]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-artifacts-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-artifacts-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of RPM NEVRs are included in this
+module stream. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-rpm-filter"></a><h3>modulemd_module_stream_v1_add_rpm_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_rpm_filter
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-rpm-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>The name of a binary RPM to filter out of this module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-rpm-filter"></a><h3>modulemd_module_stream_v1_remove_rpm_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_rpm_filter
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-rpm-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>A binary RPM name to remove from the filter list. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-rpm-filters"></a><h3>modulemd_module_stream_v1_clear_rpm_filters ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_rpm_filters
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all RPMs from the filter list.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-rpm-filters.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-rpm-filters-as-strv"></a><h3>modulemd_module_stream_v1_get_rpm_filters_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_rpm_filters_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_rpm_filters]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-filters-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-rpm-filters-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of binary RPM names that are
+filtered out of this module stream. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-servicelevel"></a><h3>modulemd_module_stream_v1_add_servicelevel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_servicelevel
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *servicelevel</code></em>);</pre>
+<p>Adds a servicelevel definition to this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-servicelevel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>servicelevel</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> for this module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-servicelevels"></a><h3>modulemd_module_stream_v1_clear_servicelevels ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_servicelevels
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Removes all servicelevels from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-servicelevels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-servicelevel-names-as-strv"></a><h3>modulemd_module_stream_v1_get_servicelevel_names_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_servicelevel_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_servicelevel_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-servicelevel-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-servicelevel-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of servicelevel names associated with
+this module stream. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-servicelevel"></a><h3>modulemd_module_stream_v1_get_servicelevel ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
+modulemd_module_stream_v1_get_servicelevel
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *servicelevel_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-servicelevel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>servicelevel_name</p></td>
+<td class="parameter_description"><p>The name of a servicelevel to retrieve. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-servicelevel.returns"></a><h4>Returns</h4>
+<p>The requested servicelevel definition if present in the
+module stream. NULL otherwise. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-eol"></a><h3>modulemd_module_stream_v1_set_eol ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                   <em class="parameter"><code><a href="../glib/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a> *eol</code></em>);</pre>
+<div class="warning"><p><code class="literal">modulemd_module_stream_v1_set_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p></div>
+<p>Comptibility function with early iterations of modulemd v1. This function is
+a wrapper for Modulemd.ModuleStreamV1.add_servicelevel("rawhide", eol).</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-eol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>eol</p></td>
+<td class="parameter_description"><p>The end-of-life date for the "rawhide" service level. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-eol"></a><h3>modulemd_module_stream_v1_get_eol ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Date-and-Time-Functions.html#GDate"><span class="returnvalue">GDate</span></a> *
+modulemd_module_stream_v1_get_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<div class="warning"><p><code class="literal">modulemd_module_stream_v1_get_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p></div>
+<p>Compatibility function with early iterations of modulemd v1. This function
+is a wrapper for Modulemd.ModuleStreamV1.get_servicelevel("rawhide").</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-eol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-eol.returns"></a><h4>Returns</h4>
+<p>The end-of-life date for the "rawhide" service
+level. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-buildtime-requirement"></a><h3>modulemd_module_stream_v1_add_buildtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_buildtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
+<p>Add a build-time dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-buildtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_stream</p></td>
+<td class="parameter_description"><p>The name of the module stream to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-add-runtime-requirement"></a><h3>modulemd_module_stream_v1_add_runtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_add_runtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
+<p>Add a runtime dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-add-runtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_stream</p></td>
+<td class="parameter_description"><p>The name of the module stream to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-buildtime-requirement"></a><h3>modulemd_module_stream_v1_remove_buildtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_buildtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Remove a build-time dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-buildtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to be removed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-remove-runtime-requirement"></a><h3>modulemd_module_stream_v1_remove_runtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_remove_runtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Remove a runtime dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-remove-runtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to be removed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-buildtime-requirements"></a><h3>modulemd_module_stream_v1_clear_buildtime_requirements ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_buildtime_requirements
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all buildtime dependencies for this module.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-buildtime-requirements.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-clear-runtime-requirements"></a><h3>modulemd_module_stream_v1_clear_runtime_requirements ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_clear_runtime_requirements
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p>Remove all runtime dependencies for this module.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-clear-runtime-requirements.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-buildtime-modules-as-strv"></a><h3>modulemd_module_stream_v1_get_buildtime_modules_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_buildtime_modules_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_buildtime_modules]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-buildtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of module names that this module
+depends on at build-time. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-runtime-modules-as-strv"></a><h3>modulemd_module_stream_v1_get_runtime_modules_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_stream_v1_get_runtime_modules_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_module_stream_v1_get_runtime_modules]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-runtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of module names that this module
+depends on at runtime. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-buildtime-requirement-stream"></a><h3>modulemd_module_stream_v1_get_buildtime_requirement_stream ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_buildtime_requirement_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-buildtime-requirement-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module this module depends on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-buildtime-requirement-stream.returns"></a><h4>Returns</h4>
+<p>The name of the stream matching this module name
+in the build-time dependencies. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-runtime-requirement-stream"></a><h3>modulemd_module_stream_v1_get_runtime_requirement_stream ()</h3>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_stream_v1_get_runtime_requirement_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-set-xmd"></a><h3>modulemd_module_stream_v1_set_xmd ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v1_set_xmd (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
+                                   <em class="parameter"><code><a href="../glib/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> *xmd</code></em>);</pre>
+<p>Sets the eXtensible MetaData (XMD) for this module. XMD is arbitrary YAML
+data that will be set and returned as-is (with the exception that the
+ordering of mapping keys is not defined). Useful for carrying private data.</p>
+<p>This function assumes ownership of the XMD <a href="../glib/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> and thus should not be
+freed by the caller.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-set-xmd.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xmd</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> representing arbitrary YAML. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v1-get-xmd"></a><h3>modulemd_module_stream_v1_get_xmd ()</h3>
+<pre class="programlisting"><a href="../glib/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-xmd.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1" title="ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v1-get-xmd.returns"></a><h4>Returns</h4>
+<p>The extensible metadata block as a GVariant. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStreamV1.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-MODULE-STREAM-V1:CAPS"></a><h3>MODULEMD_TYPE_MODULE_STREAM_V1</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_MODULE_STREAM_V1 (modulemd_module_stream_v1_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdModuleStreamV1"></a><h3>ModulemdModuleStreamV1</h3>
+<pre class="programlisting">typedef struct {
+  GObject parent_instance;
+
+  /* Properties */
+  ModulemdBuildopts *buildopts;
+  gchar *community;
+  gchar *description;
+  gchar *documentation;
+  gchar *summary;
+  gchar *tracker;
+
+  /* Internal Data Structures */
+  GHashTable *rpm_components; /* &lt;string, Modulemd.ComponentRpm&gt; */
+  GHashTable *module_components; /* &lt;string, Modulemd.ComponentModule */
+
+  GHashTable *content_licenses; /* string set */
+  GHashTable *module_licenses; /* string set */
+
+  GHashTable *profiles; /* &lt;string, Modulemd.Profile&gt; */
+
+  GHashTable *rpm_api; /* string set */
+
+  GHashTable *rpm_artifacts; /* string set */
+
+  GHashTable *rpm_filters; /* string set */
+
+  GHashTable *servicelevels; /* &lt;string, Modulemd.ServiceLevel */
+
+  GHashTable *buildtime_deps; /* &lt;string, string&gt; */
+  GHashTable *runtime_deps; /* &lt;string, string&gt; */
+
+  GVariant *xmd;
+} ModulemdModuleStreamV1;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

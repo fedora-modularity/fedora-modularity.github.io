@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd Utility Functions: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch03.html" title="Modulemd 2.0 Private Developer Utilities">
+<link rel="prev" href="ch03.html" title="Modulemd 2.0 Private Developer Utilities">
+<link rel="next" href="modulemd-2.0-YAML-Manipulation-Tools.html" title="YAML Manipulation Tools">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd-Utility-Functions.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch03.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-YAML-Manipulation-Tools.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd-Utility-Functions"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd-Utility-Functions.top_of_page"></a>Modulemd Utility Functions</span></h2>
+<p>Modulemd Utility Functions — Provides private utility functions for use within
+libmodulemd.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Private"><span class="acronym">Private</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-error-quark" title="modulemd_error_quark ()">modulemd_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">modulemd_tracer</span> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" title="modulemd_trace_init ()">modulemd_trace_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" title="modulemd_trace_free ()">modulemd_trace_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" title="MODULEMD_INIT_TRACE">MODULEMD_INIT_TRACE</a></td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()">modulemd_hash_table_deep_str_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-set-copy" title="modulemd_hash_table_deep_set_copy ()">modulemd_hash_table_deep_set_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-set-copy" title="modulemd_hash_table_deep_str_set_copy ()">modulemd_hash_table_deep_str_set_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-str-set-copy" title="modulemd_hash_table_deep_str_str_set_copy ()">modulemd_hash_table_deep_str_str_set_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal-wrapper" title="modulemd_hash_table_sets_are_equal_wrapper ()">modulemd_hash_table_sets_are_equal_wrapper</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal" title="modulemd_hash_table_sets_are_equal ()">modulemd_hash_table_sets_are_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-equals" title="modulemd_hash_table_equals ()">modulemd_hash_table_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()">modulemd_strcmp_sort</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys" title="modulemd_ordered_str_keys ()">modulemd_ordered_str_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys-as-strv" title="modulemd_ordered_str_keys_as_strv ()">modulemd_ordered_str_keys_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-variant-deep-copy" title="modulemd_variant_deep_copy ()">modulemd_variant_deep_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-unref" title="modulemd_hash_table_unref ()">modulemd_hash_table_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-validate-nevra" title="modulemd_validate_nevra ()">modulemd_validate_nevra</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" title="MODULEMD_REPLACE_SET()">MODULEMD_REPLACE_SET</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" title="MODULEMD_SETTER_GETTER_STRING_EXT()">MODULEMD_SETTER_GETTER_STRING_EXT</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" title="MODULEMD_SETTER_GETTER_STRING()">MODULEMD_SETTER_GETTER_STRING</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" title="MODULEMD_SETTER_GETTER_STRING_STATIC()">MODULEMD_SETTER_GETTER_STRING_STATIC</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR:CAPS" title="MODULEMD_ERROR">MODULEMD_ERROR</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-error-quark"></a><h3>modulemd_error_quark ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+modulemd_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-trace-init"></a><h3>modulemd_trace_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">modulemd_tracer</span> *
+modulemd_trace_init (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *function_name</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-trace-free"></a><h3>modulemd_trace_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_trace_free (<em class="parameter"><code><span class="type">modulemd_tracer</span> *tracer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-INIT-TRACE:CAPS"></a><h3>MODULEMD_INIT_TRACE</h3>
+<pre class="programlisting">#define             MODULEMD_INIT_TRACE()</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-str-copy"></a><h3>modulemd_hash_table_deep_str_copy ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_str_copy (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-set-copy"></a><h3>modulemd_hash_table_deep_set_copy ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_set_copy (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-str-set-copy"></a><h3>modulemd_hash_table_deep_str_set_copy ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_str_set_copy (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-str-str-set-copy"></a><h3>modulemd_hash_table_deep_str_str_set_copy ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_str_str_set_copy
+                               (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-sets-are-equal-wrapper"></a><h3>modulemd_hash_table_sets_are_equal_wrapper ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_hash_table_sets_are_equal_wrapper
+                               (<em class="parameter"><code>const <span class="type">void</span> *a</code></em>,
+                                <em class="parameter"><code>const <span class="type">void</span> *b</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-sets-are-equal"></a><h3>modulemd_hash_table_sets_are_equal ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_hash_table_sets_are_equal (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
+                                    <em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-equals"></a><h3>modulemd_hash_table_equals ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_hash_table_equals (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GEqualFunc"><span class="type">GEqualFunc</span></a> compare_func</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-strcmp-sort"></a><h3>modulemd_strcmp_sort ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+modulemd_strcmp_sort (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
+                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> b</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-ordered-str-keys"></a><h3>modulemd_ordered_str_keys ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_ordered_str_keys (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *htable</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> compare_func</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-ordered-str-keys-as-strv"></a><h3>modulemd_ordered_str_keys_as_strv ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+modulemd_ordered_str_keys_as_strv (<em class="parameter"><code><a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *htable</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-variant-deep-copy"></a><h3>modulemd_variant_deep_copy ()</h3>
+<pre class="programlisting"><a href="../glib/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+modulemd_variant_deep_copy (<em class="parameter"><code><a href="../glib/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> *variant</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-unref"></a><h3>modulemd_hash_table_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_hash_table_unref (<em class="parameter"><code><span class="type">void</span> *table</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-validate-nevra"></a><h3>modulemd_validate_nevra ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_validate_nevra (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nevra</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-REPLACE-SET:CAPS"></a><h3>MODULEMD_REPLACE_SET()</h3>
+<pre class="programlisting">#define             MODULEMD_REPLACE_SET(_dest, _set)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING-EXT:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_EXT()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_EXT(                                    \
+              is_static, ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING(                                        \
+              ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_STATIC()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_STATIC(                                 \
+              ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-ERROR:CAPS"></a><h3>MODULEMD_ERROR</h3>
+<pre class="programlisting">#define MODULEMD_ERROR modulemd_error_quark ()
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

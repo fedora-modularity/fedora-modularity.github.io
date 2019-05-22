@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd Reference Manual: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="next" href="modulemd-2.0.html" title="libmodulemd">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="book">
+<div class="titlepage">
+<div>
+<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">Modulemd Reference Manual</p></th></tr></table></div>
+<div><div class="authorgroup"><div class="author">
+<h3 class="author">
+<span class="firstname">Stephen</span> <span class="surname">Gallagher</span>
+</h3>
+<div class="affiliation"><div class="address"><p><br>
+            <code class="email">&lt;<a class="email" href="mailto:sgallagh@redhat.com">sgallagh@redhat.com</a>&gt;</code><br>
+          </p></div></div>
+</div></div></div>
+<div><p class="releaseinfo">
+      for Modulemd 2.4.1
+
+    </p></div>
+<div><p class="copyright">Copyright © 2017-2018 Stephen Gallagher</p></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt><span class="reference"><a href="modulemd-2.0.html">I. libmodulemd</a></span></dt>
+<dd><dl>
+<dt><span class="chapter"><a href="ch01.html">Modulemd 2.0 Public API</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.html">Modulemd</a></span><span class="refpurpose"> — User's Guide for libmodulemd</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Buildopts.html">Modulemd.Buildopts</a></span><span class="refpurpose"> — Provides hints to the build-system on how to build this module.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-ModulemdComponent.html">Modulemd.Component</a></span><span class="refpurpose"> — Pure virtual parent class for components that go into a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ComponentModule.html">Modulemd.ComponentModule</a></span><span class="refpurpose"> — A module component that goes into a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ComponentRpm.html">Modulemd.ComponentRpm</a></span><span class="refpurpose"> — A rpm component that goes into a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-ModulemdDefaults.html">Modulemd.Defaults</a></span><span class="refpurpose"> — Parent class for Default documents.
+See <span class="type">ModulemdDefaultsV1</span> for a specific type.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.DefaultsV1.html">Modulemd.DefaultsV1</a></span><span class="refpurpose"> — Object representing a defaults document (version 1)</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Dependencies.html">Modulemd.Dependencies</a></span><span class="refpurpose"> — Object to represent build-time and runtime dependencies of a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Module.html">Modulemd.Module</a></span><span class="refpurpose"> — Collects all information about a module: all of its streams, defaults, etc.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleIndex.html">Modulemd.ModuleIndex</a></span><span class="refpurpose"> — The primary interface to dealing with repodata in the
+module metadata format.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html">Modulemd.ModuleIndexMerger</a></span><span class="refpurpose"> — Class to aid in merging metadata from multiple
+repositories.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-ModulemdModuleStream.html">Modulemd.ModuleStream</a></span><span class="refpurpose"> — A parent class for all versions of <span class="type">ModulemdModuleStream</span>
+objects.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStreamV1.html">Modulemd.ModuleStreamV1</a></span><span class="refpurpose"> — The data to represent a stream of a module as described
+by a modulemd YAML document of version 1.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStreamV2.html">Modulemd.ModuleStreamV2</a></span><span class="refpurpose"> — The data to represent a stream of a module as described
+by a modulemd YAML document of version 2.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Profile.html">Modulemd.Profile</a></span><span class="refpurpose"> — Stores profile information for a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.RpmMapEntry.html">Modulemd.RpmMapEntry</a></span><span class="refpurpose"> — Provides an exploded and unexploded view of the NEVRA of
+an RPM artifact.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ServiceLevel.html">Modulemd.ServiceLevel</a></span><span class="refpurpose"> — Provides lifecycle information for a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.SubdocumentInfo.html">Modulemd.SubdocumentInfo</a></span><span class="refpurpose"> — Stores information regarding a YAML subdocument in a stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Translation.html">Modulemd.Translation</a></span><span class="refpurpose"> — Translation information for a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.TranslationEntry.html">Modulemd.TranslationEntry</a></span><span class="refpurpose"> — Contains the translated strings of a module stream for a specific locale.</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch02.html">Modulemd 2.0 Private Object Methods</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Buildopts-(Private).html">Modulemd.Buildopts (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.Buildopts</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Component-(Private).html">Modulemd.Component (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.Component</span> methods that should be used only
+by internal consumers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ComponentModule-(Private).html">Modulemd.ComponentModule (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.ComponentModule</span> methods that should be used only
+by internal consumers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ComponentRpm-(Private).html">Modulemd.ComponentRpm (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.ComponentRpm</span> methods that should be used only
+by internal consumers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Dependencies-(Private).html">Modulemd.Dependencies (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.Dependencies</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Defaults-(Private).html">Modulemd.Defaults (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdDefaults</span> methods that should only be used by
+internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html">Modulemd.DefaultsV1 (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdDefault</span> methods that should only be used by
+internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Module-(Private).html">Modulemd.Module (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModule</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleIndex-(Private).html">Modulemd.ModuleIndex (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleIndex</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStream-(Private).html">Modulemd.ModuleStream (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleStream</span> methods that should only be used
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html">Modulemd.ModuleStreamV1 (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleStreamV1</span> methods that should only be
+used by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html">Modulemd.ModuleStreamV2 (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleStreamV2</span> methods that should only be
+used by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Profile-(Private).html">Modulemd.Profile (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.Profile</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html">Modulemd.RpmMapEntry (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.RpmMapEntry</span> methods that should be used only
+by internal consumers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ServiceLevel-(Private).html">Modulemd.ServiceLevel (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.ServiceLevel</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html">Modulemd.SubdocumentInfo (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.SubdocumentInfo</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-modulemd-translation-private.html">modulemd-translation-private</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.TranslationEntry-(Private).html">Modulemd.TranslationEntry (Private)</a></span><span class="refpurpose"> — <span class="type">Modulemd.TranslationEntry</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch03.html">Modulemd 2.0 Private Developer Utilities</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd-Utility-Functions.html">Modulemd Utility Functions</a></span><span class="refpurpose"> — Provides private utility functions for use within
+libmodulemd.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-YAML-Manipulation-Tools.html">YAML Manipulation Tools</a></span><span class="refpurpose"> — Provides private YAML utilities for internal use.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Internal-Unit-Test-Utilities.html">Internal Unit Test Utilities</a></span><span class="refpurpose"> — Utility functions for use with unit tests.</span>
+</dt>
+</dl></dd>
+</dl></dd>
+</dl></div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

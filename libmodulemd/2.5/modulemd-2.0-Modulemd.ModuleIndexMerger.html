@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.ModuleIndexMerger: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.ModuleIndex.html" title="Modulemd.ModuleIndex">
+<link rel="next" href="modulemd-2.0-ModulemdModuleStream.html" title="Modulemd.ModuleStream">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ModuleIndexMerger.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.ModuleIndex.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-ModulemdModuleStream.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.ModuleIndexMerger"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.ModuleIndexMerger.top_of_page"></a>Modulemd.ModuleIndexMerger</span></h2>
+<p>Modulemd.ModuleIndexMerger — Class to aid in merging metadata from multiple
+repositories.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndexMerger.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndexMerger.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="returnvalue">ModulemdModuleIndexMerger</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-new" title="modulemd_module_index_merger_new ()">modulemd_module_index_merger_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-associate-index" title="modulemd_module_index_merger_associate_index ()">modulemd_module_index_merger_associate_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve" title="modulemd_module_index_merger_resolve ()">modulemd_module_index_merger_resolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndexMerger.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#MODULEMD-TYPE-MODULE-INDEX-MERGER:CAPS" title="MODULEMD_TYPE_MODULE_INDEX_MERGER">MODULEMD_TYPE_MODULE_INDEX_MERGER</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger">ModulemdModuleIndexMerger</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndexMerger.description"></a><h2>Description</h2>
+<p>ModuleIndexMerger is used to resolve merges between multiple repository
+metadata sources, possibly with varying priorities.</p>
+<p>It is expected to be used as follows (python example) by tools such as <code class="literal">yum</code>:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">merger </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndexMerger</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
+
+<span class="normal">merger</span><span class="symbol">.</span><span class="function">associate_index</span><span class="symbol">(</span><span class="normal">fedora_repo_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">)</span>
+<span class="normal">merger</span><span class="symbol">.</span><span class="function">associate_index</span><span class="symbol">(</span><span class="normal">updates_repo_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">)</span>
+<span class="normal">merger</span><span class="symbol">.</span><span class="function">associate_index</span><span class="symbol">(</span><span class="normal">updates_testing_repo_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">)</span>
+
+<span class="normal">merged_index </span><span class="symbol">=</span><span class="normal"> merger</span><span class="symbol">.</span><span class="function">resolve</span><span class="symbol">()</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>In the above code, merged_index will be a complete, merged view of the
+metadata from all of the added <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> instances.</p>
+<p>When merging module streams, entries will be deduplicated based on whether
+they share the same module name, stream name, version number, and context.
+At present, libmodulemd does not interrogate more closely to determine if
+they have the same content, so if the repository configuration is broken and
+there exists two <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> entries that have different content
+for the same NSVC, the behavior is undefined.</p>
+<p>Merging <a class="link" href="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> entries behaves as follows:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Within a ModuleIndex, if two or more default entries reference the same
+module, the one with the highest modified field will be used and the
+others discarded.</p></li>
+<li class="listitem"><p>When merging ModuleIndexes, if two or more indexes contain Defaults for
+the same module, but different modified values, the one with the highest
+modified value will be used and the others discarded.</p></li>
+<li class="listitem"><p>Any module default that is provided by a single repository is
+authoritative.</p></li>
+<li class="listitem"><p>If the repos have different priorities (not common), then the default for
+this module and stream name coming from the repo of higher priority will
+be used and the default from the lower-priority repo will not be included
+even if it has a higher modified value.</p></li>
+<li class="listitem">
+<p>If the repos have the same priority (such as "fedora" and "updates" in the
+Fedora Project) and modified value, the entries will be merged as follows:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; ">
+<li class="listitem"><p>If both repositories specify the same default stream for the module, use
+it.</p></li>
+<li class="listitem"><p>If either repository specifies a default stream for the module and the
+other does not, use the one specified.</p></li>
+<li class="listitem"><p>If both repositories specify different default streams, the merge will
+unset the default stream and proceed with the merge.</p></li>
+<li class="listitem"><p>If both repositories specify a set of default profiles for a stream and
+the sets are equivalent, use that set.</p></li>
+<li class="listitem"><p>If one repository specifies a set of default profiles for a stream and
+the other does not, use the one specified.</p></li>
+<li class="listitem"><p>If both repositories specify a set of default profiles for a stream and
+each are providing a different set, this is an unresolvable merge
+conflict and the merge resolution will fail and report an error.</p></li>
+<li class="listitem"><p>Intents behave in exactly the same manner as described for the top-level
+defaults, except that they merge beneath each intent name.</p></li>
+</ul></div>
+</li>
+</ul></div>
+<p>Merging <a href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslations</span></a> entries behaves as follows:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>For each translated summary, description and profile description, compare
+the <code class="literal">modified</code> value of the Translation document matching this module name
+and stream. Whichever has the higher value will be used. Any translation
+containing the empty string will be interpreted as removing the
+translation. Subsequent processing of a higher modified value may restore
+it.</p></li></ul></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndexMerger.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-module-index-merger-new"></a><h3>modulemd_module_index_merger_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="returnvalue">ModulemdModuleIndexMerger</span></a> *
+modulemd_module_index_merger_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-merger-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated Modulemd.ModuleIndexMerger
+object. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-merger-associate-index"></a><h3>modulemd_module_index_merger_associate_index ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_index_merger_associate_index
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *index</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint32"><span class="type">gint32</span></a> priority</code></em>);</pre>
+<p>Enqueues a <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> representing the parsed metadata from a
+repository into this <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> for merging and
+deduplication of other repositories.</p>
+<p>Once all repositories have been added, call
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve" title="modulemd_module_index_merger_resolve ()"><code class="function">modulemd_module_index_merger_resolve()</code></a> to perform the merge.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-merger-associate-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>A <span class="type">ModuleIndex</span>, usually constructed by reading
+the module metadata from a repository with
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-file" title="modulemd_module_index_update_from_file ()"><code class="function">modulemd_module_index_update_from_file()</code></a>,
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string" title="modulemd_module_index_update_from_string ()"><code class="function">modulemd_module_index_update_from_string()</code></a>, or
+<code class="literal"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-stream" title="modulemd_module_index_update_from_stream ()"><code class="function">modulemd_module_index_update_from_stream()</code></a></code>. This function take a reference
+on <em class="parameter"><code>index</code></em>
+, so the caller must not modify it while the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> is in use. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>The priority of the repository that the entries in <em class="parameter"><code>index</code></em>
+came from. This is used to determine when <em class="parameter"><code>index</code></em>
+should override rather then
+merge. In most cases, this will be zero. See the Description section for the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> class for details on the merge logic. Acceptable
+values are in the range of 0-1000. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-merger-resolve"></a><h3>modulemd_module_index_merger_resolve ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+modulemd_module_index_merger_resolve (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Merges all added <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects according to their priority.
+The logic of this merge is described in the Description of
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a>.</p>
+<p>Once this function has been called, the internal state of the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> is undefined. The only valid action on it after
+that point is <a href="../gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-merger-resolve.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason for a failure to resolve the
+merges. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-merger-resolve.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> containing
+the merged results. If this function encounters an unresolvable merge
+conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
+appropriately. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndexMerger.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-MODULE-INDEX-MERGER:CAPS"></a><h3>MODULEMD_TYPE_MODULE_INDEX_MERGER</h3>
+<pre class="programlisting">#define             MODULEMD_TYPE_MODULE_INDEX_MERGER</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdModuleIndexMerger"></a><h3>ModulemdModuleIndexMerger</h3>
+<pre class="programlisting">typedef struct _ModulemdModuleIndexMerger ModulemdModuleIndexMerger;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>
