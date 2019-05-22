@@ -170,6 +170,7 @@
     <keyword type="function" name="modulemd_module_index_remove_module ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-remove-module" since="2.2"/>
     <keyword type="function" name="modulemd_module_index_add_module_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-module-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_add_defaults ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-defaults" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_get_default_streams_as_hash_table ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-default-streams-as-hash-table" since="2.5"/>
     <keyword type="function" name="modulemd_module_index_add_translation ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_get_defaults_mdversion ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_get_stream_mdversion ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" since="2.0"/>
