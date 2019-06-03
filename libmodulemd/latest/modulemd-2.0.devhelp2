@@ -142,6 +142,7 @@
     <keyword type="function" name="modulemd_dependencies_get_runtime_streams_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-streams-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_DEPENDENCIES" link="modulemd-2.0-Modulemd.Dependencies.html#MODULEMD-TYPE-DEPENDENCIES:CAPS"/>
     <keyword type="struct" name="ModulemdDependencies" link="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"/>
+    <keyword type="function" name="modulemd_module_get_stream_names_as_strv ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-names-as-strv" since="2.6"/>
     <keyword type="function" name="modulemd_module_copy ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-copy" since="2.0"/>
     <keyword type="function" name="modulemd_module_validate ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-validate" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_module_name ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-module-name" since="2.0"/>
