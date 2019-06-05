@@ -175,9 +175,9 @@ or else have received an error describing why the merge was unable to
 complete successfully. Additionally, it should be noted that the combined
 metadata in any <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> will have all of its component parts
 upgraded to match the highest version of those objects seen. So for example
-if the repodata has a mix of v1 and v2 <span class="type">ModuleStream</span> objects, the index will
-contain only v2 objects (with the v1 objects automatically upgraded
-internally).</p>
+if the repodata has a mix of v1 and v2 <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> objects, the
+index will contain only v2 objects (with the v1 objects automatically
+upgraded internally).</p>
 <p>At this point, we can start operating on the retrieved data. This guide will
 give only a brief overview of the most common operations. See the API
 specification for a full list of information that can be retrieved.</p>
@@ -290,8 +290,8 @@ code-paths and support only the latest we understand. After that, it calls
 <code class="function">validate()</code> to ensure that the content that was read in was valid both
 syntactically and referentially.</p>
 <p>Also available is <code class="literal">Modulemd.ModuleStreamVersionEnum.LATEST</code> which will
-always represent the highest-supported ModuleStream version. This may change
-at any time.</p>
+always represent the highest-supported version of the
+<a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> metadata format. This may change at any time.</p>
 </div>
 </div>
 <div class="refsect1">

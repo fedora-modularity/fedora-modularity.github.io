@@ -894,11 +894,11 @@ modulemd_module_index_add_module_stream
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
                                 <em class="parameter"><code><a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> *stream</code></em>,
                                 <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
-<p>Add a <span class="type">ModuleStream</span> to the <span class="type">ModuleIndex</span>. While being added, the
-<span class="type">ModuleStream</span> will be upgraded to MD_MODULESTREAM_VERSION_LATEST to ensure
-that merges done with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> will always occur between
-streams of the same version. If this upgrade cannot be performed, the
-function will return <em class="parameter"><code>error</code></em>
+<p>Add a <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> to the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>. While being added,
+the <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> will be upgraded to MD_MODULESTREAM_VERSION_LATEST
+to ensure that merges done with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> will always occur
+between streams of the same version. If this upgrade cannot be performed,
+the function will return <em class="parameter"><code>error</code></em>
  set appropriately.</p>
 <div class="refsect3">
 <a name="modulemd-module-index-add-module-stream.parameters"></a><h4>Parameters</h4>
@@ -931,8 +931,8 @@ object could not be added or NULL if the function succeeded. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-index-add-module-stream.returns"></a><h4>Returns</h4>
-<p> TRUE if the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule" title="ModulemdModule"><span class="type">ModulemdModule</span></a> was added succesfully. If the stream
-already existed in the index, it will be replaced by the new one. On
+<p> TRUE if the <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> was added succesfully. If the
+stream already existed in the index, it will be replaced by the new one. On
 failure, returns FALSE and sets <em class="parameter"><code>error</code></em>
 appropriately.</p>
 </div>

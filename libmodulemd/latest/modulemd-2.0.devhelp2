@@ -41,7 +41,7 @@
         <sub name="Modulemd.RpmMapEntry (Private)" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html"/>
         <sub name="Modulemd.ServiceLevel (Private)" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html"/>
         <sub name="Modulemd.SubdocumentInfo (Private)" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html"/>
-        <sub name="modulemd-translation-private" link="modulemd-2.0-modulemd-translation-private.html"/>
+        <sub name="Modulemd.Translation (Private)" link="modulemd-2.0-Modulemd.Translation-(Private).html"/>
         <sub name="Modulemd.TranslationEntry (Private)" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html"/>
       </sub>
       <sub name="Modulemd 2.0 Private Developer Utilities" link="ch03.html">
@@ -482,12 +482,12 @@
     <keyword type="function" name="modulemd_subdocument_info_set_yaml ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-set-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_set_gerror ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-set-gerror" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_get_data_parser ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-get-data-parser" since="2.0"/>
-    <keyword type="function" name="modulemd_translation_get_version ()" link="modulemd-2.0-modulemd-translation-private.html#modulemd-translation-get-version"/>
-    <keyword type="function" name="modulemd_translation_get_module_name ()" link="modulemd-2.0-modulemd-translation-private.html#modulemd-translation-get-module-name"/>
-    <keyword type="function" name="modulemd_translation_get_module_stream ()" link="modulemd-2.0-modulemd-translation-private.html#modulemd-translation-get-module-stream"/>
-    <keyword type="function" name="modulemd_translation_get_modified ()" link="modulemd-2.0-modulemd-translation-private.html#modulemd-translation-get-modified"/>
-    <keyword type="function" name="modulemd_translation_parse_yaml ()" link="modulemd-2.0-modulemd-translation-private.html#modulemd-translation-parse-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_translation_emit_yaml ()" link="modulemd-2.0-modulemd-translation-private.html#modulemd-translation-emit-yaml" since="2.0"/>
+    <keyword type="function" name="modulemd_translation_get_version ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-version"/>
+    <keyword type="function" name="modulemd_translation_get_module_name ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-name"/>
+    <keyword type="function" name="modulemd_translation_get_module_stream ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-stream"/>
+    <keyword type="function" name="modulemd_translation_get_modified ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-modified"/>
+    <keyword type="function" name="modulemd_translation_parse_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-parse-yaml" since="2.0"/>
+    <keyword type="function" name="modulemd_translation_emit_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml"/>
     <keyword type="function" name="modulemd_error_quark ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-error-quark"/>
