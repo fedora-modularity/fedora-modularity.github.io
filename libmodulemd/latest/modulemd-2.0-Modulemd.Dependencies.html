@@ -15,7 +15,8 @@
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
 <td width="100%" align="left" class="shortcuts">
 <a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
-                  <a href="#modulemd-2.0-Modulemd.Dependencies.description" class="shortcut">Description</a></span>
+                  <a href="#modulemd-2.0-Modulemd.Dependencies.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Dependencies.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
@@ -45,7 +46,7 @@
 <tbody>
 <tr>
 <td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-new" title="modulemd_dependencies_new ()">modulemd_dependencies_new</a> <span class="c_punctuation">()</span>
@@ -61,7 +62,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-copy" title="modulemd_dependencies_copy ()">modulemd_dependencies_copy</a> <span class="c_punctuation">()</span>
@@ -150,7 +151,7 @@
 </tbody>
 </table></div>
 </div>
-<div class="refsect1">
+<a name="ModulemdDependencies"></a><div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Dependencies.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
@@ -164,10 +165,16 @@
 </tr>
 <tr>
 <td class="datatype_keyword"> </td>
-<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies">ModulemdDependencies</a></td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies-struct" title="ModulemdDependencies">ModulemdDependencies</a></td>
 </tr>
 </tbody>
 </table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Dependencies.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ModulemdDependencies
+</pre>
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Dependencies.description"></a><h2>Description</h2>
@@ -176,11 +183,11 @@
 <a name="modulemd-2.0-Modulemd.Dependencies.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="modulemd-dependencies-new"></a><h3>modulemd_dependencies_new ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
 modulemd_dependencies_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-dependencies-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a>. This
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a>. This
 object must be freed with <code class="function">g_object_unref()</code>. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
@@ -190,8 +197,8 @@ object must be freed with <code class="function">g_object_unref()</code>. </p>
 <div class="refsect2">
 <a name="modulemd-dependencies-equals"></a><h3>modulemd_dependencies_equals ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
-modulemd_dependencies_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_1</code></em>,
-                              <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_2</code></em>);</pre>
+modulemd_dependencies_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_1</code></em>,
+                              <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_2</code></em>);</pre>
 <p>Check if self_1 and self_2 are equal objects</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-equals.parameters"></a><h4>Parameters</h4>
@@ -204,12 +211,12 @@ modulemd_dependencies_equals (<em class="parameter"><code><a class="link" href="
 <tbody>
 <tr>
 <td class="parameter_name"><p>self_1</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>self_2</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -224,9 +231,9 @@ modulemd_dependencies_equals (<em class="parameter"><code><a class="link" href="
 <hr>
 <div class="refsect2">
 <a name="modulemd-dependencies-copy"></a><h3>modulemd_dependencies_copy ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
-modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
-<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-copy.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -237,14 +244,14 @@ modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="mo
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-dependencies-copy.returns"></a><h4>Returns</h4>
-<p>a copied <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object. </p>
+<p>a copied <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
 <p class="since">Since: 2.0</p>
@@ -254,7 +261,7 @@ modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="mo
 <a name="modulemd-dependencies-add-buildtime-stream"></a><h3>modulemd_dependencies_add_buildtime_stream ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_add_buildtime_stream
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_stream</code></em>);</pre>
 <p>Add a single stream of a module that is required to build another dependent module. The matrix of streams and module names will be calculated by the build-system. If the provided module name is already present, the streams will be added (with deduplication).</p>
@@ -269,7 +276,7 @@ modulemd_dependencies_add_buildtime_stream
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -292,7 +299,7 @@ modulemd_dependencies_add_buildtime_stream
 <a name="modulemd-dependencies-set-empty-buildtime-dependencies-for-module"></a><h3>modulemd_dependencies_set_empty_buildtime_dependencies_for_module ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_set_empty_buildtime_dependencies_for_module
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
 <p>Adds a module and inserts an empty list for it as buildtime dependency.</p>
 <div class="refsect3">
@@ -306,7 +313,7 @@ modulemd_dependencies_set_empty_buildtime_dependencies_for_module
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -324,8 +331,8 @@ modulemd_dependencies_set_empty_buildtime_dependencies_for_module
 <a name="modulemd-dependencies-clear-buildtime-dependencies"></a><h3>modulemd_dependencies_clear_buildtime_dependencies ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_clear_buildtime_dependencies
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
-<p>Remove all buildtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object</p>
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+<p>Remove all buildtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object</p>
 <p>Since 2.5</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-clear-buildtime-dependencies.parameters"></a><h4>Parameters</h4>
@@ -337,7 +344,7 @@ modulemd_dependencies_clear_buildtime_dependencies
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -348,7 +355,7 @@ modulemd_dependencies_clear_buildtime_dependencies
 <a name="modulemd-dependencies-get-buildtime-modules-as-strv"></a><h3>modulemd_dependencies_get_buildtime_modules_as_strv ()</h3>
 <pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_buildtime_modules_as_strv
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_buildtime_modules]</span></p>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-buildtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
@@ -360,7 +367,7 @@ modulemd_dependencies_get_buildtime_modules_as_strv
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -377,7 +384,7 @@ modulemd_dependencies_get_buildtime_modules_as_strv
 <a name="modulemd-dependencies-get-buildtime-streams-as-strv"></a><h3>modulemd_dependencies_get_buildtime_streams_as_strv ()</h3>
 <pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_buildtime_streams_as_strv
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_buildtime_streams]</span></p>
 <div class="refsect3">
@@ -391,7 +398,7 @@ modulemd_dependencies_get_buildtime_streams_as_strv
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -414,7 +421,7 @@ modulemd_dependencies_get_buildtime_streams_as_strv
 <a name="modulemd-dependencies-add-runtime-stream"></a><h3>modulemd_dependencies_add_runtime_stream ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_add_runtime_stream
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_stream</code></em>);</pre>
 <p>Adds a module and its stream that is required at runtime by a dependent module. The matrix of streams and module names will be calculated by the build-system. If the listed provided module name is already present, the streams will be added (with deduplication).</p>
@@ -429,7 +436,7 @@ modulemd_dependencies_add_runtime_stream
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -452,7 +459,7 @@ modulemd_dependencies_add_runtime_stream
 <a name="modulemd-dependencies-set-empty-runtime-dependencies-for-module"></a><h3>modulemd_dependencies_set_empty_runtime_dependencies_for_module ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_set_empty_runtime_dependencies_for_module
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
 <p>Adds a module and inserts an empty list for it as runtime dependency.</p>
 <div class="refsect3">
@@ -466,7 +473,7 @@ modulemd_dependencies_set_empty_runtime_dependencies_for_module
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -484,8 +491,8 @@ modulemd_dependencies_set_empty_runtime_dependencies_for_module
 <a name="modulemd-dependencies-clear-runtime-dependencies"></a><h3>modulemd_dependencies_clear_runtime_dependencies ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_clear_runtime_dependencies
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
-<p>Remove all runtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object</p>
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+<p>Remove all runtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object</p>
 <p>Since 2.5</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-clear-runtime-dependencies.parameters"></a><h4>Parameters</h4>
@@ -497,7 +504,7 @@ modulemd_dependencies_clear_runtime_dependencies
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -508,7 +515,7 @@ modulemd_dependencies_clear_runtime_dependencies
 <a name="modulemd-dependencies-get-runtime-modules-as-strv"></a><h3>modulemd_dependencies_get_runtime_modules_as_strv ()</h3>
 <pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_runtime_modules_as_strv
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_runtime_modules]</span></p>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-runtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
@@ -520,7 +527,7 @@ modulemd_dependencies_get_runtime_modules_as_strv
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -537,7 +544,7 @@ modulemd_dependencies_get_runtime_modules_as_strv
 <a name="modulemd-dependencies-get-runtime-streams-as-strv"></a><h3>modulemd_dependencies_get_runtime_streams_as_strv ()</h3>
 <pre class="programlisting"><span class="returnvalue">GStrv</span>
 modulemd_dependencies_get_runtime_streams_as_strv
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_dependencies_get_runtime_streams]</span></p>
 <div class="refsect3">
@@ -551,7 +558,7 @@ modulemd_dependencies_get_runtime_streams_as_strv
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -579,7 +586,7 @@ modulemd_dependencies_get_runtime_streams_as_strv
 </div>
 <hr>
 <div class="refsect2">
-<a name="ModulemdDependencies"></a><h3>ModulemdDependencies</h3>
+<a name="ModulemdDependencies-struct"></a><h3>ModulemdDependencies</h3>
 <pre class="programlisting">typedef struct _ModulemdDependencies ModulemdDependencies;</pre>
 </div>
 </div>

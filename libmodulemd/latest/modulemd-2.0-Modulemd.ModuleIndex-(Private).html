@@ -27,7 +27,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.ModuleIndex-(Private).top_of_page"></a>Modulemd.ModuleIndex (Private)</span></h2>
-<p>Modulemd.ModuleIndex (Private) — <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> methods that should be used only
+<p>Modulemd.ModuleIndex (Private) — <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> methods that should be used only
 by internal consumers.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
@@ -72,7 +72,7 @@ by internal consumers.</p>
 <a name="modulemd-module-index-update-from-parser"></a><h3>modulemd_module_index_update_from_parser ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 modulemd_module_index_update_from_parser
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
                                 <em class="parameter"><code><span class="type">yaml_parser_t</span> *parser</code></em>,
                                 <em class="parameter"><code><span class="type">gboolean</span> strict</code></em>,
                                 <em class="parameter"><code><span class="type">gboolean</span> autogen_module_name</code></em>,
@@ -89,7 +89,7 @@ modulemd_module_index_update_from_parser
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object. </p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
 </tr>
 <tr>
@@ -115,7 +115,7 @@ public routines should always set this to FALSE. </p></td>
 <tr>
 <td class="parameter_name"><p>failures</p></td>
 <td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
-See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo" title="ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. If the array is NULL, it will
+See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. If the array is NULL, it will
 be allocated by this function. If it is non-NULL, this function will append
 to it. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocumentInfo][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></td>
@@ -142,8 +142,8 @@ there was a fatal parse error.</p>
 <div class="refsect2">
 <a name="modulemd-module-index-merge"></a><h3>modulemd_module_index_merge ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
-modulemd_module_index_merge (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *from</code></em>,
-                             <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *into</code></em>,
+modulemd_module_index_merge (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *from</code></em>,
+                             <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *into</code></em>,
                              <em class="parameter"><code><span class="type">gboolean</span> override</code></em>,
                              <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <div class="refsect3">
@@ -157,13 +157,13 @@ modulemd_module_index_merge (<em class="parameter"><code><a class="link" href="m
 <tbody>
 <tr>
 <td class="parameter_name"><p>from</p></td>
-<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> whose contents are
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> whose contents are
 being merged in. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>into</p></td>
-<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> whose contents are
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> whose contents are
 being merged updated by those from <em class="parameter"><code>from</code></em>
 . </p></td>
 <td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/inout"><span class="acronym">inout</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
@@ -175,7 +175,7 @@ argument specifies whether the contents of <em class="parameter"><code>from</cod
 will supersede those from
 <em class="parameter"><code>into</code></em>
 . For specifics of how this works, see the Description section for
-<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger" title="ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a>. </p></td>
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@ reason for it. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-index-merge.returns"></a><h4>Returns</h4>
-<p> TRUE if the two <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects could be merged
+<p> TRUE if the two <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects could be merged
 without conflicts. FALSE and sets <em class="parameter"><code>error</code></em>
 appropriately if the merge fails.</p>
 </div>

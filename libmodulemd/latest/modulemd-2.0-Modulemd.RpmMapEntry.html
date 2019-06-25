@@ -15,7 +15,9 @@
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
 <td width="100%" align="left" class="shortcuts">
 <a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
-                  <a href="#modulemd-2.0-Modulemd.RpmMapEntry.description" class="shortcut">Description</a></span>
+                  <a href="#modulemd-2.0-Modulemd.RpmMapEntry.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.RpmMapEntry.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.RpmMapEntry.properties" class="shortcut">Properties</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
@@ -46,7 +48,7 @@ an RPM artifact.</p>
 <tbody>
 <tr>
 <td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
+<a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#modulemd-rpm-map-entry-new" title="modulemd_rpm_map_entry_new ()">modulemd_rpm_map_entry_new</a> <span class="c_punctuation">()</span>
@@ -54,7 +56,7 @@ an RPM artifact.</p>
 </tr>
 <tr>
 <td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
+<a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#modulemd-rpm-map-entry-copy" title="modulemd_rpm_map_entry_copy ()">modulemd_rpm_map_entry_copy</a> <span class="c_punctuation">()</span>
@@ -164,6 +166,53 @@ an RPM artifact.</p>
 </table></div>
 </div>
 <div class="refsect1">
+<a name="modulemd-2.0-Modulemd.RpmMapEntry.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--arch" title="The “arch” property">arch</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">guint64</span></td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--epoch" title="The “epoch” property">epoch</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--nevra" title="The “nevra” property">nevra</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--release" title="The “release” property">release</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--version" title="The “version” property">version</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ModulemdRpmMapEntry"></a><div class="refsect1">
 <a name="modulemd-2.0-Modulemd.RpmMapEntry.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
@@ -177,10 +226,16 @@ an RPM artifact.</p>
 </tr>
 <tr>
 <td class="datatype_keyword"> </td>
-<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry">ModulemdRpmMapEntry</a></td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry-struct" title="ModulemdRpmMapEntry">ModulemdRpmMapEntry</a></td>
 </tr>
 </tbody>
 </table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.RpmMapEntry.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ModulemdRpmMapEntry
+</pre>
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.RpmMapEntry.description"></a><h2>Description</h2>
@@ -189,7 +244,7 @@ an RPM artifact.</p>
 <a name="modulemd-2.0-Modulemd.RpmMapEntry.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-new"></a><h3>modulemd_rpm_map_entry_new ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
 modulemd_rpm_map_entry_new (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
                             <em class="parameter"><code><span class="type">guint64</span> epoch</code></em>,
                             <em class="parameter"><code>const <span class="type">gchar</span> *version</code></em>,
@@ -236,7 +291,7 @@ RPM artifact.</p>
 </div>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> with the
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> with the
 provided values. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
@@ -244,8 +299,8 @@ provided values. </p>
 <hr>
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-copy"></a><h3>modulemd_rpm_map_entry_copy ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
-modulemd_rpm_map_entry_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="returnvalue">ModulemdRpmMapEntry</span></a> *
+modulemd_rpm_map_entry_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-copy.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -256,14 +311,14 @@ modulemd_rpm_map_entry_copy (<em class="parameter"><code><a class="link" href="m
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-copy.returns"></a><h4>Returns</h4>
-<p>A deep copy of this <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> object. </p>
+<p>A deep copy of this <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> object. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
 <p class="since">Since: 2.2</p>
@@ -272,8 +327,8 @@ modulemd_rpm_map_entry_copy (<em class="parameter"><code><a class="link" href="m
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-equals"></a><h3>modulemd_rpm_map_entry_equals ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
-modulemd_rpm_map_entry_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
-                               <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *other</code></em>);</pre>
+modulemd_rpm_map_entry_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
+                               <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *other</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-equals.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -285,12 +340,12 @@ modulemd_rpm_map_entry_equals (<em class="parameter"><code><a class="link" href=
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>other</p></td>
-<td class="parameter_description"><p>Another <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>Another <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -307,7 +362,7 @@ differ.</p>
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-validate"></a><h3>modulemd_rpm_map_entry_validate ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
-modulemd_rpm_map_entry_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
+modulemd_rpm_map_entry_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
                                  <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-validate.parameters"></a><h4>Parameters</h4>
@@ -320,7 +375,7 @@ modulemd_rpm_map_entry_validate (<em class="parameter"><code><a class="link" hre
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -338,7 +393,7 @@ NULL if the validation passed. </p></td>
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-set-name"></a><h3>modulemd_rpm_map_entry_set_name ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_rpm_map_entry_set_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
+modulemd_rpm_map_entry_set_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
                                  <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-set-name.parameters"></a><h4>Parameters</h4>
@@ -351,7 +406,7 @@ modulemd_rpm_map_entry_set_name (<em class="parameter"><code><a class="link" hre
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -368,7 +423,7 @@ modulemd_rpm_map_entry_set_name (<em class="parameter"><code><a class="link" hre
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-get-name"></a><h3>modulemd_rpm_map_entry_get_name ()</h3>
 <pre class="programlisting">const <span class="returnvalue">gchar</span> *
-modulemd_rpm_map_entry_get_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
+modulemd_rpm_map_entry_get_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-get-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -379,7 +434,7 @@ modulemd_rpm_map_entry_get_name (<em class="parameter"><code><a class="link" hre
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -395,7 +450,7 @@ modulemd_rpm_map_entry_get_name (<em class="parameter"><code><a class="link" hre
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-set-epoch"></a><h3>modulemd_rpm_map_entry_set_epoch ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_rpm_map_entry_set_epoch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
+modulemd_rpm_map_entry_set_epoch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
                                   <em class="parameter"><code><span class="type">guint64</span> epoch</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-set-epoch.parameters"></a><h4>Parameters</h4>
@@ -408,7 +463,7 @@ modulemd_rpm_map_entry_set_epoch (<em class="parameter"><code><a class="link" hr
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -425,7 +480,7 @@ modulemd_rpm_map_entry_set_epoch (<em class="parameter"><code><a class="link" hr
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-get-epoch"></a><h3>modulemd_rpm_map_entry_get_epoch ()</h3>
 <pre class="programlisting"><span class="returnvalue">guint64</span>
-modulemd_rpm_map_entry_get_epoch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
+modulemd_rpm_map_entry_get_epoch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-get-epoch.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -436,7 +491,7 @@ modulemd_rpm_map_entry_get_epoch (<em class="parameter"><code><a class="link" hr
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -451,7 +506,7 @@ modulemd_rpm_map_entry_get_epoch (<em class="parameter"><code><a class="link" hr
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-set-version"></a><h3>modulemd_rpm_map_entry_set_version ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_rpm_map_entry_set_version (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
+modulemd_rpm_map_entry_set_version (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
                                     <em class="parameter"><code>const <span class="type">gchar</span> *version</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-set-version.parameters"></a><h4>Parameters</h4>
@@ -464,7 +519,7 @@ modulemd_rpm_map_entry_set_version (<em class="parameter"><code><a class="link" 
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -481,7 +536,7 @@ modulemd_rpm_map_entry_set_version (<em class="parameter"><code><a class="link" 
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-get-version"></a><h3>modulemd_rpm_map_entry_get_version ()</h3>
 <pre class="programlisting">const <span class="returnvalue">gchar</span> *
-modulemd_rpm_map_entry_get_version (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
+modulemd_rpm_map_entry_get_version (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-get-version.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -492,7 +547,7 @@ modulemd_rpm_map_entry_get_version (<em class="parameter"><code><a class="link" 
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -508,7 +563,7 @@ modulemd_rpm_map_entry_get_version (<em class="parameter"><code><a class="link" 
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-set-release"></a><h3>modulemd_rpm_map_entry_set_release ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_rpm_map_entry_set_release (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
+modulemd_rpm_map_entry_set_release (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
                                     <em class="parameter"><code>const <span class="type">gchar</span> *release</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-set-release.parameters"></a><h4>Parameters</h4>
@@ -521,7 +576,7 @@ modulemd_rpm_map_entry_set_release (<em class="parameter"><code><a class="link" 
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -538,7 +593,7 @@ modulemd_rpm_map_entry_set_release (<em class="parameter"><code><a class="link" 
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-get-release"></a><h3>modulemd_rpm_map_entry_get_release ()</h3>
 <pre class="programlisting">const <span class="returnvalue">gchar</span> *
-modulemd_rpm_map_entry_get_release (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
+modulemd_rpm_map_entry_get_release (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-get-release.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -549,7 +604,7 @@ modulemd_rpm_map_entry_get_release (<em class="parameter"><code><a class="link" 
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -565,7 +620,7 @@ modulemd_rpm_map_entry_get_release (<em class="parameter"><code><a class="link" 
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-set-arch"></a><h3>modulemd_rpm_map_entry_set_arch ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_rpm_map_entry_set_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
+modulemd_rpm_map_entry_set_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>,
                                  <em class="parameter"><code>const <span class="type">gchar</span> *arch</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-set-arch.parameters"></a><h4>Parameters</h4>
@@ -578,7 +633,7 @@ modulemd_rpm_map_entry_set_arch (<em class="parameter"><code><a class="link" hre
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -595,7 +650,7 @@ modulemd_rpm_map_entry_set_arch (<em class="parameter"><code><a class="link" hre
 <div class="refsect2">
 <a name="modulemd-rpm-map-entry-get-arch"></a><h3>modulemd_rpm_map_entry_get_arch ()</h3>
 <pre class="programlisting">const <span class="returnvalue">gchar</span> *
-modulemd_rpm_map_entry_get_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
+modulemd_rpm_map_entry_get_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-get-arch.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -606,7 +661,7 @@ modulemd_rpm_map_entry_get_arch (<em class="parameter"><code><a class="link" hre
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -623,7 +678,7 @@ modulemd_rpm_map_entry_get_arch (<em class="parameter"><code><a class="link" hre
 <a name="modulemd-rpm-map-entry-get-nevra-as-string"></a><h3>modulemd_rpm_map_entry_get_nevra_as_string ()</h3>
 <pre class="programlisting"><span class="returnvalue">gchar</span> *
 modulemd_rpm_map_entry_get_nevra_as_string
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> *self</code></em>);</pre>
 <p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_rpm_map_entry_get_nevra]</span></p>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-get-nevra-as-string.parameters"></a><h4>Parameters</h4>
@@ -635,7 +690,7 @@ modulemd_rpm_map_entry_get_nevra_as_string
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry" title="ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -659,8 +714,59 @@ missing. </p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ModulemdRpmMapEntry"></a><h3>ModulemdRpmMapEntry</h3>
+<a name="ModulemdRpmMapEntry-struct"></a><h3>ModulemdRpmMapEntry</h3>
 <pre class="programlisting">typedef struct _ModulemdRpmMapEntry ModulemdRpmMapEntry;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.RpmMapEntry.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ModulemdRpmMapEntry--arch"></a><h3>The <code class="literal">“arch”</code> property</h3>
+<pre class="programlisting">  “arch”                     <span class="type">gchar</span> *</pre>
+<p>The artifact package architecture.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdRpmMapEntry--epoch"></a><h3>The <code class="literal">“epoch”</code> property</h3>
+<pre class="programlisting">  “epoch”                    <span class="type">guint64</span></pre>
+<p>The artifact package epoch.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: &lt;= 4294967295</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdRpmMapEntry--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <span class="type">gchar</span> *</pre>
+<p>The artifact package name.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdRpmMapEntry--nevra"></a><h3>The <code class="literal">“nevra”</code> property</h3>
+<pre class="programlisting">  “nevra”                    <span class="type">gchar</span> *</pre>
+<p>The artifact package N-E:V-R.A.</p>
+<p>Flags: Read</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdRpmMapEntry--release"></a><h3>The <code class="literal">“release”</code> property</h3>
+<pre class="programlisting">  “release”                  <span class="type">gchar</span> *</pre>
+<p>The artifact package release string.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdRpmMapEntry--version"></a><h3>The <code class="literal">“version”</code> property</h3>
+<pre class="programlisting">  “version”                  <span class="type">gchar</span> *</pre>
+<p>The artifact package version.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NULL</p>
 </div>
 </div>
 </div>

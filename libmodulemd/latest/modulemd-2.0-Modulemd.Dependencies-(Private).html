@@ -27,7 +27,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Dependencies-(Private).top_of_page"></a>Modulemd.Dependencies (Private)</span></h2>
-<p>Modulemd.Dependencies (Private) — <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> methods that should be used only
+<p>Modulemd.Dependencies (Private) — <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> methods that should be used only
 by internal consumers.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
@@ -46,7 +46,7 @@ by internal consumers.</p>
 <tbody>
 <tr>
 <td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+<a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-parse-yaml" title="modulemd_dependencies_parse_yaml ()">modulemd_dependencies_parse_yaml</a> <span class="c_punctuation">()</span>
@@ -94,7 +94,7 @@ by internal consumers.</p>
 <a name="modulemd-2.0-Modulemd.Dependencies-(Private).functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="modulemd-dependencies-parse-yaml"></a><h3>modulemd_dependencies_parse_yaml ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="returnvalue">ModulemdDependencies</span></a> *
 modulemd_dependencies_parse_yaml (<em class="parameter"><code><span class="type">yaml_parser_t</span> *parser</code></em>,
                                   <em class="parameter"><code><span class="type">gboolean</span> strict</code></em>,
                                   <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
@@ -130,7 +130,7 @@ validation error. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-dependencies-parse-yaml.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object
 read from the YAML. NULL if a parse or validation error occurred and sets
 <em class="parameter"><code>error</code></em>
 appropriately. </p>
@@ -142,7 +142,7 @@ appropriately. </p>
 <div class="refsect2">
 <a name="modulemd-dependencies-emit-yaml"></a><h3>modulemd_dependencies_emit_yaml ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
-modulemd_dependencies_emit_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+modulemd_dependencies_emit_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                  <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                                  <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 </div>
@@ -150,7 +150,7 @@ modulemd_dependencies_emit_yaml (<em class="parameter"><code><a class="link" hre
 <div class="refsect2">
 <a name="modulemd-dependencies-validate"></a><h3>modulemd_dependencies_validate ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
-modulemd_dependencies_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+modulemd_dependencies_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 </div>
 <hr>
@@ -158,7 +158,7 @@ modulemd_dependencies_validate (<em class="parameter"><code><a class="link" href
 <a name="modulemd-dependencies-requires-module-and-stream"></a><h3>modulemd_dependencies_requires_module_and_stream ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 modulemd_dependencies_requires_module_and_stream
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *stream_name</code></em>);</pre>
 </div>
@@ -167,7 +167,7 @@ modulemd_dependencies_requires_module_and_stream
 <a name="modulemd-dependencies-buildrequires-module-and-stream"></a><h3>modulemd_dependencies_buildrequires_module_and_stream ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
 modulemd_dependencies_buildrequires_module_and_stream
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies" title="ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *stream_name</code></em>);</pre>
 </div>

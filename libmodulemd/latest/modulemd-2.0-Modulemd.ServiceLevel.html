@@ -15,7 +15,9 @@
 <table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
 <td width="100%" align="left" class="shortcuts">
 <a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
-                  <a href="#modulemd-2.0-Modulemd.ServiceLevel.description" class="shortcut">Description</a></span>
+                  <a href="#modulemd-2.0-Modulemd.ServiceLevel.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ServiceLevel.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ServiceLevel.properties" class="shortcut">Properties</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
@@ -45,7 +47,7 @@
 <tbody>
 <tr>
 <td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
+<a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#modulemd-service-level-new" title="modulemd_service_level_new ()">modulemd_service_level_new</a> <span class="c_punctuation">()</span>
@@ -53,7 +55,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
+<a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#modulemd-service-level-copy" title="modulemd_service_level_copy ()">modulemd_service_level_copy</a> <span class="c_punctuation">()</span>
@@ -118,6 +120,22 @@
 </table></div>
 </div>
 <div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ServiceLevel.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<span class="type">gchar</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="ModulemdServiceLevel"></a><div class="refsect1">
 <a name="modulemd-2.0-Modulemd.ServiceLevel.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
@@ -131,10 +149,16 @@
 </tr>
 <tr>
 <td class="datatype_keyword"> </td>
-<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel">ModulemdServiceLevel</a></td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel-struct" title="ModulemdServiceLevel">ModulemdServiceLevel</a></td>
 </tr>
 </tbody>
 </table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ServiceLevel.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GObject
+    <span class="lineart">╰──</span> ModulemdServiceLevel
+</pre>
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.ServiceLevel.description"></a><h2>Description</h2>
@@ -143,7 +167,7 @@
 <a name="modulemd-2.0-Modulemd.ServiceLevel.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
 <a name="modulemd-service-level-new"></a><h3>modulemd_service_level_new ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
 modulemd_service_level_new (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-service-level-new.parameters"></a><h4>Parameters</h4>
@@ -162,7 +186,7 @@ modulemd_service_level_new (<em class="parameter"><code>const <span class="type"
 </div>
 <div class="refsect3">
 <a name="modulemd-service-level-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a>. This
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a>. This
 object must be freed with <code class="function">g_object_unref()</code>. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
@@ -171,9 +195,9 @@ object must be freed with <code class="function">g_object_unref()</code>. </p>
 <hr>
 <div class="refsect2">
 <a name="modulemd-service-level-copy"></a><h3>modulemd_service_level_copy ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
-modulemd_service_level_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
-<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> object.</p>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="returnvalue">ModulemdServiceLevel</span></a> *
+modulemd_service_level_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
+<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> object.</p>
 <div class="refsect3">
 <a name="modulemd-service-level-copy.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -184,14 +208,14 @@ modulemd_service_level_copy (<em class="parameter"><code><a class="link" href="m
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-service-level-copy.returns"></a><h4>Returns</h4>
-<p>a copied <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> object. </p>
+<p>a copied <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> object. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
 <p class="since">Since: 2.0</p>
@@ -200,7 +224,7 @@ modulemd_service_level_copy (<em class="parameter"><code><a class="link" href="m
 <div class="refsect2">
 <a name="modulemd-service-level-get-name"></a><h3>modulemd_service_level_get_name ()</h3>
 <pre class="programlisting">const <span class="returnvalue">gchar</span> *
-modulemd_service_level_get_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
+modulemd_service_level_get_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
 <p>Get the name of this service level.</p>
 <div class="refsect3">
 <a name="modulemd-service-level-get-name.parameters"></a><h4>Parameters</h4>
@@ -212,7 +236,7 @@ modulemd_service_level_get_name (<em class="parameter"><code><a class="link" hre
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -229,7 +253,7 @@ to the internal memory location and must not be freed. </p>
 <div class="refsect2">
 <a name="modulemd-service-level-set-eol"></a><h3>modulemd_service_level_set_eol ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_service_level_set_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>,
+modulemd_service_level_set_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>,
                                 <em class="parameter"><code><span class="type">GDate</span> *date</code></em>);</pre>
 <p>Sets the end date of the service level. If the <span class="type">GDate</span> passed in is invalid
 or NULL, the EOL will be unset.</p>
@@ -244,7 +268,7 @@ or NULL, the EOL will be unset.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -261,7 +285,7 @@ or NULL, the EOL will be unset.</p>
 <div class="refsect2">
 <a name="modulemd-service-level-set-eol-ymd"></a><h3>modulemd_service_level_set_eol_ymd ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_service_level_set_eol_ymd (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>,
+modulemd_service_level_set_eol_ymd (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>,
                                     <em class="parameter"><code><span class="type">GDateYear</span> year</code></em>,
                                     <em class="parameter"><code><span class="type">GDateMonth</span> month</code></em>,
                                     <em class="parameter"><code><span class="type">GDateDay</span> day</code></em>);</pre>
@@ -276,7 +300,7 @@ modulemd_service_level_set_eol_ymd (<em class="parameter"><code><a class="link" 
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -303,7 +327,7 @@ modulemd_service_level_set_eol_ymd (<em class="parameter"><code><a class="link" 
 <div class="refsect2">
 <a name="modulemd-service-level-remove-eol"></a><h3>modulemd_service_level_remove_eol ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_service_level_remove_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
+modulemd_service_level_remove_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
 <p>Remove the EOL from this Service Level</p>
 <div class="refsect3">
 <a name="modulemd-service-level-remove-eol.parameters"></a><h4>Parameters</h4>
@@ -315,7 +339,7 @@ modulemd_service_level_remove_eol (<em class="parameter"><code><a class="link" h
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -326,7 +350,7 @@ modulemd_service_level_remove_eol (<em class="parameter"><code><a class="link" h
 <div class="refsect2">
 <a name="modulemd-service-level-get-eol"></a><h3>modulemd_service_level_get_eol ()</h3>
 <pre class="programlisting"><span class="returnvalue">GDate</span> *
-modulemd_service_level_get_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
+modulemd_service_level_get_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-service-level-get-eol.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -337,7 +361,7 @@ modulemd_service_level_get_eol (<em class="parameter"><code><a class="link" href
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -354,7 +378,7 @@ modulemd_service_level_get_eol (<em class="parameter"><code><a class="link" href
 <a name="modulemd-service-level-get-eol-as-string"></a><h3>modulemd_service_level_get_eol_as_string ()</h3>
 <pre class="programlisting"><span class="returnvalue">gchar</span> *
 modulemd_service_level_get_eol_as_string
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-service-level-get-eol-as-string.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -365,7 +389,7 @@ modulemd_service_level_get_eol_as_string
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -382,8 +406,8 @@ string of the form "YYYY-MM-DD" or NULL if the date is unset or invalid. </p>
 <div class="refsect2">
 <a name="modulemd-service-level-equals"></a><h3>modulemd_service_level_equals ()</h3>
 <pre class="programlisting"><span class="returnvalue">gboolean</span>
-modulemd_service_level_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self_1</code></em>,
-                               <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self_2</code></em>);</pre>
+modulemd_service_level_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self_1</code></em>,
+                               <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self_2</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-service-level-equals.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -395,12 +419,12 @@ modulemd_service_level_equals (<em class="parameter"><code><a class="link" href=
 <tbody>
 <tr>
 <td class="parameter_name"><p>self_1</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>self_2</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel" title="ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a></p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -422,8 +446,18 @@ modulemd_service_level_equals (<em class="parameter"><code><a class="link" href=
 </div>
 <hr>
 <div class="refsect2">
-<a name="ModulemdServiceLevel"></a><h3>ModulemdServiceLevel</h3>
+<a name="ModulemdServiceLevel-struct"></a><h3>ModulemdServiceLevel</h3>
 <pre class="programlisting">typedef struct _ModulemdServiceLevel ModulemdServiceLevel;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ServiceLevel.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ModulemdServiceLevel--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <span class="type">gchar</span> *</pre>
+<p>A human-readable name for this servicelevel.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: "__NAME_UNSET__"</p>
 </div>
 </div>
 </div>

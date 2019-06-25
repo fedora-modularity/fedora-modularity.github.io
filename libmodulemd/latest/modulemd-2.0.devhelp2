@@ -5,16 +5,16 @@
       <sub name="Modulemd 2.0 Public API" link="ch01.html">
         <sub name="Modulemd" link="modulemd-2.0-Modulemd.html"/>
         <sub name="Modulemd.Buildopts" link="modulemd-2.0-Modulemd.Buildopts.html"/>
-        <sub name="Modulemd.Component" link="modulemd-2.0-ModulemdComponent.html"/>
+        <sub name="Modulemd.Component" link="ModulemdComponent.html"/>
         <sub name="Modulemd.ComponentModule" link="modulemd-2.0-Modulemd.ComponentModule.html"/>
         <sub name="Modulemd.ComponentRpm" link="modulemd-2.0-Modulemd.ComponentRpm.html"/>
-        <sub name="Modulemd.Defaults" link="modulemd-2.0-ModulemdDefaults.html"/>
+        <sub name="Modulemd.Defaults" link="ModulemdDefaults.html"/>
         <sub name="Modulemd.DefaultsV1" link="modulemd-2.0-Modulemd.DefaultsV1.html"/>
         <sub name="Modulemd.Dependencies" link="modulemd-2.0-Modulemd.Dependencies.html"/>
         <sub name="Modulemd.Module" link="modulemd-2.0-Modulemd.Module.html"/>
         <sub name="Modulemd.ModuleIndex" link="modulemd-2.0-Modulemd.ModuleIndex.html"/>
         <sub name="Modulemd.ModuleIndexMerger" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html"/>
-        <sub name="Modulemd.ModuleStream" link="modulemd-2.0-ModulemdModuleStream.html"/>
+        <sub name="Modulemd.ModuleStream" link="ModulemdModuleStream.html"/>
         <sub name="Modulemd.ModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1.html"/>
         <sub name="Modulemd.ModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2.html"/>
         <sub name="Modulemd.Profile" link="modulemd-2.0-Modulemd.Profile.html"/>
@@ -63,32 +63,39 @@
     <keyword type="function" name="modulemd_buildopts_clear_rpm_whitelist ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-rpm-whitelist" since="2.5"/>
     <keyword type="function" name="modulemd_buildopts_get_rpm_whitelist_as_strv ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_BUILDOPTS" link="modulemd-2.0-Modulemd.Buildopts.html#MODULEMD-TYPE-BUILDOPTS:CAPS"/>
-    <keyword type="struct" name="ModulemdBuildopts" link="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"/>
-    <keyword type="function" name="modulemd_component_equals ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-equals" since="2.3"/>
-    <keyword type="function" name="modulemd_component_copy ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-copy" since="2.0"/>
-    <keyword type="function" name="modulemd_component_validate ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-validate" since="2.2"/>
-    <keyword type="function" name="modulemd_component_add_buildafter ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-add-buildafter" since="2.2"/>
-    <keyword type="function" name="modulemd_component_clear_buildafter ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-clear-buildafter" since="2.5"/>
-    <keyword type="function" name="modulemd_component_get_buildafter_as_strv ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildafter-as-strv" since="2.2"/>
-    <keyword type="function" name="modulemd_component_set_buildonly ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildonly" since="2.2"/>
-    <keyword type="function" name="modulemd_component_get_buildonly ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildonly" since="2.2"/>
-    <keyword type="function" name="modulemd_component_set_buildorder ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-buildorder" since="2.0"/>
-    <keyword type="function" name="modulemd_component_get_buildorder ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-buildorder" since="2.0"/>
-    <keyword type="function" name="modulemd_component_set_name ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-name" since="2.2"/>
-    <keyword type="function" name="modulemd_component_get_name ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-name" since="2.0"/>
-    <keyword type="function" name="modulemd_component_get_key ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-key" since="2.2"/>
-    <keyword type="function" name="modulemd_component_set_rationale ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-set-rationale" since="2.0"/>
-    <keyword type="function" name="modulemd_component_get_rationale ()" link="modulemd-2.0-ModulemdComponent.html#modulemd-component-get-rationale" since="2.0"/>
-    <keyword type="macro" name="MODULEMD_TYPE_COMPONENT" link="modulemd-2.0-ModulemdComponent.html#MODULEMD-TYPE-COMPONENT:CAPS"/>
-    <keyword type="struct" name="struct ModulemdComponentClass" link="modulemd-2.0-ModulemdComponent.html#ModulemdComponentClass"/>
-    <keyword type="struct" name="ModulemdComponent" link="modulemd-2.0-ModulemdComponent.html#ModulemdComponent"/>
+    <keyword type="struct" name="ModulemdBuildopts" link="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts-struct"/>
+    <keyword type="property" name="The “rpm-macros” property" link="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts--rpm-macros"/>
+    <keyword type="function" name="modulemd_component_equals ()" link="ModulemdComponent.html#modulemd-component-equals" since="2.3"/>
+    <keyword type="function" name="modulemd_component_copy ()" link="ModulemdComponent.html#modulemd-component-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_component_validate ()" link="ModulemdComponent.html#modulemd-component-validate" since="2.2"/>
+    <keyword type="function" name="modulemd_component_add_buildafter ()" link="ModulemdComponent.html#modulemd-component-add-buildafter" since="2.2"/>
+    <keyword type="function" name="modulemd_component_clear_buildafter ()" link="ModulemdComponent.html#modulemd-component-clear-buildafter" since="2.5"/>
+    <keyword type="function" name="modulemd_component_get_buildafter_as_strv ()" link="ModulemdComponent.html#modulemd-component-get-buildafter-as-strv" since="2.2"/>
+    <keyword type="function" name="modulemd_component_set_buildonly ()" link="ModulemdComponent.html#modulemd-component-set-buildonly" since="2.2"/>
+    <keyword type="function" name="modulemd_component_get_buildonly ()" link="ModulemdComponent.html#modulemd-component-get-buildonly" since="2.2"/>
+    <keyword type="function" name="modulemd_component_set_buildorder ()" link="ModulemdComponent.html#modulemd-component-set-buildorder" since="2.0"/>
+    <keyword type="function" name="modulemd_component_get_buildorder ()" link="ModulemdComponent.html#modulemd-component-get-buildorder" since="2.0"/>
+    <keyword type="function" name="modulemd_component_set_name ()" link="ModulemdComponent.html#modulemd-component-set-name" since="2.2"/>
+    <keyword type="function" name="modulemd_component_get_name ()" link="ModulemdComponent.html#modulemd-component-get-name" since="2.0"/>
+    <keyword type="function" name="modulemd_component_get_key ()" link="ModulemdComponent.html#modulemd-component-get-key" since="2.2"/>
+    <keyword type="function" name="modulemd_component_set_rationale ()" link="ModulemdComponent.html#modulemd-component-set-rationale" since="2.0"/>
+    <keyword type="function" name="modulemd_component_get_rationale ()" link="ModulemdComponent.html#modulemd-component-get-rationale" since="2.0"/>
+    <keyword type="macro" name="MODULEMD_TYPE_COMPONENT" link="ModulemdComponent.html#MODULEMD-TYPE-COMPONENT:CAPS"/>
+    <keyword type="struct" name="struct ModulemdComponentClass" link="ModulemdComponent.html#ModulemdComponentClass"/>
+    <keyword type="struct" name="ModulemdComponent" link="ModulemdComponent.html#ModulemdComponent-struct"/>
+    <keyword type="property" name="The “buildonly” property" link="ModulemdComponent.html#ModulemdComponent--buildonly"/>
+    <keyword type="property" name="The “buildorder” property" link="ModulemdComponent.html#ModulemdComponent--buildorder"/>
+    <keyword type="property" name="The “name” property" link="ModulemdComponent.html#ModulemdComponent--name"/>
+    <keyword type="property" name="The “rationale” property" link="ModulemdComponent.html#ModulemdComponent--rationale"/>
     <keyword type="function" name="modulemd_component_module_new ()" link="modulemd-2.0-Modulemd.ComponentModule.html#modulemd-component-module-new" since="2.0"/>
     <keyword type="function" name="modulemd_component_module_set_ref ()" link="modulemd-2.0-Modulemd.ComponentModule.html#modulemd-component-module-set-ref" since="2.0"/>
     <keyword type="function" name="modulemd_component_module_get_ref ()" link="modulemd-2.0-Modulemd.ComponentModule.html#modulemd-component-module-get-ref" since="2.0"/>
     <keyword type="function" name="modulemd_component_module_set_repository ()" link="modulemd-2.0-Modulemd.ComponentModule.html#modulemd-component-module-set-repository" since="2.0"/>
     <keyword type="function" name="modulemd_component_module_get_repository ()" link="modulemd-2.0-Modulemd.ComponentModule.html#modulemd-component-module-get-repository" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_COMPONENT_MODULE" link="modulemd-2.0-Modulemd.ComponentModule.html#MODULEMD-TYPE-COMPONENT-MODULE:CAPS"/>
-    <keyword type="struct" name="ModulemdComponentModule" link="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule"/>
+    <keyword type="struct" name="ModulemdComponentModule" link="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule-struct"/>
+    <keyword type="property" name="The “ref” property" link="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule--ref"/>
+    <keyword type="property" name="The “repository” property" link="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule--repository"/>
     <keyword type="function" name="modulemd_component_rpm_new ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-new" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_add_restricted_arch ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-add-restricted-arch" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_reset_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-arches" since="2.0"/>
@@ -103,20 +110,25 @@
     <keyword type="function" name="modulemd_component_rpm_set_repository ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-repository" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_get_repository ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-repository" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_COMPONENT_RPM" link="modulemd-2.0-Modulemd.ComponentRpm.html#MODULEMD-TYPE-COMPONENT-RPM:CAPS"/>
-    <keyword type="struct" name="ModulemdComponentRpm" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm"/>
-    <keyword type="function" name="modulemd_defaults_new ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-new" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_copy ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-copy" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_validate ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-validate" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_equals ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-equals" since="2.2"/>
-    <keyword type="function" name="modulemd_defaults_upgrade ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-upgrade" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_get_module_name ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-get-module-name" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_get_mdversion ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-get-mdversion" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_set_modified ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-set-modified" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_get_modified ()" link="modulemd-2.0-ModulemdDefaults.html#modulemd-defaults-get-modified" since="2.0"/>
-    <keyword type="enum" name="enum ModulemdDefaultsVersionEnum" link="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaultsVersionEnum" since="2.0"/>
-    <keyword type="macro" name="MODULEMD_TYPE_DEFAULTS" link="modulemd-2.0-ModulemdDefaults.html#MODULEMD-TYPE-DEFAULTS:CAPS"/>
-    <keyword type="struct" name="struct ModulemdDefaultsClass" link="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaultsClass"/>
-    <keyword type="struct" name="ModulemdDefaults" link="modulemd-2.0-ModulemdDefaults.html#ModulemdDefaults"/>
+    <keyword type="struct" name="ModulemdComponentRpm" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm-struct"/>
+    <keyword type="property" name="The “cache” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--cache"/>
+    <keyword type="property" name="The “ref” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--ref"/>
+    <keyword type="property" name="The “repository” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--repository"/>
+    <keyword type="function" name="modulemd_defaults_new ()" link="ModulemdDefaults.html#modulemd-defaults-new" since="2.0"/>
+    <keyword type="function" name="modulemd_defaults_copy ()" link="ModulemdDefaults.html#modulemd-defaults-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_defaults_validate ()" link="ModulemdDefaults.html#modulemd-defaults-validate" since="2.0"/>
+    <keyword type="function" name="modulemd_defaults_equals ()" link="ModulemdDefaults.html#modulemd-defaults-equals" since="2.2"/>
+    <keyword type="function" name="modulemd_defaults_upgrade ()" link="ModulemdDefaults.html#modulemd-defaults-upgrade" since="2.0"/>
+    <keyword type="function" name="modulemd_defaults_get_module_name ()" link="ModulemdDefaults.html#modulemd-defaults-get-module-name" since="2.0"/>
+    <keyword type="function" name="modulemd_defaults_get_mdversion ()" link="ModulemdDefaults.html#modulemd-defaults-get-mdversion" since="2.0"/>
+    <keyword type="function" name="modulemd_defaults_set_modified ()" link="ModulemdDefaults.html#modulemd-defaults-set-modified" since="2.0"/>
+    <keyword type="function" name="modulemd_defaults_get_modified ()" link="ModulemdDefaults.html#modulemd-defaults-get-modified" since="2.0"/>
+    <keyword type="enum" name="enum ModulemdDefaultsVersionEnum" link="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" since="2.0"/>
+    <keyword type="macro" name="MODULEMD_TYPE_DEFAULTS" link="ModulemdDefaults.html#MODULEMD-TYPE-DEFAULTS:CAPS"/>
+    <keyword type="struct" name="struct ModulemdDefaultsClass" link="ModulemdDefaults.html#ModulemdDefaultsClass"/>
+    <keyword type="struct" name="ModulemdDefaults" link="ModulemdDefaults.html#ModulemdDefaults-struct"/>
+    <keyword type="property" name="The “mdversion” property" link="ModulemdDefaults.html#ModulemdDefaults--mdversion"/>
+    <keyword type="property" name="The “module-name” property" link="ModulemdDefaults.html#ModulemdDefaults--module-name"/>
     <keyword type="function" name="modulemd_defaults_v1_new ()" link="modulemd-2.0-Modulemd.DefaultsV1.html#modulemd-defaults-v1-new" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_v1_set_default_stream ()" link="modulemd-2.0-Modulemd.DefaultsV1.html#modulemd-defaults-v1-set-default-stream" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_v1_get_default_stream ()" link="modulemd-2.0-Modulemd.DefaultsV1.html#modulemd-defaults-v1-get-default-stream" since="2.0"/>
@@ -126,7 +138,7 @@
     <keyword type="function" name="modulemd_defaults_v1_remove_default_profiles_for_stream ()" link="modulemd-2.0-Modulemd.DefaultsV1.html#modulemd-defaults-v1-remove-default-profiles-for-stream" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_v1_get_default_profiles_for_stream_as_strv ()" link="modulemd-2.0-Modulemd.DefaultsV1.html#modulemd-defaults-v1-get-default-profiles-for-stream-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_DEFAULTS_V1" link="modulemd-2.0-Modulemd.DefaultsV1.html#MODULEMD-TYPE-DEFAULTS-V1:CAPS"/>
-    <keyword type="struct" name="ModulemdDefaultsV1" link="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"/>
+    <keyword type="struct" name="ModulemdDefaultsV1" link="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1-struct"/>
     <keyword type="function" name="modulemd_dependencies_new ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-new" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_equals ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-equals" since="2.2"/>
     <keyword type="function" name="modulemd_dependencies_copy ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-copy" since="2.0"/>
@@ -141,7 +153,7 @@
     <keyword type="function" name="modulemd_dependencies_get_runtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-modules-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_get_runtime_streams_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-streams-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_DEPENDENCIES" link="modulemd-2.0-Modulemd.Dependencies.html#MODULEMD-TYPE-DEPENDENCIES:CAPS"/>
-    <keyword type="struct" name="ModulemdDependencies" link="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"/>
+    <keyword type="struct" name="ModulemdDependencies" link="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies-struct"/>
     <keyword type="function" name="modulemd_module_get_stream_names_as_strv ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-names-as-strv" since="2.6"/>
     <keyword type="function" name="modulemd_module_copy ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-copy" since="2.0"/>
     <keyword type="function" name="modulemd_module_validate ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-validate" since="2.0"/>
@@ -155,7 +167,8 @@
     <keyword type="macro" name="modulemd_module_remove_streams_by_name()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-name" since="2.3"/>
     <keyword type="function" name="modulemd_module_get_defaults ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-defaults" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE" link="modulemd-2.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS"/>
-    <keyword type="struct" name="ModulemdModule" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule"/>
+    <keyword type="struct" name="ModulemdModule" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule-struct"/>
+    <keyword type="property" name="The “module-name” property" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule--module-name"/>
     <keyword type="function" name="ModulemdReadHandler ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" since="2.3"/>
     <keyword type="function" name="ModulemdWriteHandler ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" since="2.3"/>
     <keyword type="function" name="modulemd_module_index_new ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new" since="2.0"/>
@@ -178,37 +191,43 @@
     <keyword type="function" name="modulemd_module_index_upgrade_streams ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-streams" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_upgrade_defaults ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_INDEX" link="modulemd-2.0-Modulemd.ModuleIndex.html#MODULEMD-TYPE-MODULE-INDEX:CAPS"/>
-    <keyword type="struct" name="ModulemdModuleIndex" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"/>
+    <keyword type="struct" name="ModulemdModuleIndex" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex-struct"/>
     <keyword type="function" name="modulemd_module_index_merger_new ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_merger_associate_index ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-associate-index" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_merger_resolve ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_INDEX_MERGER" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#MODULEMD-TYPE-MODULE-INDEX-MERGER:CAPS"/>
-    <keyword type="struct" name="ModulemdModuleIndexMerger" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"/>
-    <keyword type="function" name="modulemd_module_stream_new ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-new" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_read_file ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-read-file" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_read_string ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-read-string" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_read_stream ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-read-stream" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_equals ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-equals" since="2.3"/>
-    <keyword type="function" name="modulemd_module_stream_copy ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-copy" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_upgrade ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-upgrade" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_validate ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-validate" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_get_mdversion ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-mdversion" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_get_module_name ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-module-name" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_get_stream_name ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-stream-name" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_set_version ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-set-version" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_get_version ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-version"/>
-    <keyword type="function" name="modulemd_module_stream_set_context ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-set-context" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_get_context ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-context" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_set_arch ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-set-arch" since="2.2"/>
-    <keyword type="function" name="modulemd_module_stream_get_arch ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-arch" since="2.2"/>
-    <keyword type="function" name="modulemd_module_stream_get_nsvc_as_string ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-nsvc-as-string" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_get_NSVCA_as_string ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-get-NSVCA-as-string" since="2.2"/>
-    <keyword type="function" name="modulemd_module_stream_depends_on_stream ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-depends-on-stream" since="2.1" stability="Unstable"/>
-    <keyword type="function" name="modulemd_module_stream_build_depends_on_stream ()" link="modulemd-2.0-ModulemdModuleStream.html#modulemd-module-stream-build-depends-on-stream" since="2.1" stability="Unstable"/>
-    <keyword type="enum" name="enum ModulemdModuleStreamVersionEnum" link="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" since="2.0"/>
-    <keyword type="macro" name="MODULEMD_TYPE_MODULE_STREAM" link="modulemd-2.0-ModulemdModuleStream.html#MODULEMD-TYPE-MODULE-STREAM:CAPS"/>
-    <keyword type="struct" name="struct ModulemdModuleStreamClass" link="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStreamClass"/>
-    <keyword type="struct" name="ModulemdModuleStream" link="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream"/>
+    <keyword type="struct" name="ModulemdModuleIndexMerger" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger-struct"/>
+    <keyword type="function" name="modulemd_module_stream_new ()" link="ModulemdModuleStream.html#modulemd-module-stream-new" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_read_file ()" link="ModulemdModuleStream.html#modulemd-module-stream-read-file" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_read_string ()" link="ModulemdModuleStream.html#modulemd-module-stream-read-string" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_read_stream ()" link="ModulemdModuleStream.html#modulemd-module-stream-read-stream" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_equals ()" link="ModulemdModuleStream.html#modulemd-module-stream-equals" since="2.3"/>
+    <keyword type="function" name="modulemd_module_stream_copy ()" link="ModulemdModuleStream.html#modulemd-module-stream-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_upgrade ()" link="ModulemdModuleStream.html#modulemd-module-stream-upgrade" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_validate ()" link="ModulemdModuleStream.html#modulemd-module-stream-validate" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_mdversion ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-mdversion" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_module_name ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-module-name" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_stream_name ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-stream-name" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_set_version ()" link="ModulemdModuleStream.html#modulemd-module-stream-set-version" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_version ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-version"/>
+    <keyword type="function" name="modulemd_module_stream_set_context ()" link="ModulemdModuleStream.html#modulemd-module-stream-set-context" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_context ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-context" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_set_arch ()" link="ModulemdModuleStream.html#modulemd-module-stream-set-arch" since="2.2"/>
+    <keyword type="function" name="modulemd_module_stream_get_arch ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-arch" since="2.2"/>
+    <keyword type="function" name="modulemd_module_stream_get_nsvc_as_string ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-nsvc-as-string" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_NSVCA_as_string ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-NSVCA-as-string" since="2.2"/>
+    <keyword type="function" name="modulemd_module_stream_depends_on_stream ()" link="ModulemdModuleStream.html#modulemd-module-stream-depends-on-stream" since="2.1" stability="Unstable"/>
+    <keyword type="function" name="modulemd_module_stream_build_depends_on_stream ()" link="ModulemdModuleStream.html#modulemd-module-stream-build-depends-on-stream" since="2.1" stability="Unstable"/>
+    <keyword type="enum" name="enum ModulemdModuleStreamVersionEnum" link="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" since="2.0"/>
+    <keyword type="macro" name="MODULEMD_TYPE_MODULE_STREAM" link="ModulemdModuleStream.html#MODULEMD-TYPE-MODULE-STREAM:CAPS"/>
+    <keyword type="struct" name="struct ModulemdModuleStreamClass" link="ModulemdModuleStream.html#ModulemdModuleStreamClass"/>
+    <keyword type="struct" name="ModulemdModuleStream" link="ModulemdModuleStream.html#ModulemdModuleStream-struct"/>
+    <keyword type="property" name="The “arch” property" link="ModulemdModuleStream.html#ModulemdModuleStream--arch"/>
+    <keyword type="property" name="The “context” property" link="ModulemdModuleStream.html#ModulemdModuleStream--context"/>
+    <keyword type="property" name="The “mdversion” property" link="ModulemdModuleStream.html#ModulemdModuleStream--mdversion"/>
+    <keyword type="property" name="The “module-name” property" link="ModulemdModuleStream.html#ModulemdModuleStream--module-name"/>
+    <keyword type="property" name="The “stream-name” property" link="ModulemdModuleStream.html#ModulemdModuleStream--stream-name"/>
+    <keyword type="property" name="The “version” property" link="ModulemdModuleStream.html#ModulemdModuleStream--version"/>
     <keyword type="function" name="modulemd_module_stream_v1_new ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_set_arch ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-arch" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_get_arch ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-arch" since="2.0"/>
@@ -276,7 +295,12 @@
     <keyword type="function" name="modulemd_module_stream_v1_set_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-xmd" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_get_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-xmd"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_STREAM_V1" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#MODULEMD-TYPE-MODULE-STREAM-V1:CAPS"/>
-    <keyword type="struct" name="ModulemdModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"/>
+    <keyword type="struct" name="ModulemdModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1-struct"/>
+    <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--arch"/>
+    <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--buildopts"/>
+    <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--community"/>
+    <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--documentation"/>
+    <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--tracker"/>
     <keyword type="function" name="modulemd_module_stream_v2_new ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_set_arch ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-set-arch" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_arch ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-arch" since="2.0"/>
@@ -338,7 +362,12 @@
     <keyword type="function" name="modulemd_module_stream_v2_set_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-set-xmd" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-xmd"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_STREAM_V2" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#MODULEMD-TYPE-MODULE-STREAM-V2:CAPS"/>
-    <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"/>
+    <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2-struct"/>
+    <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--arch"/>
+    <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--buildopts"/>
+    <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--community"/>
+    <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--documentation"/>
+    <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--tracker"/>
     <keyword type="function" name="modulemd_profile_equals ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-equals" since="2.2"/>
     <keyword type="function" name="modulemd_profile_new ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-new" since="2.0"/>
     <keyword type="function" name="modulemd_profile_copy ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-copy" since="2.0"/>
@@ -350,7 +379,8 @@
     <keyword type="function" name="modulemd_profile_clear_rpms ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-clear-rpms" since="2.5"/>
     <keyword type="function" name="modulemd_profile_get_rpms_as_strv ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-get-rpms-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_PROFILE" link="modulemd-2.0-Modulemd.Profile.html#MODULEMD-TYPE-PROFILE:CAPS"/>
-    <keyword type="struct" name="ModulemdProfile" link="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"/>
+    <keyword type="struct" name="ModulemdProfile" link="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile-struct"/>
+    <keyword type="property" name="The “name” property" link="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile--name"/>
     <keyword type="function" name="modulemd_rpm_map_entry_new ()" link="modulemd-2.0-Modulemd.RpmMapEntry.html#modulemd-rpm-map-entry-new"/>
     <keyword type="function" name="modulemd_rpm_map_entry_copy ()" link="modulemd-2.0-Modulemd.RpmMapEntry.html#modulemd-rpm-map-entry-copy" since="2.2"/>
     <keyword type="function" name="modulemd_rpm_map_entry_equals ()" link="modulemd-2.0-Modulemd.RpmMapEntry.html#modulemd-rpm-map-entry-equals" since="2.2"/>
@@ -367,7 +397,13 @@
     <keyword type="function" name="modulemd_rpm_map_entry_get_arch ()" link="modulemd-2.0-Modulemd.RpmMapEntry.html#modulemd-rpm-map-entry-get-arch" since="2.2"/>
     <keyword type="function" name="modulemd_rpm_map_entry_get_nevra_as_string ()" link="modulemd-2.0-Modulemd.RpmMapEntry.html#modulemd-rpm-map-entry-get-nevra-as-string" since="2.2"/>
     <keyword type="macro" name="MODULEMD_TYPE_RPM_MAP_ENTRY" link="modulemd-2.0-Modulemd.RpmMapEntry.html#MODULEMD-TYPE-RPM-MAP-ENTRY:CAPS"/>
-    <keyword type="struct" name="ModulemdRpmMapEntry" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"/>
+    <keyword type="struct" name="ModulemdRpmMapEntry" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry-struct"/>
+    <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--arch"/>
+    <keyword type="property" name="The “epoch” property" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--epoch"/>
+    <keyword type="property" name="The “name” property" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--name"/>
+    <keyword type="property" name="The “nevra” property" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--nevra"/>
+    <keyword type="property" name="The “release” property" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--release"/>
+    <keyword type="property" name="The “version” property" link="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry--version"/>
     <keyword type="function" name="modulemd_service_level_new ()" link="modulemd-2.0-Modulemd.ServiceLevel.html#modulemd-service-level-new" since="2.0"/>
     <keyword type="function" name="modulemd_service_level_copy ()" link="modulemd-2.0-Modulemd.ServiceLevel.html#modulemd-service-level-copy" since="2.0"/>
     <keyword type="function" name="modulemd_service_level_get_name ()" link="modulemd-2.0-Modulemd.ServiceLevel.html#modulemd-service-level-get-name" since="2.0"/>
@@ -378,11 +414,12 @@
     <keyword type="function" name="modulemd_service_level_get_eol_as_string ()" link="modulemd-2.0-Modulemd.ServiceLevel.html#modulemd-service-level-get-eol-as-string" since="2.0"/>
     <keyword type="function" name="modulemd_service_level_equals ()" link="modulemd-2.0-Modulemd.ServiceLevel.html#modulemd-service-level-equals" since="2.2"/>
     <keyword type="macro" name="MODULEMD_TYPE_SERVICE_LEVEL" link="modulemd-2.0-Modulemd.ServiceLevel.html#MODULEMD-TYPE-SERVICE-LEVEL:CAPS"/>
-    <keyword type="struct" name="ModulemdServiceLevel" link="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"/>
+    <keyword type="struct" name="ModulemdServiceLevel" link="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel-struct"/>
+    <keyword type="property" name="The “name” property" link="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel--name"/>
     <keyword type="function" name="modulemd_subdocument_info_get_yaml ()" link="modulemd-2.0-Modulemd.SubdocumentInfo.html#modulemd-subdocument-info-get-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_get_gerror ()" link="modulemd-2.0-Modulemd.SubdocumentInfo.html#modulemd-subdocument-info-get-gerror" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_SUBDOCUMENT_INFO" link="modulemd-2.0-Modulemd.SubdocumentInfo.html#MODULEMD-TYPE-SUBDOCUMENT-INFO:CAPS"/>
-    <keyword type="struct" name="ModulemdSubdocumentInfo" link="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"/>
+    <keyword type="struct" name="ModulemdSubdocumentInfo" link="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo-struct"/>
     <keyword type="function" name="modulemd_translation_new ()" link="modulemd-2.0-Modulemd.Translation.html#modulemd-translation-new" since="2.0"/>
     <keyword type="function" name="modulemd_translation_copy ()" link="modulemd-2.0-Modulemd.Translation.html#modulemd-translation-copy" since="2.0"/>
     <keyword type="function" name="modulemd_translation_validate ()" link="modulemd-2.0-Modulemd.Translation.html#modulemd-translation-validate" since="2.0"/>
@@ -391,7 +428,11 @@
     <keyword type="function" name="modulemd_translation_set_translation_entry ()" link="modulemd-2.0-Modulemd.Translation.html#modulemd-translation-set-translation-entry" since="2.0"/>
     <keyword type="function" name="modulemd_translation_get_translation_entry ()" link="modulemd-2.0-Modulemd.Translation.html#modulemd-translation-get-translation-entry" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_TRANSLATION" link="modulemd-2.0-Modulemd.Translation.html#MODULEMD-TYPE-TRANSLATION:CAPS"/>
-    <keyword type="struct" name="ModulemdTranslation" link="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"/>
+    <keyword type="struct" name="ModulemdTranslation" link="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation-struct"/>
+    <keyword type="property" name="The “modified” property" link="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--modified"/>
+    <keyword type="property" name="The “module-name” property" link="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--module-name"/>
+    <keyword type="property" name="The “module-stream” property" link="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--module-stream"/>
+    <keyword type="property" name="The “version” property" link="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--version"/>
     <keyword type="function" name="modulemd_translation_entry_new ()" link="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-new" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_copy ()" link="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-copy" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_get_locale ()" link="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-locale" since="2.0"/>
@@ -403,7 +444,10 @@
     <keyword type="function" name="modulemd_translation_entry_set_profile_description ()" link="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-profile-description" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_get_profile_description ()" link="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-profile-description"/>
     <keyword type="macro" name="MODULEMD_TYPE_TRANSLATION_ENTRY" link="modulemd-2.0-Modulemd.TranslationEntry.html#MODULEMD-TYPE-TRANSLATION-ENTRY:CAPS"/>
-    <keyword type="struct" name="ModulemdTranslationEntry" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"/>
+    <keyword type="struct" name="ModulemdTranslationEntry" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry-struct"/>
+    <keyword type="property" name="The “description” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--description"/>
+    <keyword type="property" name="The “locale” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--locale"/>
+    <keyword type="property" name="The “summary” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--summary"/>
     <keyword type="function" name="modulemd_buildopts_parse_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_buildopts_emit_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-emit-yaml"/>
     <keyword type="function" name="modulemd_component_parse_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildafter" since="2.2"/>
@@ -459,10 +503,20 @@
     <keyword type="function" name="modulemd_module_stream_emit_yaml_base ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-emit-yaml-base"/>
     <keyword type="function" name="modulemd_module_stream_v1_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-emit-yaml" since="2.0"/>
-    <keyword type="struct" name="ModulemdModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1"/>
+    <keyword type="struct" name="ModulemdModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1-struct"/>
+    <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--arch"/>
+    <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--buildopts"/>
+    <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--community"/>
+    <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--documentation"/>
+    <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--tracker"/>
     <keyword type="function" name="modulemd_module_stream_v2_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-emit-yaml" since="2.0"/>
-    <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2"/>
+    <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2-struct"/>
+    <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--arch"/>
+    <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--buildopts"/>
+    <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--community"/>
+    <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--documentation"/>
+    <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--tracker"/>
     <keyword type="function" name="modulemd_profile_parse_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_emit_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml"/>
     <keyword type="function" name="modulemd_profile_equals_wrapper ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" since="2.5"/>
@@ -584,14 +638,14 @@
     <keyword type="function" name="parser_skip_headers ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-headers" since="2.0"/>
     <keyword type="function" name="parser_skip_document_start ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-document-start" since="2.0"/>
     <keyword type="variable" name="modulemd_test_signal" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#modulemd-test-signal"/>
-    <keyword type="constant" name="MD_DEFAULTS_VERSION_ERROR" link="modulemd-2.0-ModulemdDefaults.html#MD-DEFAULTS-VERSION-ERROR:CAPS"/>
-    <keyword type="constant" name="MD_DEFAULTS_VERSION_UNSET" link="modulemd-2.0-ModulemdDefaults.html#MD-DEFAULTS-VERSION-UNSET:CAPS"/>
-    <keyword type="constant" name="MD_DEFAULTS_VERSION_ONE" link="modulemd-2.0-ModulemdDefaults.html#MD-DEFAULTS-VERSION-ONE:CAPS"/>
-    <keyword type="constant" name="MD_DEFAULTS_VERSION_LATEST" link="modulemd-2.0-ModulemdDefaults.html#MD-DEFAULTS-VERSION-LATEST:CAPS"/>
-    <keyword type="constant" name="MD_MODULESTREAM_VERSION_ERROR" link="modulemd-2.0-ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ERROR:CAPS"/>
-    <keyword type="constant" name="MD_MODULESTREAM_VERSION_UNSET" link="modulemd-2.0-ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-UNSET:CAPS"/>
-    <keyword type="constant" name="MD_MODULESTREAM_VERSION_ONE" link="modulemd-2.0-ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ONE:CAPS"/>
-    <keyword type="constant" name="MD_MODULESTREAM_VERSION_TWO" link="modulemd-2.0-ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-TWO:CAPS"/>
-    <keyword type="constant" name="MD_MODULESTREAM_VERSION_LATEST" link="modulemd-2.0-ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-LATEST:CAPS"/>
+    <keyword type="constant" name="MD_DEFAULTS_VERSION_ERROR" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-ERROR:CAPS"/>
+    <keyword type="constant" name="MD_DEFAULTS_VERSION_UNSET" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-UNSET:CAPS"/>
+    <keyword type="constant" name="MD_DEFAULTS_VERSION_ONE" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-ONE:CAPS"/>
+    <keyword type="constant" name="MD_DEFAULTS_VERSION_LATEST" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-LATEST:CAPS"/>
+    <keyword type="constant" name="MD_MODULESTREAM_VERSION_ERROR" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ERROR:CAPS"/>
+    <keyword type="constant" name="MD_MODULESTREAM_VERSION_UNSET" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-UNSET:CAPS"/>
+    <keyword type="constant" name="MD_MODULESTREAM_VERSION_ONE" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ONE:CAPS"/>
+    <keyword type="constant" name="MD_MODULESTREAM_VERSION_TWO" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-TWO:CAPS"/>
+    <keyword type="constant" name="MD_MODULESTREAM_VERSION_LATEST" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-LATEST:CAPS"/>
   </functions>
 </book>

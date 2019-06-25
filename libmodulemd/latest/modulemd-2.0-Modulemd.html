@@ -63,7 +63,7 @@ It will assume that the content of the YAML module metadata from those two
 repositories have been loaded into string variables "fedora_yaml" and
 "updates_yaml", respectively.</p>
 <p>First step is to load the metadata from these two repositories into
-<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects. This is done as follows:</p>
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects. This is done as follows:</p>
 <p>In C:</p>
 <div class="informalexample">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
@@ -173,9 +173,9 @@ two indexes into a combined one:</p>
 <p>At this point, you now have either a complete view of the merged repodata,
 or else have received an error describing why the merge was unable to
 complete successfully. Additionally, it should be noted that the combined
-metadata in any <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> will have all of its component parts
+metadata in any <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> will have all of its component parts
 upgraded to match the highest version of those objects seen. So for example
-if the repodata has a mix of v1 and v2 <a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> objects, the
+if the repodata has a mix of v1 and v2 <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects, the
 index will contain only v2 objects (with the v1 objects automatically
 upgraded internally).</p>
 <p>At this point, we can start operating on the retrieved data. This guide will
@@ -252,13 +252,13 @@ specification for a full list of information that can be retrieved.</p>
 <hr>
 <div class="refsect2">
 <a name="id-1.2.3.2.5.3"></a><h3>Working with a single module stream (Packager/MBS use-case)</h3>
-<p>One limitation of the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex" title="ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> format is that it requires that
+<p>One limitation of the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> format is that it requires that
 all module streams loaded into it have both a name and a stream name. This
 however is not possible when dealing with streams such as a packager would
 be using (since the build-system auto-generates the module name and stream
 name from the git repository information. In this case, we need to work
 with a single module stream document at a time. For this, we will use the
-<a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> interface.</p>
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> interface.</p>
 <p>This example will assume that the module name and stream name have already
 been determined from the repodata and that they are stored in string
 variables named 'module_name' and 'stream_name', respectively.</p>
@@ -291,7 +291,7 @@ code-paths and support only the latest we understand. After that, it calls
 syntactically and referentially.</p>
 <p>Also available is <code class="literal">Modulemd.ModuleStreamVersionEnum.LATEST</code> which will
 always represent the highest-supported version of the
-<a class="link" href="modulemd-2.0-ModulemdModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> metadata format. This may change at any time.</p>
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> metadata format. This may change at any time.</p>
 </div>
 </div>
 <div class="refsect1">
