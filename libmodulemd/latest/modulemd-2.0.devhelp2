@@ -520,6 +520,7 @@
     <keyword type="function" name="modulemd_profile_parse_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_emit_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml"/>
     <keyword type="function" name="modulemd_profile_equals_wrapper ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" since="2.5"/>
+    <keyword type="function" name="modulemd_profile_set_owner ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-set-owner" since="2.6"/>
     <keyword type="function" name="modulemd_rpm_map_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-parse-yaml" since="2.2"/>
     <keyword type="function" name="modulemd_rpm_map_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-emit-yaml" since="2.2"/>
     <keyword type="function" name="modulemd_rpm_map_entry_equals_wrapper ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-equals-wrapper" since="2.5"/>
