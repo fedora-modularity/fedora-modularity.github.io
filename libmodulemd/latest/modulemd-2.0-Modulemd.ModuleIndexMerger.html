@@ -69,6 +69,14 @@ repositories.</p>
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve" title="modulemd_module_index_merger_resolve ()">modulemd_module_index_merger_resolve</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve-ext" title="modulemd_module_index_merger_resolve_ext ()">modulemd_module_index_merger_resolve_ext</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -258,6 +266,9 @@ The logic of this merge is described in the Description of
 <p>Once this function has been called, the internal state of the
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> is undefined. The only valid action on it after
 that point is <code class="function">g_object_unref()</code>.</p>
+<p>This function is equivalent to calling
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve-ext" title="modulemd_module_index_merger_resolve_ext ()"><code class="function">modulemd_module_index_merger_resolve_ext()</code></a> with
+<code class="literal">strict_default_streams=FALSE</code>.</p>
 <div class="refsect3">
 <a name="modulemd-module-index-merger-resolve.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -290,6 +301,60 @@ appropriately. </p>
 <p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
 </div>
 <p class="since">Since: 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-merger-resolve-ext"></a><h3>modulemd_module_index_merger_resolve_ext ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+modulemd_module_index_merger_resolve_ext
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> *self</code></em>,
+                                <em class="parameter"><code><span class="type">gboolean</span> strict_default_streams</code></em>,
+                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+<p>Merges all added <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects according to their priority.
+The logic of this merge is described in the Description of
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a>.</p>
+<p>Once this function has been called, the internal state of the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> is undefined. The only valid action on it after
+that point is <code class="function">g_object_unref()</code>.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-merger-resolve-ext.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict_default_streams</p></td>
+<td class="parameter_description"><p>If TRUE, merging two <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> with
+conflicting default streams will raise an error. If FALSE, the module will
+have its default stream blocked. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason for a failure to resolve the
+merges. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-merger-resolve-ext.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> containing
+the merged results. If this function encounters an unresolvable merge
+conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
+appropriately. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 2.6</p>
 </div>
 </div>
 <div class="refsect1">

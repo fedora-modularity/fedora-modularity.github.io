@@ -145,6 +145,7 @@ there was a fatal parse error.</p>
 modulemd_module_index_merge (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *from</code></em>,
                              <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *into</code></em>,
                              <em class="parameter"><code><span class="type">gboolean</span> override</code></em>,
+                             <em class="parameter"><code><span class="type">gboolean</span> strict_default_streams</code></em>,
                              <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-module-index-merge.parameters"></a><h4>Parameters</h4>
@@ -176,6 +177,13 @@ will supersede those from
 <em class="parameter"><code>into</code></em>
 . For specifics of how this works, see the Description section for
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict_default_streams</p></td>
+<td class="parameter_description"><p>When merging <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a>, treat
+conflicting stream defaults as an error if this is True. Otherwise, on a
+conflict, the default stream will be unset. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
 </tr>
 <tr>

@@ -195,6 +195,7 @@
     <keyword type="function" name="modulemd_module_index_merger_new ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_merger_associate_index ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-associate-index" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_merger_resolve ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_merger_resolve_ext ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve-ext" since="2.6"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_INDEX_MERGER" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#MODULEMD-TYPE-MODULE-INDEX-MERGER:CAPS"/>
     <keyword type="struct" name="ModulemdModuleIndexMerger" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger-struct"/>
     <keyword type="function" name="modulemd_module_stream_new ()" link="ModulemdModuleStream.html#modulemd-module-stream-new" since="2.0"/>
