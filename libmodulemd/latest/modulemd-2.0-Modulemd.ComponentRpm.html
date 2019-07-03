@@ -29,7 +29,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.ComponentRpm.top_of_page"></a>Modulemd.ComponentRpm</span></h2>
-<p>Modulemd.ComponentRpm — A rpm component that goes into a module stream.</p>
+<p>Modulemd.ComponentRpm — An rpm component that goes into a module stream.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -244,7 +244,10 @@ components from a <a class="link" href="ModulemdModuleStream.html" title="Module
 modulemd_component_rpm_add_restricted_arch
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm"><span class="type">ModulemdComponentRpm</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *arch</code></em>);</pre>
-<p>Restrict the list of architectures on which this RPM will be available. It may be called any number of times to indicate support on additional architectures. Use <code class="literal"><code class="function">reset_arches()</code></code> to return to "all architectures".</p>
+<p>Restrict the list of architectures on which this RPM will be available. It
+may be called any number of times to indicate support on additional
+architectures. Use <a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-arches" title="modulemd_component_rpm_reset_arches ()"><code class="function">modulemd_component_rpm_reset_arches()</code></a> to return to "all
+architectures".</p>
 <div class="refsect3">
 <a name="modulemd-component-rpm-add-restricted-arch.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -328,7 +331,9 @@ modulemd_component_rpm_get_arches_as_strv
 modulemd_component_rpm_add_multilib_arch
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm"><span class="type">ModulemdComponentRpm</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <span class="type">gchar</span> *arch</code></em>);</pre>
-<p>Add an architectures on which this RPM will be multilib. It may be called any number of times. Use <code class="literal"><code class="function">reset_multilib_arches()</code></code> to return to "no architectures".</p>
+<p>Add an architectures on which this RPM will be multilib. It may be called
+any number of times. Use <a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-multilib-arches" title="modulemd_component_rpm_reset_multilib_arches ()"><code class="function">modulemd_component_rpm_reset_multilib_arches()</code></a> to
+return to "no architectures".</p>
 <div class="refsect3">
 <a name="modulemd-component-rpm-add-multilib-arch.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">

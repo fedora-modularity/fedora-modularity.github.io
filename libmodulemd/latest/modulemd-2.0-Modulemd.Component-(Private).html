@@ -28,7 +28,7 @@
 <td valign="top">
 <h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Component-(Private).top_of_page"></a>Modulemd.Component (Private)</span></h2>
 <p>Modulemd.Component (Private) — <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> methods that should be used only
-by internal consumers</p>
+by internal consumers.</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -185,7 +185,7 @@ modulemd_component_parse_buildonly (<em class="parameter"><code><a class="link" 
 </div>
 <div class="refsect3">
 <a name="modulemd-component-parse-buildonly.returns"></a><h4>Returns</h4>
-<p> TRUE if the buildafter list could be parsed successfully.</p>
+<p> TRUE if the buildonly list could be parsed successfully.</p>
 </div>
 <p class="since">Since: 2.2</p>
 </div>
@@ -211,7 +211,7 @@ modulemd_component_has_buildafter (<em class="parameter"><code><a class="link" h
 </div>
 <div class="refsect3">
 <a name="modulemd-component-has-buildafter.returns"></a><h4>Returns</h4>
-<p> Whether one or more buildafter entries have been added to this
+<p> TRUE if one or more buildafter entries have been added to this
 component.</p>
 </div>
 <p class="since">Since: 2.2</p>
@@ -281,7 +281,7 @@ belongs in the YAML document. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-component-emit-yaml-start.returns"></a><h4>Returns</h4>
-<p> TRUE if the component header was emitted succesfully. FALSE and sets
+<p> TRUE if the component header was emitted successfully. FALSE and sets
 <em class="parameter"><code>error</code></em>
 appropriately if the YAML could not be emitted.</p>
 </div>
@@ -326,9 +326,10 @@ document. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-component-emit-yaml-build-common.returns"></a><h4>Returns</h4>
-<p> TRUE if the component buildorder was emitted succesfully. FALSE and
-sets <em class="parameter"><code>error</code></em>
-appropriately if the YAML could not be emitted.</p>
+<p> TRUE if the component buildorder, buildafter and/or buildonly
+item(s) were emitted successfully. FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately if
+the YAML could not be emitted.</p>
 </div>
 <p class="since">Since: 2.2</p>
 </div>
@@ -362,7 +363,7 @@ modulemd_component_equals_wrapper (<em class="parameter"><code>const <span class
 </div>
 <div class="refsect3">
 <a name="modulemd-component-equals-wrapper.returns"></a><h4>Returns</h4>
-<p> TRUE, if both the pointers are equal. FALSE, otherwise</p>
+<p> TRUE, if both the pointers are equal. FALSE, otherwise.</p>
 </div>
 <p class="since">Since: 2.5</p>
 </div>

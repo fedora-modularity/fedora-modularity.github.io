@@ -449,7 +449,7 @@
     <keyword type="property" name="The “locale” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--locale"/>
     <keyword type="property" name="The “summary” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--summary"/>
     <keyword type="function" name="modulemd_buildopts_parse_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-parse-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_buildopts_emit_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-emit-yaml"/>
+    <keyword type="function" name="modulemd_buildopts_emit_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_parse_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildafter" since="2.2"/>
     <keyword type="function" name="modulemd_component_parse_buildonly ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildonly" since="2.2"/>
     <keyword type="function" name="modulemd_component_has_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-has-buildafter" since="2.2"/>
@@ -466,12 +466,12 @@
     <keyword type="function" name="modulemd_dependencies_validate ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-validate"/>
     <keyword type="function" name="modulemd_dependencies_requires_module_and_stream ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-requires-module-and-stream"/>
     <keyword type="function" name="modulemd_dependencies_buildrequires_module_and_stream ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-buildrequires-module-and-stream"/>
-    <keyword type="function" name="modulemd_defaults_set_module_name ()" link="modulemd-2.0-Modulemd.Defaults-(Private).html#modulemd-defaults-set-module-name"/>
+    <keyword type="function" name="modulemd_defaults_set_module_name ()" link="modulemd-2.0-Modulemd.Defaults-(Private).html#modulemd-defaults-set-module-name" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_merge ()" link="modulemd-2.0-Modulemd.Defaults-(Private).html#modulemd-defaults-merge" since="2.0"/>
     <keyword type="macro" name="DEFAULT_PLACEHOLDER" link="modulemd-2.0-Modulemd.Defaults-(Private).html#DEFAULT-PLACEHOLDER:CAPS"/>
     <keyword type="function" name="modulemd_defaults_v1_parse_yaml ()" link="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#modulemd-defaults-v1-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_v1_emit_yaml ()" link="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#modulemd-defaults-v1-emit-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_defaults_v1_merge ()" link="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#modulemd-defaults-v1-merge"/>
+    <keyword type="function" name="modulemd_defaults_v1_merge ()" link="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#modulemd-defaults-v1-merge" since="2.0"/>
     <keyword type="macro" name="DEFAULT_MERGE_CONFLICT" link="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#DEFAULT-MERGE-CONFLICT:CAPS"/>
     <keyword type="function" name="modulemd_module_new ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_set_defaults ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-set-defaults" since="2.0"/>
