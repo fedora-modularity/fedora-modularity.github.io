@@ -636,6 +636,8 @@
     <keyword type="macro" name="EMIT_ARRAY_VALUES()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES:CAPS"/>
     <keyword type="macro" name="EMIT_ARRAY_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES-IF-NON-EMPTY:CAPS"/>
     <keyword type="macro" name="MODULEMD_YAML_ERROR" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR:CAPS"/>
+    <keyword type="enum" name="enum ModulemdYamlDocumentTypeEnum" link="modulemd-2.0-YAML-Manipulation-Tools.html#ModulemdYamlDocumentTypeEnum" since="2.0"/>
+    <keyword type="enum" name="enum ModulemdYamlErrorEnum" link="modulemd-2.0-YAML-Manipulation-Tools.html#ModulemdYamlErrorEnum" since="2.0"/>
     <keyword type="function" name="modulemd_test_signal_handler ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#modulemd-test-signal-handler" since="2.0"/>
     <keyword type="function" name="parser_skip_headers ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-headers" since="2.0"/>
     <keyword type="function" name="parser_skip_document_start ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-document-start" since="2.0"/>
@@ -649,5 +651,17 @@
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_ONE" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ONE:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_TWO" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-TWO:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_LATEST" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-LATEST:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_DOC_UNKNOWN" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-UNKNOWN:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_DOC_MODULESTREAM" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-MODULESTREAM:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_DOC_DEFAULTS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-DEFAULTS:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_DOC_TRANSLATIONS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-TRANSLATIONS:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_OPEN" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-OPEN:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_PROGRAMMING" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-PROGRAMMING:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_UNPARSEABLE" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-UNPARSEABLE:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_PARSE" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-PARSE:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_EMIT" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-EMIT:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_MISSING_REQUIRED" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-MISSING-REQUIRED:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_EVENT_INIT" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-EVENT-INIT:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_ERROR_INCONSISTENT" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR-INCONSISTENT:CAPS"/>
   </functions>
 </book>
