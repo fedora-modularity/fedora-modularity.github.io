@@ -35,7 +35,13 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Buildopts.stability-level"></a><h2>Stability Level</h2>
-<a href="http://foldoc.org/Stable"><span class="acronym">Stable</span></a>, unless otherwise indicated
+<acronym title="The intention of a Stable interface is to enable arbitrary third parties to
+develop applications to these interfaces, release them, and have confidence that
+they will run on all minor releases of the product (after the one in which the
+interface was introduced, and within the same major release). Even at a major
+release, incompatible changes are expected to be rare, and to have strong
+justifications.
+"><span class="acronym">Stable</span></acronym>, unless otherwise indicated
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Buildopts.functions"></a><h2>Functions</h2>
@@ -55,7 +61,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-equals" title="modulemd_buildopts_equals ()">modulemd_buildopts_equals</a> <span class="c_punctuation">()</span>
@@ -78,7 +84,7 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <span class="returnvalue">gchar</span> *
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-macros" title="modulemd_buildopts_get_rpm_macros ()">modulemd_buildopts_get_rpm_macros</a> <span class="c_punctuation">()</span>
@@ -110,7 +116,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">GStrv</span>
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist-as-strv" title="modulemd_buildopts_get_rpm_whitelist_as_strv ()">modulemd_buildopts_get_rpm_whitelist_as_strv</a> <span class="c_punctuation">()</span>
@@ -129,7 +135,7 @@
 </colgroup>
 <tbody><tr>
 <td class="property_type">
-<span class="type">gchar</span> *</td>
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts--rpm-macros" title="The “rpm-macros” property">rpm-macros</a></td>
 <td class="property_flags">Read / Write</td>
 </tr></tbody>
@@ -156,7 +162,7 @@
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Buildopts.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    GObject
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ModulemdBuildopts
 </pre>
 </div>
@@ -172,15 +178,15 @@ modulemd_buildopts_new (<em class="parameter"><code><span class="type">void</spa
 <div class="refsect3">
 <a name="modulemd-buildopts-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a>. This object
-must be freed with <code class="function">g_object_unref()</code>. </p>
-<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-buildopts-equals"></a><h3>modulemd_buildopts_equals ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_buildopts_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self_1</code></em>,
                            <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self_2</code></em>);</pre>
 <p>Check for equality for 2 ModulemdBuildopts objects.</p>
@@ -210,7 +216,7 @@ modulemd_buildopts_equals (<em class="parameter"><code><a class="link" href="mod
 <a name="modulemd-buildopts-equals.returns"></a><h4>Returns</h4>
 <p> TRUE if both objects are equal, FALSE otherwise.</p>
 </div>
-<p class="since">Since: 2.2</p>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -236,16 +242,16 @@ modulemd_buildopts_copy (<em class="parameter"><code><a class="link" href="modul
 <div class="refsect3">
 <a name="modulemd-buildopts-copy.returns"></a><h4>Returns</h4>
 <p>a copied <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object. </p>
-<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-buildopts-set-rpm-macros"></a><h3>modulemd_buildopts_set_rpm_macros ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_buildopts_set_rpm_macros (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
-                                   <em class="parameter"><code>const <span class="type">gchar</span> *rpm_macros</code></em>);</pre>
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm_macros</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-buildopts-set-rpm-macros.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -268,12 +274,12 @@ modulemd_buildopts_set_rpm_macros (<em class="parameter"><code><a class="link" h
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-buildopts-get-rpm-macros"></a><h3>modulemd_buildopts_get_rpm_macros ()</h3>
-<pre class="programlisting">const <span class="returnvalue">gchar</span> *
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 modulemd_buildopts_get_rpm_macros (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-buildopts-get-rpm-macros.parameters"></a><h4>Parameters</h4>
@@ -293,9 +299,9 @@ modulemd_buildopts_get_rpm_macros (<em class="parameter"><code><a class="link" h
 <div class="refsect3">
 <a name="modulemd-buildopts-get-rpm-macros.returns"></a><h4>Returns</h4>
 <p>A string containing RPM build macros in the form that they would appear in an RPM macros file on-disk. </p>
-<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -303,7 +309,7 @@ modulemd_buildopts_get_rpm_macros (<em class="parameter"><code><a class="link" h
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_buildopts_add_rpm_to_whitelist
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <span class="type">gchar</span> *rpm</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-buildopts-add-rpm-to-whitelist.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -326,7 +332,7 @@ modulemd_buildopts_add_rpm_to_whitelist
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -334,7 +340,7 @@ modulemd_buildopts_add_rpm_to_whitelist
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_buildopts_remove_rpm_from_whitelist
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <span class="type">gchar</span> *rpm</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-buildopts-remove-rpm-from-whitelist.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -357,7 +363,7 @@ modulemd_buildopts_remove_rpm_from_whitelist
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -381,15 +387,15 @@ modulemd_buildopts_clear_rpm_whitelist
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: 2.5</p>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-buildopts-get-rpm-whitelist-as-strv"></a><h3>modulemd_buildopts_get_rpm_whitelist_as_strv ()</h3>
-<pre class="programlisting"><span class="returnvalue">GStrv</span>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
 modulemd_buildopts_get_rpm_whitelist_as_strv
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
-<p><span class="annotation">[<a href="http://foldoc.org/rename-to"><span class="acronym">rename-to</span></a> modulemd_buildopts_get_rpm_whitelist]</span></p>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_buildopts_get_rpm_whitelist]</span></p>
 <div class="refsect3">
 <a name="modulemd-buildopts-get-rpm-whitelist-as-strv.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -407,10 +413,10 @@ modulemd_buildopts_get_rpm_whitelist_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-buildopts-get-rpm-whitelist-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered <span class="type">GStrv</span> list of all RPMs in the whitelist. </p>
-<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of all RPMs in the whitelist. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -430,7 +436,7 @@ modulemd_buildopts_get_rpm_whitelist_as_strv
 <a name="modulemd-2.0-Modulemd.Buildopts.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ModulemdBuildopts--rpm-macros"></a><h3>The <code class="literal">“rpm-macros”</code> property</h3>
-<pre class="programlisting">  “rpm-macros”               <span class="type">gchar</span> *</pre>
+<pre class="programlisting">  “rpm-macros”               <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>A string containing RPM build macros in the form that they would appear in an RPM macros file on-disk.</p>
 <p>Flags: Read / Write</p>
 <p>Default value: "__BUILDOPTS_RPM_MACROS_UNSET__"</p>

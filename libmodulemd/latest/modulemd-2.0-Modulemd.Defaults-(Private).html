@@ -34,7 +34,10 @@ internal consumers.</p>
 </tr></table></div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Defaults-(Private).stability-level"></a><h2>Stability Level</h2>
-<a href="http://foldoc.org/Private"><span class="acronym">Private</span></a>, unless otherwise indicated
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Defaults-(Private).functions"></a><h2>Functions</h2>
@@ -85,7 +88,7 @@ internal consumers.</p>
 <a name="modulemd-defaults-set-module-name"></a><h3>modulemd_defaults_set_module_name ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_defaults_set_module_name (<em class="parameter"><code><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
-                                   <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-defaults-set-module-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -98,7 +101,7 @@ modulemd_defaults_set_module_name (<em class="parameter"><code><a class="link" h
 <tr>
 <td class="parameter_name"><p>self</p></td>
 <td class="parameter_description"><p>This <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>module_name</p></td>
@@ -108,7 +111,7 @@ modulemd_defaults_set_module_name (<em class="parameter"><code><a class="link" h
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -116,8 +119,8 @@ modulemd_defaults_set_module_name (<em class="parameter"><code><a class="link" h
 <pre class="programlisting"><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="returnvalue">ModulemdDefaults</span></a> *
 modulemd_defaults_merge (<em class="parameter"><code><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> *from</code></em>,
                          <em class="parameter"><code><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> *into</code></em>,
-                         <em class="parameter"><code><span class="type">gboolean</span> strict_default_streams</code></em>,
-                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict_default_streams</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Performs a merge of two <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> objects. See the documentation for
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> for details on the merge algorithm used.</p>
 <div class="refsect3">
@@ -132,24 +135,24 @@ modulemd_defaults_merge (<em class="parameter"><code><a class="link" href="Modul
 <tr>
 <td class="parameter_name"><p>from</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object to merge from. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>into</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object being merged into. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>strict_default_streams</p></td>
 <td class="parameter_description"><p>Whether a stream conflict should throw an
 error or just unset the default stream. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span> containing the reason for an unresolvable merge
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason for an unresolvable merge
 conflict. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -162,9 +165,9 @@ and <em class="parameter"><code>into</code></em>
 . If this function encounters an
 unresolvable merge conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
 appropriately. </p>
-<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 </div>
 <div class="refsect1">

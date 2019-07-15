@@ -50,6 +50,20 @@
         <sub name="Internal Unit Test Utilities" link="modulemd-2.0-Internal-Unit-Test-Utilities.html"/>
       </sub>
     </sub>
+    <sub name="resources" link="modulemd-2.0-resources.html">
+      <sub name="Annotations" link="ch04.html">
+        <sub name="Annotation Glossary" link="ch04.html#annotation-glossary"/>
+      </sub>
+      <sub name="2.0 API Index" link="ch05.html"/>
+      <sub name="2.1 API Index" link="ch06.html"/>
+      <sub name="2.2 API Index" link="ch07.html"/>
+      <sub name="2.3 API Index" link="ch08.html"/>
+      <sub name="2.4 API Index" link="ch09.html"/>
+      <sub name="2.5 API Index" link="ch10.html"/>
+      <sub name="2.6 API Index" link="ch11.html"/>
+      <sub name="Deprecated API Index" link="ch12.html"/>
+      <sub name="Full API Index" link="ch13.html"/>
+    </sub>
   </chapters>
   <functions>
     <keyword type="function" name="modulemd_get_version ()" link="modulemd-2.0-Modulemd.html#modulemd-get-version" since="2.0"/>

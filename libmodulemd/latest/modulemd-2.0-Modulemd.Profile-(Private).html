@@ -34,7 +34,10 @@ by internal consumers.</p>
 </tr></table></div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Profile-(Private).stability-level"></a><h2>Stability Level</h2>
-<a href="http://foldoc.org/Private"><span class="acronym">Private</span></a>, unless otherwise indicated
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.Profile-(Private).functions"></a><h2>Functions</h2>
@@ -54,7 +57,7 @@ by internal consumers.</p>
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml" title="modulemd_profile_emit_yaml ()">modulemd_profile_emit_yaml</a> <span class="c_punctuation">()</span>
@@ -62,7 +65,7 @@ by internal consumers.</p>
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" title="modulemd_profile_equals_wrapper ()">modulemd_profile_equals_wrapper</a> <span class="c_punctuation">()</span>
@@ -88,9 +91,9 @@ by internal consumers.</p>
 <a name="modulemd-profile-parse-yaml"></a><h3>modulemd_profile_parse_yaml ()</h3>
 <pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
 modulemd_profile_parse_yaml (<em class="parameter"><code><span class="type">yaml_parser_t</span> *parser</code></em>,
-                             <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>,
-                             <em class="parameter"><code><span class="type">gboolean</span> strict</code></em>,
-                             <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-profile-parse-yaml.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -104,24 +107,24 @@ modulemd_profile_parse_yaml (<em class="parameter"><code><span class="type">yaml
 <td class="parameter_name"><p>parser</p></td>
 <td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a
 Profile entry in the YAML document. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/inout"><span class="acronym">inout</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>name</p></td>
 <td class="parameter_description"><p>The name of this profile. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>strict</p></td>
 <td class="parameter_description"><p>Whether the parser should return failure if it encounters an
 unknown mapping key or if it should ignore it. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/in"><span class="acronym">in</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <span class="type">GError</span> that will return the reason for a parsing or
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
 validation error. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -132,22 +135,22 @@ validation error. </p></td>
 read from the YAML. NULL if a parse or validation error occurred and sets
 <em class="parameter"><code>error</code></em>
 appropriately. </p>
-<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: 2.0</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-profile-emit-yaml"></a><h3>modulemd_profile_emit_yaml ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_profile_emit_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>,
                             <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
-                            <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-profile-equals-wrapper"></a><h3>modulemd_profile_equals_wrapper ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_profile_equals_wrapper (<em class="parameter"><code>const <span class="type">void</span> *a</code></em>,
                                  <em class="parameter"><code>const <span class="type">void</span> *b</code></em>);</pre>
 <div class="refsect3">
@@ -176,7 +179,7 @@ modulemd_profile_equals_wrapper (<em class="parameter"><code>const <span class="
 <a name="modulemd-profile-equals-wrapper.returns"></a><h4>Returns</h4>
 <p> TRUE, if both the pointers are equal. FALSE, otherwise</p>
 </div>
-<p class="since">Since: 2.5</p>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -207,7 +210,7 @@ translations internally.</p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: 2.6</p>
+<p class="since">Since: <a class="link" href="ch11.html#api-index-2.6">2.6</a></p>
 </div>
 </div>
 <div class="refsect1">

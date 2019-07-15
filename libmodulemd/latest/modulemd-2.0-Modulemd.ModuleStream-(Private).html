@@ -34,7 +34,10 @@ by internal consumers.</p>
 </tr></table></div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.ModuleStream-(Private).stability-level"></a><h2>Stability Level</h2>
-<a href="http://foldoc.org/Private"><span class="acronym">Private</span></a>, unless otherwise indicated
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.ModuleStream-(Private).functions"></a><h2>Functions</h2>
@@ -134,7 +137,7 @@ by internal consumers.</p>
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-components" title="modulemd_module_stream_validate_components ()">modulemd_module_stream_validate_components</a> <span class="c_punctuation">()</span>
@@ -178,7 +181,7 @@ by internal consumers.</p>
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">gboolean</span>
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-emit-yaml-base" title="modulemd_module_stream_emit_yaml_base ()">modulemd_module_stream_emit_yaml_base</a> <span class="c_punctuation">()</span>
@@ -197,7 +200,7 @@ by internal consumers.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_set_module_name
                                (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <span class="type">gchar</span> *module_name</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -205,7 +208,7 @@ modulemd_module_stream_set_module_name
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_set_stream_name
                                (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <span class="type">gchar</span> *stream_name</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -228,7 +231,7 @@ modulemd_module_stream_get_translation
 <pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="returnvalue">ModulemdTranslationEntry</span></a> *
 modulemd_module_stream_get_translation_entry
                                (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <span class="type">gchar</span> *locale</code></em>);</pre>
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *locale</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -236,7 +239,7 @@ modulemd_module_stream_get_translation_entry
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v2_replace_content_licenses
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
-                                <em class="parameter"><code><span class="type">GHashTable</span> *set</code></em>);</pre>
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -244,7 +247,7 @@ modulemd_module_stream_v2_replace_content_licenses
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v2_replace_module_licenses
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
-                                <em class="parameter"><code><span class="type">GHashTable</span> *set</code></em>);</pre>
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -252,7 +255,7 @@ modulemd_module_stream_v2_replace_module_licenses
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v2_replace_rpm_api
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
-                                <em class="parameter"><code><span class="type">GHashTable</span> *set</code></em>);</pre>
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -260,7 +263,7 @@ modulemd_module_stream_v2_replace_rpm_api
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v2_replace_rpm_artifacts
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
-                                <em class="parameter"><code><span class="type">GHashTable</span> *set</code></em>);</pre>
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -268,7 +271,7 @@ modulemd_module_stream_v2_replace_rpm_artifacts
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v2_replace_rpm_filters
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
-                                <em class="parameter"><code><span class="type">GHashTable</span> *set</code></em>);</pre>
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -276,15 +279,15 @@ modulemd_module_stream_v2_replace_rpm_filters
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v2_replace_dependencies
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
-                                <em class="parameter"><code><span class="type">GPtrArray</span> *array</code></em>);</pre>
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *array</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-module-stream-validate-components"></a><h3>modulemd_module_stream_validate_components ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_module_stream_validate_components
-                               (<em class="parameter"><code><span class="type">GHashTable</span> *components</code></em>,
-                                <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *components</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -320,10 +323,10 @@ modulemd_module_stream_validate_components
 <hr>
 <div class="refsect2">
 <a name="modulemd-module-stream-emit-yaml-base"></a><h3>modulemd_module_stream_emit_yaml_base ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_module_stream_emit_yaml_base (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
                                        <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
-                                       <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 </div>
 </div>
 <div class="refsect1">
