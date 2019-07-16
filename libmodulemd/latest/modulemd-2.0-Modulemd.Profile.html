@@ -194,12 +194,12 @@ modulemd_profile_equals (<em class="parameter"><code><a class="link" href="modul
 <tbody>
 <tr>
 <td class="parameter_name"><p>self_1</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>self_2</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -207,7 +207,10 @@ modulemd_profile_equals (<em class="parameter"><code><a class="link" href="modul
 </div>
 <div class="refsect3">
 <a name="modulemd-profile-equals.returns"></a><h4>Returns</h4>
-<p> TRUE if all elements of self_1 and self_2 are equal. FALSE, otherwise. </p>
+<p> TRUE, if all elements of <em class="parameter"><code>self_1</code></em>
+and <em class="parameter"><code>self_2</code></em>
+are equal. FALSE,
+otherwise.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
@@ -233,8 +236,8 @@ modulemd_profile_new (<em class="parameter"><code>const <a href="https://develop
 </div>
 <div class="refsect3">
 <a name="modulemd-profile-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a>. This object
-must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object. This
+object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -255,14 +258,14 @@ modulemd_profile_copy (<em class="parameter"><code><a class="link" href="modulem
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-profile-copy.returns"></a><h4>Returns</h4>
-<p>a copied <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object. </p>
+<p>The copied <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -282,7 +285,7 @@ modulemd_profile_get_name (<em class="parameter"><code><a class="link" href="mod
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -311,12 +314,12 @@ modulemd_profile_set_description (<em class="parameter"><code><a class="link" hr
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>description</p></td>
-<td class="parameter_description"><p>The description of this profile in the C locale. </p></td>
+<td class="parameter_description"><p>The untranslated description of this profile. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -341,15 +344,15 @@ modulemd_profile_get_description (<em class="parameter"><code><a class="link" hr
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>locale</p></td>
 <td class="parameter_description"><p>The name of the locale to use when translating
 the string. If NULL, it will determine the locale with a system call to
-setlocale(LC_MESSAGES, NULL) and return the that. If the caller wants the
-untranslated string, they should pass "C" for the locale. </p></td>
+<code class="literal">setlocale(LC_MESSAGES, NULL)</code> and return that. If the caller wants the
+untranslated string, they should pass <code class="literal">"C"</code> for the locale. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -359,7 +362,8 @@ untranslated string, they should pass "C" for the locale. </p></td>
 <a name="modulemd-profile-get-description.returns"></a><h4>Returns</h4>
 <p>The description of this profile translated into
 the language specified by the locale if it is available, otherwise it
-returns the C.UTF-8 original. </p>
+returns the C.UTF-8 original. Translation information is managed by the
+<a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> and <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> objects. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -381,7 +385,7 @@ modulemd_profile_add_rpm (<em class="parameter"><code><a class="link" href="modu
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -412,7 +416,7 @@ modulemd_profile_remove_rpm (<em class="parameter"><code><a class="link" href="m
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -430,7 +434,7 @@ modulemd_profile_remove_rpm (<em class="parameter"><code><a class="link" href="m
 <a name="modulemd-profile-clear-rpms"></a><h3>modulemd_profile_clear_rpms ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_profile_clear_rpms (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>);</pre>
-<p>Remove all RPMs from this profile</p>
+<p>Remove all RPMs from this profile.</p>
 <div class="refsect3">
 <a name="modulemd-profile-clear-rpms.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -441,7 +445,7 @@ modulemd_profile_clear_rpms (<em class="parameter"><code><a class="link" href="m
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -464,7 +468,7 @@ modulemd_profile_get_rpms_as_strv (<em class="parameter"><code><a class="link" h
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>

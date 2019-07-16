@@ -152,7 +152,7 @@ appropriately if the YAML could not be emitted.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -189,12 +189,12 @@ modulemd_rpm_map_entry_equals_wrapper (<em class="parameter"><code>const <span c
 <tbody>
 <tr>
 <td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>const void pointer</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>b</p></td>
-<td class="parameter_description"><p>const void pointer</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -202,8 +202,8 @@ modulemd_rpm_map_entry_equals_wrapper (<em class="parameter"><code>const <span c
 </div>
 <div class="refsect3">
 <a name="modulemd-rpm-map-entry-equals-wrapper.returns"></a><h4>Returns</h4>
-<p> TRUE if the two entries contain equivalent data. FALSE if they
-differ.</p>
+<p> TRUE if the two entries are both pointers to <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a>
+objects containing equivalent data. FALSE if they differ.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>
@@ -225,12 +225,12 @@ modulemd_RpmMapEntry_hash_table_equals_wrapper
 <tbody>
 <tr>
 <td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>const void pointer</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>b</p></td>
-<td class="parameter_description"><p>const void pointer</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -238,8 +238,9 @@ modulemd_RpmMapEntry_hash_table_equals_wrapper
 </div>
 <div class="refsect3">
 <a name="modulemd-RpmMapEntry-hash-table-equals-wrapper.returns"></a><h4>Returns</h4>
-<p> TRUE if the two entries contain equivalent data. FALSE if they
-differ.</p>
+<p> TRUE if the two entries are equivalent <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>s of
+pointers to <a class="link" href="modulemd-2.0-Modulemd.RpmMapEntry.html#ModulemdRpmMapEntry"><span class="type">ModulemdRpmMapEntry</span></a> objects containing equivalent data. FALSE
+if they differ.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>

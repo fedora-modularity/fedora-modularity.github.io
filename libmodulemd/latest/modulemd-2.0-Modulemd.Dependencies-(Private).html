@@ -148,6 +148,42 @@ appropriately. </p>
 modulemd_dependencies_emit_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                  <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-dependencies-emit-yaml.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a dependencies instance
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an emission or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-emit-yaml.returns"></a><h4>Returns</h4>
+<p> TRUE if the dependencies object was emitted successfully. FALSE and sets
+<em class="parameter"><code>error</code></em>
+appropriately if the YAML could not be emitted.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -155,6 +191,37 @@ modulemd_dependencies_emit_yaml (<em class="parameter"><code><a class="link" hre
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_dependencies_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-dependencies-validate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the object failed validation.
+NULL if the validation passed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-validate.returns"></a><h4>Returns</h4>
+<p> TRUE if validation passed. FALSE and sets <em class="parameter"><code>error</code></em>
+if failed.</p>
+<p>This method runs a sanity check that the runtime (requires) and buildtime
+(buildrequires) dependencies are internally consistent.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -164,6 +231,40 @@ modulemd_dependencies_requires_module_and_stream
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-dependencies-requires-module-and-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to be checked. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to be checked. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-requires-module-and-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if the specified runtime dependency is present. FALSE if not.</p>
+<p>This method checks if the runtime dependencies for this object include the
+specified module stream.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -173,6 +274,40 @@ modulemd_dependencies_buildrequires_module_and_stream
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-dependencies-buildrequires-module-and-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to be checked. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to be checked. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dependencies-buildrequires-module-and-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if the specified buildtime dependency is present. FALSE if not.</p>
+<p>This method checks if the buildtime dependencies for this object include the
+specified module stream.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 <div class="refsect1">

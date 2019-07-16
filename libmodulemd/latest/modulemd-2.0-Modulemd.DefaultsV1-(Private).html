@@ -155,7 +155,7 @@ modulemd_defaults_v1_emit_yaml (<em class="parameter"><code><a class="link" href
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -218,6 +218,12 @@ defaults for a single module name. See the documentation for
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
+<td class="parameter_name"><p>strict_default_streams</p></td>
+<td class="parameter_description"><p>Whether a stream conflict should throw an
+error or just unset the default stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
 <td class="parameter_name"><p>error</p></td>
 <td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason for an unresolvable merge
 conflict. </p></td>
@@ -228,11 +234,11 @@ conflict. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-defaults-v1-merge.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> containing
-the merged values of <em class="parameter"><code>from</code></em>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> object
+containing the merged values of <em class="parameter"><code>from</code></em>
 and <em class="parameter"><code>into</code></em>
-. If this function encounters an
-unresolvable merge conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
+. If this function encounters
+an unresolvable merge conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
 appropriately. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>

@@ -212,8 +212,8 @@ It must correspond to the format specified by libc locale names. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-translation-entry-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a>. This
-object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a>
+object. This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -234,14 +234,14 @@ modulemd_translation_entry_copy (<em class="parameter"><code><a class="link" hre
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-translation-entry-copy.returns"></a><h4>Returns</h4>
-<p>a copied <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object. </p>
+<p>The copied <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -262,7 +262,7 @@ modulemd_translation_entry_get_locale (<em class="parameter"><code><a class="lin
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -293,12 +293,13 @@ modulemd_translation_entry_set_summary
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>summary</p></td>
-<td class="parameter_description"><p>The summary of this module translated appropriately for this locale. </p></td>
+<td class="parameter_description"><p>The summary of this module translated appropriately
+for this locale. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -323,14 +324,15 @@ modulemd_translation_entry_get_summary
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-translation-entry-get-summary.returns"></a><h4>Returns</h4>
-<p>The summary of this module stream translated into the language specified by locale. </p>
+<p>The summary of this module stream translated into
+the language specified by locale. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -353,12 +355,13 @@ modulemd_translation_entry_set_description
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>description</p></td>
-<td class="parameter_description"><p>The description of this module stream translated into the language specified by locale. </p></td>
+<td class="parameter_description"><p>The description of this module stream translated
+into the language specified by locale. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -383,14 +386,15 @@ modulemd_translation_entry_get_description
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-translation-entry-get-description.returns"></a><h4>Returns</h4>
-<p>The description of this module stream translated into the language specified by locale. </p>
+<p>The description of this module stream translated
+into the language specified by locale. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -413,7 +417,7 @@ modulemd_translation_entry_get_profiles_as_strv
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -434,7 +438,7 @@ modulemd_translation_entry_set_profile_description
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *profile_name</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *profile_description</code></em>);</pre>
-<p>Adds a profile name translation</p>
+<p>Adds a profile name translation.</p>
 <div class="refsect3">
 <a name="modulemd-translation-entry-set-profile-description.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -446,7 +450,7 @@ modulemd_translation_entry_set_profile_description
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>

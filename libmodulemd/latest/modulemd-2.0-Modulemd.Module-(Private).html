@@ -132,7 +132,7 @@ modulemd_module_new (<em class="parameter"><code>const <a href="https://develope
 </div>
 <div class="refsect3">
 <a name="modulemd-module-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>. </p>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -194,11 +194,11 @@ failed. </p></td>
 <div class="refsect3">
 <a name="modulemd-module-set-defaults.returns"></a><h4>Returns</h4>
 <p> The mdversion of the defaults that were added. Returns
-MD_DEFAULTS_VERSION_ERROR and sets <em class="parameter"><code>error</code></em>
+<a class="link" href="ModulemdDefaults.html#MD-DEFAULTS-VERSION-ERROR:CAPS"><code class="literal">MD_DEFAULTS_VERSION_ERROR</code></a> and sets <em class="parameter"><code>error</code></em>
 if the default name didn't match
 or the Defaults object couldn't be upgraded successfully to
 the <em class="parameter"><code>index_mdversion</code></em>
-. Returns MD_DEFAULTS_VERSION_UNSET if <em class="parameter"><code>defaults</code></em>
+. Returns <a class="link" href="ModulemdDefaults.html#MD-DEFAULTS-VERSION-UNSET:CAPS"><code class="literal">MD_DEFAULTS_VERSION_UNSET</code></a> if <em class="parameter"><code>defaults</code></em>
 was
 NULL.</p>
 </div>
@@ -210,6 +210,30 @@ NULL.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_add_translation (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
                                  <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> *translation</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-add-translation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>translation</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object which is copied into the
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -227,7 +251,7 @@ modulemd_module_get_translated_streams
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -246,6 +270,34 @@ been added, sorted by stream name. </p>
 <pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="returnvalue">ModulemdTranslation</span></a> *
 modulemd_module_get_translation (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-translation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The stream to look up translations for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-translation.returns"></a><h4>Returns</h4>
+<p>The set of translations attached to streams. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -270,7 +322,7 @@ appropriate error.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -304,12 +356,12 @@ failed. </p></td>
 <div class="refsect3">
 <a name="modulemd-module-add-stream.returns"></a><h4>Returns</h4>
 <p> The mdversion of the stream that was added. Returns
-MD_MODULE_STREAM_VERSION_ERROR and sets <em class="parameter"><code>error</code></em>
+<code class="literal">MD_MODULE_STREAM_VERSION_ERROR</code> and sets <em class="parameter"><code>error</code></em>
 if the module name didn't
 match, the module and stream names were unset or the stream object couldn't
 be upgraded successfully to the <em class="parameter"><code>index_mdversion</code></em>
 . Returns
-MD_MODULE_STREAM_VERSION_UNSET if <em class="parameter"><code>stream</code></em>
+<code class="literal">MD_MODULE_STREAM_VERSION_UNSET</code> if <em class="parameter"><code>stream</code></em>
 was NULL.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -332,12 +384,12 @@ modulemd_module_upgrade_streams (<em class="parameter"><code><a class="link" hre
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>mdversion</p></td>
-<td class="parameter_description"><p>The metadata version to upgrade to</p></td>
+<td class="parameter_description"><p>The metadata version to upgrade to.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>

@@ -138,6 +138,42 @@ appropriately. </p>
 modulemd_service_level_emit_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> *self</code></em>,
                                   <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-service-level-emit-yaml.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a Service Level
+entry belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an emission or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-service-level-emit-yaml.returns"></a><h4>Returns</h4>
+<p> TRUE if the service level was emitted successfully. FALSE and sets
+<em class="parameter"><code>error</code></em>
+appropriately if the YAML could not be emitted.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -156,12 +192,12 @@ modulemd_service_level_equals_wrapper (<em class="parameter"><code>const <span c
 <tbody>
 <tr>
 <td class="parameter_name"><p>a</p></td>
-<td class="parameter_description"><p>A void pointer</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>b</p></td>
-<td class="parameter_description"><p>A void pointer</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -169,7 +205,8 @@ modulemd_service_level_equals_wrapper (<em class="parameter"><code>const <span c
 </div>
 <div class="refsect3">
 <a name="modulemd-service-level-equals-wrapper.returns"></a><h4>Returns</h4>
-<p> TRUE, if both the pointers are equal. FALSE, otherwise</p>
+<p> TRUE, if both arguments are pointers to equivalent
+<a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> objects. FALSE, otherwise.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>

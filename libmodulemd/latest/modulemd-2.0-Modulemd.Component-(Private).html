@@ -128,13 +128,13 @@ modulemd_component_parse_buildafter (<em class="parameter"><code><a class="link"
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>parser</p></td>
 <td class="parameter_description"><p>A libyaml parser object positioned just after the
-"buildafter" key in a <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> section of a YAML document. </p></td>
+"buildafter" key in a Component section of a YAML document. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -169,13 +169,13 @@ modulemd_component_parse_buildonly (<em class="parameter"><code><a class="link" 
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>parser</p></td>
 <td class="parameter_description"><p>A libyaml parser object positioned just after the
-"buildonly" key in a <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> section of a YAML document. </p></td>
+"buildonly" key in a Component section of a YAML document. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -207,7 +207,7 @@ modulemd_component_has_buildafter (<em class="parameter"><code><a class="link" h
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -235,7 +235,7 @@ modulemd_component_get_buildafter_internal
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule"><span class="type">ModulemdComponentModule</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -265,7 +265,7 @@ modulemd_component_emit_yaml_start (<em class="parameter"><code><a class="link" 
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ modulemd_component_emit_yaml_build_common
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -366,7 +366,7 @@ modulemd_component_equals_wrapper (<em class="parameter"><code>const <span class
 </div>
 <div class="refsect3">
 <a name="modulemd-component-equals-wrapper.returns"></a><h4>Returns</h4>
-<p> TRUE, if both the pointers are equal. FALSE, otherwise.</p>
+<p> TRUE, if both pointers are pointers to <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> objects and both objects are equal. FALSE, otherwise.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>

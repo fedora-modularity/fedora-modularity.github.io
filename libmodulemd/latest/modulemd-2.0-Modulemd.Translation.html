@@ -207,7 +207,8 @@ modulemd_translation_new (<em class="parameter"><code><a href="https://developer
 </tr>
 <tr>
 <td class="parameter_name"><p>modified</p></td>
-<td class="parameter_description"><p>The last modified time represented as a 64-bit integer (such as 201807011200)</p></td>
+<td class="parameter_description"><p>The last modified time represented as a 64-bit integer (such as
+201807011200).</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -215,8 +216,8 @@ modulemd_translation_new (<em class="parameter"><code><a href="https://developer
 </div>
 <div class="refsect3">
 <a name="modulemd-translation-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a>. This
-object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.
+This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -237,14 +238,14 @@ modulemd_translation_copy (<em class="parameter"><code><a class="link" href="mod
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-translation-copy.returns"></a><h4>Returns</h4>
-<p>a copied <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object. </p>
+<p>The copied <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -255,7 +256,10 @@ modulemd_translation_copy (<em class="parameter"><code><a class="link" href="mod
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_translation_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> *self</code></em>,
                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>This method ensures that the translation is internally consistent for usage or dumping to YAML. It will be run implicitly prior to emitting YAML. This is not a complete linter, merely a sanity check that the values are not impossible.</p>
+<p>This method ensures that the translation is internally consistent for usage
+or dumping to YAML. It will be run implicitly prior to emitting YAML. This
+is not a complete linter, merely a sanity check that the values are not
+impossible.</p>
 <div class="refsect3">
 <a name="modulemd-translation-validate.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -267,7 +271,7 @@ modulemd_translation_validate (<em class="parameter"><code><a class="link" href=
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -297,12 +301,13 @@ modulemd_translation_set_modified (<em class="parameter"><code><a class="link" h
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>modified</p></td>
-<td class="parameter_description"><p>The last modified time represented as a 64-bit integer (such as 201807011200)</p></td>
+<td class="parameter_description"><p>The last modified time represented as a 64-bit integer (such as
+201807011200).</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -327,14 +332,15 @@ modulemd_translation_get_locales_as_strv
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-translation-get-locales-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of locales known to this Modulemd.Translation. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of locales known to this
+<a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -357,7 +363,7 @@ modulemd_translation_set_translation_entry
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -388,7 +394,7 @@ modulemd_translation_get_translation_entry
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -449,7 +455,7 @@ modulemd_translation_get_translation_entry
 <div class="refsect2">
 <a name="ModulemdTranslation--version"></a><h3>The <code class="literal">“version”</code> property</h3>
 <pre class="programlisting">  “version”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
-<p>The metadata version of this Modulemd.Translation.</p>
+<p>The metadata version of this Translation object.</p>
 <p>Flags: Read / Write / Construct Only</p>
 <p>Default value: 0</p>
 </div>

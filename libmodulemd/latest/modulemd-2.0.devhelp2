@@ -158,12 +158,12 @@
     <keyword type="function" name="modulemd_dependencies_copy ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-copy" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_add_buildtime_stream ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-add-buildtime-stream" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_set_empty_buildtime_dependencies_for_module ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-set-empty-buildtime-dependencies-for-module" since="2.0"/>
-    <keyword type="function" name="modulemd_dependencies_clear_buildtime_dependencies ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-clear-buildtime-dependencies"/>
+    <keyword type="function" name="modulemd_dependencies_clear_buildtime_dependencies ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-clear-buildtime-dependencies" since="2.5"/>
     <keyword type="function" name="modulemd_dependencies_get_buildtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-buildtime-modules-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_get_buildtime_streams_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-buildtime-streams-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_add_runtime_stream ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-add-runtime-stream" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_set_empty_runtime_dependencies_for_module ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-set-empty-runtime-dependencies-for-module" since="2.0"/>
-    <keyword type="function" name="modulemd_dependencies_clear_runtime_dependencies ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-clear-runtime-dependencies"/>
+    <keyword type="function" name="modulemd_dependencies_clear_runtime_dependencies ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-clear-runtime-dependencies" since="2.5"/>
     <keyword type="function" name="modulemd_dependencies_get_runtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-modules-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_get_runtime_streams_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-streams-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_DEPENDENCIES" link="modulemd-2.0-Modulemd.Dependencies.html#MODULEMD-TYPE-DEPENDENCIES:CAPS"/>
@@ -477,10 +477,10 @@
     <keyword type="function" name="modulemd_component_rpm_parse_yaml ()" link="modulemd-2.0-Modulemd.ComponentRpm-(Private).html#modulemd-component-rpm-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_emit_yaml ()" link="modulemd-2.0-Modulemd.ComponentRpm-(Private).html#modulemd-component-rpm-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_parse_yaml ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-parse-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_dependencies_emit_yaml ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-emit-yaml"/>
-    <keyword type="function" name="modulemd_dependencies_validate ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-validate"/>
-    <keyword type="function" name="modulemd_dependencies_requires_module_and_stream ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-requires-module-and-stream"/>
-    <keyword type="function" name="modulemd_dependencies_buildrequires_module_and_stream ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-buildrequires-module-and-stream"/>
+    <keyword type="function" name="modulemd_dependencies_emit_yaml ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-emit-yaml" since="2.0"/>
+    <keyword type="function" name="modulemd_dependencies_validate ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-validate" since="2.0"/>
+    <keyword type="function" name="modulemd_dependencies_requires_module_and_stream ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-requires-module-and-stream" since="2.2"/>
+    <keyword type="function" name="modulemd_dependencies_buildrequires_module_and_stream ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-buildrequires-module-and-stream" since="2.2"/>
     <keyword type="function" name="modulemd_defaults_set_module_name ()" link="modulemd-2.0-Modulemd.Defaults-(Private).html#modulemd-defaults-set-module-name" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_merge ()" link="modulemd-2.0-Modulemd.Defaults-(Private).html#modulemd-defaults-merge" since="2.0"/>
     <keyword type="macro" name="DEFAULT_PLACEHOLDER" link="modulemd-2.0-Modulemd.Defaults-(Private).html#DEFAULT-PLACEHOLDER:CAPS"/>
@@ -490,32 +490,26 @@
     <keyword type="macro" name="DEFAULT_MERGE_CONFLICT" link="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#DEFAULT-MERGE-CONFLICT:CAPS"/>
     <keyword type="function" name="modulemd_module_new ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-new" since="2.0"/>
     <keyword type="function" name="modulemd_module_set_defaults ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-set-defaults" since="2.0"/>
-    <keyword type="function" name="modulemd_module_add_translation ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-translation"/>
+    <keyword type="function" name="modulemd_module_add_translation ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_translated_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translated-streams" since="2.0"/>
-    <keyword type="function" name="modulemd_module_get_translation ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translation"/>
+    <keyword type="function" name="modulemd_module_get_translation ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_add_stream ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_upgrade_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-upgrade-streams" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_parser ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-update-from-parser" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_merge ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-merge" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_set_module_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-module-name"/>
-    <keyword type="function" name="modulemd_module_stream_set_stream_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-stream-name"/>
-    <keyword type="function" name="modulemd_module_stream_associate_translation ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-associate-translation"/>
-    <keyword type="function" name="modulemd_module_stream_get_translation ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation"/>
-    <keyword type="function" name="modulemd_module_stream_get_translation_entry ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation-entry"/>
-    <keyword type="function" name="modulemd_module_stream_v2_replace_content_licenses ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-content-licenses"/>
-    <keyword type="function" name="modulemd_module_stream_v2_replace_module_licenses ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-module-licenses"/>
-    <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_api ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-rpm-api"/>
-    <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_artifacts ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-rpm-artifacts"/>
-    <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-rpm-filters"/>
-    <keyword type="function" name="modulemd_module_stream_v2_replace_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-v2-replace-dependencies"/>
-    <keyword type="function" name="modulemd_module_stream_validate_components ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-components"/>
+    <keyword type="function" name="modulemd_module_stream_set_module_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-module-name" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_set_stream_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-stream-name" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_associate_translation ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-associate-translation" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_translation ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_get_translation_entry ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation-entry" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_validate_components ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-components" since="2.0"/>
     <keyword type="macro" name="STREAM_COPY_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET:CAPS"/>
     <keyword type="macro" name="STREAM_UPGRADE_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET:CAPS"/>
     <keyword type="macro" name="STREAM_COPY_IF_SET_WITH_LOCALE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET-WITH-LOCALE:CAPS"/>
     <keyword type="macro" name="STREAM_UPGRADE_IF_SET_WITH_LOCALE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-WITH-LOCALE:CAPS"/>
     <keyword type="macro" name="STREAM_REPLACE_HASHTABLE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-REPLACE-HASHTABLE:CAPS"/>
     <keyword type="macro" name="COPY_HASHTABLE_BY_VALUE_ADDER()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#COPY-HASHTABLE-BY-VALUE-ADDER:CAPS"/>
-    <keyword type="function" name="modulemd_module_stream_emit_yaml_base ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-emit-yaml-base"/>
+    <keyword type="function" name="modulemd_module_stream_emit_yaml_base ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-emit-yaml-base" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-emit-yaml" since="2.0"/>
     <keyword type="struct" name="ModulemdModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1-struct"/>
@@ -526,6 +520,12 @@
     <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--tracker"/>
     <keyword type="function" name="modulemd_module_stream_v2_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-emit-yaml" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_replace_content_licenses ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-content-licenses" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_replace_module_licenses ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-module-licenses" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_api ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-api" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_artifacts ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-artifacts" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-filters" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_replace_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-dependencies" since="2.0"/>
     <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2-struct"/>
     <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--arch"/>
     <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--buildopts"/>
@@ -533,7 +533,7 @@
     <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--documentation"/>
     <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--tracker"/>
     <keyword type="function" name="modulemd_profile_parse_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-parse-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_profile_emit_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml"/>
+    <keyword type="function" name="modulemd_profile_emit_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_equals_wrapper ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_profile_set_owner ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-set-owner" since="2.6"/>
     <keyword type="function" name="modulemd_rpm_map_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-parse-yaml" since="2.2"/>
@@ -541,7 +541,7 @@
     <keyword type="function" name="modulemd_rpm_map_entry_equals_wrapper ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-rpm-map-entry-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_RpmMapEntry_hash_table_equals_wrapper ()" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html#modulemd-RpmMapEntry-hash-table-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_service_level_parse_yaml ()" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html#modulemd-service-level-parse-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_service_level_emit_yaml ()" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html#modulemd-service-level-emit-yaml"/>
+    <keyword type="function" name="modulemd_service_level_emit_yaml ()" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html#modulemd-service-level-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_service_level_equals_wrapper ()" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html#modulemd-service-level-equals-wrapper" since="2.5"/>
     <keyword type="function" name="modulemd_subdocument_info_new ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-new" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_copy ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-copy" since="2.0"/>
@@ -552,14 +552,14 @@
     <keyword type="function" name="modulemd_subdocument_info_set_yaml ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-set-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_set_gerror ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-set-gerror" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_get_data_parser ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-get-data-parser" since="2.0"/>
-    <keyword type="function" name="modulemd_translation_get_version ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-version"/>
-    <keyword type="function" name="modulemd_translation_get_module_name ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-name"/>
-    <keyword type="function" name="modulemd_translation_get_module_stream ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-stream"/>
-    <keyword type="function" name="modulemd_translation_get_modified ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-modified"/>
+    <keyword type="function" name="modulemd_translation_get_version ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-version" since="2.0"/>
+    <keyword type="function" name="modulemd_translation_get_module_name ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-name" since="2.0"/>
+    <keyword type="function" name="modulemd_translation_get_module_stream ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-stream" since="2.0"/>
+    <keyword type="function" name="modulemd_translation_get_modified ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-modified" since="2.0"/>
     <keyword type="function" name="modulemd_translation_parse_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_emit_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-parse-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml"/>
+    <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_error_quark ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-error-quark"/>
     <keyword type="function" name="modulemd_trace_init ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init"/>
     <keyword type="function" name="modulemd_trace_free ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free"/>

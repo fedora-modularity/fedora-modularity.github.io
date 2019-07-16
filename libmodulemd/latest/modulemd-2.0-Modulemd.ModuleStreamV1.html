@@ -909,20 +909,28 @@ modulemd_module_stream_v1_get_description
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
 <td class="parameter_name"><p>locale</p></td>
 <td class="parameter_description"><p>The name of the locale to use when translating
 the string. If NULL, it will determine the locale with a system call to
-setlocale(LC_MESSAGES, NULL) and return the that. If the caller wants the
-untranslated string, they should pass "C" for the locale. </p></td>
+<code class="literal">setlocale(LC_MESSAGES, NULL)</code> and return that. If the caller wants the
+untranslated string, they should pass <code class="literal">"C"</code> for the locale. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
-</tr></tbody>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-description.returns"></a><h4>Returns</h4>
 <p>The module description, translated to the
-requested locale if available. </p>
+requested locale if available. Translation information is managed by the
+<a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> and <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> objects. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1032,20 +1040,28 @@ modulemd_module_stream_v1_get_summary (<em class="parameter"><code><a class="lin
 <col class="parameters_description">
 <col width="200px" class="parameters_annotations">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
 <td class="parameter_name"><p>locale</p></td>
 <td class="parameter_description"><p>The name of the locale to use when translating
 the string. If NULL, it will determine the locale with a system call to
-setlocale(LC_MESSAGES, NULL) and return the that. If the caller wants the
-untranslated string, they should pass "C" for the locale. </p></td>
+<code class="literal">setlocale(LC_MESSAGES, NULL)</code> and return that. If the caller wants the
+untranslated string, they should pass <code class="literal">"C"</code> for the locale. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
-</tr></tbody>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-summary.returns"></a><h4>Returns</h4>
 <p>The module summary, translated to the requested
-locale if available. </p>
+locale if available. Translation information is managed by the
+<a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> and <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> objects. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1279,8 +1295,8 @@ modulemd_module_stream_v1_get_module_component_names_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-module-component-names-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of module component names included
-in this stream. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module component names
+included in this stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1309,8 +1325,8 @@ modulemd_module_stream_v1_get_rpm_component_names_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-rpm-component-names-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of RPM component names included
-in this stream. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of RPM component names
+included in this stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1346,8 +1362,8 @@ modulemd_module_stream_v1_get_module_component
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-module-component.returns"></a><h4>Returns</h4>
-<p>The module component matching <em class="parameter"><code>component</code></em>
-name if
+<p>The module component matching <em class="parameter"><code>component_name</code></em>
+if
 it exists, else NULL. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1384,8 +1400,8 @@ modulemd_module_stream_v1_get_rpm_component
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-rpm-component.returns"></a><h4>Returns</h4>
-<p>The RPM component matching <em class="parameter"><code>component</code></em>
-name if it
+<p>The RPM component matching <em class="parameter"><code>component_name</code></em>
+if it
 exists, else NULL. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -1590,8 +1606,8 @@ modulemd_module_stream_v1_get_content_licenses_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-content-licenses-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of licenses under which one or
-more components of this module stream are released. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of licenses under which one
+or more components of this module stream are released. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1620,8 +1636,8 @@ modulemd_module_stream_v1_get_module_licenses_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-module-licenses-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of licenses under which this
-module stream is released. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of licenses under which
+this module stream is released. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1663,7 +1679,7 @@ modulemd_module_stream_v1_add_profile (<em class="parameter"><code><a class="lin
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v1_clear_profiles
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
-<p>Removes all profiles from this module stream.</p>
+<p>Remove all profiles from this module stream.</p>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-clear-profiles.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1705,8 +1721,8 @@ modulemd_module_stream_v1_get_profile_names_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-profile-names-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of profile names associated with
-this module stream. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of profile names associated
+with this module stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1857,8 +1873,8 @@ modulemd_module_stream_v1_get_rpm_api_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-rpm-api-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of binary RPM names that forms
-the public API of this module stream. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of binary RPM names that
+forms the public API of this module stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1931,7 +1947,7 @@ modulemd_module_stream_v1_remove_rpm_artifact
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v1_clear_rpm_artifacts
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
-<p>Remove all RPM NEVRs from the list of artifacts</p>
+<p>Remove all RPM NEVRs from the list of artifacts.</p>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-clear-rpm-artifacts.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1973,8 +1989,8 @@ modulemd_module_stream_v1_get_rpm_artifacts_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-rpm-artifacts-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of RPM NEVRs are included in this
-module stream. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of RPM NEVRs are included
+in this module stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -2089,8 +2105,8 @@ modulemd_module_stream_v1_get_rpm_filters_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-rpm-filters-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of binary RPM names that are
-filtered out of this module stream. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of binary RPM names that
+are filtered out of this module stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -2133,7 +2149,7 @@ modulemd_module_stream_v1_add_servicelevel
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v1_clear_servicelevels
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
-<p>Removes all servicelevels from this module stream.</p>
+<p>Remove all servicelevels from this module stream.</p>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-clear-servicelevels.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -2175,8 +2191,8 @@ modulemd_module_stream_v1_get_servicelevel_names_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-servicelevel-names-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of servicelevel names associated with
-this module stream. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of servicelevel names
+associated with this module stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -2226,7 +2242,7 @@ modulemd_module_stream_v1_set_eol (<em class="parameter"><code><a class="link" h
                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a> *eol</code></em>);</pre>
 <div class="warning"><p><code class="literal">modulemd_module_stream_v1_set_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p></div>
 <p>Comptibility function with early iterations of modulemd v1. This function is
-a wrapper for Modulemd.ModuleStreamV1.add_servicelevel("rawhide", eol).</p>
+a wrapper for <code class="literal">modulemd_module_stream_v1_add_servicelevel("rawhide", eol)</code>.</p>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-set-eol.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -2258,7 +2274,7 @@ a wrapper for Modulemd.ModuleStreamV1.add_servicelevel("rawhide", eol).</p>
 modulemd_module_stream_v1_get_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
 <div class="warning"><p><code class="literal">modulemd_module_stream_v1_get_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p></div>
 <p>Compatibility function with early iterations of modulemd v1. This function
-is a wrapper for Modulemd.ModuleStreamV1.get_servicelevel("rawhide").</p>
+is a wrapper for <code class="literal">modulemd_module_stream_v1_get_servicelevel("rawhide")</code>.</p>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-eol.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -2494,8 +2510,8 @@ modulemd_module_stream_v1_get_buildtime_modules_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of module names that this module
-depends on at build-time. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
+module depends on at build-time. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -2524,8 +2540,8 @@ modulemd_module_stream_v1_get_runtime_modules_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of module names that this module
-depends on at runtime. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
+module depends on at runtime. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -2632,7 +2648,7 @@ modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" h
 </div>
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-xmd.returns"></a><h4>Returns</h4>
-<p>The extensible metadata block as a GVariant. </p>
+<p>The extensible metadata block as a <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>

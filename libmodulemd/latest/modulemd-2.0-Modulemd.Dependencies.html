@@ -193,8 +193,8 @@ justifications.
 modulemd_dependencies_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="refsect3">
 <a name="modulemd-dependencies-new.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a>. This
-object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.
+This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -205,7 +205,9 @@ object must be freed with <a href="https://developer.gnome.org/gobject/stable/go
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_dependencies_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_1</code></em>,
                               <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self_2</code></em>);</pre>
-<p>Check if self_1 and self_2 are equal objects</p>
+<p>Check if <em class="parameter"><code>self_1</code></em>
+ and <em class="parameter"><code>self_2</code></em>
+ are equal objects.</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-equals.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -217,12 +219,12 @@ modulemd_dependencies_equals (<em class="parameter"><code><a class="link" href="
 <tbody>
 <tr>
 <td class="parameter_name"><p>self_1</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>self_2</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -250,14 +252,14 @@ modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="mo
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-dependencies-copy.returns"></a><h4>Returns</h4>
-<p>a copied <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object. </p>
+<p>The copied <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -270,7 +272,10 @@ modulemd_dependencies_add_buildtime_stream
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
-<p>Add a single stream of a module that is required to build another dependent module. The matrix of streams and module names will be calculated by the build-system. If the provided module name is already present, the streams will be added (with deduplication).</p>
+<p>Add a single stream of a module that is required to build another dependent
+module. The matrix of streams and module names will be calculated by the
+build-system. If the provided module name is already present, the streams
+will be added (with deduplication).</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-add-buildtime-stream.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -282,7 +287,7 @@ modulemd_dependencies_add_buildtime_stream
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -319,7 +324,7 @@ modulemd_dependencies_set_empty_buildtime_dependencies_for_module
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -338,8 +343,7 @@ modulemd_dependencies_set_empty_buildtime_dependencies_for_module
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_clear_buildtime_dependencies
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
-<p>Remove all buildtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object</p>
-<p>Since 2.5</p>
+<p>Remove all buildtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-clear-buildtime-dependencies.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -350,11 +354,12 @@ modulemd_dependencies_clear_buildtime_dependencies
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -373,14 +378,15 @@ modulemd_dependencies_get_buildtime_modules_as_strv
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of module names of build-time dependencies. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names of
+build-time dependencies. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -404,7 +410,7 @@ modulemd_dependencies_get_buildtime_streams_as_strv
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -417,7 +423,9 @@ modulemd_dependencies_get_buildtime_streams_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-buildtime-streams-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of module streams associated with the specified module that are required at build-time. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module
+streams associated with the specified module that are required at
+build-time. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -430,7 +438,10 @@ modulemd_dependencies_add_runtime_stream
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>);</pre>
-<p>Adds a module and its stream that is required at runtime by a dependent module. The matrix of streams and module names will be calculated by the build-system. If the listed provided module name is already present, the streams will be added (with deduplication).</p>
+<p>Adds a module and its stream that is required at runtime by a dependent
+module. The matrix of streams and module names will be calculated by the
+build-system. If the listed provided module name is already present, the
+streams will be added (with deduplication).</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-add-runtime-stream.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -442,7 +453,7 @@ modulemd_dependencies_add_runtime_stream
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -479,7 +490,7 @@ modulemd_dependencies_set_empty_runtime_dependencies_for_module
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -498,8 +509,7 @@ modulemd_dependencies_set_empty_runtime_dependencies_for_module
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_dependencies_clear_runtime_dependencies
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> *self</code></em>);</pre>
-<p>Remove all runtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object</p>
-<p>Since 2.5</p>
+<p>Remove all runtime dependencies from this <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p>
 <div class="refsect3">
 <a name="modulemd-dependencies-clear-runtime-dependencies.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -510,11 +520,12 @@ modulemd_dependencies_clear_runtime_dependencies
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -533,14 +544,15 @@ modulemd_dependencies_get_runtime_modules_as_strv
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of module names of run-time dependencies. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names of run-time
+dependencies. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -564,7 +576,7 @@ modulemd_dependencies_get_runtime_streams_as_strv
 <tbody>
 <tr>
 <td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a></p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -577,7 +589,8 @@ modulemd_dependencies_get_runtime_streams_as_strv
 </div>
 <div class="refsect3">
 <a name="modulemd-dependencies-get-runtime-streams-as-strv.returns"></a><h4>Returns</h4>
-<p>An ordered list of module streams associated with the specified module that are required at run-time. </p>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module streams
+associated with the specified module that are required at run-time. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>

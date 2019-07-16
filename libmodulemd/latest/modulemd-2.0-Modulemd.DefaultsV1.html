@@ -286,8 +286,8 @@ profiles. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-defaults-v1-get-streams-with-default-profiles-as-strv.returns"></a><h4>Returns</h4>
-<p>A sorted list of unique stream names for which
-default profiles have been assigned. </p>
+<p>A sorted <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of unique stream names for
+which default profiles have been assigned. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -368,8 +368,8 @@ a file, it will appear as <code class="literal">stream_name: []</code>.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>stream_name</p></td>
-<td class="parameter_description"><p>The name of the module stream to which to add this
-default profile. </p></td>
+<td class="parameter_description"><p>The name of the module stream for which to empty
+default profiles. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -409,8 +409,8 @@ in the output document.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>stream_name</p></td>
-<td class="parameter_description"><p>The name of the module stream to which to add this
-default profile. </p></td>
+<td class="parameter_description"><p>The name of the module stream from which to remove
+default profiles. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -464,9 +464,9 @@ retrieve the profile defaults for this stream. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-defaults-v1-get-default-profiles-for-stream-as-strv.returns"></a><h4>Returns</h4>
-<p>A sorted list of unique profiles to be installed
-by default for this stream. NULL, if this stream_name is not present in the
-defaults. </p>
+<p>A sorted <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of unique profiles to be
+installed by default for this stream. NULL, if this stream_name is not
+present in the defaults. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
