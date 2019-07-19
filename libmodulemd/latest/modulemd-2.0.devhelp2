@@ -560,28 +560,29 @@
     <keyword type="function" name="modulemd_translation_emit_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml" since="2.0"/>
-    <keyword type="function" name="modulemd_error_quark ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-error-quark"/>
-    <keyword type="function" name="modulemd_trace_init ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init"/>
-    <keyword type="function" name="modulemd_trace_free ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free"/>
-    <keyword type="macro" name="MODULEMD_INIT_TRACE" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS"/>
-    <keyword type="function" name="modulemd_hash_table_deep_str_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy"/>
-    <keyword type="function" name="modulemd_hash_table_deep_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-set-copy"/>
-    <keyword type="function" name="modulemd_hash_table_deep_str_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-set-copy"/>
-    <keyword type="function" name="modulemd_hash_table_deep_str_str_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-str-set-copy"/>
-    <keyword type="function" name="modulemd_hash_table_sets_are_equal_wrapper ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal-wrapper"/>
-    <keyword type="function" name="modulemd_hash_table_sets_are_equal ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal"/>
-    <keyword type="function" name="modulemd_hash_table_equals ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-equals"/>
-    <keyword type="function" name="modulemd_strcmp_sort ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort"/>
-    <keyword type="function" name="modulemd_ordered_str_keys ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys"/>
-    <keyword type="function" name="modulemd_ordered_str_keys_as_strv ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys-as-strv"/>
-    <keyword type="function" name="modulemd_variant_deep_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-variant-deep-copy"/>
-    <keyword type="function" name="modulemd_hash_table_unref ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-unref"/>
-    <keyword type="function" name="modulemd_validate_nevra ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-validate-nevra"/>
-    <keyword type="macro" name="MODULEMD_REPLACE_SET()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS"/>
-    <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_EXT()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS"/>
-    <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS"/>
-    <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_STATIC()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS"/>
+    <keyword type="function" name="modulemd_error_quark ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-error-quark" since="2.0"/>
+    <keyword type="function" name="modulemd_trace_init ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" since="2.0"/>
+    <keyword type="function" name="modulemd_trace_free ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" since="2.0"/>
+    <keyword type="macro" name="MODULEMD_INIT_TRACE" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" since="2.0"/>
+    <keyword type="function" name="modulemd_hash_table_deep_str_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_hash_table_deep_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-set-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_hash_table_deep_str_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-set-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_hash_table_deep_str_str_set_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-str-set-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_hash_table_sets_are_equal_wrapper ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal-wrapper" since="2.2"/>
+    <keyword type="function" name="modulemd_hash_table_sets_are_equal ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal" since="2.0"/>
+    <keyword type="function" name="modulemd_hash_table_equals ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-equals" since="2.2"/>
+    <keyword type="function" name="modulemd_strcmp_sort ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" since="2.0"/>
+    <keyword type="function" name="modulemd_ordered_str_keys ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys" since="2.0"/>
+    <keyword type="function" name="modulemd_ordered_str_keys_as_strv ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys-as-strv" since="2.0"/>
+    <keyword type="function" name="modulemd_variant_deep_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-variant-deep-copy" since="2.0"/>
+    <keyword type="function" name="modulemd_hash_table_unref ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-unref" since="2.0"/>
+    <keyword type="function" name="modulemd_validate_nevra ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-validate-nevra" since="2.0"/>
+    <keyword type="macro" name="MODULEMD_REPLACE_SET()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" since="2.0"/>
+    <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_EXT()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" since="2.2"/>
+    <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" since="2.2"/>
+    <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_STATIC()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_ERROR" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR:CAPS"/>
+    <keyword type="enum" name="enum ModulemdErrorEnum" link="modulemd-2.0-Modulemd-Utility-Functions.html#ModulemdErrorEnum" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_error_quark ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-error-quark"/>
     <keyword type="function" name="write_yaml_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#write-yaml-string"/>
     <keyword type="function" name="modulemd_yaml_string_free ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-string-free"/>
@@ -665,6 +666,11 @@
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_ONE" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ONE:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_TWO" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-TWO:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_LATEST" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-LATEST:CAPS"/>
+    <keyword type="constant" name="MODULEMD_ERROR_UPGRADE" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR-UPGRADE:CAPS"/>
+    <keyword type="constant" name="MODULEMD_ERROR_VALIDATE" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR-VALIDATE:CAPS"/>
+    <keyword type="constant" name="MODULEMD_ERROR_FILE_ACCESS" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR-FILE-ACCESS:CAPS"/>
+    <keyword type="constant" name="MODULEMD_ERROR_NO_MATCHES" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR-NO-MATCHES:CAPS"/>
+    <keyword type="constant" name="MODULEMD_ERROR_TOO_MANY_MATCHES" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR-TOO-MANY-MATCHES:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_UNKNOWN" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-UNKNOWN:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_MODULESTREAM" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-MODULESTREAM:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_DEFAULTS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-DEFAULTS:CAPS"/>

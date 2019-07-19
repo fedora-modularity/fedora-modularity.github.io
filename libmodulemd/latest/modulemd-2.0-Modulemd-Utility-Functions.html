@@ -213,10 +213,16 @@ documented ways.
 <col width="150px" class="name">
 <col class="description">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="define_keyword">#define</td>
 <td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR:CAPS" title="MODULEMD_ERROR">MODULEMD_ERROR</a></td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#ModulemdErrorEnum" title="enum ModulemdErrorEnum">ModulemdErrorEnum</a></td>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect1">
@@ -228,41 +234,177 @@ documented ways.
 <a name="modulemd-error-quark"></a><h3>modulemd_error_quark ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
 modulemd_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-error-quark.returns"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> used to identify an error in the general modulemd domain.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-trace-init"></a><h3>modulemd_trace_init ()</h3>
 <pre class="programlisting"><span class="returnvalue">modulemd_tracer</span> *
 modulemd_trace_init (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *function_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-trace-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>function_name</p></td>
+<td class="parameter_description"><p>The name of the function being traced.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-trace-init.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <span class="type">modulemd_tracer</span> object.</p>
+<p>Allocates and returns a new <span class="type">modulemd_tracer</span> that tracks the provided
+<em class="parameter"><code>function_name</code></em>
+. Also writes a <a href="https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-debug"><code class="function">g_debug()</code></a> trace message indicating
+<em class="parameter"><code>function_name</code></em>
+has been entered.</p>
+<p>DIRECT USE OF THIS FUNCTION SHOULD BE AVOIDED. Instead use
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" title="MODULEMD_INIT_TRACE"><code class="literal">MODULEMD_INIT_TRACE</code></a>--which makes use of this function as part of its
+internal implementation. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-trace-free"></a><h3>modulemd_trace_free ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_trace_free (<em class="parameter"><code><span class="type">modulemd_tracer</span> *tracer</code></em>);</pre>
+<p>Writes a <a href="https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-debug"><code class="function">g_debug()</code></a> trace message indicating the function name associated
+with <em class="parameter"><code>tracer</code></em>
+ is being exited and frees <em class="parameter"><code>tracer</code></em>
+.</p>
+<p>DIRECT USE OF THIS FUNCTION SHOULD BE AVOIDED. Instead use
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" title="MODULEMD_INIT_TRACE"><code class="literal">MODULEMD_INIT_TRACE</code></a>--which makes use of this function as part of its
+internal implementation.</p>
+<div class="refsect3">
+<a name="modulemd-trace-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tracer</p></td>
+<td class="parameter_description"><p>A <span class="type">modulemd_tracer</span> object representing a function being traced.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MODULEMD-INIT-TRACE:CAPS"></a><h3>MODULEMD_INIT_TRACE</h3>
 <pre class="programlisting">#define             MODULEMD_INIT_TRACE()</pre>
+<p>When used at the beginning of a function, automatically writes <a href="https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-debug"><code class="function">g_debug()</code></a>
+trace messages when entering and leaving that function. Makes use of
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" title="modulemd_trace_init ()"><code class="function">modulemd_trace_init()</code></a> and <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" title="modulemd_trace_free ()"><code class="function">modulemd_trace_free()</code></a>.</p>
+<p>This macro manages the memory of the hidden <span class="type">modulemd_tracer</span> object it
+creates, so the caller should not attempt to modify that object in any way.</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-hash-table-deep-str-copy"></a><h3>modulemd_hash_table_deep_str_copy ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
 modulemd_hash_table_deep_str_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys and string values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of both the keys and values from <em class="parameter"><code>orig</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-hash-table-deep-set-copy"></a><h3>modulemd_hash_table_deep_set_copy ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
 modulemd_hash_table_deep_set_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-set-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-set-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of the keys from <em class="parameter"><code>orig</code></em>
+. The values from <em class="parameter"><code>orig</code></em>
+are ignored, and the
+values in the copy are set the same as the corresponding keys so the
+returned <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> can be used as a set. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-hash-table-deep-str-set-copy"></a><h3>modulemd_hash_table_deep_str_set_copy ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
 modulemd_hash_table_deep_str_set_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-set-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys and <a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-set-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of the keys from <em class="parameter"><code>orig</code></em>
+. The corresponding <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> value for each
+key is deep copied via <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()"><code class="function">modulemd_hash_table_deep_str_copy()</code></a> for use as a set. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -270,6 +412,32 @@ modulemd_hash_table_deep_str_set_copy (<em class="parameter"><code><a href="http
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
 modulemd_hash_table_deep_str_str_set_copy
                                (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-str-set-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys and <a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> values
+that are nested two levels deep.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-str-set-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of the keys from <em class="parameter"><code>orig</code></em>
+. Each corresponding <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> value is deep
+copied, with the second level <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> copied for use as a set as
+described in <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()"><code class="function">modulemd_hash_table_deep_str_copy()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -278,6 +446,39 @@ modulemd_hash_table_deep_str_str_set_copy
 modulemd_hash_table_sets_are_equal_wrapper
                                (<em class="parameter"><code>const <span class="type">void</span> *a</code></em>,
                                 <em class="parameter"><code>const <span class="type">void</span> *b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal-wrapper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A void pointer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A void pointer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal-wrapper.returns"></a><h4>Returns</h4>
+<p> TRUE if both <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+(considered as <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>s) contain
+an identical set of keys, FALSE if they differ.</p>
+<p>Only the keys of <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are compared. The values are ignored.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -285,6 +486,39 @@ modulemd_hash_table_sets_are_equal_wrapper
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_hash_table_sets_are_equal (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal.returns"></a><h4>Returns</h4>
+<p> TRUE if both <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+contain an identical set of keys, FALSE if
+they differ.</p>
+<p>Only the keys of <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are compared. The values are ignored.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -293,6 +527,44 @@ modulemd_hash_table_sets_are_equal (<em class="parameter"><code><a href="https:/
 modulemd_hash_table_equals (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GEqualFunc"><span class="type">GEqualFunc</span></a> compare_func</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>compare_func</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GEqualFunc"><span class="type">GEqualFunc</span></a> function that is called to determine the
+equivalence of pairs of <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-equals.returns"></a><h4>Returns</h4>
+<p> TRUE if both <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+contain identical keys and identical
+corresponding values (as determined by <em class="parameter"><code>compare_func</code></em>
+), FALSE if they
+differ.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -300,6 +572,40 @@ modulemd_hash_table_equals (<em class="parameter"><code><a href="https://develop
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 modulemd_strcmp_sort (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-strcmp-sort.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-strcmp-sort.returns"></a><h4>Returns</h4>
+<p> 0 if <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are pointers to identical strings, a negative value
+if <em class="parameter"><code>a</code></em>
+is less than <em class="parameter"><code>b</code></em>
+, and a positive value if <em class="parameter"><code>a</code></em>
+is greater than <em class="parameter"><code>b</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -307,53 +613,339 @@ modulemd_strcmp_sort (<em class="parameter"><code><a href="https://developer.gno
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
 modulemd_ordered_str_keys (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *htable</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> compare_func</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>htable</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>compare_func</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> function that is called to determine the
+equivalence of pairs of <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> keys from <em class="parameter"><code>htable</code></em>
+. This should almost
+always be passed as <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()"><code class="function">modulemd_strcmp_sort()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of the keys from <em class="parameter"><code>htable</code></em>
+sorted
+according to <em class="parameter"><code>compare_func</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-ordered-str-keys-as-strv"></a><h3>modulemd_ordered_str_keys_as_strv ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
 modulemd_ordered_str_keys_as_strv (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *htable</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>htable</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys-as-strv.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of the keys from <em class="parameter"><code>htable</code></em>
+sorted
+according to <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()"><code class="function">modulemd_strcmp_sort()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-variant-deep-copy"></a><h3>modulemd_variant_deep_copy ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
 modulemd_variant_deep_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> *variant</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-variant-deep-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>variant</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> opaque data structure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-variant-deep-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated deep copy of <em class="parameter"><code>variant</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-hash-table-unref"></a><h3>modulemd_hash_table_unref ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_hash_table_unref (<em class="parameter"><code><span class="type">void</span> *table</code></em>);</pre>
+<p>Decrements the reference count of <em class="parameter"><code>table</code></em>
+ (considered as a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>). If
+the reference count drops to 0, all keys, values, and memory associated with
+<em class="parameter"><code>table</code></em>
+ will be released.</p>
+<p>The main purpose of this function is to provide a <a href="https://developer.gnome.org/glib/stable/glib-Datasets.html#GDestroyNotify"><code class="function">GDestroyNotify()</code></a> function
+for <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a>, <a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>, and similar object types.</p>
+<div class="refsect3">
+<a name="modulemd-hash-table-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>A void pointer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-validate-nevra"></a><h3>modulemd_validate_nevra ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 modulemd_validate_nevra (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nevra</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-validate-nevra.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nevra</p></td>
+<td class="parameter_description"><p>A NEVRA (Name, Epoch, Version, Release, Architecture) string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-validate-nevra.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>nevra</code></em>
+is in proper N-E:V-R.A format, FALSE otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MODULEMD-REPLACE-SET:CAPS"></a><h3>MODULEMD_REPLACE_SET()</h3>
 <pre class="programlisting">#define             MODULEMD_REPLACE_SET(_dest, _set)</pre>
+<p>Frees the existing <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> at <em class="parameter"><code>_dest</code></em>
+. If <em class="parameter"><code>_set</code></em>
+ is not NULL, assigns a
+deep copy of <em class="parameter"><code>_set</code></em>
+'s keys for use as a set.</p>
+<p>This helper function is intended for use in <code class="function">GOBJECT_copy()</code> functions to
+simplify copying internal set variables and avoid code duplication.</p>
+<div class="refsect3">
+<a name="MODULEMD-REPLACE-SET.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_dest</p></td>
+<td class="parameter_description"><p>A reference to a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_set</p></td>
+<td class="parameter_description"><p>A reference to a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MODULEMD-SETTER-GETTER-STRING-EXT:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_EXT()</h3>
 <pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_EXT(                                    \
               is_static, ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+<p>A convenience macro for defining standard set and get methods for a string
+attribute of an object.</p>
+<p>This is the internal implementation for <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" title="MODULEMD_SETTER_GETTER_STRING()"><code class="literal">MODULEMD_SETTER_GETTER_STRING</code></a> and
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" title="MODULEMD_SETTER_GETTER_STRING_STATIC()"><code class="literal">MODULEMD_SETTER_GETTER_STRING_STATIC</code></a> which should be used instead.</p>
+<div class="refsect3">
+<a name="MODULEMD-SETTER-GETTER-STRING-EXT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>is_static</p></td>
+<td class="parameter_description"><p>static for private methods, or empty comment for public.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ObjName</p></td>
+<td class="parameter_description"><p>The name of the object type, in camel case.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obj_name</p></td>
+<td class="parameter_description"><p>The name of the object type, in lowercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>OBJ_NAME</p></td>
+<td class="parameter_description"><p>The name of the object type, in uppercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>attr</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in lowercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ATTR</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in uppercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MODULEMD-SETTER-GETTER-STRING:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING()</h3>
 <pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING(                                        \
               ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+<p>A convenience macro for defining standard <span class="emphasis"><em>public</em></span> set
+and get methods for a string attribute of an object.</p>
+<div class="refsect3">
+<a name="MODULEMD-SETTER-GETTER-STRING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ObjName</p></td>
+<td class="parameter_description"><p>The name of the object type, in camel case.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obj_name</p></td>
+<td class="parameter_description"><p>The name of the object type, in lowercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>OBJ_NAME</p></td>
+<td class="parameter_description"><p>The name of the object type, in uppercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>attr</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in lowercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ATTR</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in uppercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_STATIC()</h3>
 <pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_STATIC(                                 \
               ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+<p>A is a convenience macro for defining standard <span class="emphasis"><em>private</em></span>
+(static) set and get methods for a string attribute of an object.</p>
+<div class="refsect3">
+<a name="MODULEMD-SETTER-GETTER-STRING-STATIC.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ObjName</p></td>
+<td class="parameter_description"><p>The name of the object type, in camel case.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obj_name</p></td>
+<td class="parameter_description"><p>The name of the object type, in lowercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>OBJ_NAME</p></td>
+<td class="parameter_description"><p>The name of the object type, in uppercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>attr</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in lowercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ATTR</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in uppercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -362,6 +954,65 @@ modulemd_validate_nevra (<em class="parameter"><code>const <a href="https://deve
 <a name="MODULEMD-ERROR:CAPS"></a><h3>MODULEMD_ERROR</h3>
 <pre class="programlisting">#define MODULEMD_ERROR modulemd_error_quark ()
 </pre>
+<p>A convenience macro for identifying an error in the general modulemd domain.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdErrorEnum"></a><h3>enum ModulemdErrorEnum</h3>
+<div class="refsect3">
+<a name="ModulemdErrorEnum.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-ERROR-UPGRADE:CAPS"></a>MODULEMD_ERROR_UPGRADE</p></td>
+<td class="enum_member_description">
+<p>Represents an error encountered while upgrading the
+metadata version of a module stream or module defaults.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-ERROR-VALIDATE:CAPS"></a>MODULEMD_ERROR_VALIDATE</p></td>
+<td class="enum_member_description">
+<p>Represents an error encountered while validating
+module metadata.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-ERROR-FILE-ACCESS:CAPS"></a>MODULEMD_ERROR_FILE_ACCESS</p></td>
+<td class="enum_member_description">
+<p>Represents an error encountered when attempting
+to access a file.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-ERROR-NO-MATCHES:CAPS"></a>MODULEMD_ERROR_NO_MATCHES</p></td>
+<td class="enum_member_description">
+<p>Represents an error indicating that no streams
+matched when searching for a specific module stream. Since: 2.2</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-ERROR-TOO-MANY-MATCHES:CAPS"></a>MODULEMD_ERROR_TOO_MANY_MATCHES</p></td>
+<td class="enum_member_description">
+<p>Represents an error indicating that
+multiple streams matched when searching for a specific module stream.
+Since: 2.2</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 </div>
 </div>
