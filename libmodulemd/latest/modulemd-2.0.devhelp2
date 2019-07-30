@@ -124,11 +124,17 @@
     <keyword type="function" name="modulemd_component_rpm_get_ref ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-ref" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_set_repository ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-repository" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_get_repository ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-repository" since="2.0"/>
+    <keyword type="function" name="modulemd_component_rpm_set_buildroot ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-buildroot" since="2.7"/>
+    <keyword type="function" name="modulemd_component_rpm_get_buildroot ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-buildroot" since="2.7"/>
+    <keyword type="function" name="modulemd_component_rpm_set_srpm_buildroot ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-srpm-buildroot" since="2.7"/>
+    <keyword type="function" name="modulemd_component_rpm_get_srpm_buildroot ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-srpm-buildroot" since="2.7"/>
     <keyword type="macro" name="MODULEMD_TYPE_COMPONENT_RPM" link="modulemd-2.0-Modulemd.ComponentRpm.html#MODULEMD-TYPE-COMPONENT-RPM:CAPS"/>
     <keyword type="struct" name="ModulemdComponentRpm" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm-struct"/>
+    <keyword type="property" name="The “buildroot” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--buildroot"/>
     <keyword type="property" name="The “cache” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--cache"/>
     <keyword type="property" name="The “ref” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--ref"/>
     <keyword type="property" name="The “repository” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--repository"/>
+    <keyword type="property" name="The “srpm-buildroot” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--srpm-buildroot"/>
     <keyword type="function" name="modulemd_defaults_new ()" link="ModulemdDefaults.html#modulemd-defaults-new" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_copy ()" link="ModulemdDefaults.html#modulemd-defaults-copy" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_validate ()" link="ModulemdDefaults.html#modulemd-defaults-validate" since="2.0"/>
@@ -580,6 +586,7 @@
     <keyword type="function" name="modulemd_variant_deep_copy ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-variant-deep-copy" since="2.0"/>
     <keyword type="function" name="modulemd_hash_table_unref ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-unref" since="2.0"/>
     <keyword type="function" name="modulemd_validate_nevra ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-validate-nevra" since="2.0"/>
+    <keyword type="function" name="modulemd_boolean_equals ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-boolean-equals" since="2.7"/>
     <keyword type="macro" name="MODULEMD_REPLACE_SET()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" since="2.0"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_EXT()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" since="2.2"/>
