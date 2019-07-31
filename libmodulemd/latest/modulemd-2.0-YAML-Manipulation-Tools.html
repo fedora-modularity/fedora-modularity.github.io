@@ -536,6 +536,11 @@ documented ways.
 <a name="modulemd-yaml-error-quark"></a><h3>modulemd_yaml_error_quark ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
 modulemd_yaml_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-yaml-error-quark.returns"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> used to identify an error in the modulemd yaml domain.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -544,63 +549,394 @@ modulemd_yaml_error_quark (<em class="parameter"><code><span class="type">void</
 write_yaml_string (<em class="parameter"><code><span class="type">void</span> *data</code></em>,
                    <em class="parameter"><code>unsigned <span class="type">char</span> *buffer</code></em>,
                    <em class="parameter"><code><span class="type">size_t</span> size</code></em>);</pre>
+<p>Additionally memory for <em class="parameter"><code>data</code></em>
+ is automatically allocated if necessary.</p>
+<div class="refsect3">
+<a name="write-yaml-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A void pointer to a <span class="type">modulemd_yaml_string</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>YAML text to append to <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The number of bytes from <em class="parameter"><code>buffer</code></em>
+to append to <em class="parameter"><code>data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="modulemd-yaml-string-free"></a><h3>modulemd_yaml_string_free ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_yaml_string_free (<em class="parameter"><code><span class="type">modulemd_yaml_string</span> *yaml_string</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-yaml-string-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A pointer to a <span class="type">modulemd_yaml_string</span> to be freed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="mmd-yaml-get-event-name"></a><h3>mmd_yaml_get_event_name ()</h3>
 <pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 mmd_yaml_get_event_name (<em class="parameter"><code><span class="type">yaml_event_type_t</span> type</code></em>);</pre>
+<p>Returns the string representation for <em class="parameter"><code>type</code></em>
+.</p>
+<div class="refsect3">
+<a name="mmd-yaml-get-event-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>A libyaml event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-INIT-YAML-PARSER:CAPS"></a><h3>MMD_INIT_YAML_PARSER()</h3>
 <pre class="programlisting">#define             MMD_INIT_YAML_PARSER(_parser)</pre>
+<p>This convenience macro allocates and initializes a new libyaml parser object
+named <em class="parameter"><code>_parser</code></em>
+.</p>
+<div class="refsect3">
+<a name="MMD-INIT-YAML-PARSER.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>_parser</p></td>
+<td class="parameter_description"><p>A variable name to use for the new parser object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-INIT-YAML-EMITTER:CAPS"></a><h3>MMD_INIT_YAML_EMITTER()</h3>
 <pre class="programlisting">#define             MMD_INIT_YAML_EMITTER(_emitter)</pre>
+<p>This convenience macro allocates and initializes a new libyaml emitter
+object named <em class="parameter"><code>_emitter</code></em>
+.</p>
+<div class="refsect3">
+<a name="MMD-INIT-YAML-EMITTER.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>_emitter</p></td>
+<td class="parameter_description"><p>A variable name to use for the new emitter object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-INIT-YAML-EVENT:CAPS"></a><h3>MMD_INIT_YAML_EVENT()</h3>
 <pre class="programlisting">#define             MMD_INIT_YAML_EVENT(_event)</pre>
+<p>This convenience macro allocates and initializes a new libyaml event object
+named <em class="parameter"><code>_event</code></em>
+.</p>
+<div class="refsect3">
+<a name="MMD-INIT-YAML-EVENT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>A variable name to use for the new event object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-INIT-YAML-STRING:CAPS"></a><h3>MMD_INIT_YAML_STRING()</h3>
 <pre class="programlisting">#define             MMD_INIT_YAML_STRING(_emitter, _string)</pre>
+<p>This convenience macro allocates and initializes a new yaml string object
+named <em class="parameter"><code>_string</code></em>
+ and associates it as the output target for the libyaml
+emitter object <em class="parameter"><code>_emitter</code></em>
+.</p>
+<div class="refsect3">
+<a name="MMD-INIT-YAML-STRING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_string</p></td>
+<td class="parameter_description"><p>A variable name to use for the new yaml string object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-REINIT-YAML-STRING:CAPS"></a><h3>MMD_REINIT_YAML_STRING()</h3>
 <pre class="programlisting">#define             MMD_REINIT_YAML_STRING(_emitter, _string)</pre>
+<p>This convenience macro deletes then initializes a new libyaml emitter named
+<em class="parameter"><code>_emitter</code></em>
+, then deletes, reallocates, and initializes a new yaml string
+object named <em class="parameter"><code>_string</code></em>
+ and associates it as the output target for <em class="parameter"><code>_emitter</code></em>
+.</p>
+<div class="refsect3">
+<a name="MMD-REINIT-YAML-STRING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object to reinitialize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_string</p></td>
+<td class="parameter_description"><p>A variable name to reinitialize with a new yaml string object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="YAML-PARSER-PARSE-WITH-EXIT-FULL:CAPS"></a><h3>YAML_PARSER_PARSE_WITH_EXIT_FULL()</h3>
 <pre class="programlisting">#define             YAML_PARSER_PARSE_WITH_EXIT_FULL(_parser, _returnval, _event, _error)</pre>
+<p>DIRECT USE OF THIS MACRO SHOULD BE AVOIDED. This is the internal
+implementation for <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-BOOL:CAPS" title="YAML_PARSER_PARSE_WITH_EXIT_BOOL()"><code class="literal">YAML_PARSER_PARSE_WITH_EXIT_BOOL</code></a>,
+<a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-INT:CAPS" title="YAML_PARSER_PARSE_WITH_EXIT_INT()"><code class="literal">YAML_PARSER_PARSE_WITH_EXIT_INT</code></a>, and <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT:CAPS" title="YAML_PARSER_PARSE_WITH_EXIT()"><code class="literal">YAML_PARSER_PARSE_WITH_EXIT</code></a> which
+should be used instead.</p>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT-FULL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_parser</p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_returnval</p></td>
+<td class="parameter_description"><p>The value to return in case of of a parsing error.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
+error.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT-FULL.returns"></a><h4>Returns</h4>
+<p> Continues on if parsing of the event was successful. Returns
+<em class="parameter"><code>_returnval</code></em>
+if a parse error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="YAML-PARSER-PARSE-WITH-EXIT-BOOL:CAPS"></a><h3>YAML_PARSER_PARSE_WITH_EXIT_BOOL()</h3>
 <pre class="programlisting">#define             YAML_PARSER_PARSE_WITH_EXIT_BOOL(_parser, _event, _error)</pre>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT-BOOL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_parser</p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
+error.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT-BOOL.returns"></a><h4>Returns</h4>
+<p> Continues on if parsing of the event was successful. Returns
+FALSE if a parse error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="YAML-PARSER-PARSE-WITH-EXIT-INT:CAPS"></a><h3>YAML_PARSER_PARSE_WITH_EXIT_INT()</h3>
 <pre class="programlisting">#define             YAML_PARSER_PARSE_WITH_EXIT_INT(_parser, _event, _error)</pre>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT-INT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_parser</p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
+error.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT-INT.returns"></a><h4>Returns</h4>
+<p> Continues on if parsing of the event was successful. Returns
+0 if a parse error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="YAML-PARSER-PARSE-WITH-EXIT:CAPS"></a><h3>YAML_PARSER_PARSE_WITH_EXIT()</h3>
 <pre class="programlisting">#define             YAML_PARSER_PARSE_WITH_EXIT(_parser, _event, _error)</pre>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_parser</p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
+error.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="YAML-PARSER-PARSE-WITH-EXIT.returns"></a><h4>Returns</h4>
+<p> Continues on if parsing of the event was successful. Returns
+NULL if a parse error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1465,6 +1801,8 @@ appropriately if the document was malformed YAML.</p>
 <a name="MODULEMD-YAML-ERROR:CAPS"></a><h3>MODULEMD_YAML_ERROR</h3>
 <pre class="programlisting">#define MODULEMD_YAML_ERROR modulemd_yaml_error_quark ()
 </pre>
+<p>A convenience macro for identifying an error in the modulemd yaml domain.</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">

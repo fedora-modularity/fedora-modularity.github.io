@@ -592,19 +592,19 @@
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_STATIC()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_ERROR" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR:CAPS"/>
-    <keyword type="function" name="modulemd_yaml_error_quark ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-error-quark"/>
-    <keyword type="function" name="write_yaml_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#write-yaml-string"/>
-    <keyword type="function" name="modulemd_yaml_string_free ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-string-free"/>
-    <keyword type="function" name="mmd_yaml_get_event_name ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-yaml-get-event-name"/>
-    <keyword type="macro" name="MMD_INIT_YAML_PARSER()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-PARSER:CAPS"/>
-    <keyword type="macro" name="MMD_INIT_YAML_EMITTER()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-EMITTER:CAPS"/>
-    <keyword type="macro" name="MMD_INIT_YAML_EVENT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-EVENT:CAPS"/>
-    <keyword type="macro" name="MMD_INIT_YAML_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-STRING:CAPS"/>
-    <keyword type="macro" name="MMD_REINIT_YAML_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-REINIT-YAML-STRING:CAPS"/>
-    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-FULL:CAPS"/>
-    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_BOOL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-BOOL:CAPS"/>
-    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_INT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-INT:CAPS"/>
-    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT:CAPS"/>
+    <keyword type="function" name="modulemd_yaml_error_quark ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-error-quark" since="2.0"/>
+    <keyword type="function" name="write_yaml_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#write-yaml-string" since="2.0"/>
+    <keyword type="function" name="modulemd_yaml_string_free ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-string-free" since="2.0"/>
+    <keyword type="function" name="mmd_yaml_get_event_name ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-yaml-get-event-name" since="2.0"/>
+    <keyword type="macro" name="MMD_INIT_YAML_PARSER()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-PARSER:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_INIT_YAML_EMITTER()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-EMITTER:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_INIT_YAML_EVENT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-EVENT:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_INIT_YAML_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-INIT-YAML-STRING:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_REINIT_YAML_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-REINIT-YAML-STRING:CAPS" since="2.0"/>
+    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-FULL:CAPS" since="2.0"/>
+    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_BOOL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-BOOL:CAPS" since="2.0"/>
+    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_INT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-INT:CAPS" since="2.0"/>
+    <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT:CAPS" since="2.0"/>
     <keyword type="macro" name="MMD_EMIT_WITH_EXIT_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT-FULL:CAPS"/>
     <keyword type="macro" name="MMD_EMIT_WITH_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT:CAPS"/>
     <keyword type="macro" name="MMD_EMIT_WITH_EXIT_PTR()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT-PTR:CAPS"/>
@@ -659,7 +659,7 @@
     <keyword type="macro" name="EMIT_STRING_SET_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET-FULL:CAPS"/>
     <keyword type="macro" name="EMIT_ARRAY_VALUES()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES:CAPS"/>
     <keyword type="macro" name="EMIT_ARRAY_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES-IF-NON-EMPTY:CAPS"/>
-    <keyword type="macro" name="MODULEMD_YAML_ERROR" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR:CAPS"/>
+    <keyword type="macro" name="MODULEMD_YAML_ERROR" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR:CAPS" since="2.0"/>
     <keyword type="enum" name="enum ModulemdYamlDocumentTypeEnum" link="modulemd-2.0-YAML-Manipulation-Tools.html#ModulemdYamlDocumentTypeEnum" since="2.0"/>
     <keyword type="function" name="modulemd_test_signal_handler ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#modulemd-test-signal-handler" since="2.0"/>
     <keyword type="function" name="parser_skip_headers ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-headers" since="2.0"/>
