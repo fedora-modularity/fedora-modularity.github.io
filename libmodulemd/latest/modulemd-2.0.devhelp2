@@ -62,8 +62,10 @@
       <sub name="2.4 API Index" link="ch09.html"/>
       <sub name="2.5 API Index" link="ch10.html"/>
       <sub name="2.6 API Index" link="ch11.html"/>
-      <sub name="Deprecated API Index" link="ch12.html"/>
-      <sub name="Full API Index" link="ch13.html"/>
+      <sub name="2.7 API Index" link="ch12.html"/>
+      <sub name="2.8 API Index" link="ch13.html"/>
+      <sub name="Deprecated API Index" link="ch14.html"/>
+      <sub name="Full API Index" link="ch15.html"/>
     </sub>
   </chapters>
   <functions>
@@ -189,6 +191,7 @@
     <keyword type="function" name="modulemd_module_remove_streams_by_NSVCA ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-NSVCA" since="2.3"/>
     <keyword type="macro" name="modulemd_module_remove_streams_by_name()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-name" since="2.3"/>
     <keyword type="function" name="modulemd_module_get_defaults ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-defaults" since="2.0"/>
+    <keyword type="function" name="modulemd_module_get_translation ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-translation" since="2.8"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE" link="modulemd-2.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS"/>
     <keyword type="struct" name="ModulemdModule" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule-struct"/>
     <keyword type="property" name="The “module-name” property" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule--module-name"/>
@@ -501,7 +504,6 @@
     <keyword type="function" name="modulemd_module_set_defaults ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-set-defaults" since="2.0"/>
     <keyword type="function" name="modulemd_module_add_translation ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_translated_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translated-streams" since="2.0"/>
-    <keyword type="function" name="modulemd_module_get_translation ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_add_stream ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_upgrade_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-upgrade-streams" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_parser ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-update-from-parser" since="2.0"/>
@@ -605,23 +607,23 @@
     <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_BOOL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-BOOL:CAPS" since="2.0"/>
     <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT_INT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT-INT:CAPS" since="2.0"/>
     <keyword type="macro" name="YAML_PARSER_PARSE_WITH_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#YAML-PARSER-PARSE-WITH-EXIT:CAPS" since="2.0"/>
-    <keyword type="macro" name="MMD_EMIT_WITH_EXIT_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT-FULL:CAPS"/>
-    <keyword type="macro" name="MMD_EMIT_WITH_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT:CAPS"/>
-    <keyword type="macro" name="MMD_EMIT_WITH_EXIT_PTR()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT-PTR:CAPS"/>
-    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-FULL:CAPS"/>
-    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT:CAPS"/>
-    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT_BOOL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-BOOL:CAPS"/>
-    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT_INT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-INT:CAPS"/>
-    <keyword type="macro" name="MMD_SET_PARSED_YAML_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-SET-PARSED-YAML-STRING:CAPS"/>
-    <keyword type="function" name="mmd_emitter_start_stream ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-stream"/>
-    <keyword type="function" name="mmd_emitter_end_stream ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-stream"/>
-    <keyword type="function" name="mmd_emitter_start_document ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-document"/>
-    <keyword type="function" name="mmd_emitter_end_document ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-document"/>
-    <keyword type="function" name="mmd_emitter_start_mapping ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-mapping"/>
-    <keyword type="function" name="mmd_emitter_end_mapping ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-mapping"/>
-    <keyword type="function" name="mmd_emitter_start_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-sequence"/>
-    <keyword type="function" name="mmd_emitter_end_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-sequence"/>
-    <keyword type="function" name="mmd_emitter_scalar ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-scalar"/>
+    <keyword type="macro" name="MMD_EMIT_WITH_EXIT_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT-FULL:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_EMIT_WITH_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_EMIT_WITH_EXIT_PTR()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT-PTR:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-FULL:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT_BOOL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-BOOL:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_YAML_ERROR_EVENT_EXIT_INT()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-INT:CAPS" since="2.0"/>
+    <keyword type="macro" name="MMD_SET_PARSED_YAML_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-SET-PARSED-YAML-STRING:CAPS" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_start_stream ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-stream" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_end_stream ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-stream" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_start_document ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-document" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_end_document ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-document" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_start_mapping ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-mapping" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_end_mapping ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-mapping" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_start_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-sequence" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_end_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-sequence" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_scalar ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-scalar" since="2.0"/>
     <keyword type="function" name="mmd_emitter_strv ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-strv" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_date ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-date" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-string" since="2.0"/>
@@ -638,27 +640,27 @@
     <keyword type="function" name="mmd_variant_from_mapping ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-variant-from-mapping" since="2.0"/>
     <keyword type="function" name="mmd_variant_from_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-variant-from-sequence" since="2.0"/>
     <keyword type="function" name="skip_unknown_yaml ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#skip-unknown-yaml"/>
-    <keyword type="macro" name="SKIP_UNKNOWN()" link="modulemd-2.0-YAML-Manipulation-Tools.html#SKIP-UNKNOWN:CAPS"/>
-    <keyword type="macro" name="NON_EMPTY_TABLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#NON-EMPTY-TABLE:CAPS"/>
-    <keyword type="macro" name="NON_EMPTY_ARRAY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#NON-EMPTY-ARRAY:CAPS"/>
-    <keyword type="macro" name="EMIT_SCALAR_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SCALAR-FULL:CAPS"/>
-    <keyword type="macro" name="EMIT_SCALAR()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SCALAR:CAPS"/>
-    <keyword type="macro" name="EMIT_KEY_VALUE_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-FULL:CAPS"/>
-    <keyword type="macro" name="EMIT_KEY_VALUE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE:CAPS"/>
-    <keyword type="macro" name="EMIT_KEY_VALUE_IF_SET()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-IF-SET:CAPS"/>
-    <keyword type="macro" name="EMIT_MAPPING_START_WITH_STYLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-START-WITH-STYLE:CAPS"/>
-    <keyword type="macro" name="EMIT_MAPPING_START()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-START:CAPS"/>
-    <keyword type="macro" name="EMIT_MAPPING_END()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-END:CAPS"/>
-    <keyword type="macro" name="EMIT_SEQUENCE_START_WITH_STYLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SEQUENCE-START-WITH-STYLE:CAPS"/>
-    <keyword type="macro" name="EMIT_SEQUENCE_START()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SEQUENCE-START:CAPS"/>
-    <keyword type="macro" name="EMIT_SEQUENCE_END()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SEQUENCE-END:CAPS"/>
-    <keyword type="macro" name="EMIT_HASHTABLE_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-HASHTABLE-VALUES-IF-NON-EMPTY:CAPS"/>
-    <keyword type="macro" name="EMIT_HASHTABLE_KEY_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-HASHTABLE-KEY-VALUES-IF-NON-EMPTY:CAPS"/>
-    <keyword type="macro" name="EMIT_STRING_SET()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET:CAPS"/>
-    <keyword type="macro" name="EMIT_STRING_SET_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET-IF-NON-EMPTY:CAPS"/>
-    <keyword type="macro" name="EMIT_STRING_SET_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET-FULL:CAPS"/>
-    <keyword type="macro" name="EMIT_ARRAY_VALUES()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES:CAPS"/>
-    <keyword type="macro" name="EMIT_ARRAY_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES-IF-NON-EMPTY:CAPS"/>
+    <keyword type="macro" name="SKIP_UNKNOWN()" link="modulemd-2.0-YAML-Manipulation-Tools.html#SKIP-UNKNOWN:CAPS" since="2.0"/>
+    <keyword type="macro" name="NON_EMPTY_TABLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#NON-EMPTY-TABLE:CAPS" since="2.0"/>
+    <keyword type="macro" name="NON_EMPTY_ARRAY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#NON-EMPTY-ARRAY:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_SCALAR_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SCALAR-FULL:CAPS" since="2.1"/>
+    <keyword type="macro" name="EMIT_SCALAR()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SCALAR:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_KEY_VALUE_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-FULL:CAPS" since="2.1"/>
+    <keyword type="macro" name="EMIT_KEY_VALUE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_KEY_VALUE_IF_SET()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-IF-SET:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_MAPPING_START_WITH_STYLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-START-WITH-STYLE:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_MAPPING_START()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-START:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_MAPPING_END()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-END:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_SEQUENCE_START_WITH_STYLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SEQUENCE-START-WITH-STYLE:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_SEQUENCE_START()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SEQUENCE-START:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_SEQUENCE_END()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SEQUENCE-END:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_HASHTABLE_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-HASHTABLE-VALUES-IF-NON-EMPTY:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_HASHTABLE_KEY_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-HASHTABLE-KEY-VALUES-IF-NON-EMPTY:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_STRING_SET()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_STRING_SET_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET-IF-NON-EMPTY:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_STRING_SET_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET-FULL:CAPS" since="2.1"/>
+    <keyword type="macro" name="EMIT_ARRAY_VALUES()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_ARRAY_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES-IF-NON-EMPTY:CAPS" since="2.0"/>
     <keyword type="macro" name="MODULEMD_YAML_ERROR" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR:CAPS" since="2.0"/>
     <keyword type="enum" name="enum ModulemdYamlDocumentTypeEnum" link="modulemd-2.0-YAML-Manipulation-Tools.html#ModulemdYamlDocumentTypeEnum" since="2.0"/>
     <keyword type="function" name="modulemd_test_signal_handler ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#modulemd-test-signal-handler" since="2.0"/>

@@ -562,21 +562,21 @@ write_yaml_string (<em class="parameter"><code><span class="type">void</span> *d
 <tbody>
 <tr>
 <td class="parameter_name"><p>data</p></td>
-<td class="parameter_description"><p>A void pointer to a <span class="type">modulemd_yaml_string</span> object.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A void pointer to a <span class="type">modulemd_yaml_string</span> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>buffer</p></td>
 <td class="parameter_description"><p>YAML text to append to <em class="parameter"><code>data</code></em>
-.</p></td>
-<td class="parameter_annotations"> </td>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>size</p></td>
 <td class="parameter_description"><p>The number of bytes from <em class="parameter"><code>buffer</code></em>
 to append to <em class="parameter"><code>data</code></em>
-.</p></td>
-<td class="parameter_annotations"> </td>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -598,8 +598,8 @@ modulemd_yaml_string_free (<em class="parameter"><code><span class="type">module
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>yaml_string</p></td>
-<td class="parameter_description"><p>A pointer to a <span class="type">modulemd_yaml_string</span> to be freed.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A pointer to a <span class="type">modulemd_yaml_string</span> to be freed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
 </div>
@@ -610,8 +610,6 @@ modulemd_yaml_string_free (<em class="parameter"><code><span class="type">module
 <a name="mmd-yaml-get-event-name"></a><h3>mmd_yaml_get_event_name ()</h3>
 <pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 mmd_yaml_get_event_name (<em class="parameter"><code><span class="type">yaml_event_type_t</span> type</code></em>);</pre>
-<p>Returns the string representation for <em class="parameter"><code>type</code></em>
-.</p>
 <div class="refsect3">
 <a name="mmd-yaml-get-event-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -622,10 +620,15 @@ mmd_yaml_get_event_name (<em class="parameter"><code><span class="type">yaml_eve
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>type</p></td>
-<td class="parameter_description"><p>A libyaml event.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A libyaml event type. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-yaml-get-event-name.returns"></a><h4>Returns</h4>
+<p> The string representation for <em class="parameter"><code>type</code></em>
+.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -646,8 +649,8 @@ named <em class="parameter"><code>_parser</code></em>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>_parser</p></td>
-<td class="parameter_description"><p>A variable name to use for the new parser object.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A variable name to use for the new parser object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
 </div>
@@ -670,8 +673,8 @@ object named <em class="parameter"><code>_emitter</code></em>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>_emitter</p></td>
-<td class="parameter_description"><p>A variable name to use for the new emitter object.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A variable name to use for the new emitter object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
 </div>
@@ -694,8 +697,8 @@ named <em class="parameter"><code>_event</code></em>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>_event</p></td>
-<td class="parameter_description"><p>A variable name to use for the new event object.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A variable name to use for the new event object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
 </div>
@@ -721,13 +724,13 @@ emitter object <em class="parameter"><code>_emitter</code></em>
 <tbody>
 <tr>
 <td class="parameter_name"><p>_emitter</p></td>
-<td class="parameter_description"><p>A libyaml emitter object.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A libyaml emitter object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_string</p></td>
-<td class="parameter_description"><p>A variable name to use for the new yaml string object.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A variable name to use for the new yaml string object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -755,13 +758,14 @@ object named <em class="parameter"><code>_string</code></em>
 <tbody>
 <tr>
 <td class="parameter_name"><p>_emitter</p></td>
-<td class="parameter_description"><p>A libyaml emitter object to reinitialize.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A libyaml emitter object to reinitialize. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_string</p></td>
-<td class="parameter_description"><p>A variable name to reinitialize with a new yaml string object.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A variable name to reinitialize with a new yaml string
+object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -787,24 +791,25 @@ should be used instead.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>_parser</p></td>
-<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an
+event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_returnval</p></td>
-<td class="parameter_description"><p>The value to return in case of of a parsing error.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>The value to return in case of a parsing error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_event</p></td>
-<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>Returns the libyaml event that was parsed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
-error.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -833,19 +838,20 @@ appropriately.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>_parser</p></td>
-<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an
+event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_event</p></td>
-<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>Returns the libyaml event that was parsed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
-error.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -873,19 +879,20 @@ appropriately.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>_parser</p></td>
-<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an
+event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_event</p></td>
-<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>Returns the libyaml event that was parsed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
-error.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -913,19 +920,20 @@ appropriately.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>_parser</p></td>
-<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an event.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an
+event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_event</p></td>
-<td class="parameter_description"><p>Returns the type of libyaml event that was parsed.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>Returns the libyaml event that was parsed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation
-error.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -942,41 +950,375 @@ appropriately.</p>
 <div class="refsect2">
 <a name="MMD-EMIT-WITH-EXIT-FULL:CAPS"></a><h3>MMD_EMIT_WITH_EXIT_FULL()</h3>
 <pre class="programlisting">#define             MMD_EMIT_WITH_EXIT_FULL(_emitter, _returnval, _event, _error, ...)</pre>
+<p>DIRECT USE OF THIS MACRO SHOULD BE AVOIDED. This is the internal
+implementation for <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT:CAPS" title="MMD_EMIT_WITH_EXIT()"><code class="literal">MMD_EMIT_WITH_EXIT</code></a> and <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-EMIT-WITH-EXIT-PTR:CAPS" title="MMD_EMIT_WITH_EXIT_PTR()"><code class="literal">MMD_EMIT_WITH_EXIT_PTR</code></a> which
+should be used instead.</p>
+<div class="refsect3">
+<a name="MMD-EMIT-WITH-EXIT-FULL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where <em class="parameter"><code>_event</code></em>
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_returnval</p></td>
+<td class="parameter_description"><p>The value to return in case of an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>The libyaml event to be emitted. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<em class="parameter"><code>_error</code></em>
+in case of failure. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-EMIT-WITH-EXIT-FULL.returns"></a><h4>Returns</h4>
+<p> Continues on if emitting of the event was successful. Returns
+<em class="parameter"><code>_returnval</code></em>
+if an output error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-EMIT-WITH-EXIT:CAPS"></a><h3>MMD_EMIT_WITH_EXIT()</h3>
 <pre class="programlisting">#define             MMD_EMIT_WITH_EXIT(_emitter, _event, _error, ...)</pre>
+<div class="refsect3">
+<a name="MMD-EMIT-WITH-EXIT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where <em class="parameter"><code>_event</code></em>
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>The libyaml event to be emitted. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<em class="parameter"><code>_error</code></em>
+in case of failure. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-EMIT-WITH-EXIT.returns"></a><h4>Returns</h4>
+<p> Continues on if emitting of the event was successful. Returns
+FALSE if an output error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-EMIT-WITH-EXIT-PTR:CAPS"></a><h3>MMD_EMIT_WITH_EXIT_PTR()</h3>
 <pre class="programlisting">#define             MMD_EMIT_WITH_EXIT_PTR(_emitter, _event, _error, ...)</pre>
+<div class="refsect3">
+<a name="MMD-EMIT-WITH-EXIT-PTR.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where <em class="parameter"><code>_event</code></em>
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>The libyaml event to be emitted. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<em class="parameter"><code>_error</code></em>
+in case of failure. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-EMIT-WITH-EXIT-PTR.returns"></a><h4>Returns</h4>
+<p> Continues on if emitting of the event was successful. Returns
+NULL if an output error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-YAML-ERROR-EVENT-EXIT-FULL:CAPS"></a><h3>MMD_YAML_ERROR_EVENT_EXIT_FULL()</h3>
 <pre class="programlisting">#define             MMD_YAML_ERROR_EVENT_EXIT_FULL(_error, _event, _returnval, ...)</pre>
+<p>DIRECT USE OF THIS MACRO SHOULD BE AVOIDED. This is the internal
+implementation for <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT:CAPS" title="MMD_YAML_ERROR_EVENT_EXIT()"><code class="literal">MMD_YAML_ERROR_EVENT_EXIT</code></a>,
+<a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-BOOL:CAPS" title="MMD_YAML_ERROR_EVENT_EXIT_BOOL()"><code class="literal">MMD_YAML_ERROR_EVENT_EXIT_BOOL</code></a>, and <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-INT:CAPS" title="MMD_YAML_ERROR_EVENT_EXIT_INT()"><code class="literal">MMD_YAML_ERROR_EVENT_EXIT_INT</code></a> which
+should be used instead.</p>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT-FULL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for the error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>The libyaml event for which an error is to be reported. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_returnval</p></td>
+<td class="parameter_description"><p>The error value to return. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<em class="parameter"><code>_error</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT-FULL.returns"></a><h4>Returns</h4>
+<p> Returns <em class="parameter"><code>_returnval</code></em>
+and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-YAML-ERROR-EVENT-EXIT:CAPS"></a><h3>MMD_YAML_ERROR_EVENT_EXIT()</h3>
 <pre class="programlisting">#define             MMD_YAML_ERROR_EVENT_EXIT(_error, _event, ...)</pre>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for the error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>The libyaml event for which an error is to be reported. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<em class="parameter"><code>_error</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT.returns"></a><h4>Returns</h4>
+<p> Returns NULL and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-YAML-ERROR-EVENT-EXIT-BOOL:CAPS"></a><h3>MMD_YAML_ERROR_EVENT_EXIT_BOOL()</h3>
 <pre class="programlisting">#define             MMD_YAML_ERROR_EVENT_EXIT_BOOL(_error, _event, ...)</pre>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT-BOOL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for the error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>The libyaml event for which an error is to be reported. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<em class="parameter"><code>_error</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT-BOOL.returns"></a><h4>Returns</h4>
+<p> Returns FALSE and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-YAML-ERROR-EVENT-EXIT-INT:CAPS"></a><h3>MMD_YAML_ERROR_EVENT_EXIT_INT()</h3>
 <pre class="programlisting">#define             MMD_YAML_ERROR_EVENT_EXIT_INT(_error, _event, ...)</pre>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT-INT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for the error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_event</p></td>
+<td class="parameter_description"><p>The libyaml event for which an error is to be reported. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<em class="parameter"><code>_error</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-YAML-ERROR-EVENT-EXIT-INT.returns"></a><h4>Returns</h4>
+<p> Returns 0 and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="MMD-SET-PARSED-YAML-STRING:CAPS"></a><h3>MMD_SET_PARSED_YAML_STRING()</h3>
 <pre class="programlisting">#define             MMD_SET_PARSED_YAML_STRING(_parser, _error, _fn, _obj)</pre>
+<p>This convenience macro can be used when a YAML string (scalar) event is
+expected, and that string is to be stored in a property of libmodulemd
+object <em class="parameter"><code>_obj</code></em>
+ via setter method <em class="parameter"><code>_fn</code></em>
+.</p>
+<div class="refsect3">
+<a name="MMD-SET-PARSED-YAML-STRING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_parser</p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of an
+expected string event. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_fn</p></td>
+<td class="parameter_description"><p>A setter method for a property of object <em class="parameter"><code>_obj</code></em>
+to be called with
+the successfully parsed string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_obj</p></td>
+<td class="parameter_description"><p>The object that is to store the parsed string via its <em class="parameter"><code>_fn</code></em>
+setter method. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="MMD-SET-PARSED-YAML-STRING.returns"></a><h4>Returns</h4>
+<p> Continues on if parsing of the event was successful. Returns
+NULL if a parse error occurred and sets <em class="parameter"><code>_error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -984,6 +1326,36 @@ appropriately.</p>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 mmd_emitter_start_stream (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="mmd-emitter-start-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that will be positioned at the
+beginning of a new YAML output stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-start-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML stream was started successfully. Returns FALSE if
+an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -991,6 +1363,36 @@ mmd_emitter_start_stream (<em class="parameter"><code><span class="type">yaml_em
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 mmd_emitter_end_stream (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="mmd-emitter-end-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the end of
+a YAML output stream to be closed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-end-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML stream was closed successfully. Returns FALSE if
+an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -998,6 +1400,37 @@ mmd_emitter_end_stream (<em class="parameter"><code><span class="type">yaml_emit
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 mmd_emitter_start_document (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Emits a YAML document start header line.</p>
+<div class="refsect3">
+<a name="mmd-emitter-start-document.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new YAML document will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-start-document.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML document was started successfully. Returns FALSE
+if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1005,6 +1438,37 @@ mmd_emitter_start_document (<em class="parameter"><code><span class="type">yaml_
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 mmd_emitter_end_document (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Emits a YAML document termination line.</p>
+<div class="refsect3">
+<a name="mmd-emitter-end-document.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a YAML document terminator will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-end-document.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML document was terminated successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1013,6 +1477,41 @@ mmd_emitter_end_document (<em class="parameter"><code><span class="type">yaml_em
 mmd_emitter_start_mapping (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                            <em class="parameter"><code><span class="type">yaml_mapping_style_t</span> style</code></em>,
                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="mmd-emitter-start-mapping.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new mapping will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The YAML mapping style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-start-mapping.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML mapping was started successfully. Returns FALSE if
+an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1020,6 +1519,36 @@ mmd_emitter_start_mapping (<em class="parameter"><code><span class="type">yaml_e
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 mmd_emitter_end_mapping (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="mmd-emitter-end-mapping.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a mapping ending will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-end-mapping.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML mapping was ended successfully. Returns FALSE if
+an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1028,6 +1557,41 @@ mmd_emitter_end_mapping (<em class="parameter"><code><span class="type">yaml_emi
 mmd_emitter_start_sequence (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                             <em class="parameter"><code><span class="type">yaml_sequence_style_t</span> style</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="mmd-emitter-start-sequence.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The YAML sequence style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-start-sequence.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML sequence was started successfully. Returns FALSE
+if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1035,6 +1599,36 @@ mmd_emitter_start_sequence (<em class="parameter"><code><span class="type">yaml_
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 mmd_emitter_end_sequence (<em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="mmd-emitter-end-sequence.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a sequence ending will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-end-sequence.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML sequence was ended successfully. Returns FALSE if
+an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1044,6 +1638,46 @@ mmd_emitter_scalar (<em class="parameter"><code><span class="type">yaml_emitter_
                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *scalar</code></em>,
                     <em class="parameter"><code><span class="type">yaml_scalar_style_t</span> style</code></em>,
                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="mmd-emitter-scalar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a scalar will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>scalar</p></td>
+<td class="parameter_description"><p>The scalar (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The YAML scalar style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="mmd-emitter-scalar.returns"></a><h4>Returns</h4>
+<p> TRUE if the YAML scalar was written successfully. Returns FALSE if
+an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1064,8 +1698,9 @@ mmd_emitter_strv (<em class="parameter"><code><span class="type">yaml_emitter_t<
 <tbody>
 <tr>
 <td class="parameter_name"><p>emitter</p></td>
-<td class="parameter_description"><p>A yaml emitter object positioned at the beginning of a value place to emit a sequence. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned at the start of where
+a string sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>seq_style</p></td>
@@ -1074,8 +1709,8 @@ mmd_emitter_strv (<em class="parameter"><code><span class="type">yaml_emitter_t<
 </tr>
 <tr>
 <td class="parameter_name"><p>list</p></td>
-<td class="parameter_description"><p>A list that will be emitted to the YAML emitter.</p></td>
-<td class="parameter_annotations"> </td>
+<td class="parameter_description"><p>A list that will be emitted to the YAML emitter. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
@@ -1087,7 +1722,9 @@ mmd_emitter_strv (<em class="parameter"><code><span class="type">yaml_emitter_t<
 </div>
 <div class="refsect3">
 <a name="mmd-emitter-strv.returns"></a><h4>Returns</h4>
-<p> A boolean whether emitting the sequence was successful.</p>
+<p> TRUE if the sequence emitted successfully. FALSE if an error was
+encountered and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1147,12 +1784,14 @@ modulemd_yaml_parse_string (<em class="parameter"><code><span class="type">yaml_
 <tbody>
 <tr>
 <td class="parameter_name"><p>parser</p></td>
-<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a string scalar entry. </p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a
+string scalar entry. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation error. </p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -1160,8 +1799,8 @@ modulemd_yaml_parse_string (<em class="parameter"><code><span class="type">yaml_
 </div>
 <div class="refsect3">
 <a name="modulemd-yaml-parse-string.returns"></a><h4>Returns</h4>
-<p>A newly-allocated gchar * representing the parsed value.
-NULL if a parse error occurred and sets <em class="parameter"><code>error</code></em>
+<p>A newly-allocated <code class="literal">gchar *</code> representing the
+parsed value. NULL if a parse error occurred and sets <em class="parameter"><code>error</code></em>
 appropriately. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -1185,7 +1824,7 @@ modulemd_yaml_parse_bool (<em class="parameter"><code><span class="type">yaml_pa
 <tr>
 <td class="parameter_name"><p>parser</p></td>
 <td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a
-int64 scalar entry. </p></td>
+boolean scalar entry. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -1300,12 +1939,14 @@ modulemd_yaml_parse_string_set (<em class="parameter"><code><span class="type">y
 <tbody>
 <tr>
 <td class="parameter_name"><p>parser</p></td>
-<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a sequence with string scalars. </p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a
+sequence with string scalars. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or validation error. </p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -1313,9 +1954,9 @@ modulemd_yaml_parse_string_set (<em class="parameter"><code><span class="type">y
 </div>
 <div class="refsect3">
 <a name="modulemd-yaml-parse-string-set.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> * representing the parsed value.
-All parsed sequence entries are added as keys in the hashtable.
-NULL if a parse error occurred and sets <em class="parameter"><code>error</code></em>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> * representing the
+parsed value. All parsed sequence entries are added as keys in the
+hashtable. NULL if a parse error occurred and sets <em class="parameter"><code>error</code></em>
 appropriately. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -1437,14 +2078,15 @@ version and the data section.</p>
 <tbody><tr>
 <td class="parameter_name"><p>parser</p></td>
 <td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a
-yaml subdocument immediately prior to a YAML_DOCUMENT_START_EVENT. </p></td>
+yaml subdocument immediately prior to a <code class="literal">YAML_DOCUMENT_START_EVENT</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
 </div>
 <div class="refsect3">
 <a name="modulemd-yaml-parse-document-type.returns"></a><h4>Returns</h4>
-<p>A SubdocumentInfo with information on the parse results. </p>
+<p>A <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> with information on
+the parse results. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
@@ -1459,7 +2101,7 @@ modulemd_yaml_emit_document_headers (<em class="parameter"><code><span class="ty
                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Creates the YAML header and returns <em class="parameter"><code>emitter</code></em>
  positioned just before the
-YAML_MAPPING_START for the "data:" section.</p>
+<code class="literal">YAML_MAPPING_START</code> for the "data:" section.</p>
 <div class="refsect3">
 <a name="modulemd-yaml-emit-document-headers.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1472,8 +2114,8 @@ YAML_MAPPING_START for the "data:" section.</p>
 <tr>
 <td class="parameter_name"><p>emitter</p></td>
 <td class="parameter_description"><p>A libyaml emitter object that is positioned where the
-YAML_DOCUMENT_START_EVENT should occur (so this must be after either a
-YAML_STREAM_START_EVENT or YAML_DOCUMENT_END_EVENT). </p></td>
+<code class="literal">YAML_DOCUMENT_START_EVENT</code> should occur (so this must be after either a
+<code class="literal">YAML_STREAM_START_EVENT</code> or <code class="literal">YAML_DOCUMENT_END_EVENT</code>). </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -1591,7 +2233,7 @@ mmd_variant_from_mapping (<em class="parameter"><code><span class="type">yaml_pa
 <tbody>
 <tr>
 <td class="parameter_name"><p>parser</p></td>
-<td class="parameter_description"><p>A YAML parser positioned just after a MAPPING_START. </p></td>
+<td class="parameter_description"><p>A YAML parser positioned just after a <code class="literal">MAPPING_START</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -1627,7 +2269,7 @@ mmd_variant_from_sequence (<em class="parameter"><code><span class="type">yaml_p
 <tbody>
 <tr>
 <td class="parameter_name"><p>parser</p></td>
-<td class="parameter_description"><p>A YAML parser positioned just after a SEQUENCE_START. </p></td>
+<td class="parameter_description"><p>A YAML parser positioned just after a <code class="literal">SEQUENCE_START</code>. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -1690,109 +2332,961 @@ appropriately if the document was malformed YAML.</p>
 <div class="refsect2">
 <a name="SKIP-UNKNOWN:CAPS"></a><h3>SKIP_UNKNOWN()</h3>
 <pre class="programlisting">#define             SKIP_UNKNOWN(_parser, _returnval, ...)</pre>
+<p>This convenience macro is a wrapper around <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#skip-unknown-yaml" title="skip_unknown_yaml ()"><code class="function">skip_unknown_yaml()</code></a> used to skip
+a section of YAML that contains unknown keys.</p>
+<p>NOTE: Local variables <code class="literal">strict</code> and <code class="literal">error</code> are expected to be present in the
+code from which this macro is used.</p>
+<div class="refsect3">
+<a name="SKIP-UNKNOWN.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_parser</p></td>
+<td class="parameter_description"><p>A YAML parser positioned just after an unexpected map key. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_returnval</p></td>
+<td class="parameter_description"><p>The error value to return. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>Additional argument(s) to pass to <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#g-set-error"><code class="function">g_set_error()</code></a> when setting
+<code class="literal">error</code>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="SKIP-UNKNOWN.returns"></a><h4>Returns</h4>
+<p> If <code class="literal">strict</code> is TRUE or <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#skip-unknown-yaml" title="skip_unknown_yaml ()"><code class="function">skip_unknown_yaml()</code></a> fails, <em class="parameter"><code>_returnval</code></em>
+is
+returned and <code class="literal">error</code> is set appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="NON-EMPTY-TABLE:CAPS"></a><h3>NON_EMPTY_TABLE()</h3>
 <pre class="programlisting">#define NON_EMPTY_TABLE(table) (g_hash_table_size (table) != 0)
 </pre>
+<div class="refsect3">
+<a name="NON-EMPTY-TABLE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="NON-EMPTY-TABLE.returns"></a><h4>Returns</h4>
+<p> FALSE if <em class="parameter"><code>table</code></em>
+is empty, otherwise TRUE.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="NON-EMPTY-ARRAY:CAPS"></a><h3>NON_EMPTY_ARRAY()</h3>
 <pre class="programlisting">#define NON_EMPTY_ARRAY(array) (array-&gt;len != 0)
 </pre>
+<div class="refsect3">
+<a name="NON-EMPTY-ARRAY.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="NON-EMPTY-ARRAY.returns"></a><h4>Returns</h4>
+<p> FALSE if <em class="parameter"><code>array</code></em>
+is empty, otherwise TRUE.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-SCALAR-FULL:CAPS"></a><h3>EMIT_SCALAR_FULL()</h3>
 <pre class="programlisting">#define             EMIT_SCALAR_FULL(emitter, error, value, style)</pre>
+<p>Emits scalar <em class="parameter"><code>value</code></em>
+ using style <em class="parameter"><code>style</code></em>
+.</p>
+<div class="refsect3">
+<a name="EMIT-SCALAR-FULL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a scalar
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The scalar (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The YAML scalar style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-SCALAR-FULL.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML scalar was written successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch06.html#api-index-2.1">2.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-SCALAR:CAPS"></a><h3>EMIT_SCALAR()</h3>
 <pre class="programlisting">#define             EMIT_SCALAR(emitter, error, value)</pre>
+<p>Emits scalar <em class="parameter"><code>value</code></em>
+ using style <code class="literal">YAML_PLAIN_SCALAR_STYLE</code>.</p>
+<div class="refsect3">
+<a name="EMIT-SCALAR.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a scalar
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The scalar (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-SCALAR.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML scalar was written successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-KEY-VALUE-FULL:CAPS"></a><h3>EMIT_KEY_VALUE_FULL()</h3>
 <pre class="programlisting">#define             EMIT_KEY_VALUE_FULL(emitter, error, key, value, style)</pre>
+<p>Emits key/value pair (<em class="parameter"><code>key</code></em>
+: <em class="parameter"><code>value</code></em>
+) using style <em class="parameter"><code>style</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and a value for that key, thus it must
+only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-KEY-VALUE-FULL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a scalar
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The key (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The scalar (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The YAML scalar style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-KEY-VALUE-FULL.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML key/value pair was written successfully.
+Returns FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch06.html#api-index-2.1">2.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-KEY-VALUE:CAPS"></a><h3>EMIT_KEY_VALUE()</h3>
 <pre class="programlisting">#define             EMIT_KEY_VALUE(emitter, error, key, value)</pre>
+<p>Emits key/value pair (<em class="parameter"><code>key</code></em>
+: <em class="parameter"><code>value</code></em>
+) using style <code class="literal">YAML_PLAIN_SCALAR_STYLE</code>.</p>
+<p>NOTE: This macro outputs both a key and a value for that key, thus it must
+only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-KEY-VALUE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a scalar
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The key (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The scalar (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-KEY-VALUE.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML key/value pair was written successfully.
+Returns FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-KEY-VALUE-IF-SET:CAPS"></a><h3>EMIT_KEY_VALUE_IF_SET()</h3>
 <pre class="programlisting">#define             EMIT_KEY_VALUE_IF_SET(emitter, error, key, value)</pre>
+<p>Emits key/value pair (<em class="parameter"><code>key</code></em>
+: <em class="parameter"><code>value</code></em>
+) only if <em class="parameter"><code>value</code></em>
+ is not NULL.</p>
+<p>NOTE: This macro outputs both a key and a value for that key, thus it must
+only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-KEY-VALUE-IF-SET.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a scalar
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an output error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The key (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The scalar (string) to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-KEY-VALUE-IF-SET.returns"></a><h4>Returns</h4>
+<p> Continues on if <em class="parameter"><code>value</code></em>
+is NULL or the YAML key/value pair was
+written successfully. Returns FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-MAPPING-START-WITH-STYLE:CAPS"></a><h3>EMIT_MAPPING_START_WITH_STYLE()</h3>
 <pre class="programlisting">#define             EMIT_MAPPING_START_WITH_STYLE(emitter, error, style)</pre>
+<div class="refsect3">
+<a name="EMIT-MAPPING-START-WITH-STYLE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new mapping will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The YAML mapping style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-MAPPING-START-WITH-STYLE.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML mapping was started successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-MAPPING-START:CAPS"></a><h3>EMIT_MAPPING_START()</h3>
 <pre class="programlisting">#define             EMIT_MAPPING_START(emitter, error)</pre>
+<div class="refsect3">
+<a name="EMIT-MAPPING-START.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new mapping will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-MAPPING-START.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML mapping was started successfully using
+style <code class="literal">YAML_BLOCK_MAPPING_STYLE</code>. Returns FALSE if an error occurred and
+sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-MAPPING-END:CAPS"></a><h3>EMIT_MAPPING_END()</h3>
 <pre class="programlisting">#define             EMIT_MAPPING_END(emitter, error)</pre>
+<div class="refsect3">
+<a name="EMIT-MAPPING-END.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a mapping ending will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-MAPPING-END.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML mapping was ended successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-SEQUENCE-START-WITH-STYLE:CAPS"></a><h3>EMIT_SEQUENCE_START_WITH_STYLE()</h3>
 <pre class="programlisting">#define             EMIT_SEQUENCE_START_WITH_STYLE(emitter, error, style)</pre>
+<div class="refsect3">
+<a name="EMIT-SEQUENCE-START-WITH-STYLE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>The YAML sequence style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-SEQUENCE-START-WITH-STYLE.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was started successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-SEQUENCE-START:CAPS"></a><h3>EMIT_SEQUENCE_START()</h3>
 <pre class="programlisting">#define             EMIT_SEQUENCE_START(emitter, error)</pre>
+<div class="refsect3">
+<a name="EMIT-SEQUENCE-START.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-SEQUENCE-START.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was started successfully using
+style <code class="literal">YAML_BLOCK_SEQUENCE_STYLE</code>. Returns FALSE if an error occurred and
+sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-SEQUENCE-END:CAPS"></a><h3>EMIT_SEQUENCE_END()</h3>
 <pre class="programlisting">#define             EMIT_SEQUENCE_END(emitter, error)</pre>
+<div class="refsect3">
+<a name="EMIT-SEQUENCE-END.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a sequence ending will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-SEQUENCE-END.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was ended successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-HASHTABLE-VALUES-IF-NON-EMPTY:CAPS"></a><h3>EMIT_HASHTABLE_VALUES_IF_NON_EMPTY()</h3>
 <pre class="programlisting">#define             EMIT_HASHTABLE_VALUES_IF_NON_EMPTY(                                   \
               emitter, error, key, table, emitfn)</pre>
+<p>Does nothing if the hash table <em class="parameter"><code>table</code></em>
+ is empty. Otherwise, calls <em class="parameter"><code>emitfn</code></em>
+
+to emit each of the values from <em class="parameter"><code>table</code></em>
+ identified as <em class="parameter"><code>key</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and a sub-mapping value for that key,
+thus it must only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-HASHTABLE-VALUES-IF-NON-EMPTY.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new mapping will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The name to be used as the identifier for the output mapping. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>The <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> that is to be output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitfn</p></td>
+<td class="parameter_description"><p>A function used to emit each of the hash table values. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-HASHTABLE-VALUES-IF-NON-EMPTY.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML mapping was output successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-HASHTABLE-KEY-VALUES-IF-NON-EMPTY:CAPS"></a><h3>EMIT_HASHTABLE_KEY_VALUES_IF_NON_EMPTY()</h3>
 <pre class="programlisting">#define             EMIT_HASHTABLE_KEY_VALUES_IF_NON_EMPTY(emitter, error, key, table)</pre>
+<p>Does nothing if the hash table <em class="parameter"><code>table</code></em>
+ is empty. Otherwise, outputs a YAML
+mapping with the key/value pairs from <em class="parameter"><code>table</code></em>
+ identified as <em class="parameter"><code>key</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and a sub-mapping value for that key,
+thus it must only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-HASHTABLE-KEY-VALUES-IF-NON-EMPTY.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new mapping will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The name to be used as the identifier for the output mapping. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>The <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> that is to be output. Both the keys and values
+must be strings. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-HASHTABLE-KEY-VALUES-IF-NON-EMPTY.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML mapping was output successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-STRING-SET:CAPS"></a><h3>EMIT_STRING_SET()</h3>
 <pre class="programlisting">#define             EMIT_STRING_SET(emitter, error, key, table)</pre>
+<p>Raises an error if the hash table <em class="parameter"><code>table</code></em>
+ is empty. Otherwise, outputs a YAML
+sequence using style <code class="literal">YAML_BLOCK_SEQUENCE_STYLE</code> with the keys from <em class="parameter"><code>table</code></em>
+
+identified as <em class="parameter"><code>key</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and an array value for that key, thus it
+must only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-STRING-SET.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The name to be used as the identifier for the output sequence. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>The <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> that is to be output. The keys are expected to
+be a <code class="function">set()</code> of strings. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-STRING-SET.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was output successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-STRING-SET-IF-NON-EMPTY:CAPS"></a><h3>EMIT_STRING_SET_IF_NON_EMPTY()</h3>
 <pre class="programlisting">#define             EMIT_STRING_SET_IF_NON_EMPTY(emitter, error, key, table)</pre>
+<p>Does nothing if the hash table <em class="parameter"><code>table</code></em>
+ is empty. Otherwise, outputs a YAML
+sequence using style <code class="literal">YAML_BLOCK_SEQUENCE_STYLE</code> with the keys from <em class="parameter"><code>table</code></em>
+
+identified as <em class="parameter"><code>key</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and an array value for that key, thus it
+must only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-STRING-SET-IF-NON-EMPTY.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The name to be used as the identifier for the output sequence. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>The <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> that is to be output. The keys are expected to
+be a <code class="function">set()</code> of strings. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-STRING-SET-IF-NON-EMPTY.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was output successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-STRING-SET-FULL:CAPS"></a><h3>EMIT_STRING_SET_FULL()</h3>
 <pre class="programlisting">#define             EMIT_STRING_SET_FULL(emitter, error, key, table, sequence_style)</pre>
+<p>Outputs a YAML sequence with the keys from <em class="parameter"><code>table</code></em>
+ identified as <em class="parameter"><code>key</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and an array value for that key, thus it
+must only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-STRING-SET-FULL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The name to be used as the identifier for the output sequence. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>The <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> that is to be output. The keys are expected to
+be a <code class="function">set()</code> of strings. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sequence_style</p></td>
+<td class="parameter_description"><p>The YAML sequence style for the output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-STRING-SET-FULL.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was output successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch06.html#api-index-2.1">2.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-ARRAY-VALUES:CAPS"></a><h3>EMIT_ARRAY_VALUES()</h3>
 <pre class="programlisting">#define             EMIT_ARRAY_VALUES(emitter, error, key, array, emitfn)</pre>
+<p>Raises an error if the array <em class="parameter"><code>array</code></em>
+ is empty. Otherwise, calls <em class="parameter"><code>emitfn</code></em>
+
+to emit each of the values from <em class="parameter"><code>array</code></em>
+ identified as <em class="parameter"><code>key</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and an array value for that key, thus it
+must only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-ARRAY-VALUES.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The name to be used as the identifier for the output sequence. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>The <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> that is to be output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitfn</p></td>
+<td class="parameter_description"><p>A function used to emit each of the array values. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-ARRAY-VALUES.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was output successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="EMIT-ARRAY-VALUES-IF-NON-EMPTY:CAPS"></a><h3>EMIT_ARRAY_VALUES_IF_NON_EMPTY()</h3>
 <pre class="programlisting">#define             EMIT_ARRAY_VALUES_IF_NON_EMPTY(emitter, error, key, array, emitfn)</pre>
+<p>Does nothing if the array <em class="parameter"><code>array</code></em>
+ is empty. Otherwise, calls <em class="parameter"><code>emitfn</code></em>
+ to emit
+each of the values from <em class="parameter"><code>array</code></em>
+ identified as <em class="parameter"><code>key</code></em>
+.</p>
+<p>NOTE: This macro outputs both a key and an array value for that key, thus it
+must only be used from within a YAML mapping.</p>
+<div class="refsect3">
+<a name="EMIT-ARRAY-VALUES-IF-NON-EMPTY.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object that is positioned at the start
+of where a new sequence will be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for any error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The name to be used as the identifier for the output sequence. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>array</p></td>
+<td class="parameter_description"><p>The <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> that is to be output. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitfn</p></td>
+<td class="parameter_description"><p>A function used to emit each of the array values. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="EMIT-ARRAY-VALUES-IF-NON-EMPTY.returns"></a><h4>Returns</h4>
+<p> Continues on if the YAML sequence was output successfully. Returns
+FALSE if an error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 </div>
 <div class="refsect1">
