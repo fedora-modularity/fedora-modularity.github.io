@@ -514,12 +514,13 @@
     <keyword type="function" name="modulemd_module_stream_get_translation ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_get_translation_entry ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation-entry" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_validate_components ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-components" since="2.0"/>
-    <keyword type="macro" name="STREAM_COPY_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET:CAPS"/>
-    <keyword type="macro" name="STREAM_UPGRADE_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET:CAPS"/>
-    <keyword type="macro" name="STREAM_COPY_IF_SET_WITH_LOCALE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET-WITH-LOCALE:CAPS"/>
-    <keyword type="macro" name="STREAM_UPGRADE_IF_SET_WITH_LOCALE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-WITH-LOCALE:CAPS"/>
-    <keyword type="macro" name="STREAM_REPLACE_HASHTABLE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-REPLACE-HASHTABLE:CAPS"/>
-    <keyword type="macro" name="COPY_HASHTABLE_BY_VALUE_ADDER()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#COPY-HASHTABLE-BY-VALUE-ADDER:CAPS"/>
+    <keyword type="macro" name="STREAM_UPGRADE_IF_SET_FULL()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-FULL:CAPS" since="2.0"/>
+    <keyword type="macro" name="STREAM_COPY_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET:CAPS" since="2.0"/>
+    <keyword type="macro" name="STREAM_UPGRADE_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET:CAPS" since="2.0"/>
+    <keyword type="macro" name="STREAM_COPY_IF_SET_WITH_LOCALE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET-WITH-LOCALE:CAPS" since="2.0"/>
+    <keyword type="macro" name="STREAM_UPGRADE_IF_SET_WITH_LOCALE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-WITH-LOCALE:CAPS" since="2.0"/>
+    <keyword type="macro" name="STREAM_REPLACE_HASHTABLE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-REPLACE-HASHTABLE:CAPS" since="2.0"/>
+    <keyword type="macro" name="COPY_HASHTABLE_BY_VALUE_ADDER()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#COPY-HASHTABLE-BY-VALUE-ADDER:CAPS" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_emit_yaml_base ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-emit-yaml-base" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-emit-yaml" since="2.0"/>
