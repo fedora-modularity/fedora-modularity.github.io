@@ -206,6 +206,7 @@
     <keyword type="function" name="modulemd_module_index_update_from_string ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_custom ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-custom" since="2.3"/>
+    <keyword type="function" name="modulemd_module_index_update_from_defaults_directory ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-defaults-directory" since="2.8"/>
     <keyword type="function" name="modulemd_module_index_dump_to_string ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-string" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_dump_to_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_dump_to_custom ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-custom" since="2.3"/>

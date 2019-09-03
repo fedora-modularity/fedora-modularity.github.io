@@ -109,6 +109,14 @@ justifications.
 </tr>
 <tr>
 <td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-defaults-directory" title="modulemd_module_index_update_from_defaults_directory ()">modulemd_module_index_update_from_defaults_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
@@ -665,6 +673,77 @@ if
 there was a fatal parse error.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-defaults-directory"></a><h3>modulemd_module_index_update_from_defaults_directory ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_update_from_defaults_directory
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *overrides_path</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>This function will open the directory at <em class="parameter"><code>path</code></em>
+ and iterate through it,
+adding any files with the suffix ".yaml" to <em class="parameter"><code>self</code></em>
+. If <em class="parameter"><code>overrides_path</code></em>
+ is
+non-NULL, it will also open any files with the suffix ".yaml" in that
+location and import them, overriding any conflicts with the existing
+defaults.</p>
+<p>Note: If you need detailed information about what failed and why, it is
+better to implement the directory traversal yourself and use the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-file" title="modulemd_module_index_update_from_file ()"><code class="function">modulemd_module_index_update_from_file()</code></a> function, as it will return the
+failures information.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-defaults-directory.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>The path to a directory containing defaults documents. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>overrides_path</p></td>
+<td class="parameter_description"><p>If non-NULL, the path to a directory
+containing defaults documents that should override those in <em class="parameter"><code>path</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> indicating why this function failed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-defaults-directory.returns"></a><h4>Returns</h4>
+<p> TRUE if all ".yaml" files in the directory were imported
+successfully (this includes if no ".yaml" files were present). FALSE if one
+or more files could not be read successfully and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch13.html#api-index-2.8">2.8</a></p>
 </div>
 <hr>
 <div class="refsect2">
