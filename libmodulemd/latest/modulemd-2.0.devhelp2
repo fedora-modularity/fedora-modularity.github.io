@@ -8,6 +8,7 @@
         <sub name="Modulemd.Component" link="ModulemdComponent.html"/>
         <sub name="Modulemd.ComponentModule" link="modulemd-2.0-Modulemd.ComponentModule.html"/>
         <sub name="Modulemd.ComponentRpm" link="modulemd-2.0-Modulemd.ComponentRpm.html"/>
+        <sub name="Modulemd Compression Helpers" link="modulemd-2.0-Modulemd-Compression-Helpers.html"/>
         <sub name="Modulemd.Defaults" link="ModulemdDefaults.html"/>
         <sub name="Modulemd.DefaultsV1" link="modulemd-2.0-Modulemd.DefaultsV1.html"/>
         <sub name="Modulemd.Dependencies" link="modulemd-2.0-Modulemd.Dependencies.html"/>
@@ -30,6 +31,7 @@
         <sub name="Modulemd.Component (Private)" link="modulemd-2.0-Modulemd.Component-(Private).html"/>
         <sub name="Modulemd.ComponentModule (Private)" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html"/>
         <sub name="Modulemd.ComponentRpm (Private)" link="modulemd-2.0-Modulemd.ComponentRpm-(Private).html"/>
+        <sub name="Modulemd Compression Helpers (Private)" link="modulemd-2.0-Modulemd-Compression-Helpers-(Private).html"/>
         <sub name="Modulemd.Dependencies (Private)" link="modulemd-2.0-Modulemd.Dependencies-(Private).html"/>
         <sub name="Modulemd.Defaults (Private)" link="modulemd-2.0-Modulemd.Defaults-(Private).html"/>
         <sub name="Modulemd.DefaultsV1 (Private)" link="modulemd-2.0-Modulemd.DefaultsV1-(Private).html"/>
@@ -137,6 +139,8 @@
     <keyword type="property" name="The “ref” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--ref"/>
     <keyword type="property" name="The “repository” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--repository"/>
     <keyword type="property" name="The “srpm-buildroot” property" link="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--srpm-buildroot"/>
+    <keyword type="function" name="modulemd_compression_type ()" link="modulemd-2.0-Modulemd-Compression-Helpers.html#modulemd-compression-type" since="2.8"/>
+    <keyword type="enum" name="enum ModulemdCompressionTypeEnum" link="modulemd-2.0-Modulemd-Compression-Helpers.html#ModulemdCompressionTypeEnum" since="2.8"/>
     <keyword type="function" name="modulemd_defaults_new ()" link="ModulemdDefaults.html#modulemd-defaults-new" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_copy ()" link="ModulemdDefaults.html#modulemd-defaults-copy" since="2.0"/>
     <keyword type="function" name="modulemd_defaults_validate ()" link="ModulemdDefaults.html#modulemd-defaults-validate" since="2.0"/>
@@ -488,6 +492,11 @@
     <keyword type="function" name="modulemd_component_module_emit_yaml ()" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html#modulemd-component-module-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_parse_yaml ()" link="modulemd-2.0-Modulemd.ComponentRpm-(Private).html#modulemd-component-rpm-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_emit_yaml ()" link="modulemd-2.0-Modulemd.ComponentRpm-(Private).html#modulemd-component-rpm-emit-yaml" since="2.0"/>
+    <keyword type="function" name="mmd_Fclose ()" link="modulemd-2.0-Modulemd-Compression-Helpers-(Private).html#mmd-Fclose" since="2.8"/>
+    <keyword type="function" name="modulemd_detect_compression ()" link="modulemd-2.0-Modulemd-Compression-Helpers-(Private).html#modulemd-detect-compression" since="2.8"/>
+    <keyword type="function" name="modulemd_compression_suffix ()" link="modulemd-2.0-Modulemd-Compression-Helpers-(Private).html#modulemd-compression-suffix" since="2.8"/>
+    <keyword type="function" name="modulemd_get_rpmio_fmode ()" link="modulemd-2.0-Modulemd-Compression-Helpers-(Private).html#modulemd-get-rpmio-fmode" since="2.8"/>
+    <keyword type="function" name="compressed_stream_read_fn ()" link="modulemd-2.0-Modulemd-Compression-Helpers-(Private).html#compressed-stream-read-fn" since="2.8"/>
     <keyword type="function" name="modulemd_dependencies_parse_yaml ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_emit_yaml ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_dependencies_validate ()" link="modulemd-2.0-Modulemd.Dependencies-(Private).html#modulemd-dependencies-validate" since="2.0"/>
@@ -668,6 +677,14 @@
     <keyword type="function" name="parser_skip_headers ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-headers" since="2.0"/>
     <keyword type="function" name="parser_skip_document_start ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-document-start" since="2.0"/>
     <keyword type="variable" name="modulemd_test_signal" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#modulemd-test-signal"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_DETECTION_FAILED" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-DETECTION-FAILED:CAPS"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_UNKNOWN_COMPRESSION" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-UNKNOWN-COMPRESSION:CAPS"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_NO_COMPRESSION" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-NO-COMPRESSION:CAPS"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_GZ_COMPRESSION" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-GZ-COMPRESSION:CAPS"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_BZ2_COMPRESSION" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-BZ2-COMPRESSION:CAPS"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_XZ_COMPRESSION" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-XZ-COMPRESSION:CAPS"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_ZCK_COMPRESSION" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-ZCK-COMPRESSION:CAPS"/>
+    <keyword type="constant" name="MODULEMD_COMPRESSION_TYPE_SENTINEL" link="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-SENTINEL:CAPS"/>
     <keyword type="constant" name="MD_DEFAULTS_VERSION_ERROR" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-ERROR:CAPS"/>
     <keyword type="constant" name="MD_DEFAULTS_VERSION_UNSET" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-UNSET:CAPS"/>
     <keyword type="constant" name="MD_DEFAULTS_VERSION_ONE" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-ONE:CAPS"/>
@@ -677,6 +694,8 @@
     <keyword type="constant" name="MODULEMD_ERROR_FILE_ACCESS" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-FILE-ACCESS:CAPS"/>
     <keyword type="constant" name="MODULEMD_ERROR_NO_MATCHES" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-NO-MATCHES:CAPS"/>
     <keyword type="constant" name="MODULEMD_ERROR_TOO_MANY_MATCHES" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-TOO-MANY-MATCHES:CAPS"/>
+    <keyword type="constant" name="MODULEMD_ERROR_MAGIC" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-MAGIC:CAPS"/>
+    <keyword type="constant" name="MODULEMD_ERROR_NOT_IMPLEMENTED" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-NOT-IMPLEMENTED:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_ERROR_OPEN" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-YAML-ERROR-OPEN:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_ERROR_PROGRAMMING" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-YAML-ERROR-PROGRAMMING:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_ERROR_UNPARSEABLE" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-YAML-ERROR-UNPARSEABLE:CAPS"/>
