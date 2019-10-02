@@ -148,37 +148,54 @@ At present, libmodulemd does not interrogate more closely to determine if
 they have the same content, so if the repository configuration is broken and
 there exists two <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> entries that have different content
 for the same NSVC, the behavior is undefined.</p>
-<p>Merging <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> entries behaves as follows:</p>
+<p>Merging <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> entries behaves as follows (note that this
+behavior has changed slightly as of 2.8.1):</p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
-<li class="listitem"><p>Within a ModuleIndex, if two or more default entries reference the same
-module, the one with the highest modified field will be used and the
-others discarded.</p></li>
-<li class="listitem"><p>When merging ModuleIndexes, if two or more indexes contain Defaults for
-the same module, but different modified values, the one with the highest
-modified value will be used and the others discarded.</p></li>
-<li class="listitem"><p>Any module default that is provided by a single repository is
-authoritative.</p></li>
-<li class="listitem"><p>If the repos have different priorities (not common), then the default for
-this module and stream name coming from the repo of higher priority will
-be used and the default from the lower-priority repo will not be included
-even if it has a higher modified value.</p></li>
+<li class="listitem"><p>Any module defaults object that is provided by a single
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> will be the defaults object in the resulting merged
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>.</p></li>
+<li class="listitem"><p>If the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> inputs have different priorities (not common),
+then the defaults from the highest priority <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> will be
+used and the others entirely discarded. The <code class="literal">modified</code> value will not be
+considered at all. (Priority is intended for providing a total override,
+including an on-disk configuration).</p></li>
 <li class="listitem">
 <p>If the repos have the same priority (such as "fedora" and "updates" in the
-Fedora Project) and modified value, the entries will be merged as follows:</p>
+Fedora Project) and <code class="literal">modified</code> value, the entries will be merged as
+follows for default streams:</p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; ">
-<li class="listitem"><p>If both repositories specify the same default stream for the module, use
-it.</p></li>
-<li class="listitem"><p>If either repository specifies a default stream for the module and the
-other does not, use the one specified.</p></li>
-<li class="listitem"><p>If both repositories specify different default streams, the merge will
-unset the default stream and proceed with the merge.</p></li>
-<li class="listitem"><p>If both repositories specify a set of default profiles for a stream and
-the sets are equivalent, use that set.</p></li>
-<li class="listitem"><p>If one repository specifies a set of default profiles for a stream and
-the other does not, use the one specified.</p></li>
-<li class="listitem"><p>If both repositories specify a set of default profiles for a stream and
-each are providing a different set, this is an unresolvable merge
-conflict and the merge resolution will fail and report an error.</p></li>
+<li class="listitem"><p>If both <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects specify the same default stream for
+the module, that one will be used.</p></li>
+<li class="listitem"><p>If either <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> specifies a default stream for the module
+and the other does not, the provided one will be used.</p></li>
+<li class="listitem"><p>If both <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects specify different default streams
+and have different <code class="literal">modified</code> values, the default stream from the
+<a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object with the higher <code class="literal">modified</code> value will be used.</p></li>
+<li class="listitem"><p>If both <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects specify different default streams
+and have the same <code class="literal">modified</code> value, the merge will unset the default
+stream and leave no default stream in the resulting merged
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>. This behavior can be controlled by using
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve-ext" title="modulemd_module_index_merger_resolve_ext ()"><code class="function">modulemd_module_index_merger_resolve_ext()</code></a> and setting
+<code class="literal">strict_default_streams</code> to <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a>. In that case, an error will be
+returned if conflicting default streams have been provided.</p></li>
+</ul></div>
+</li>
+<li class="listitem">
+<p>and for profile defaults:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; ">
+<li class="listitem"><p>If both <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects specify a set of default profiles
+for a particular module and stream and the sets are equivalent, use that
+set.</p></li>
+<li class="listitem"><p>If one <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object specifies a set of default profiles
+for a module and stream and the other does not, use the provided set.</p></li>
+<li class="listitem"><p>If both <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects specify a set of default profiles
+for a stream, each are providing a different set and the <code class="literal">modified</code>
+value differs, the set from the object with the higher <code class="literal">modified</code> value
+will be used.</p></li>
+<li class="listitem"><p>If both <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects specify a set of default profiles
+for a stream, each are providing a different set and the <code class="literal">modified</code>
+value is the same, this is an unresolvable merge conflict and the merge
+resolution will fail and return an error.</p></li>
 <li class="listitem"><p>Intents behave in exactly the same manner as described for the top-level
 defaults, except that they merge beneath each intent name.</p></li>
 </ul></div>
