@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Component: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 1.0 (Deprecated)">
+<link rel="prev" href="modulemd-1.0-Modulemd.Buildopts.html" title="Modulemd.Buildopts">
+<link rel="next" href="modulemd-1.0-Modulemd.ComponentModule.html" title="Modulemd.ComponentModule">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-1.0-ModulemdComponent.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-1.0-Modulemd.Buildopts.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-1.0-Modulemd.ComponentModule.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-1.0-ModulemdComponent"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-1.0-ModulemdComponent.top_of_page"></a>Modulemd.Component</span></h2>
+<p>Modulemd.Component — Pure virtual parent class for components that go into a
+module stream. See <span class="type">ModulemdComponentRPM</span> and <a class="link" href="modulemd-1.0-Modulemd.ComponentModule.html#ModulemdComponentModule" title="ModulemdComponentModule"><span class="type">ModulemdComponentModule</span></a> for
+specific types.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-1.0-ModulemdComponent.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="returnvalue">ModulemdComponent</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-new" title="modulemd_component_new ()">modulemd_component_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-set-buildorder" title="modulemd_component_set_buildorder ()">modulemd_component_set_buildorder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-get-buildorder" title="modulemd_component_get_buildorder ()">modulemd_component_get_buildorder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-peek-buildorder" title="modulemd_component_peek_buildorder ()">modulemd_component_peek_buildorder</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-set-name" title="modulemd_component_set_name ()">modulemd_component_set_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-get-name" title="modulemd_component_get_name ()">modulemd_component_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-peek-name" title="modulemd_component_peek_name ()">modulemd_component_peek_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-dup-name" title="modulemd_component_dup_name ()">modulemd_component_dup_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-set-rationale" title="modulemd_component_set_rationale ()">modulemd_component_set_rationale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-get-rationale" title="modulemd_component_get_rationale ()">modulemd_component_get_rationale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-peek-rationale" title="modulemd_component_peek_rationale ()">modulemd_component_peek_rationale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-dup-rationale" title="modulemd_component_dup_rationale ()">modulemd_component_dup_rationale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="returnvalue">ModulemdComponent</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-ModulemdComponent.html#modulemd-component-copy" title="modulemd_component_copy ()">modulemd_component_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-ModulemdComponent.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-1.0-ModulemdComponent.html#MODULEMD-TYPE-COMPONENT:CAPS" title="MODULEMD_TYPE_COMPONENT">MODULEMD_TYPE_COMPONENT</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponentClass" title="struct ModulemdComponentClass">ModulemdComponentClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent">ModulemdComponent</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-ModulemdComponent.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-ModulemdComponent.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-component-new"></a><h3>modulemd_component_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="returnvalue">ModulemdComponent</span></a> *
+modulemd_component_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Allocates a new <a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a></p>
+<div class="refsect3">
+<a name="modulemd-component-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a></p>
+</div>
+<p class="since">Since: 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-set-buildorder"></a><h3>modulemd_component_set_buildorder ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_component_set_buildorder (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a> buildorder</code></em>);</pre>
+<p>Sets the 'buildorder' property.</p>
+<div class="refsect3">
+<a name="modulemd-component-set-buildorder.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>buildorder</p></td>
+<td class="parameter_description"><p>The order to build this component</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-get-buildorder"></a><h3>modulemd_component_get_buildorder ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+modulemd_component_get_buildorder (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<p>Returns the 'buildorder' property</p>
+<p class="since">Since: 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-peek-buildorder"></a><h3>modulemd_component_peek_buildorder ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+modulemd_component_peek_buildorder (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<p>Returns the 'buildorder' property</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-set-name"></a><h3>modulemd_component_set_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_component_set_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Sets the 'name' property.</p>
+<div class="refsect3">
+<a name="modulemd-component-set-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the component</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-get-name"></a><h3>modulemd_component_get_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_component_get_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">modulemd_component_get_name</code> has been deprecated since version 1.1 and should not be used in newly-written code.</p>
+<p>Use <code class="function">peek_name()</code> instead.</p>
+</div>
+<p>Returns the 'name' property;</p>
+<p class="since">Since: 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-peek-name"></a><h3>modulemd_component_peek_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_component_peek_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<p>Returns the 'name' property;</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-dup-name"></a><h3>modulemd_component_dup_name ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_component_dup_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<p>Returns a copy of the 'name' property;</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-set-rationale"></a><h3>modulemd_component_set_rationale ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_component_set_rationale (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rationale</code></em>);</pre>
+<p>Sets the 'rationale' property.</p>
+<div class="refsect3">
+<a name="modulemd-component-set-rationale.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rationale</p></td>
+<td class="parameter_description"><p>The rationale for including this component</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-get-rationale"></a><h3>modulemd_component_get_rationale ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_component_get_rationale (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">modulemd_component_get_rationale</code> has been deprecated since version 1.1 and should not be used in newly-written code.</p>
+<p>Use <code class="function">peek_rationale()</code> instead.</p>
+</div>
+<p>Returns the 'rationale' property;</p>
+<p class="since">Since: 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-peek-rationale"></a><h3>modulemd_component_peek_rationale ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_component_peek_rationale (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<p>Returns the 'rationale' property;</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-dup-rationale"></a><h3>modulemd_component_dup_rationale ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_component_dup_rationale (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<p>Returns a copy of the 'rationale' property;</p>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-component-copy"></a><h3>modulemd_component_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="returnvalue">ModulemdComponent</span></a> *
+modulemd_component_copy (<em class="parameter"><code><a class="link" href="modulemd-1.0-ModulemdComponent.html#ModulemdComponent" title="ModulemdComponent"><span class="type">ModulemdComponent</span></a> *self</code></em>);</pre>
+<p>Returns a complete copy of this Component.</p>
+<div class="refsect3">
+<a name="modulemd-component-copy.returns"></a><h4>Returns</h4>
+<p>A copy of this Component. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-ModulemdComponent.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-COMPONENT:CAPS"></a><h3>MODULEMD_TYPE_COMPONENT</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_COMPONENT modulemd_component_get_type ()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdComponentClass"></a><h3>struct ModulemdComponentClass</h3>
+<pre class="programlisting">struct ModulemdComponentClass {
+  GObjectClass parent_instance;
+
+  /* Virtual Public Members */
+  void (*set_buildorder) (ModulemdComponent *self, gint64 buildorder);
+  gint64 (*peek_buildorder) (ModulemdComponent *self);
+
+  void (*set_name) (ModulemdComponent *self, const gchar *name);
+  const gchar *(*peek_name) (ModulemdComponent *self);
+
+  void (*set_rationale) (ModulemdComponent *self, const gchar *rationale);
+  const gchar *(*peek_rationale) (ModulemdComponent *self);
+
+  gchar *(*dup_name) (ModulemdComponent *self);
+  gchar *(*dup_rationale) (ModulemdComponent *self);
+
+  /* Pure Virtual Public Members */
+  ModulemdComponent *(*copy) (ModulemdComponent *self);
+
+  /* Padding to allow adding up to 11 new virtual functions without
+   * breaking ABI. */
+  gpointer padding[9];
+};
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdComponent"></a><h3>ModulemdComponent</h3>
+<pre class="programlisting">typedef struct _ModulemdComponent ModulemdComponent;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

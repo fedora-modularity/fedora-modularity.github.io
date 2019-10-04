@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 1.0 (Deprecated)">
+<link rel="prev" href="ch01.html" title="Modulemd 1.0 (Deprecated)">
+<link rel="next" href="modulemd-1.0-Modulemd.Buildopts.html" title="Modulemd.Buildopts">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-1.0-Modulemd.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-1.0-Modulemd.Buildopts.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-1.0-Modulemd"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-1.0-Modulemd.top_of_page"></a>Modulemd</span></h2>
+<p>Modulemd — Functions for managing Module Metadata</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-get-version" title="modulemd_get_version ()">modulemd_get_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-objects-from-file" title="modulemd_objects_from_file ()">modulemd_objects_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-objects-from-file-ext" title="modulemd_objects_from_file_ext ()">modulemd_objects_from_file_ext</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-index-from-file" title="modulemd_index_from_file ()">modulemd_index_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-objects-from-string" title="modulemd_objects_from_string ()">modulemd_objects_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-objects-from-string-ext" title="modulemd_objects_from_string_ext ()">modulemd_objects_from_string_ext</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-index-from-string" title="modulemd_index_from_string ()">modulemd_index_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-objects-from-stream" title="modulemd_objects_from_stream ()">modulemd_objects_from_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-objects-from-stream-ext" title="modulemd_objects_from_stream_ext ()">modulemd_objects_from_stream_ext</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-index-from-stream" title="modulemd_index_from_stream ()">modulemd_index_from_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-dump-index" title="modulemd_dump_index ()">modulemd_dump_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-dumps-index" title="modulemd_dumps_index ()">modulemd_dumps_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-dump" title="modulemd_dump ()">modulemd_dump</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-dumps" title="modulemd_dumps ()">modulemd_dumps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.html#modulemd-merge-defaults" title="modulemd_merge_defaults ()">modulemd_merge_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-get-version"></a><h3>modulemd_get_version ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_get_version (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-get-version.returns"></a><h4>Returns</h4>
+<p> The version of libmodulemd.</p>
+</div>
+<p class="since">Since: 1.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-objects-from-file"></a><h3>modulemd_objects_from_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_objects_from_file (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a file.</p>
+<div class="refsect3">
+<a name="modulemd-objects-from-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A YAML file containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-objects-from-file.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a YAML file. These
+subdocuments will all be GObjects and their type can be identified with
+G_OBJECT_TYPE(object). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-objects-from-file-ext"></a><h3>modulemd_objects_from_file_ext ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_objects_from_file_ext (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a file.</p>
+<div class="refsect3">
+<a name="modulemd-objects-from-file-ext.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A YAML file containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-objects-from-file-ext.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a YAML file. These
+subdocuments will all be GObjects and their type can be identified with
+G_OBJECT_TYPE(object). This array must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-index-from-file"></a><h3>modulemd_index_from_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_index_from_file (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> of module data from a file.</p>
+<div class="refsect3">
+<a name="modulemd-index-from-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A YAML file containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-index-from-file.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing all of the subdocuments from a YAML file, indexed
+by module name. This hash table must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#g-hash-table-unref"><code class="function">g_hash_table_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdImprovedModule][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-objects-from-string"></a><h3>modulemd_objects_from_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_objects_from_string (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_string</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a file.</p>
+<div class="refsect3">
+<a name="modulemd-objects-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A YAML string containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-objects-from-string.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a YAML file. These
+subdocuments will all be GObjects and their type can be identified with
+G_OBJECT_TYPE(object). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-objects-from-string-ext"></a><h3>modulemd_objects_from_string_ext ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_objects_from_string_ext (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_string</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a file.</p>
+<div class="refsect3">
+<a name="modulemd-objects-from-string-ext.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A YAML string containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-objects-from-string-ext.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a YAML file. These
+subdocuments will all be GObjects and their type can be identified with
+G_OBJECT_TYPE(object). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-index-from-string"></a><h3>modulemd_index_from_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_index_from_string (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_string</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> of module data from a string.</p>
+<div class="refsect3">
+<a name="modulemd-index-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A YAML string containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML string that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-index-from-string.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing all of the subdocuments from a YAML file, indexed
+by module name. This hash table must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#g-hash-table-unref"><code class="function">g_hash_table_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdImprovedModule][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-objects-from-stream"></a><h3>modulemd_objects_from_stream ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_objects_from_stream (<em class="parameter"><code><span class="type">FILE</span> *stream</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a file.</p>
+<div class="refsect3">
+<a name="modulemd-objects-from-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>A YAML stream containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-objects-from-stream.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a YAML file. These
+subdocuments will all be GObjects and their type can be identified with
+G_OBJECT_TYPE(object). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-objects-from-stream-ext"></a><h3>modulemd_objects_from_stream_ext ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_objects_from_stream_ext (<em class="parameter"><code><span class="type">FILE</span> *stream</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a file.</p>
+<div class="refsect3">
+<a name="modulemd-objects-from-stream-ext.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>A YAML stream containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-objects-from-stream-ext.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of various supported subdocuments from a YAML file. These
+subdocuments will all be GObjects and their type can be identified with
+G_OBJECT_TYPE(object). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-index-from-stream"></a><h3>modulemd_index_from_stream ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_index_from_stream (<em class="parameter"><code><span class="type">FILE</span> *yaml_stream</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Allocates a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> of module data from a stream.</p>
+<div class="refsect3">
+<a name="modulemd-index-from-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_stream</p></td>
+<td class="parameter_description"><p>A YAML stream containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML stream that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-index-from-stream.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing all of the subdocuments from a YAML file, indexed
+by module name. This hash table must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#g-hash-table-unref"><code class="function">g_hash_table_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdImprovedModule][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dump-index"></a><h3>modulemd_dump_index ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_dump_index (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *index</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-dump-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>The index
+of <a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> objects to dump to a YAML file. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdImprovedModule][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>The path to the file that should contain the
+resulting YAML. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dump-index.returns"></a><h4>Returns</h4>
+<p> TRUE if the file was written successfully. In the event of an error,
+sets <em class="parameter"><code>error</code></em>
+appropriately and returns FALSE.</p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dumps-index"></a><h3>modulemd_dumps_index ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_dumps_index (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *index</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-dumps-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>The index
+of <a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> objects to dump to a string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdImprovedModule][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-dumps-index.returns"></a><h4>Returns</h4>
+<p> A YAML representation of the index as a string, which must be freed
+with <a href="https://developer.gnome.org/glib/stable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. In the event of an error, sets <em class="parameter"><code>error</code></em>
+appropriately and
+returns NULL.</p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dump"></a><h3>modulemd_dump ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_dump (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *objects</code></em>,
+               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+               <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Creates a file containing a series of YAML subdocuments, one per object
+passed in.</p>
+<div class="refsect3">
+<a name="modulemd-dump.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>objects</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of
+modulemd or related objects to dump to YAML. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>The path to the file that should contain the resulting YAML</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-dumps"></a><h3>modulemd_dumps ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_dumps (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *objects</code></em>,
+                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Creates a string containing a series of YAML subdocuments, one per object
+passed in. This string must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when no longer needed.</p>
+<div class="refsect3">
+<a name="modulemd-dumps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>objects</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of
+modulemd or related objects to dump to YAML. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-merge-defaults"></a><h3>modulemd_merge_defaults ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_merge_defaults (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *first</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> *second</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> override</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>This function will process the lists of objects, merging duplicated
+modulemd-defaults objects as needed. If the object lists have different
+priorities, the conflicting values will be replaced by the ones from the
+higher-priority list rather than merged.</p>
+<p>This function will return an error if the merge cannot be completed safely.</p>
+<div class="refsect3">
+<a name="modulemd-merge-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>first</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of
+modulemd-related objects. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>second</p></td>
+<td class="parameter_description"><p>Optional. A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of modulemd-related objects to be merged into the
+first list. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>override</p></td>
+<td class="parameter_description"><p>Whether entries in <em class="parameter"><code>second</code></em>
+should override those of <em class="parameter"><code>first</code></em>
+in the
+event of a conflict or whether they should attempt to merge instead.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-merge-defaults.returns"></a><h4>Returns</h4>
+<p>A list of
+module-related objects with defaults deduplicated and merged. This array is
+newly-allocated and must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GObject][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.3</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>libmodulemd: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="index.html" title="Modulemd Reference Manual">
+<link rel="prev" href="index.html" title="Modulemd Reference Manual">
+<link rel="next" href="ch01.html" title="Modulemd 1.0 (Deprecated)">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="index.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch01.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="reference">
+<div class="titlepage">
+<div><div><h1 class="title">
+<a name="modulemd-1.0"></a>libmodulemd</h1></div></div>
+<hr>
+</div>
+<div class="partintro">
+<div></div>
+<p>
+        API Documentation for libmodulemd.
+      </p>
+<div class="toc">
+<p><b>Table of Contents</b></p>
+<dl class="toc">
+<dt><span class="chapter"><a href="ch01.html">Modulemd 1.0 (Deprecated)</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.html">Modulemd</a></span><span class="refpurpose"> — Functions for managing Module Metadata</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Buildopts.html">Modulemd.Buildopts</a></span><span class="refpurpose"> — Provides hints to the build-system on how to build this
+module.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-ModulemdComponent.html">Modulemd.Component</a></span><span class="refpurpose"> — Pure virtual parent class for components that go into a
+module stream. See <span class="type">ModulemdComponentRPM</span> and <span class="type">ModulemdComponentModule</span> for
+specific types.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.ComponentModule.html">Modulemd.ComponentModule</a></span><span class="refpurpose"> — A module component that goes into a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.ComponentRpm.html">Modulemd.ComponentRpm</a></span><span class="refpurpose"> — An RPM component that goes into a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Defaults.html">Modulemd.Defaults</a></span><span class="refpurpose"> — Represents the default stream, profiles and other global
+data for a module.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Dependencies.html">Modulemd.Dependencies</a></span><span class="refpurpose"> — Object to represent build-time and runtime dependencies
+of a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.ImprovedModule.html">Modulemd.ImprovedModule</a></span><span class="refpurpose"> — Collects all information about a module: all of its
+streams, defaults, etc.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Intent.html">Modulemd.Intent</a></span><span class="refpurpose"> — Overrides <span class="type">ModulemdDefaults</span> when a specific system
+"purpose" has been set.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Module.html">Modulemd.Module</a></span><span class="refpurpose"> — DEPRECATED: use <span class="type">ModulemdModuleStream</span> instead</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.ModuleStream.html">Modulemd.ModuleStream</a></span><span class="refpurpose"> — The data to represent a stream of a module as described
+by a modulemd YAML document.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Prioritizer.html">Modulemd.Prioritizer</a></span><span class="refpurpose"> — Class to aid in merging module metadata from multiple
+repositories.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Profile.html">Modulemd.Profile</a></span><span class="refpurpose"> — Stores profile information for a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.ServiceLevel.html">Modulemd.ServiceLevel</a></span><span class="refpurpose"> — Provides lifecycle information for a module stream.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.SimpleSet.html">Modulemd.SimpleSet</a></span><span class="refpurpose"> — Stores a set of strings, guaranteeing uniqueness.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Subdocument.html">Modulemd.Subdocument</a></span><span class="refpurpose"> — Contains information about individual YAML subdocuments
+being parsed for modulemd information.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.Translation.html">Modulemd.Translation</a></span><span class="refpurpose"> — Translation information for a module stream</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-1.0-Modulemd.TranslationEntry.html">Modulemd.TranslationEntry</a></span><span class="refpurpose"> — Contains the translated strings for a particular module
+stream.</span>
+</dt>
+</dl></dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

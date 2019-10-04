@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.ImprovedModule: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 1.0 (Deprecated)">
+<link rel="prev" href="modulemd-1.0-Modulemd.Dependencies.html" title="Modulemd.Dependencies">
+<link rel="next" href="modulemd-1.0-Modulemd.Intent.html" title="Modulemd.Intent">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-1.0-Modulemd.ImprovedModule.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-1.0-Modulemd.Dependencies.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-1.0-Modulemd.Intent.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-1.0-Modulemd.ImprovedModule"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-1.0-Modulemd.ImprovedModule.top_of_page"></a>Modulemd.ImprovedModule</span></h2>
+<p>Modulemd.ImprovedModule — Collects all information about a module: all of its
+streams, defaults, etc.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.ImprovedModule.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="returnvalue">ModulemdImprovedModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-new" title="modulemd_improvedmodule_new ()">modulemd_improvedmodule_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-add-stream" title="modulemd_improvedmodule_add_stream ()">modulemd_improvedmodule_add_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-stream-by-name" title="modulemd_improvedmodule_get_stream_by_name ()">modulemd_improvedmodule_get_stream_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-stream-by-nsvc" title="modulemd_improvedmodule_get_stream_by_nsvc ()">modulemd_improvedmodule_get_stream_by_nsvc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-streams" title="modulemd_improvedmodule_get_streams ()">modulemd_improvedmodule_get_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-streams-by-name" title="modulemd_improvedmodule_get_streams_by_name ()">modulemd_improvedmodule_get_streams_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-set-name" title="modulemd_improvedmodule_set_name ()">modulemd_improvedmodule_set_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-name" title="modulemd_improvedmodule_get_name ()">modulemd_improvedmodule_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-peek-name" title="modulemd_improvedmodule_peek_name ()">modulemd_improvedmodule_peek_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-set-defaults" title="modulemd_improvedmodule_set_defaults ()">modulemd_improvedmodule_set_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-defaults" title="modulemd_improvedmodule_get_defaults ()">modulemd_improvedmodule_get_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-peek-defaults" title="modulemd_improvedmodule_peek_defaults ()">modulemd_improvedmodule_peek_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="returnvalue">ModulemdImprovedModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-copy" title="modulemd_improvedmodule_copy ()">modulemd_improvedmodule_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-dump" title="modulemd_improvedmodule_dump ()">modulemd_improvedmodule_dump</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-dumps" title="modulemd_improvedmodule_dumps ()">modulemd_improvedmodule_dumps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.ImprovedModule.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#MODULEMD-TYPE-IMPROVEDMODULE:CAPS" title="MODULEMD_TYPE_IMPROVEDMODULE">MODULEMD_TYPE_IMPROVEDMODULE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule">ModulemdImprovedModule</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.ImprovedModule.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.ImprovedModule.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-new"></a><h3>modulemd_improvedmodule_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="returnvalue">ModulemdImprovedModule</span></a> *
+modulemd_improvedmodule_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a>. This
+object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-add-stream"></a><h3>modulemd_improvedmodule_add_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_improvedmodule_add_stream (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> *stream</code></em>);</pre>
+<p>Add a <a class="link" href="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> to this module. If this stream name is already in
+use, this function will overwrite the existing value. If the module name does
+not match, this function will silently ignore this stream.</p>
+<p>Since : 1.6</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-add-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="type">ModulemdModuleStream</span></a> of this
+module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/not%20nullable"><span class="acronym">not nullable</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-get-stream-by-name"></a><h3>modulemd_improvedmodule_get_stream_by_name ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+modulemd_improvedmodule_get_stream_by_name
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">modulemd_improvedmodule_get_stream_by_name</code> has been deprecated since version 1.7 and should not be used in newly-written code.</p>
+<p>Use <code class="function">get_stream_by_nsvc()</code> or <code class="function">get_streams_by_name()</code> instead.</p>
+</div>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-stream-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-stream-by-name.returns"></a><h4>Returns</h4>
+<p>A <span class="type">ModulemModuleStream</span> representing the requested
+module stream. NULL if the stream name was not found. If there is more than
+one version and/or context for this stream, it will return one in a
+non-deterministic manner. This function remains for backwards-compatibility,
+but it should never be used. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-get-stream-by-nsvc"></a><h3>modulemd_improvedmodule_get_stream_by_nsvc ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream" title="ModulemdModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+modulemd_improvedmodule_get_stream_by_nsvc
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nsvc</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-stream-by-nsvc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nsvc</p></td>
+<td class="parameter_description"><p>The NSVC of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-stream-by-nsvc.returns"></a><h4>Returns</h4>
+<p>A <span class="type">ModulemModuleStream</span> representing the requested
+module stream. NULL if the stream (name, version, context) was not found. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.7</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-get-streams"></a><h3>modulemd_improvedmodule_get_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_improvedmodule_get_streams (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-streams.returns"></a><h4>Returns</h4>
+<p>A
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing all <span class="type">ModulemModuleStream</span> objects for this module.
+This hash table must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#g-hash-table-unref"><code class="function">g_hash_table_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdModuleStream][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-get-streams-by-name"></a><h3>modulemd_improvedmodule_get_streams_by_name ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_improvedmodule_get_streams_by_name
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-streams-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-streams-by-name.returns"></a><h4>Returns</h4>
+<p>A
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> containing all <span class="type">ModulemModuleStream</span> objects for this module which
+matches the requested stream_name. Returns NULL if no streams matched this
+name.
+This <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> must be freed with <a href="../glib/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdModuleStream][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-set-name"></a><h3>modulemd_improvedmodule_set_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_improvedmodule_set_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Sets the module name.</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-set-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/not%20nullable"><span class="acronym">not nullable</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-get-name"></a><h3>modulemd_improvedmodule_get_name ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_improvedmodule_get_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>);</pre>
+<p>Gets the name of this module.</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-name.returns"></a><h4>Returns</h4>
+<p>The name of this module. This value must be freed
+with <a href="https://developer.gnome.org/glib/stable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-peek-name"></a><h3>modulemd_improvedmodule_peek_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_improvedmodule_peek_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>);</pre>
+<p>Gets the name of this module.</p>
+<p><span class="annotation">[<a href="http://foldoc.org/skip"><span class="acronym">skip</span></a>]</span></p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-peek-name.returns"></a><h4>Returns</h4>
+<p>The name of this module. This value must be not be
+modified or freed. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-set-defaults"></a><h3>modulemd_improvedmodule_set_defaults ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_improvedmodule_set_defaults (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *defaults</code></em>);</pre>
+<p>Set the default stream and profiles for this module. Makes no changes if the
+defaults do not apply to this module.</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-set-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>defaults</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object describing
+the defaults for this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-get-defaults"></a><h3>modulemd_improvedmodule_get_defaults ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_improvedmodule_get_defaults (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>);</pre>
+<p>Returns the <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object for this module.</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-get-defaults.returns"></a><h4>Returns</h4>
+<p>a <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object if set, NULL otherwise.
+This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-peek-defaults"></a><h3>modulemd_improvedmodule_peek_defaults ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_improvedmodule_peek_defaults (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>);</pre>
+<p>Returns the <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object for this module.</p>
+<p><span class="annotation">[<a href="http://foldoc.org/skip"><span class="acronym">skip</span></a>]</span></p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-peek-defaults.returns"></a><h4>Returns</h4>
+<p>a <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object if set, NULL otherwise.
+This object must be not be modified or freed. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-copy"></a><h3>modulemd_improvedmodule_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="returnvalue">ModulemdImprovedModule</span></a> *
+modulemd_improvedmodule_copy (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>);</pre>
+<p>Make a copy of this module.</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> that is
+a copy of the one passed in. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-dump"></a><h3>modulemd_improvedmodule_dump ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_improvedmodule_dump (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Writes this module out to a YAML document on disk.</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-dump.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A string containing the path to the output file</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-improvedmodule-dumps"></a><h3>modulemd_improvedmodule_dumps ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_improvedmodule_dumps (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule" title="ModulemdImprovedModule"><span class="type">ModulemdImprovedModule</span></a> *self</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Writes this module out to a YAML document string.</p>
+<div class="refsect3">
+<a name="modulemd-improvedmodule-dumps.returns"></a><h4>Returns</h4>
+<p>A string containing a YAML representation of
+this module and all of its streams. This string must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.6</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.ImprovedModule.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-IMPROVEDMODULE:CAPS"></a><h3>MODULEMD_TYPE_IMPROVEDMODULE</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_IMPROVEDMODULE (modulemd_improvedmodule_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdImprovedModule"></a><h3>ModulemdImprovedModule</h3>
+<pre class="programlisting">typedef struct _ModulemdImprovedModule ModulemdImprovedModule;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>

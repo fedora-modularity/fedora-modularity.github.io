@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Modulemd Reference Manual" link="index.html" author="Stephen Gallagher" name="modulemd-1.0" version="2" language="c">
+  <chapters>
+    <sub name="libmodulemd" link="modulemd-1.0.html">
+      <sub name="Modulemd 1.0 (Deprecated)" link="ch01.html">
+        <sub name="Modulemd" link="modulemd-1.0-Modulemd.html"/>
+        <sub name="Modulemd.Buildopts" link="modulemd-1.0-Modulemd.Buildopts.html"/>
+        <sub name="Modulemd.Component" link="modulemd-1.0-ModulemdComponent.html"/>
+        <sub name="Modulemd.ComponentModule" link="modulemd-1.0-Modulemd.ComponentModule.html"/>
+        <sub name="Modulemd.ComponentRpm" link="modulemd-1.0-Modulemd.ComponentRpm.html"/>
+        <sub name="Modulemd.Defaults" link="modulemd-1.0-Modulemd.Defaults.html"/>
+        <sub name="Modulemd.Dependencies" link="modulemd-1.0-Modulemd.Dependencies.html"/>
+        <sub name="Modulemd.ImprovedModule" link="modulemd-1.0-Modulemd.ImprovedModule.html"/>
+        <sub name="Modulemd.Intent" link="modulemd-1.0-Modulemd.Intent.html"/>
+        <sub name="Modulemd.Module" link="modulemd-1.0-Modulemd.Module.html"/>
+        <sub name="Modulemd.ModuleStream" link="modulemd-1.0-Modulemd.ModuleStream.html"/>
+        <sub name="Modulemd.Prioritizer" link="modulemd-1.0-Modulemd.Prioritizer.html"/>
+        <sub name="Modulemd.Profile" link="modulemd-1.0-Modulemd.Profile.html"/>
+        <sub name="Modulemd.ServiceLevel" link="modulemd-1.0-Modulemd.ServiceLevel.html"/>
+        <sub name="Modulemd.SimpleSet" link="modulemd-1.0-Modulemd.SimpleSet.html"/>
+        <sub name="Modulemd.Subdocument" link="modulemd-1.0-Modulemd.Subdocument.html"/>
+        <sub name="Modulemd.Translation" link="modulemd-1.0-Modulemd.Translation.html"/>
+        <sub name="Modulemd.TranslationEntry" link="modulemd-1.0-Modulemd.TranslationEntry.html"/>
+      </sub>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="modulemd_get_version ()" link="modulemd-1.0-Modulemd.html#modulemd-get-version" since="1.5"/>
+    <keyword type="function" name="modulemd_objects_from_file ()" link="modulemd-1.0-Modulemd.html#modulemd-objects-from-file" since="1.2"/>
+    <keyword type="function" name="modulemd_objects_from_file_ext ()" link="modulemd-1.0-Modulemd.html#modulemd-objects-from-file-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_index_from_file ()" link="modulemd-1.0-Modulemd.html#modulemd-index-from-file" since="1.6"/>
+    <keyword type="function" name="modulemd_objects_from_string ()" link="modulemd-1.0-Modulemd.html#modulemd-objects-from-string" since="1.2"/>
+    <keyword type="function" name="modulemd_objects_from_string_ext ()" link="modulemd-1.0-Modulemd.html#modulemd-objects-from-string-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_index_from_string ()" link="modulemd-1.0-Modulemd.html#modulemd-index-from-string" since="1.6"/>
+    <keyword type="function" name="modulemd_objects_from_stream ()" link="modulemd-1.0-Modulemd.html#modulemd-objects-from-stream" since="1.4"/>
+    <keyword type="function" name="modulemd_objects_from_stream_ext ()" link="modulemd-1.0-Modulemd.html#modulemd-objects-from-stream-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_index_from_stream ()" link="modulemd-1.0-Modulemd.html#modulemd-index-from-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_dump_index ()" link="modulemd-1.0-Modulemd.html#modulemd-dump-index" since="1.6"/>
+    <keyword type="function" name="modulemd_dumps_index ()" link="modulemd-1.0-Modulemd.html#modulemd-dumps-index" since="1.6"/>
+    <keyword type="function" name="modulemd_dump ()" link="modulemd-1.0-Modulemd.html#modulemd-dump" since="1.2"/>
+    <keyword type="function" name="modulemd_dumps ()" link="modulemd-1.0-Modulemd.html#modulemd-dumps" since="1.2"/>
+    <keyword type="function" name="modulemd_merge_defaults ()" link="modulemd-1.0-Modulemd.html#modulemd-merge-defaults" since="1.3"/>
+    <keyword type="function" name="modulemd_buildopts_new ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-new" since="1.5"/>
+    <keyword type="function" name="modulemd_buildopts_set_rpm_macros ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-set-rpm-macros" since="1.5"/>
+    <keyword type="function" name="modulemd_buildopts_get_rpm_macros ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-macros" since="1.5"/>
+    <keyword type="function" name="modulemd_buildopts_set_rpm_whitelist ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-set-rpm-whitelist" since="1.5"/>
+    <keyword type="function" name="modulemd_buildopts_set_rpm_whitelist_simpleset ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-set-rpm-whitelist-simpleset" since="1.5"/>
+    <keyword type="function" name="modulemd_buildopts_get_rpm_whitelist ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist" since="1.5"/>
+    <keyword type="function" name="modulemd_buildopts_get_rpm_whitelist_simpleset ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist-simpleset" since="1.5"/>
+    <keyword type="function" name="modulemd_buildopts_copy ()" link="modulemd-1.0-Modulemd.Buildopts.html#modulemd-buildopts-copy" since="1.5"/>
+    <keyword type="macro" name="MODULEMD_TYPE_BUILDOPTS" link="modulemd-1.0-Modulemd.Buildopts.html#MODULEMD-TYPE-BUILDOPTS:CAPS"/>
+    <keyword type="struct" name="ModulemdBuildopts" link="modulemd-1.0-Modulemd.Buildopts.html#ModulemdBuildopts"/>
+    <keyword type="function" name="modulemd_component_new ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-new" since="1.0"/>
+    <keyword type="function" name="modulemd_component_set_buildorder ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-set-buildorder" since="1.0"/>
+    <keyword type="function" name="modulemd_component_get_buildorder ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-get-buildorder" since="1.0"/>
+    <keyword type="function" name="modulemd_component_peek_buildorder ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-peek-buildorder" since="1.1"/>
+    <keyword type="function" name="modulemd_component_set_name ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-set-name" since="1.0"/>
+    <keyword type="function" name="modulemd_component_get_name ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-get-name" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_component_peek_name ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-peek-name" since="1.1"/>
+    <keyword type="function" name="modulemd_component_dup_name ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-dup-name" since="1.1"/>
+    <keyword type="function" name="modulemd_component_set_rationale ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-set-rationale" since="1.0"/>
+    <keyword type="function" name="modulemd_component_get_rationale ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-get-rationale" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_component_peek_rationale ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-peek-rationale" since="1.1"/>
+    <keyword type="function" name="modulemd_component_dup_rationale ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-dup-rationale" since="1.1"/>
+    <keyword type="function" name="modulemd_component_copy ()" link="modulemd-1.0-ModulemdComponent.html#modulemd-component-copy" since="1.1"/>
+    <keyword type="macro" name="MODULEMD_TYPE_COMPONENT" link="modulemd-1.0-ModulemdComponent.html#MODULEMD-TYPE-COMPONENT:CAPS"/>
+    <keyword type="struct" name="struct ModulemdComponentClass" link="modulemd-1.0-ModulemdComponent.html#ModulemdComponentClass"/>
+    <keyword type="struct" name="ModulemdComponent" link="modulemd-1.0-ModulemdComponent.html#ModulemdComponent"/>
+    <keyword type="function" name="modulemd_component_module_new ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-new" since="1.0"/>
+    <keyword type="function" name="modulemd_component_module_set_ref ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-set-ref" since="1.0"/>
+    <keyword type="function" name="modulemd_component_module_get_ref ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-get-ref" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_component_module_peek_ref ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-peek-ref" since="1.1"/>
+    <keyword type="function" name="modulemd_component_module_dup_ref ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-dup-ref" since="1.1"/>
+    <keyword type="function" name="modulemd_component_module_set_repository ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-set-repository" since="1.0"/>
+    <keyword type="function" name="modulemd_component_module_get_repository ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-get-repository" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_component_module_peek_repository ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-peek-repository" since="1.1"/>
+    <keyword type="function" name="modulemd_component_module_dup_repository ()" link="modulemd-1.0-Modulemd.ComponentModule.html#modulemd-component-module-dup-repository" since="1.1"/>
+    <keyword type="macro" name="MODULEMD_TYPE_COMPONENT_MODULE" link="modulemd-1.0-Modulemd.ComponentModule.html#MODULEMD-TYPE-COMPONENT-MODULE:CAPS"/>
+    <keyword type="struct" name="ModulemdComponentModule" link="modulemd-1.0-Modulemd.ComponentModule.html#ModulemdComponentModule"/>
+    <keyword type="function" name="modulemd_component_rpm_new ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-new" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_set_arches ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-arches" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_get_arches ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-arches" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_peek_arches ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-peek-arches" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_dup_arches ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-dup-arches" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_set_cache ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-cache" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_get_cache ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-cache" deprecated=""/>
+    <keyword type="function" name="modulemd_component_rpm_peek_cache ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-peek-cache" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_dup_cache ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-dup-cache" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_set_multilib ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-multilib" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_get_multilib ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-multilib" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_peek_multilib ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-peek-multilib" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_dup_multilib ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-dup-multilib" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_set_ref ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-ref" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_get_ref ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-ref" deprecated=""/>
+    <keyword type="function" name="modulemd_component_rpm_peek_ref ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-peek-ref" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_dup_ref ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-dup-ref" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_set_repository ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-repository" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_get_repository ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-repository" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_component_rpm_peek_repository ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-peek-repository" since="1.1"/>
+    <keyword type="function" name="modulemd_component_rpm_dup_repository ()" link="modulemd-1.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-dup-repository" since="1.1"/>
+    <keyword type="macro" name="MODULEMD_TYPE_COMPONENT_RPM" link="modulemd-1.0-Modulemd.ComponentRpm.html#MODULEMD-TYPE-COMPONENT-RPM:CAPS"/>
+    <keyword type="struct" name="ModulemdComponentRpm" link="modulemd-1.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm"/>
+    <keyword type="function" name="modulemd_defaults_error_quark ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-error-quark"/>
+    <keyword type="function" name="modulemd_defaults_new ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_set_version ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-version" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_peek_version ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-version" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_set_module_name ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-module-name" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_peek_module_name ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-module-name" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_dup_module_name ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-module-name" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_set_default_stream ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-default-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_peek_default_stream ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-default-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_dup_default_stream ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-default-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_set_profiles_for_stream ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-profiles-for-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_assign_profiles_for_stream ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-assign-profiles-for-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_set_profile_defaults ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-profile-defaults" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_dup_profiles_for_stream ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-profiles-for-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_peek_profile_defaults ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-profile-defaults" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_dup_profile_defaults ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-profile-defaults" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_add_intent ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-add-intent" since="1.5"/>
+    <keyword type="function" name="modulemd_defaults_set_intents ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-intents" since="1.5"/>
+    <keyword type="function" name="modulemd_defaults_peek_intents ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-intents" since="1.5"/>
+    <keyword type="function" name="modulemd_defaults_dup_intents ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-intents" since="1.5"/>
+    <keyword type="function" name="modulemd_defaults_set_modified ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-modified" since="1.8"/>
+    <keyword type="function" name="modulemd_defaults_get_modified ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-get-modified" since="1.8"/>
+    <keyword type="function" name="modulemd_defaults_new_from_file ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-file" since="1.2"/>
+    <keyword type="function" name="modulemd_defaults_new_from_file_ext ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-file-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_defaults_new_from_string ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-string" since="1.2"/>
+    <keyword type="function" name="modulemd_defaults_new_from_string_ext ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-string-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_defaults_new_from_stream ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-stream" since="1.4"/>
+    <keyword type="function" name="modulemd_defaults_new_from_stream_ext ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-stream-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_defaults_dump ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dump" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_dumps ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dumps" since="1.1"/>
+    <keyword type="function" name="modulemd_defaults_copy ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-copy" since="1.3"/>
+    <keyword type="function" name="modulemd_defaults_merge ()" link="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-merge" since="1.3"/>
+    <keyword type="macro" name="MD_DEFAULTS_VERSION_LATEST" link="modulemd-1.0-Modulemd.Defaults.html#MD-DEFAULTS-VERSION-LATEST:CAPS"/>
+    <keyword type="macro" name="MODULEMD_DEFAULTS_ERROR" link="modulemd-1.0-Modulemd.Defaults.html#MODULEMD-DEFAULTS-ERROR:CAPS"/>
+    <keyword type="macro" name="MODULEMD_TYPE_DEFAULTS" link="modulemd-1.0-Modulemd.Defaults.html#MODULEMD-TYPE-DEFAULTS:CAPS"/>
+    <keyword type="struct" name="ModulemdDefaults" link="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults"/>
+    <keyword type="function" name="modulemd_dependencies_new ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-new" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_add_buildrequires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-add-buildrequires" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_add_buildrequires_single ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-add-buildrequires-single" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_set_buildrequires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-set-buildrequires" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_get_buildrequires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-get-buildrequires" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_peek_buildrequires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-peek-buildrequires" since="1.1"/>
+    <keyword type="function" name="modulemd_dependencies_dup_buildrequires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-dup-buildrequires" since="1.1"/>
+    <keyword type="function" name="modulemd_dependencies_add_requires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-add-requires" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_add_requires_single ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-add-requires-single" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_set_requires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-set-requires" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_get_requires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-get-requires" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_dependencies_peek_requires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-peek-requires" since="1.1"/>
+    <keyword type="function" name="modulemd_dependencies_dup_requires ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-dup-requires" since="1.1"/>
+    <keyword type="function" name="modulemd_dependencies_copy ()" link="modulemd-1.0-Modulemd.Dependencies.html#modulemd-dependencies-copy" since="1.0"/>
+    <keyword type="macro" name="MODULEMD_TYPE_DEPENDENCIES" link="modulemd-1.0-Modulemd.Dependencies.html#MODULEMD-TYPE-DEPENDENCIES:CAPS"/>
+    <keyword type="struct" name="ModulemdDependencies" link="modulemd-1.0-Modulemd.Dependencies.html#ModulemdDependencies"/>
+    <keyword type="function" name="modulemd_improvedmodule_new ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-new" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_add_stream ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-add-stream"/>
+    <keyword type="function" name="modulemd_improvedmodule_get_stream_by_name ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-stream-by-name" deprecated="" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_get_stream_by_nsvc ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-stream-by-nsvc" since="1.7"/>
+    <keyword type="function" name="modulemd_improvedmodule_get_streams ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-streams" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_get_streams_by_name ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-streams-by-name" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_set_name ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-set-name" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_get_name ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-name" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_peek_name ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-peek-name" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_set_defaults ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-set-defaults" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_get_defaults ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-get-defaults" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_peek_defaults ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-peek-defaults" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_copy ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-copy" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_dump ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-dump" since="1.6"/>
+    <keyword type="function" name="modulemd_improvedmodule_dumps ()" link="modulemd-1.0-Modulemd.ImprovedModule.html#modulemd-improvedmodule-dumps" since="1.6"/>
+    <keyword type="macro" name="MODULEMD_TYPE_IMPROVEDMODULE" link="modulemd-1.0-Modulemd.ImprovedModule.html#MODULEMD-TYPE-IMPROVEDMODULE:CAPS"/>
+    <keyword type="struct" name="ModulemdImprovedModule" link="modulemd-1.0-Modulemd.ImprovedModule.html#ModulemdImprovedModule"/>
+    <keyword type="function" name="modulemd_intent_new ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-new" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_set_intent_name ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-set-intent-name" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_peek_intent_name ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-peek-intent-name" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_dup_intent_name ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-dup-intent-name" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_set_default_stream ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-set-default-stream" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_peek_default_stream ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-peek-default-stream" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_dup_default_stream ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-dup-default-stream" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_set_profiles_for_stream ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-set-profiles-for-stream" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_assign_profiles_for_stream ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-assign-profiles-for-stream" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_set_profile_defaults ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-set-profile-defaults" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_dup_profiles_for_stream ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-dup-profiles-for-stream" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_peek_profile_defaults ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-peek-profile-defaults" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_dup_profile_defaults ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-dup-profile-defaults" since="1.5"/>
+    <keyword type="function" name="modulemd_intent_copy ()" link="modulemd-1.0-Modulemd.Intent.html#modulemd-intent-copy" since="1.5"/>
+    <keyword type="macro" name="MODULEMD_TYPE_INTENT" link="modulemd-1.0-Modulemd.Intent.html#MODULEMD-TYPE-INTENT:CAPS"/>
+    <keyword type="struct" name="ModulemdIntent" link="modulemd-1.0-Modulemd.Intent.html#ModulemdIntent"/>
+    <keyword type="function" name="modulemd_module_error_quark ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-error-quark"/>
+    <keyword type="function" name="modulemd_module_new ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_module_new_from_file ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-from-file" since="1.0"/>
+    <keyword type="function" name="modulemd_module_new_from_file_ext ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-from-file-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_module_new_all_from_file ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-all-from-file" since="1.0"/>
+    <keyword type="function" name="modulemd_module_new_all_from_file_ext ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-all-from-file-ext" since="1.1"/>
+    <keyword type="function" name="modulemd_module_new_from_string ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-from-string" since="1.0"/>
+    <keyword type="function" name="modulemd_module_new_from_string_ext ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-from-string-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_module_new_all_from_string ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-all-from-string" since="1.0"/>
+    <keyword type="function" name="modulemd_module_new_all_from_string_ext ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-all-from-string-ext" since="1.1"/>
+    <keyword type="function" name="modulemd_module_new_from_stream ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-from-stream" since="1.4"/>
+    <keyword type="function" name="modulemd_module_new_from_stream_ext ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-from-stream-ext" since="1.4"/>
+    <keyword type="function" name="modulemd_module_new_from_modulestream ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-new-from-modulestream"/>
+    <keyword type="function" name="modulemd_module_dump ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dump" since="1.0"/>
+    <keyword type="function" name="modulemd_module_dumps ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dumps" since="1.0"/>
+    <keyword type="function" name="modulemd_module_dump_all ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dump-all" since="1.0"/>
+    <keyword type="function" name="modulemd_module_dumps_all ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dumps-all" since="1.0"/>
+    <keyword type="function" name="modulemd_module_upgrade ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-upgrade" since="1.0"/>
+    <keyword type="function" name="modulemd_module_set_arch ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-arch" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_arch ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-arch" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_arch ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-arch" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_arch ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-arch" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_buildopts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-buildopts" since="1.5"/>
+    <keyword type="function" name="modulemd_module_get_buildopts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-buildopts" since="1.5"/>
+    <keyword type="function" name="modulemd_module_peek_buildopts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-buildopts" since="1.6"/>
+    <keyword type="function" name="modulemd_module_set_buildrequires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-buildrequires" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_buildrequires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-buildrequires" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_buildrequires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-buildrequires" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_buildrequires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-buildrequires" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_community ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-community" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_community ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-community" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_community ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-community" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_community ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-community" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_content_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-content-licenses" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_content_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-content-licenses" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_content_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-content-licenses" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_content_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-content-licenses" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_context ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-context" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_context ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-context" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_context ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-context" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_context ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-context" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_dependencies ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-dependencies" since="1.0"/>
+    <keyword type="function" name="modulemd_module_add_dependencies ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-add-dependencies" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_dependencies ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-dependencies" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_dependencies ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-dependencies" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_dependencies ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-dependencies" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_description ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-description" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_description ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-description" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_description ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-description" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_description ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-description" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_documentation ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-documentation" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_documentation ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-documentation" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_documentation ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-documentation" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_documentation ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-documentation" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_eol ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-eol" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_eol ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-eol" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_eol ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-eol" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_eol ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-eol" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_mdversion ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-mdversion" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_mdversion ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-mdversion" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_mdversion ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-mdversion"/>
+    <keyword type="function" name="modulemd_module_add_module_component ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-add-module-component" since="1.0"/>
+    <keyword type="function" name="modulemd_module_clear_module_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-clear-module-components" since="1.0"/>
+    <keyword type="function" name="modulemd_module_set_module_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-module-components" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_module_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-module-components" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_module_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-module-components" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_module_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-module-components" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_module_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-module-licenses" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_module_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-module-licenses" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_module_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-module-licenses" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_module_licenses ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-module-licenses" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_name ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-name" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_name ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-name" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_name ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-name" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_name ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-name" since="1.1"/>
+    <keyword type="function" name="modulemd_module_add_profile ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-add-profile" since="1.0"/>
+    <keyword type="function" name="modulemd_module_clear_profiles ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-clear-profiles" since="1.0"/>
+    <keyword type="function" name="modulemd_module_set_profiles ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-profiles" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_profiles ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-profiles" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_profiles ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-profiles" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_profiles ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-profiles" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_requires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-requires" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_requires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-requires" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_requires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-requires" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_requires ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-requires" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_rpm_api ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-rpm-api" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_rpm_api ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-rpm-api" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_rpm_api ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-rpm-api" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_rpm_api ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-rpm-api" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_rpm_artifacts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-rpm-artifacts" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_rpm_artifacts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-rpm-artifacts" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_rpm_artifacts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-rpm-artifacts" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_rpm_artifacts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-rpm-artifacts" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_rpm_buildopts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-rpm-buildopts" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_rpm_buildopts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-rpm-buildopts" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_rpm_buildopts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-rpm-buildopts" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_rpm_buildopts ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-rpm-buildopts" since="1.1"/>
+    <keyword type="function" name="modulemd_module_add_rpm_component ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-add-rpm-component" since="1.0"/>
+    <keyword type="function" name="modulemd_module_clear_rpm_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-clear-rpm-components" since="1.0"/>
+    <keyword type="function" name="modulemd_module_set_rpm_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-rpm-components" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_rpm_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-rpm-components" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_rpm_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-rpm-components" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_rpm_components ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-rpm-components" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_rpm_filter ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-rpm-filter" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_rpm_filter ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-rpm-filter" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_rpm_filter ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-rpm-filter" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_rpm_filter ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-rpm-filter" since="1.1"/>
+    <keyword type="function" name="modulemd_module_clear_servicelevels ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-clear-servicelevels" since="1.0"/>
+    <keyword type="function" name="modulemd_module_set_servicelevels ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-servicelevels" since="1.0"/>
+    <keyword type="function" name="modulemd_module_add_servicelevel ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-add-servicelevel" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_servicelevels ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-servicelevels" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_servicelevels ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-servicelevels" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_servicelevels ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-servicelevels" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_stream ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-stream" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_stream ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-stream" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_stream ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_stream ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-stream" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_summary ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-summary" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_summary ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-summary" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_summary ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-summary" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_summary ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-summary" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_tracker ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-tracker" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_tracker ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-tracker" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_tracker ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-tracker" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_tracker ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-tracker" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_version ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-version" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_version ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-version" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_version ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-version" since="1.1"/>
+    <keyword type="function" name="modulemd_module_set_xmd ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-set-xmd" since="1.0"/>
+    <keyword type="function" name="modulemd_module_get_xmd ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-get-xmd" since="1.0"/>
+    <keyword type="function" name="modulemd_module_peek_xmd ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-peek-xmd" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_xmd ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-xmd" since="1.1"/>
+    <keyword type="function" name="modulemd_module_copy ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-copy" since="1.1"/>
+    <keyword type="function" name="modulemd_module_dup_nsvc ()" link="modulemd-1.0-Modulemd.Module.html#modulemd-module-dup-nsvc"/>
+    <keyword type="macro" name="MODULEMD_MODULE_ERROR" link="modulemd-1.0-Modulemd.Module.html#MODULEMD-MODULE-ERROR:CAPS"/>
+    <keyword type="macro" name="MODULEMD_TYPE_MODULE" link="modulemd-1.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS"/>
+    <keyword type="struct" name="ModulemdModule" link="modulemd-1.0-Modulemd.Module.html#ModulemdModule"/>
+    <keyword type="function" name="modulemd_modulestream_error_quark ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-error-quark"/>
+    <keyword type="function" name="modulemd_modulestream_new ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-new" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_copy ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-copy" since="1.1"/>
+    <keyword type="function" name="modulemd_modulestream_import_from_file ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-import-from-file" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_dump ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-dump" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_import_from_string ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-import-from-string" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_dumps ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-dumps" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_import_from_stream ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-import-from-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_upgrade ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-upgrade" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_arch ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-arch" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_arch ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-arch" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_arch ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-arch" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_buildopts ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-buildopts" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_buildopts ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-buildopts" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_buildopts ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-buildopts" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_buildrequires ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-buildrequires" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_buildrequires ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-buildrequires" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_buildrequires ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-buildrequires" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_community ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-community" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_community ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-community" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_community ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-community" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_content_licenses ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-content-licenses" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_content_licenses ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-content-licenses" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_content_licenses ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-content-licenses" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_context ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-context" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_context ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-context" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_context ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-context" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_dependencies ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-dependencies" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_add_dependencies ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-add-dependencies" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_dependencies ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-dependencies" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_dependencies ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-dependencies" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_description ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-description" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_description ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-description" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_localized_description ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-localized-description" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_description ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-description" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_documentation ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-documentation" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_documentation ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-documentation" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_documentation ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-documentation" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_eol ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-eol" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_eol ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-eol" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_eol ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-eol" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_mdversion ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-mdversion" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_mdversion ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-mdversion" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_add_module_component ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-add-module-component" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_clear_module_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-clear-module-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_module_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-module-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_module_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-module-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_module_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-module-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_module_licenses ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-module-licenses" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_module_licenses ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-module-licenses" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_module_licenses ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-module-licenses" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_name ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-name" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_name ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-name" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_name ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-name" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_add_profile ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-add-profile" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_clear_profiles ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-clear-profiles" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_profiles ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-profiles" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_profiles ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-profiles" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_profiles ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-profiles" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_requires ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-requires" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_requires ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-requires" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_requires ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-requires" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_rpm_api ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-rpm-api" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_rpm_api ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-rpm-api" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_rpm_api ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-rpm-api" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_rpm_artifacts ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-rpm-artifacts" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_rpm_artifacts ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-rpm-artifacts" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_rpm_artifacts ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-rpm-artifacts" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_add_rpm_component ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-add-rpm-component" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_clear_rpm_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-clear-rpm-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_rpm_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-rpm-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_rpm_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-rpm-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_rpm_components ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-rpm-components" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_rpm_filter ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-rpm-filter" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_rpm_filter ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-rpm-filter" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_rpm_filter ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-rpm-filter" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_clear_servicelevels ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-clear-servicelevels" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_servicelevels ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-servicelevels" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_add_servicelevel ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-add-servicelevel" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_servicelevels ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-servicelevels" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_servicelevels ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-servicelevels" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_stream ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_stream ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_stream ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_summary ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-summary" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_summary ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-summary" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_localized_summary ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-localized-summary" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_summary ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-summary" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_tracker ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-tracker" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_tracker ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-tracker" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_tracker ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-tracker" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_translation ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-translation" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_translation ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-translation" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_version ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-version" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_version ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-version" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_set_xmd ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-set-xmd" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_xmd ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-xmd" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_peek_xmd ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-peek-xmd" since="1.6"/>
+    <keyword type="function" name="modulemd_modulestream_get_nsvc ()" link="modulemd-1.0-Modulemd.ModuleStream.html#modulemd-modulestream-get-nsvc"/>
+    <keyword type="macro" name="MODULEMD_MODULESTREAM_ERROR" link="modulemd-1.0-Modulemd.ModuleStream.html#MODULEMD-MODULESTREAM-ERROR:CAPS"/>
+    <keyword type="macro" name="MODULEMD_TYPE_MODULESTREAM" link="modulemd-1.0-Modulemd.ModuleStream.html#MODULEMD-TYPE-MODULESTREAM:CAPS"/>
+    <keyword type="struct" name="ModulemdModuleStream" link="modulemd-1.0-Modulemd.ModuleStream.html#ModulemdModuleStream"/>
+    <keyword type="function" name="modulemd_prioritizer_error_quark ()" link="modulemd-1.0-Modulemd.Prioritizer.html#modulemd-prioritizer-error-quark"/>
+    <keyword type="function" name="modulemd_prioritizer_new ()" link="modulemd-1.0-Modulemd.Prioritizer.html#modulemd-prioritizer-new" since="1.3"/>
+    <keyword type="function" name="modulemd_prioritizer_add ()" link="modulemd-1.0-Modulemd.Prioritizer.html#modulemd-prioritizer-add" since="1.3"/>
+    <keyword type="function" name="modulemd_prioritizer_resolve ()" link="modulemd-1.0-Modulemd.Prioritizer.html#modulemd-prioritizer-resolve" since="1.3"/>
+    <keyword type="function" name="modulemd_prioritizer_add_index ()" link="modulemd-1.0-Modulemd.Prioritizer.html#modulemd-prioritizer-add-index" since="1.6"/>
+    <keyword type="function" name="modulemd_prioritizer_resolve_index ()" link="modulemd-1.0-Modulemd.Prioritizer.html#modulemd-prioritizer-resolve-index" since="1.6"/>
+    <keyword type="macro" name="MODULEMD_PRIORITIZER_ERROR" link="modulemd-1.0-Modulemd.Prioritizer.html#MODULEMD-PRIORITIZER-ERROR:CAPS"/>
+    <keyword type="macro" name="MODULEMD_PRIORITIZER_PRIORITY_MAX" link="modulemd-1.0-Modulemd.Prioritizer.html#MODULEMD-PRIORITIZER-PRIORITY-MAX:CAPS"/>
+    <keyword type="macro" name="MODULEMD_PRIORITIZER_PRIORITY_MIN" link="modulemd-1.0-Modulemd.Prioritizer.html#MODULEMD-PRIORITIZER-PRIORITY-MIN:CAPS"/>
+    <keyword type="macro" name="MODULEMD_TYPE_PRIORITIZER" link="modulemd-1.0-Modulemd.Prioritizer.html#MODULEMD-TYPE-PRIORITIZER:CAPS"/>
+    <keyword type="struct" name="ModulemdPrioritizer" link="modulemd-1.0-Modulemd.Prioritizer.html#ModulemdPrioritizer"/>
+    <keyword type="function" name="modulemd_profile_new ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-new" since="1.0"/>
+    <keyword type="function" name="modulemd_profile_set_description ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-set-description" since="1.0"/>
+    <keyword type="function" name="modulemd_profile_get_description ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-get-description" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_profile_get_localized_description ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-get-localized-description" since="1.6"/>
+    <keyword type="function" name="modulemd_profile_peek_description ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-peek-description" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_dup_description ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-dup-description" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_set_name ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-set-name" since="1.0"/>
+    <keyword type="function" name="modulemd_profile_get_name ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-get-name" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_profile_peek_name ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-peek-name" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_dup_name ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-dup-name" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_set_rpms ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-set-rpms" since="1.0"/>
+    <keyword type="function" name="modulemd_profile_get_rpms ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-get-rpms" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_profile_peek_rpms ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-peek-rpms" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_dup_rpms ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-dup-rpms" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_add_rpm ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-add-rpm" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_remove_rpm ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-remove-rpm" since="1.1"/>
+    <keyword type="function" name="modulemd_profile_copy ()" link="modulemd-1.0-Modulemd.Profile.html#modulemd-profile-copy" since="1.1"/>
+    <keyword type="macro" name="MODULEMD_TYPE_PROFILE" link="modulemd-1.0-Modulemd.Profile.html#MODULEMD-TYPE-PROFILE:CAPS"/>
+    <keyword type="struct" name="ModulemdProfile" link="modulemd-1.0-Modulemd.Profile.html#ModulemdProfile"/>
+    <keyword type="function" name="modulemd_servicelevel_new ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-new" since="1.0"/>
+    <keyword type="function" name="modulemd_servicelevel_set_eol ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-set-eol" since="1.0"/>
+    <keyword type="function" name="modulemd_servicelevel_get_eol ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-get-eol" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_servicelevel_peek_eol ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-peek-eol" since="1.1"/>
+    <keyword type="function" name="modulemd_servicelevel_dup_eol ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-dup-eol" since="1.1"/>
+    <keyword type="function" name="modulemd_servicelevel_set_name ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-set-name" since="1.0"/>
+    <keyword type="function" name="modulemd_servicelevel_get_name ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-get-name" deprecated="" since="1.0"/>
+    <keyword type="function" name="modulemd_servicelevel_peek_name ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-peek-name" since="1.1"/>
+    <keyword type="function" name="modulemd_servicelevel_dup_name ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-dup-name" since="1.1"/>
+    <keyword type="function" name="modulemd_servicelevel_copy ()" link="modulemd-1.0-Modulemd.ServiceLevel.html#modulemd-servicelevel-copy" since="1.1"/>
+    <keyword type="macro" name="MODULEMD_TYPE_SERVICELEVEL" link="modulemd-1.0-Modulemd.ServiceLevel.html#MODULEMD-TYPE-SERVICELEVEL:CAPS"/>
+    <keyword type="struct" name="ModulemdServiceLevel" link="modulemd-1.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"/>
+    <keyword type="function" name="modulemd_simpleset_new ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-new" since="1.0"/>
+    <keyword type="function" name="modulemd_simpleset_contains ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-contains" since="1.0"/>
+    <keyword type="function" name="modulemd_simpleset_size ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-size" since="1.0"/>
+    <keyword type="function" name="modulemd_simpleset_set ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-set" since="1.0"/>
+    <keyword type="function" name="modulemd_simpleset_get ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-get" since="1.0"/>
+    <keyword type="function" name="modulemd_simpleset_dup ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-dup" since="1.1"/>
+    <keyword type="function" name="modulemd_simpleset_add ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-add" since="1.0"/>
+    <keyword type="function" name="modulemd_simpleset_remove ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-remove"/>
+    <keyword type="function" name="modulemd_simpleset_copy ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-copy" since="1.0"/>
+    <keyword type="function" name="modulemd_simpleset_is_equal ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-is-equal" since="1.3"/>
+    <keyword type="function" name="ModulemdSimpleSetValidationFn ()" link="modulemd-1.0-Modulemd.SimpleSet.html#ModulemdSimpleSetValidationFn"/>
+    <keyword type="function" name="modulemd_simpleset_validate_contents ()" link="modulemd-1.0-Modulemd.SimpleSet.html#modulemd-simpleset-validate-contents" since="1.4"/>
+    <keyword type="macro" name="MODULEMD_TYPE_SIMPLESET" link="modulemd-1.0-Modulemd.SimpleSet.html#MODULEMD-TYPE-SIMPLESET:CAPS"/>
+    <keyword type="struct" name="ModulemdSimpleSet" link="modulemd-1.0-Modulemd.SimpleSet.html#ModulemdSimpleSet"/>
+    <keyword type="function" name="modulemd_subdocument_new ()" link="modulemd-1.0-Modulemd.Subdocument.html#modulemd-subdocument-new" since="1.4"/>
+    <keyword type="function" name="modulemd_subdocument_get_yaml ()" link="modulemd-1.0-Modulemd.Subdocument.html#modulemd-subdocument-get-yaml" since="1.4"/>
+    <keyword type="function" name="modulemd_subdocument_get_gerror ()" link="modulemd-1.0-Modulemd.Subdocument.html#modulemd-subdocument-get-gerror" since="1.4"/>
+    <keyword type="macro" name="MODULEMD_TYPE_SUBDOCUMENT" link="modulemd-1.0-Modulemd.Subdocument.html#MODULEMD-TYPE-SUBDOCUMENT:CAPS"/>
+    <keyword type="struct" name="ModulemdSubdocument" link="modulemd-1.0-Modulemd.Subdocument.html#ModulemdSubdocument"/>
+    <keyword type="function" name="modulemd_translation_error_quark ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-error-quark"/>
+    <keyword type="function" name="modulemd_translation_new ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-new" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_new_full ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-new-full" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_copy ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-copy" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_import_from_file ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-import-from-file" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_import_from_string ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-import-from-string" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_import_from_stream ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-import-from-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_dump ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-dump" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_dumps ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-dumps" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_set_mdversion ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-set-mdversion" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_get_mdversion ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-get-mdversion" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_set_module_name ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-set-module-name" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_get_module_name ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-get-module-name" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_peek_module_name ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-peek-module-name" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_set_module_stream ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-set-module-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_get_module_stream ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-get-module-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_peek_module_stream ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-peek-module-stream" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_set_modified ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-set-modified" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_get_modified ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-get-modified" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_add_entry ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-add-entry" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_get_entry_by_locale ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-get-entry-by-locale" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_get_locales ()" link="modulemd-1.0-Modulemd.Translation.html#modulemd-translation-get-locales" since="1.6"/>
+    <keyword type="macro" name="MODULEMD_TRANSLATION_ERROR" link="modulemd-1.0-Modulemd.Translation.html#MODULEMD-TRANSLATION-ERROR:CAPS"/>
+    <keyword type="macro" name="MD_TRANSLATION_VERSION_LATEST" link="modulemd-1.0-Modulemd.Translation.html#MD-TRANSLATION-VERSION-LATEST:CAPS"/>
+    <keyword type="macro" name="MODULEMD_TYPE_TRANSLATION" link="modulemd-1.0-Modulemd.Translation.html#MODULEMD-TYPE-TRANSLATION:CAPS"/>
+    <keyword type="struct" name="ModulemdTranslation" link="modulemd-1.0-Modulemd.Translation.html#ModulemdTranslation"/>
+    <keyword type="function" name="modulemd_translation_entry_new ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-new" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_copy ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-copy" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_set_locale ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-locale" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_get_locale ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-locale" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_peek_locale ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-peek-locale" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_set_summary ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-summary" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_get_summary ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-summary" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_peek_summary ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-peek-summary" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_set_description ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-description" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_get_description ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-description" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_peek_description ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-peek-description" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_set_profile_description ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-profile-description" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_get_profile_description ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-profile-description" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_peek_profile_description ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-peek-profile-description" since="1.6"/>
+    <keyword type="function" name="modulemd_translation_entry_get_all_profile_descriptions ()" link="modulemd-1.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-all-profile-descriptions" since="1.6"/>
+    <keyword type="macro" name="MODULEMD_TYPE_TRANSLATION_ENTRY" link="modulemd-1.0-Modulemd.TranslationEntry.html#MODULEMD-TYPE-TRANSLATION-ENTRY:CAPS"/>
+    <keyword type="struct" name="ModulemdTranslationEntry" link="modulemd-1.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"/>
+  </functions>
+</book>

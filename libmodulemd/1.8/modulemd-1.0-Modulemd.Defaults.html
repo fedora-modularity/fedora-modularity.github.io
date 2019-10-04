@@ -1,0 +1,1161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Defaults: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 1.0 (Deprecated)">
+<link rel="prev" href="modulemd-1.0-Modulemd.ComponentRpm.html" title="Modulemd.ComponentRpm">
+<link rel="next" href="modulemd-1.0-Modulemd.Dependencies.html" title="Modulemd.Dependencies">
+<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-1.0-Modulemd.Defaults.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-1.0-Modulemd.ComponentRpm.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-1.0-Modulemd.Dependencies.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-1.0-Modulemd.Defaults"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-1.0-Modulemd.Defaults.top_of_page"></a>Modulemd.Defaults</span></h2>
+<p>Modulemd.Defaults — Represents the default stream, profiles and other global
+data for a module.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.Defaults.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-error-quark" title="modulemd_defaults_error_quark ()">modulemd_defaults_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new" title="modulemd_defaults_new ()">modulemd_defaults_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-version" title="modulemd_defaults_set_version ()">modulemd_defaults_set_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-version" title="modulemd_defaults_peek_version ()">modulemd_defaults_peek_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-module-name" title="modulemd_defaults_set_module_name ()">modulemd_defaults_set_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-module-name" title="modulemd_defaults_peek_module_name ()">modulemd_defaults_peek_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-module-name" title="modulemd_defaults_dup_module_name ()">modulemd_defaults_dup_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-default-stream" title="modulemd_defaults_set_default_stream ()">modulemd_defaults_set_default_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-default-stream" title="modulemd_defaults_peek_default_stream ()">modulemd_defaults_peek_default_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-default-stream" title="modulemd_defaults_dup_default_stream ()">modulemd_defaults_dup_default_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-profiles-for-stream" title="modulemd_defaults_set_profiles_for_stream ()">modulemd_defaults_set_profiles_for_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-assign-profiles-for-stream" title="modulemd_defaults_assign_profiles_for_stream ()">modulemd_defaults_assign_profiles_for_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-profile-defaults" title="modulemd_defaults_set_profile_defaults ()">modulemd_defaults_set_profile_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-profiles-for-stream" title="modulemd_defaults_dup_profiles_for_stream ()">modulemd_defaults_dup_profiles_for_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-profile-defaults" title="modulemd_defaults_peek_profile_defaults ()">modulemd_defaults_peek_profile_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-profile-defaults" title="modulemd_defaults_dup_profile_defaults ()">modulemd_defaults_dup_profile_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-add-intent" title="modulemd_defaults_add_intent ()">modulemd_defaults_add_intent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-intents" title="modulemd_defaults_set_intents ()">modulemd_defaults_set_intents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-peek-intents" title="modulemd_defaults_peek_intents ()">modulemd_defaults_peek_intents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-intents" title="modulemd_defaults_dup_intents ()">modulemd_defaults_dup_intents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-set-modified" title="modulemd_defaults_set_modified ()">modulemd_defaults_set_modified</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-get-modified" title="modulemd_defaults_get_modified ()">modulemd_defaults_get_modified</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-file" title="modulemd_defaults_new_from_file ()">modulemd_defaults_new_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-file-ext" title="modulemd_defaults_new_from_file_ext ()">modulemd_defaults_new_from_file_ext</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-string" title="modulemd_defaults_new_from_string ()">modulemd_defaults_new_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-string-ext" title="modulemd_defaults_new_from_string_ext ()">modulemd_defaults_new_from_string_ext</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-stream" title="modulemd_defaults_new_from_stream ()">modulemd_defaults_new_from_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-new-from-stream-ext" title="modulemd_defaults_new_from_stream_ext ()">modulemd_defaults_new_from_stream_ext</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dump" title="modulemd_defaults_dump ()">modulemd_defaults_dump</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dumps" title="modulemd_defaults_dumps ()">modulemd_defaults_dumps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-copy" title="modulemd_defaults_copy ()">modulemd_defaults_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-merge" title="modulemd_defaults_merge ()">modulemd_defaults_merge</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.Defaults.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#MD-DEFAULTS-VERSION-LATEST:CAPS" title="MD_DEFAULTS_VERSION_LATEST">MD_DEFAULTS_VERSION_LATEST</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#MODULEMD-DEFAULTS-ERROR:CAPS" title="MODULEMD_DEFAULTS_ERROR">MODULEMD_DEFAULTS_ERROR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#MODULEMD-TYPE-DEFAULTS:CAPS" title="MODULEMD_TYPE_DEFAULTS">MODULEMD_TYPE_DEFAULTS</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults">ModulemdDefaults</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.Defaults.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.Defaults.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-defaults-error-quark"></a><h3>modulemd_defaults_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+modulemd_defaults_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-new"></a><h3>modulemd_defaults_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. This
+must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-version"></a><h3>modulemd_defaults_set_version ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_version (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> version</code></em>);</pre>
+<p>Sets the version of the metadata in use.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-set-version.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The metadata file format version</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-peek-version"></a><h3>modulemd_defaults_peek_version ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+modulemd_defaults_peek_version (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Retrieves the metadata file format version.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-peek-version.returns"></a><h4>Returns</h4>
+<p> a 64-bit unsigned integer containing the file format version.</p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-module-name"></a><h3>modulemd_defaults_set_module_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_module_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Sets the "module-name" property.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-set-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The module name to which these defaults apply</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-peek-module-name"></a><h3>modulemd_defaults_peek_module_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_defaults_peek_module_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Retrieves the module name to which these defaults apply.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-peek-module-name.returns"></a><h4>Returns</h4>
+<p> a string containing the "module-name" property. This string must
+not be modified or freed. If you need to do so, use
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-module-name" title="modulemd_defaults_dup_module_name ()"><code class="function">modulemd_defaults_dup_module_name()</code></a> instead.</p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-dup-module-name"></a><h3>modulemd_defaults_dup_module_name ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_defaults_dup_module_name (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Retrieves the module name to which these defaults apply.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-dup-module-name.returns"></a><h4>Returns</h4>
+<p> a string containing the "module-name" property. This string must be
+freed with <a href="https://developer.gnome.org/glib/stable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when the caller is done with it.</p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-default-stream"></a><h3>modulemd_defaults_set_default_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_default_stream (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream</code></em>);</pre>
+<p>Sets the "default-stream" property.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-set-default-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The default stream for this module</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-peek-default-stream"></a><h3>modulemd_defaults_peek_default_stream ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_defaults_peek_default_stream (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Retrieves the default stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-peek-default-stream.returns"></a><h4>Returns</h4>
+<p> a string containing the "default-stream" property. This string
+must not be modified or freed. If you need to do so, use
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-default-stream" title="modulemd_defaults_dup_default_stream ()"><code class="function">modulemd_defaults_dup_default_stream()</code></a> instead.</p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-dup-default-stream"></a><h3>modulemd_defaults_dup_default_stream ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_defaults_dup_default_stream (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Retrieves the default stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-dup-default-stream.returns"></a><h4>Returns</h4>
+<p> a string containing the "default-stream" property. This string must
+be freed with <a href="https://developer.gnome.org/glib/stable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when the caller is done with it.</p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-profiles-for-stream"></a><h3>modulemd_defaults_set_profiles_for_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_profiles_for_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **profiles</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-set-profiles-for-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The name of the stream getting default profiles</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profiles</p></td>
+<td class="parameter_description"><p>The set of profile
+names to install by default when installing this stream of the module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-assign-profiles-for-stream"></a><h3>modulemd_defaults_assign_profiles_for_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_assign_profiles_for_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.SimpleSet.html#ModulemdSimpleSet" title="ModulemdSimpleSet"><span class="type">ModulemdSimpleSet</span></a> *profiles</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-assign-profiles-for-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The name of the stream getting default profiles</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profiles</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-1.0-Modulemd.SimpleSet.html#ModulemdSimpleSet" title="ModulemdSimpleSet"><span class="type">ModulemdSimpleSet</span></a> of profile names to install by default when
+installing this stream of the module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-profile-defaults"></a><h3>modulemd_defaults_set_profile_defaults ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_profile_defaults
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *profile_defaults</code></em>);</pre>
+<p>Assigns the hash table of streams and their default profiles</p>
+<div class="refsect3">
+<a name="modulemd-defaults-set-profile-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>profile_defaults</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdSimpleSet][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-dup-profiles-for-stream"></a><h3>modulemd_defaults_dup_profiles_for_stream ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+modulemd_defaults_dup_profiles_for_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-dup-profiles-for-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The name of the stream from which to retrieve defaults</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-dup-profiles-for-stream.returns"></a><h4>Returns</h4>
+<p>A zero-terminated array
+of strings that provides the list of profiles that should be installed by
+default when this stream is specified. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-peek-profile-defaults"></a><h3>modulemd_defaults_peek_profile_defaults ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_defaults_peek_profile_defaults
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Retrieves a hash table of the profile defaults.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-peek-profile-defaults.returns"></a><h4>Returns</h4>
+<p>A GHashTable
+containing the set of profile defaults for streams of this module. This hash
+table is maintained by the ModulemdDefaults object and must not be freed or
+modified. If modification is necessary, use
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#modulemd-defaults-dup-profile-defaults" title="modulemd_defaults_dup_profile_defaults ()"><code class="function">modulemd_defaults_dup_profile_defaults()</code></a> instead. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdSimpleSet][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-dup-profile-defaults"></a><h3>modulemd_defaults_dup_profile_defaults ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_defaults_dup_profile_defaults
+                               (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Retrieves a copy of the hash table of profile defaults.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-dup-profile-defaults.returns"></a><h4>Returns</h4>
+<p>A
+GHashTable containing the set of profile defaults for streams of this
+module. This hash table is a copy and must be freed with
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#g-hash-table-unref"><code class="function">g_hash_table_unref()</code></a> when the caller is finished with it. The elements it
+contains are maintained by the hash table and will be automatically freed
+when their key is removed or the hash table is freed. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdSimpleSet][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-add-intent"></a><h3>modulemd_defaults_add_intent ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_add_intent (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                              <em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Intent.html#ModulemdIntent" title="ModulemdIntent"><span class="type">ModulemdIntent</span></a> *intent</code></em>);</pre>
+<p>Adds an intent object to the hash table.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-add-intent.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>intent</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-1.0-Modulemd.Intent.html#ModulemdIntent" title="ModulemdIntent"><span class="type">ModulemdIntent</span></a> to add to the
+intents table. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/not%20nullable"><span class="acronym">not nullable</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-intents"></a><h3>modulemd_defaults_set_intents ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_intents (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *intents</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-set-intents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>intents</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing defaults for individual system intents. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdIntent][<a href="http://foldoc.org/nullable"><span class="acronym">nullable</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-peek-intents"></a><h3>modulemd_defaults_peek_intents ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_defaults_peek_intents (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Get a pointer to the intents hash table. The returned table is managed by the
+<a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object and must not be modified or freed.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-peek-intents.returns"></a><h4>Returns</h4>
+<p>A pointer to the
+intents hash table. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdIntent][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-dup-intents"></a><h3>modulemd_defaults_dup_intents ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_defaults_dup_intents (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<p>Get a copy of the intents hash table. The returned table is managed by the
+caller and must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#g-hash-table-unref"><code class="function">g_hash_table_unref()</code></a></p>
+<div class="refsect3">
+<a name="modulemd-defaults-dup-intents.returns"></a><h4>Returns</h4>
+<p>A copy of
+the intents hash table. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8 ModulemdIntent][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-set-modified"></a><h3>modulemd_defaults_set_modified ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_set_modified (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> modified</code></em>);</pre>
+<p>Sets the modified field for these defaults.</p>
+<p class="since">Since: 1.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-get-modified"></a><h3>modulemd_defaults_get_modified ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+modulemd_defaults_get_modified (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-get-modified.returns"></a><h4>Returns</h4>
+<p> The modified field for these defaults.</p>
+</div>
+<p class="since">Since: 1.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-new-from-file"></a><h3>modulemd_defaults_new_from_file ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new_from_file (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Constructs a new <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object from the first valid
+modulemd-defaults document in the given module stream. This will ignore any
+documents of other types, malformed documents and defaults that appear later
+in the stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A YAML file containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-file.returns"></a><h4>Returns</h4>
+<p> A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object constructed the first valid
+modulemd-defaults document in the given module stream. This must be freed
+with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+</div>
+<p class="since">Since: 1.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-new-from-file-ext"></a><h3>modulemd_defaults_new_from_file_ext ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new_from_file_ext (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Constructs a new <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object from the first valid
+modulemd-defaults document in the given module stream. This will ignore any
+documents of other types, malformed documents and defaults that appear later
+in the stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-file-ext.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A YAML file containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-file-ext.returns"></a><h4>Returns</h4>
+<p> A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object constructed the first valid
+modulemd-defaults document in the given module stream. This must be freed
+with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-new-from-string"></a><h3>modulemd_defaults_new_from_string ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new_from_string (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_string</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Constructs a new <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object from the first valid
+modulemd-defaults document in the given module stream. This will ignore any
+documents of other types, malformed documents and defaults that appear later
+in the stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A YAML string containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-string.returns"></a><h4>Returns</h4>
+<p> A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object constructed the first valid
+modulemd-defaults document in the given module stream. This must be freed
+with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+</div>
+<p class="since">Since: 1.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-new-from-string-ext"></a><h3>modulemd_defaults_new_from_string_ext ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new_from_string_ext (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_string</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Constructs a new <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object from the first valid
+modulemd-defaults document in the given module stream. This will ignore any
+documents of other types, malformed documents and defaults that appear later
+in the stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-string-ext.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A YAML string containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-string-ext.returns"></a><h4>Returns</h4>
+<p> A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object constructed the first valid
+modulemd-defaults document in the given module stream. This must be freed
+with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-new-from-stream"></a><h3>modulemd_defaults_new_from_stream ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new_from_stream (<em class="parameter"><code><span class="type">FILE</span> *stream</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Constructs a new <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object from the first valid
+modulemd-defaults document in the given module stream. This will ignore any
+documents of other types, malformed documents and defaults that appear later
+in the stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>A YAML stream containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-stream.returns"></a><h4>Returns</h4>
+<p> A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object constructed the first valid
+modulemd-defaults document in the given module stream. This must be freed
+with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-new-from-stream-ext"></a><h3>modulemd_defaults_new_from_stream_ext ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_new_from_stream_ext (<em class="parameter"><code><span class="type">FILE</span> *stream</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Constructs a new <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object from the first valid
+modulemd-defaults document in the given module stream. This will ignore any
+documents of other types, malformed documents and defaults that appear later
+in the stream.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-stream-ext.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>A YAML stream containing the module metadata and other related
+information such as default streams.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to
+parse. This must be freed with <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-unref"><code class="function">g_ptr_array_unref()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> ModulemdSubdocument][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>][<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-new-from-stream-ext.returns"></a><h4>Returns</h4>
+<p> A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object constructed the first valid
+modulemd-defaults document in the given module stream. This must be freed
+with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer needed.</p>
+</div>
+<p class="since">Since: 1.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-dump"></a><h3>modulemd_defaults_dump ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_dump (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *file_path</code></em>);</pre>
+<p>Exports the YAML representation of this defaults object to a file.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-dump.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>file_path</p></td>
+<td class="parameter_description"><p>File path for exporting the YAML representation of this defaults
+object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-dumps"></a><h3>modulemd_defaults_dumps ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_defaults_dumps (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **yaml_string</code></em>);</pre>
+<p>Exports the YAML representation of this defaults object to a string. The
+caller is responsible for calling <a href="https://developer.gnome.org/glib/stable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> on this string when they are
+finished with it.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-dumps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>File path for exporting the YAML representation of this defaults
+object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 1.1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-copy"></a><h3>modulemd_defaults_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_copy (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-copy.returns"></a><h4>Returns</h4>
+<p>A deep-copied <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. This
+object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-merge"></a><h3>modulemd_defaults_merge ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_merge (<em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *first</code></em>,
+                         <em class="parameter"><code><a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> *second</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> override</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-merge.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>first</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object providing the base for the merge.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>second</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object being merged onto <em class="parameter"><code>first</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>override</p></td>
+<td class="parameter_description"><p>In the case of a conflict, should <em class="parameter"><code>second</code></em>
+completely replace the
+contents of <em class="parameter"><code>first</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-merge.returns"></a><h4>Returns</h4>
+<p>A merged or replaced <a class="link" href="modulemd-1.0-Modulemd.Defaults.html#ModulemdDefaults" title="ModulemdDefaults"><span class="type">ModulemdDefaults</span></a> object. In
+case of unresolvable merge, NULL will be returned and an error will be set.
+This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+<p class="since">Since: 1.3</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-1.0-Modulemd.Defaults.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MD-DEFAULTS-VERSION-LATEST:CAPS"></a><h3>MD_DEFAULTS_VERSION_LATEST</h3>
+<pre class="programlisting">#define MD_DEFAULTS_VERSION_LATEST MD_DEFAULTS_VERSION_1
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-DEFAULTS-ERROR:CAPS"></a><h3>MODULEMD_DEFAULTS_ERROR</h3>
+<pre class="programlisting">#define MODULEMD_DEFAULTS_ERROR modulemd_defaults_error_quark ()
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-DEFAULTS:CAPS"></a><h3>MODULEMD_TYPE_DEFAULTS</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_DEFAULTS (modulemd_defaults_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdDefaults"></a><h3>ModulemdDefaults</h3>
+<pre class="programlisting">typedef struct _ModulemdDefaults ModulemdDefaults;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.29</div>
+</body>
+</html>
