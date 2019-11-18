@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="next" href="modulemd-2.0-Modulemd.Buildopts.html" title="Modulemd.Buildopts">
-<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -45,8 +45,8 @@ justifications.
 <a name="modulemd-2.0-Modulemd.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody><tr>
 <td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
@@ -88,19 +88,19 @@ repositories have been loaded into string variables <code class="literal">fedora
 11
 12
 13</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex-struct">ModulemdModuleIndex</a> </span><span class="symbol">*</span><span class="normal"> fedora_index </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new">modulemd_module_index_new</a></span><span class="normal"> </span><span class="symbol">();</span>
-<span class="usertype">gboolean</span><span class="normal"> ret </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string">modulemd_module_index_update_from_string</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">fedora_index</span><span class="symbol">,</span>
-<span class="normal">                                                         fedora_yaml</span><span class="symbol">,</span>
-<span class="normal">                                                         <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS">TRUE</a></span><span class="symbol">,</span>
-<span class="normal">                                                         </span><span class="symbol">&amp;</span><span class="normal">failures</span><span class="symbol">,</span>
-<span class="normal">                                                         </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModuleIndex</span> <span class="o">*</span> <span class="n">fedora_index</span> <span class="o">=</span> <span class="n">modulemd_module_index_new</span> <span class="p">();</span>
+<span class="n">gboolean</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">modulemd_module_index_update_from_string</span> <span class="p">(</span><span class="n">fedora_index</span><span class="p">,</span>
+                                                         <span class="n">fedora_yaml</span><span class="p">,</span>
+                                                         <span class="n">TRUE</span><span class="p">,</span>
+                                                         <span class="o">&amp;</span><span class="n">failures</span><span class="p">,</span>
+                                                         <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
 
-<span class="normal"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex-struct">ModulemdModuleIndex</a> </span><span class="symbol">*</span><span class="normal"> updates_index </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new">modulemd_module_index_new</a></span><span class="normal"> </span><span class="symbol">();</span>
-<span class="usertype">gboolean</span><span class="normal"> ret2 </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string">modulemd_module_index_update_from_string</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">updates_index</span><span class="symbol">,</span>
-<span class="normal">                                                          updates_yaml</span><span class="symbol">,</span>
-<span class="normal">                                                          <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS">TRUE</a></span><span class="symbol">,</span>
-<span class="normal">                                                          </span><span class="symbol">&amp;</span><span class="normal">failures</span><span class="symbol">,</span>
-<span class="normal">                                                          </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span></pre></td>
+<span class="n">ModulemdModuleIndex</span> <span class="o">*</span> <span class="n">updates_index</span> <span class="o">=</span> <span class="n">modulemd_module_index_new</span> <span class="p">();</span>
+<span class="n">gboolean</span> <span class="n">ret2</span> <span class="o">=</span> <span class="n">modulemd_module_index_update_from_string</span> <span class="p">(</span><span class="n">updates_index</span><span class="p">,</span>
+                                                          <span class="n">updates_yaml</span><span class="p">,</span>
+                                                          <span class="n">TRUE</span><span class="p">,</span>
+                                                          <span class="o">&amp;</span><span class="n">failures</span><span class="p">,</span>
+                                                          <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -117,11 +117,11 @@ repositories have been loaded into string variables <code class="literal">fedora
 3
 4
 5</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">fedora_index </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndex</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
-<span class="normal">ret</span><span class="symbol">,</span><span class="normal"> failures </span><span class="symbol">=</span><span class="normal"> fedora_index</span><span class="symbol">.</span><span class="function">update_from_string</span><span class="symbol">(</span><span class="normal">fedora_yaml</span><span class="symbol">,</span><span class="normal"> True</span><span class="symbol">)</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">fedora_index</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">ret</span><span class="p">,</span> <span class="n">failures</span> <span class="o">=</span> <span class="n">fedora_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">fedora_yaml</span><span class="p">,</span> <span class="n">True</span><span class="p">)</span>
 
-<span class="normal">fedora_index </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndex</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
-<span class="normal">ret</span><span class="symbol">,</span><span class="normal"> failures </span><span class="symbol">=</span><span class="normal"> updates_index</span><span class="symbol">.</span><span class="function">update_from_string</span><span class="symbol">(</span><span class="normal">updates_yaml</span><span class="symbol">,</span><span class="normal"> True</span><span class="symbol">)</span></pre></td>
+<span class="n">fedora_index</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">ret</span><span class="p">,</span> <span class="n">failures</span> <span class="o">=</span> <span class="n">updates_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">updates_yaml</span><span class="p">,</span> <span class="n">True</span><span class="p">)</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -147,12 +147,12 @@ indexes into a combined one:</p>
 4
 5
 6</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger-struct">ModulemdModuleIndexMerger</a> </span><span class="symbol">*</span><span class="normal"> merger </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-new">modulemd_module_index_merger_new</a></span><span class="normal"> </span><span class="symbol">();</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModuleIndexMerger</span> <span class="o">*</span> <span class="n">merger</span> <span class="o">=</span> <span class="n">modulemd_module_index_merger_new</span> <span class="p">();</span>
 
-<span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-associate-index">modulemd_module_index_merger_associate_index</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merger</span><span class="symbol">,</span><span class="normal"> fedora_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">);</span>
-<span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-associate-index">modulemd_module_index_merger_associate_index</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merger</span><span class="symbol">,</span><span class="normal"> updates_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">);</span>
+<span class="n">modulemd_module_index_merger_associate_index</span> <span class="p">(</span><span class="n">merger</span><span class="p">,</span> <span class="n">fedora_index</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">modulemd_module_index_merger_associate_index</span> <span class="p">(</span><span class="n">merger</span><span class="p">,</span> <span class="n">updates_index</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 
-<span class="normal"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex-struct">ModulemdModuleIndex</a> </span><span class="symbol">*</span><span class="normal"> merged_index </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-resolve">modulemd_module_index_merger_resolve</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merger</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span></pre></td>
+<span class="n">ModulemdModuleIndex</span> <span class="o">*</span> <span class="n">merged_index</span> <span class="o">=</span> <span class="n">modulemd_module_index_merger_resolve</span> <span class="p">(</span><span class="n">merger</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -170,12 +170,12 @@ indexes into a combined one:</p>
 4
 5
 6</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">merger </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleIndexMerger</span><span class="symbol">.</span><span class="function">new</span><span class="symbol">()</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">merger</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndexMerger</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
 
-<span class="normal">merger</span><span class="symbol">.</span><span class="function">associate_index</span><span class="symbol">(</span><span class="normal">fedora_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">)</span>
-<span class="normal">merger</span><span class="symbol">.</span><span class="function">associate_index</span><span class="symbol">(</span><span class="normal">updates_index</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">)</span>
+<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">fedora_index</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">updates_index</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
-<span class="normal">merged_index </span><span class="symbol">=</span><span class="normal"> merger</span><span class="symbol">.</span><span class="function">resolve</span><span class="symbol">()</span></pre></td>
+<span class="n">merged_index</span> <span class="o">=</span> <span class="n">merger</span><span class="p">.</span><span class="n">resolve</span><span class="p">()</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -204,10 +204,10 @@ specification for a full list of information that can be retrieved.</p>
 2
 3
 4</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal"><a href="modulemd-2.0-Modulemd.Module.html#ModulemdModule-struct">ModulemdModule</a> </span><span class="symbol">*</span><span class="normal"> module </span><span class="symbol">=</span><span class="normal">  </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module">modulemd_module_index_get_module</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merged_index</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"modulename"</span><span class="symbol">);</span>
-<span class="normal"><a href="ModulemdDefaults.html#ModulemdDefaults-struct">ModulemdDefaults</a> </span><span class="symbol">*</span><span class="normal"> defaults </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-defaults">modulemd_module_get_defaults</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">module</span><span class="symbol">);</span>
-<span class="function">printf</span><span class="normal"> </span><span class="symbol">(</span><span class="string">"Default stream for modulename is %s</span><span class="specialchar">\n</span><span class="string">"</span><span class="symbol">,</span>
-<span class="normal">        </span><span class="function"><a href="modulemd-2.0-Modulemd.DefaultsV1.html#modulemd-defaults-v1-get-default-stream">modulemd_defaults_v1_get_default_stream</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">MODULEMD_DEFAULTS_V1</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">defaults</span><span class="symbol">),</span><span class="normal"> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">));</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModule</span> <span class="o">*</span> <span class="n">module</span> <span class="o">=</span>  <span class="n">modulemd_module_index_get_module</span> <span class="p">(</span><span class="n">merged_index</span><span class="p">,</span> <span class="s">&quot;modulename&quot;</span><span class="p">);</span>
+<span class="n">ModulemdDefaults</span> <span class="o">*</span> <span class="n">defaults</span> <span class="o">=</span> <span class="n">modulemd_module_get_defaults</span> <span class="p">(</span><span class="n">module</span><span class="p">);</span>
+<span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Default stream for modulename is %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
+        <span class="n">modulemd_defaults_v1_get_default_stream</span> <span class="p">(</span><span class="n">MODULEMD_DEFAULTS_V1</span> <span class="p">(</span><span class="n">defaults</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">));</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -223,10 +223,10 @@ specification for a full list of information that can be retrieved.</p>
 2
 3
 4</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">module </span><span class="symbol">=</span><span class="normal"> merged_index</span><span class="symbol">.</span><span class="function">get_module</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'modulename'</span><span class="symbol">)</span>
-<span class="normal">defaults </span><span class="symbol">=</span><span class="normal"> module</span><span class="symbol">.</span><span class="function">get_defaults</span><span class="symbol">()</span>
-<span class="function">print</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'Default stream for modulename is %s'</span><span class="normal"> </span><span class="symbol">%</span><span class="normal"> </span><span class="symbol">(</span>
-<span class="normal">       defaults</span><span class="symbol">.</span><span class="function">get_default_stream</span><span class="symbol">())</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">module</span> <span class="o">=</span> <span class="n">merged_index</span><span class="p">.</span><span class="n">get_module</span> <span class="p">(</span><span class="err">&#39;</span><span class="n">modulename</span><span class="err">&#39;</span><span class="p">)</span>
+<span class="n">defaults</span> <span class="o">=</span> <span class="n">module</span><span class="p">.</span><span class="n">get_defaults</span><span class="p">()</span>
+<span class="n">print</span> <span class="p">(</span><span class="err">&#39;</span><span class="n">Default</span> <span class="n">stream</span> <span class="k">for</span> <span class="n">modulename</span> <span class="n">is</span> <span class="o">%</span><span class="n">s</span><span class="err">&#39;</span> <span class="o">%</span> <span class="p">(</span>
+       <span class="n">defaults</span><span class="p">.</span><span class="n">get_default_stream</span><span class="p">())</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -243,7 +243,7 @@ specification for a full list of information that can be retrieved.</p>
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal"><a href="modulemd-2.0-Modulemd.Module.html#ModulemdModule-struct">ModulemdModule</a> </span><span class="symbol">*</span><span class="normal"> module </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module">modulemd_module_index_get_module</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merged_index</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"modulename"</span><span class="symbol">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModule</span> <span class="o">*</span> <span class="n">module</span> <span class="o">=</span> <span class="n">modulemd_module_index_get_module</span> <span class="p">(</span><span class="n">merged_index</span><span class="p">,</span> <span class="s">&quot;modulename&quot;</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -256,7 +256,7 @@ specification for a full list of information that can be retrieved.</p>
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">module </span><span class="symbol">=</span><span class="normal"> merged_index</span><span class="symbol">.</span><span class="function">get_module</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'modulename'</span><span class="symbol">)</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">module</span> <span class="o">=</span> <span class="n">merged_index</span><span class="p">.</span><span class="n">get_module</span> <span class="p">(</span><span class="err">&#39;</span><span class="n">modulename</span><span class="err">&#39;</span><span class="p">)</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -276,12 +276,12 @@ provided NSVCA (name-stream-version-context-architecture identifier).</p>
 4
 5
 6</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal"><a href="ModulemdModuleStream.html#ModulemdModuleStream-struct">ModulemdModuleStream</a> </span><span class="symbol">*</span><span class="normal"> stream </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVCA">modulemd_module_get_stream_by_NSVCA</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">module</span><span class="symbol">,</span>
-<span class="normal">                                                                     </span><span class="string">"modulestream"</span><span class="symbol">,</span>
-<span class="normal">                                                                     </span><span class="number">0</span><span class="symbol">,</span>
-<span class="normal">                                                                     </span><span class="string">"deadbeef"</span><span class="symbol">,</span>
-<span class="normal">                                                                     </span><span class="string">"coolarch"</span><span class="symbol">,</span>
-<span class="normal">                                                                     </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModuleStream</span> <span class="o">*</span> <span class="n">stream</span> <span class="o">=</span> <span class="n">modulemd_module_get_stream_by_NSVCA</span> <span class="p">(</span><span class="n">module</span><span class="p">,</span>
+                                                                     <span class="s">&quot;modulestream&quot;</span><span class="p">,</span>
+                                                                     <span class="mi">0</span><span class="p">,</span>
+                                                                     <span class="s">&quot;deadbeef&quot;</span><span class="p">,</span>
+                                                                     <span class="s">&quot;coolarch&quot;</span><span class="p">,</span>
+                                                                     <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -294,7 +294,7 @@ provided NSVCA (name-stream-version-context-architecture identifier).</p>
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">stream </span><span class="symbol">=</span><span class="normal"> module</span><span class="symbol">.</span><span class="function">get_stream_by_NSVCA</span><span class="symbol">(</span><span class="string">'modulestream'</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> </span><span class="string">'deadbeef'</span><span class="symbol">,</span><span class="normal"> </span><span class="string">'coolarch'</span><span class="symbol">)</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">stream</span> <span class="o">=</span> <span class="n">module</span><span class="p">.</span><span class="n">get_stream_by_NSVCA</span><span class="p">(</span><span class="err">&#39;</span><span class="n">modulestream</span><span class="err">&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">deadbeef</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">coolarch</span><span class="err">&#39;</span><span class="p">)</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -309,7 +309,7 @@ a list of strings containing package names.</p>
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="usertype">GStrv</span><span class="normal"> api_list </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-rpm-api-as-strv">modulemd_module_stream_v2_get_rpm_api_as_strv</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">MODULEMD_MODULE_STREAM_V2</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">stream</span><span class="symbol">));</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GStrv</span> <span class="n">api_list</span> <span class="o">=</span> <span class="n">modulemd_module_stream_v2_get_rpm_api_as_strv</span> <span class="p">(</span><span class="n">MODULEMD_MODULE_STREAM_V2</span> <span class="p">(</span><span class="n">stream</span><span class="p">));</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -322,7 +322,7 @@ a list of strings containing package names.</p>
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">api_list </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">get_rpm_api</span><span class="symbol">()</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">api_list</span> <span class="o">=</span> <span class="n">stream</span><span class="p">.</span><span class="n">get_rpm_api</span><span class="p">()</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -345,14 +345,14 @@ a list of strings containing package names.</p>
 6
 7
 8</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal"><a href="modulemd-2.0-Modulemd.Module.html#ModulemdModule-struct">ModulemdModule</a> </span><span class="symbol">*</span><span class="normal"> module </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module">modulemd_module_index_get_module</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">merged_index</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"modulename"</span><span class="symbol">);</span>
-<span class="normal"><a href="ModulemdModuleStream.html#ModulemdModuleStream-struct">ModulemdModuleStream</a> </span><span class="symbol">*</span><span class="normal"> stream </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVCA">modulemd_module_get_stream_by_NSVCA</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">module</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"modulestream"</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"deadbeef"</span><span class="symbol">,</span><span class="normal"> </span><span class="string">"coolarch"</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">error</span><span class="symbol">);</span>
-<span class="normal"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray">GPtrArray</a> </span><span class="symbol">*</span><span class="normal"> deps_list </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-dependencies">modulemd_module_stream_v2_get_dependencies</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">MODULEMD_MODULE_STREAM_V2</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">stream</span><span class="symbol">));</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModule</span> <span class="o">*</span> <span class="n">module</span> <span class="o">=</span> <span class="n">modulemd_module_index_get_module</span> <span class="p">(</span><span class="n">merged_index</span><span class="p">,</span> <span class="s">&quot;modulename&quot;</span><span class="p">);</span>
+<span class="n">ModulemdModuleStream</span> <span class="o">*</span> <span class="n">stream</span> <span class="o">=</span> <span class="n">modulemd_module_get_stream_by_NSVCA</span> <span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="s">&quot;modulestream&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;deadbeef&quot;</span><span class="p">,</span> <span class="s">&quot;coolarch&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+<span class="n">GPtrArray</span> <span class="o">*</span> <span class="n">deps_list</span> <span class="o">=</span> <span class="n">modulemd_module_stream_v2_get_dependencies</span> <span class="p">(</span><span class="n">MODULEMD_MODULE_STREAM_V2</span> <span class="p">(</span><span class="n">stream</span><span class="p">));</span>
 
-<span class="keyword">for</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">gint</span><span class="normal"> i </span><span class="symbol">=</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span><span class="normal"> i </span><span class="symbol">&lt;</span><span class="normal"> deps_list</span><span class="symbol">-&gt;</span><span class="normal">len</span><span class="symbol">;</span><span class="normal"> i</span><span class="symbol">++)</span>
-<span class="normal">  </span><span class="cbracket">{</span>
-<span class="normal">    stuff </span><span class="usertype">with</span><span class="normal"> </span><span class="function"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#g-ptr-array-index">g_ptr_array_index</a></span><span class="symbol">(</span><span class="normal">deps_list</span><span class="symbol">,</span><span class="normal"> i</span><span class="symbol">);</span>
-<span class="normal">  </span><span class="cbracket">}</span></pre></td>
+<span class="k">for</span> <span class="p">(</span><span class="n">gint</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">deps_list</span><span class="o">-&gt;</span><span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">stuff</span> <span class="n">with</span> <span class="n">g_ptr_array_index</span><span class="p">(</span><span class="n">deps_list</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+  <span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -371,13 +371,13 @@ a list of strings containing package names.</p>
 5
 6
 7</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">module </span><span class="symbol">=</span><span class="normal"> merged_index</span><span class="symbol">.</span><span class="function">get_module</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'modulename'</span><span class="symbol">)</span>
-<span class="normal">stream </span><span class="symbol">=</span><span class="normal"> module</span><span class="symbol">.</span><span class="function">get_stream_by_NSVCA</span><span class="symbol">(</span><span class="string">'modulestream'</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> </span><span class="string">'deadbeef'</span><span class="symbol">,</span><span class="normal"> </span><span class="string">'coolarch'</span><span class="symbol">)</span>
-<span class="normal">deps_list </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">get_dependencies</span><span class="symbol">()</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">module</span> <span class="o">=</span> <span class="n">merged_index</span><span class="p">.</span><span class="n">get_module</span> <span class="p">(</span><span class="err">&#39;</span><span class="n">modulename</span><span class="err">&#39;</span><span class="p">)</span>
+<span class="n">stream</span> <span class="o">=</span> <span class="n">module</span><span class="p">.</span><span class="n">get_stream_by_NSVCA</span><span class="p">(</span><span class="err">&#39;</span><span class="n">modulestream</span><span class="err">&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">deadbeef</span><span class="err">&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="n">coolarch</span><span class="err">&#39;</span><span class="p">)</span>
+<span class="n">deps_list</span> <span class="o">=</span> <span class="n">stream</span><span class="p">.</span><span class="n">get_dependencies</span><span class="p">()</span>
 
-<span class="keyword">for</span><span class="normal"> dep </span><span class="usertype">in</span><span class="normal"> deps_list</span><span class="symbol">:</span>
-<span class="normal">  depstream_list </span><span class="symbol">=</span><span class="normal"> dep</span><span class="symbol">.</span><span class="function">get_runtime_streams</span><span class="symbol">(</span><span class="string">'depstreamname'</span><span class="symbol">)</span>
-<span class="normal">  </span><span class="symbol">&lt;</span><span class="normal">do_stuff</span><span class="symbol">&gt;</span></pre></td>
+<span class="k">for</span> <span class="n">dep</span> <span class="n">in</span> <span class="nl">deps_list</span><span class="p">:</span>
+  <span class="n">depstream_list</span> <span class="o">=</span> <span class="n">dep</span><span class="p">.</span><span class="n">get_runtime_streams</span><span class="p">(</span><span class="err">&#39;</span><span class="n">depstreamname</span><span class="err">&#39;</span><span class="p">)</span>
+  <span class="o">&lt;</span><span class="n">do_stuff</span><span class="o">&gt;</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -409,12 +409,12 @@ string variables named <code class="literal">module_name</code> and <code class=
 4
 5
 6</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">stream </span><span class="symbol">=</span><span class="normal"> Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStream</span><span class="symbol">.</span><span class="function">read_file</span><span class="normal"> </span><span class="symbol">(</span><span class="string">'/path/to/module_name.yaml'</span><span class="symbol">,</span>
-<span class="normal">                                          True</span><span class="symbol">,</span>
-<span class="normal">                                          module_name</span><span class="symbol">,</span>
-<span class="normal">                                          stream_name</span><span class="symbol">)</span>
-<span class="normal">v2_stream </span><span class="symbol">=</span><span class="normal"> stream</span><span class="symbol">.</span><span class="function">upgrade</span><span class="symbol">(</span><span class="normal">Modulemd</span><span class="symbol">.</span><span class="normal">ModuleStreamVersionEnum</span><span class="symbol">.</span><span class="normal">TWO</span><span class="symbol">)</span>
-<span class="normal">v2_stream</span><span class="symbol">.</span><span class="function">validate</span><span class="symbol">()</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">stream</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleStream</span><span class="p">.</span><span class="n">read_file</span> <span class="p">(</span><span class="err">&#39;</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">module_name</span><span class="p">.</span><span class="n">yaml</span><span class="err">&#39;</span><span class="p">,</span>
+                                          <span class="n">True</span><span class="p">,</span>
+                                          <span class="n">module_name</span><span class="p">,</span>
+                                          <span class="n">stream_name</span><span class="p">)</span>
+<span class="n">v2_stream</span> <span class="o">=</span> <span class="n">stream</span><span class="p">.</span><span class="n">upgrade</span><span class="p">(</span><span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleStreamVersionEnum</span><span class="p">.</span><span class="n">TWO</span><span class="p">)</span>
+<span class="n">v2_stream</span><span class="p">.</span><span class="n">validate</span><span class="p">()</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -445,11 +445,8 @@ modulemd_get_version (<em class="parameter"><code><span class="type">void</span>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
 </div>
-<div class="refsect1">
-<a name="modulemd-2.0-Modulemd.other_details"></a><h2>Types and Values</h2>
-</div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.29</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

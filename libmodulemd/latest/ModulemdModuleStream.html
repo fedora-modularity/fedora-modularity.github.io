@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html" title="Modulemd.ModuleIndexMerger">
 <link rel="next" href="modulemd-2.0-Modulemd.ModuleStreamV1.html" title="Modulemd.ModuleStreamV1">
-<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -48,8 +48,8 @@ justifications.
 <a name="ModulemdModuleStream.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -249,13 +249,13 @@ justifications.
 <td class="property_type">
 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStream--module-name" title="The “module-name” property">module-name</a></td>
-<td class="property_flags">Read / Write / Construct Only</td>
+<td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type">
 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStream--stream-name" title="The “stream-name” property">stream-name</a></td>
-<td class="property_flags">Read / Write / Construct Only</td>
+<td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
@@ -269,8 +269,8 @@ justifications.
 <a name="ModulemdModuleStream.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -1257,6 +1257,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <a name="ModulemdModuleStream--arch"></a><h3>The <code class="literal">“arch”</code> property</h3>
 <pre class="programlisting">  “arch”                     <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The processor architecture of this module stream.</p>
+<p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read / Write / Construct</p>
 <p>Default value: NULL</p>
 </div>
@@ -1265,6 +1266,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <a name="ModulemdModuleStream--context"></a><h3>The <code class="literal">“context”</code> property</h3>
 <pre class="programlisting">  “context”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The context of this module stream. Distinguishes between streams with the same version but different dependencies due to module stream expansion.</p>
+<p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read / Write / Construct</p>
 <p>Default value: NULL</p>
 </div>
@@ -1273,6 +1275,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <a name="ModulemdModuleStream--mdversion"></a><h3>The <code class="literal">“mdversion”</code> property</h3>
 <pre class="programlisting">  “mdversion”                <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The metadata version of this ModuleStream object. Read-only.</p>
+<p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read</p>
 <p>Allowed values: &lt;= 2</p>
 <p>Default value: 0</p>
@@ -1282,7 +1285,8 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <a name="ModulemdModuleStream--module-name"></a><h3>The <code class="literal">“module-name”</code> property</h3>
 <pre class="programlisting">  “module-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of the module providing this stream.</p>
-<p>Flags: Read / Write / Construct Only</p>
+<p>Owner: ModulemdModuleStream</p>
+<p>Flags: Read / Write / Construct Only</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
@@ -1290,7 +1294,8 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <a name="ModulemdModuleStream--stream-name"></a><h3>The <code class="literal">“stream-name”</code> property</h3>
 <pre class="programlisting">  “stream-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of this module stream.</p>
-<p>Flags: Read / Write / Construct Only</p>
+<p>Owner: ModulemdModuleStream</p>
+<p>Flags: Read / Write / Construct Only</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
@@ -1298,12 +1303,13 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <a name="ModulemdModuleStream--version"></a><h3>The <code class="literal">“version”</code> property</h3>
 <pre class="programlisting">  “version”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The version of this module stream.</p>
+<p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read / Write / Construct</p>
 <p>Default value: 0</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.29</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>

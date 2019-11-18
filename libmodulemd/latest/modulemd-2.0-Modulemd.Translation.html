@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.SubdocumentInfo.html" title="Modulemd.SubdocumentInfo">
 <link rel="next" href="modulemd-2.0-Modulemd.TranslationEntry.html" title="Modulemd.TranslationEntry">
-<meta name="generator" content="GTK-Doc V1.29 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -47,8 +47,8 @@ justifications.
 <a name="modulemd-2.0-Modulemd.Translation.functions"></a><h2>Functions</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="functions_return">
-<col class="functions_name">
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -128,18 +128,18 @@ justifications.
 <td class="property_type">
 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--module-name" title="The “module-name” property">module-name</a></td>
-<td class="property_flags">Read / Write / Construct Only</td>
+<td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type">
 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--module-stream" title="The “module-stream” property">module-stream</a></td>
-<td class="property_flags">Read / Write / Construct Only</td>
+<td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--version" title="The “version” property">version</a></td>
-<td class="property_flags">Read / Write / Construct Only</td>
+<td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 </tbody>
 </table></div>
@@ -148,8 +148,8 @@ justifications.
 <a name="modulemd-2.0-Modulemd.Translation.other"></a><h2>Types and Values</h2>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
-<col width="150px" class="name">
-<col class="description">
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
 </colgroup>
 <tbody>
 <tr>
@@ -432,6 +432,7 @@ modulemd_translation_get_translation_entry
 <a name="ModulemdTranslation--modified"></a><h3>The <code class="literal">“modified”</code> property</h3>
 <pre class="programlisting">  “modified”                 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The last modified time represented as a 64-bit integer (such as 201807011200).</p>
+<p>Owner: ModulemdTranslation</p>
 <p>Flags: Read / Write</p>
 <p>Default value: 0</p>
 </div>
@@ -440,7 +441,8 @@ modulemd_translation_get_translation_entry
 <a name="ModulemdTranslation--module-name"></a><h3>The <code class="literal">“module-name”</code> property</h3>
 <pre class="programlisting">  “module-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of the module to which these translations apply.</p>
-<p>Flags: Read / Write / Construct Only</p>
+<p>Owner: ModulemdTranslation</p>
+<p>Flags: Read / Write / Construct Only</p>
 <p>Default value: "__TRANSLATION_VALUE_UNSET__"</p>
 </div>
 <hr>
@@ -448,7 +450,8 @@ modulemd_translation_get_translation_entry
 <a name="ModulemdTranslation--module-stream"></a><h3>The <code class="literal">“module-stream”</code> property</h3>
 <pre class="programlisting">  “module-stream”            <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
 <p>The name of the module stream to which these translations apply.</p>
-<p>Flags: Read / Write / Construct Only</p>
+<p>Owner: ModulemdTranslation</p>
+<p>Flags: Read / Write / Construct Only</p>
 <p>Default value: "__TRANSLATION_VALUE_UNSET__"</p>
 </div>
 <hr>
@@ -456,12 +459,13 @@ modulemd_translation_get_translation_entry
 <a name="ModulemdTranslation--version"></a><h3>The <code class="literal">“version”</code> property</h3>
 <pre class="programlisting">  “version”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
 <p>The metadata version of this Translation object.</p>
-<p>Flags: Read / Write / Construct Only</p>
+<p>Owner: ModulemdTranslation</p>
+<p>Flags: Read / Write / Construct Only</p>
 <p>Default value: 0</p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.29</div>
+<hr>Generated by GTK-Doc V1.32</div>
 </body>
 </html>
