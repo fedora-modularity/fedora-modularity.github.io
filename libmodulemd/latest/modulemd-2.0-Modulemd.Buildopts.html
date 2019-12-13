@@ -122,6 +122,38 @@ justifications.
 <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist-as-strv" title="modulemd_buildopts_get_rpm_whitelist_as_strv ()">modulemd_buildopts_get_rpm_whitelist_as_strv</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-add-arch" title="modulemd_buildopts_add_arch ()">modulemd_buildopts_add_arch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-remove-arch" title="modulemd_buildopts_remove_arch ()">modulemd_buildopts_remove_arch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-arches" title="modulemd_buildopts_clear_arches ()">modulemd_buildopts_clear_arches</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-arches-as-strv" title="modulemd_buildopts_get_arches_as_strv ()">modulemd_buildopts_get_arches_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -421,6 +453,123 @@ modulemd_buildopts_get_rpm_whitelist_as_strv
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-add-arch"></a><h3>modulemd_buildopts_add_arch ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_add_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<p>Restrict the list of architectures for which to build this module. It may be
+called any number of times to indicate support on additional architectures.
+Use <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-arches" title="modulemd_buildopts_clear_arches ()"><code class="function">modulemd_buildopts_clear_arches()</code></a> to return to "all architectures".</p>
+<div class="refsect3">
+<a name="modulemd-buildopts-add-arch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>An architecture for which to build this module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-remove-arch"></a><h3>modulemd_buildopts_remove_arch ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_remove_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-buildopts-remove-arch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>An architecture to remove from the list of architectures for which to
+build this module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-clear-arches"></a><h3>modulemd_buildopts_clear_arches ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_clear_arches (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<p>Indicate that this module should be built for all architectures.</p>
+<div class="refsect3">
+<a name="modulemd-buildopts-clear-arches.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-get-arches-as-strv"></a><h3>modulemd_buildopts_get_arches_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_buildopts_get_arches_as_strv (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_buildopts_get_arches]</span></p>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-arches-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-arches-as-strv.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of architectures for which this
+module should be built. If empty, this module should be built for all
+architectures. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: 2.9</p>
 </div>
 </div>
 <div class="refsect1">

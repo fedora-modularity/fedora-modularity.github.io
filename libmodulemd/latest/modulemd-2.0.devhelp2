@@ -81,6 +81,10 @@
     <keyword type="function" name="modulemd_buildopts_remove_rpm_from_whitelist ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-remove-rpm-from-whitelist" since="2.0"/>
     <keyword type="function" name="modulemd_buildopts_clear_rpm_whitelist ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-rpm-whitelist" since="2.5"/>
     <keyword type="function" name="modulemd_buildopts_get_rpm_whitelist_as_strv ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist-as-strv" since="2.0"/>
+    <keyword type="function" name="modulemd_buildopts_add_arch ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-add-arch" since="2.9"/>
+    <keyword type="function" name="modulemd_buildopts_remove_arch ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-remove-arch" since="2.9"/>
+    <keyword type="function" name="modulemd_buildopts_clear_arches ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-arches" since="2.9"/>
+    <keyword type="function" name="modulemd_buildopts_get_arches_as_strv ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-arches-as-strv" since="2.9"/>
     <keyword type="macro" name="MODULEMD_TYPE_BUILDOPTS" link="modulemd-2.0-Modulemd.Buildopts.html#MODULEMD-TYPE-BUILDOPTS:CAPS"/>
     <keyword type="struct" name="ModulemdBuildopts" link="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts-struct"/>
     <keyword type="property" name="The “rpm-macros” property" link="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts--rpm-macros"/>
@@ -524,6 +528,7 @@
     <keyword type="function" name="modulemd_module_stream_get_translation ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_get_translation_entry ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation-entry" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_validate_components ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-components" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_validate_component_rpm_arches ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-component-rpm-arches" since="2.9"/>
     <keyword type="macro" name="STREAM_UPGRADE_IF_SET_FULL()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-FULL:CAPS" since="2.0"/>
     <keyword type="macro" name="STREAM_COPY_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET:CAPS" since="2.0"/>
     <keyword type="macro" name="STREAM_UPGRADE_IF_SET()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET:CAPS" since="2.0"/>
