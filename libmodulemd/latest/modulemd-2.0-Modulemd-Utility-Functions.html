@@ -48,6 +48,12 @@ documented ways.
 </colgroup>
 <tbody>
 <tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#UNUSED:CAPS" title="UNUSED()">UNUSED</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
 <td class="function_type">
 <a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
 </td>
@@ -188,6 +194,38 @@ documented ways.
 </td>
 </tr>
 <tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-is-glob-pattern" title="modulemd_is_glob_pattern ()">modulemd_is_glob_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#compare-streams" title="compare_streams ()">compare_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-fnmatch" title="modulemd_fnmatch ()">modulemd_fnmatch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-rpm-match" title="modulemd_rpm_match ()">modulemd_rpm_match</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
 <td class="define_keyword">#define</td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" title="MODULEMD_REPLACE_SET()">MODULEMD_REPLACE_SET</a><span class="c_punctuation">()</span>
@@ -232,6 +270,12 @@ documented ways.
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd-Utility-Functions.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="UNUSED:CAPS"></a><h3>UNUSED()</h3>
+<pre class="programlisting">#define UNUSED(x) UNUSED_##x __attribute__ ((__unused__))
+</pre>
+</div>
+<hr>
 <div class="refsect2">
 <a name="modulemd-error-quark"></a><h3>modulemd_error_quark ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
@@ -802,6 +846,151 @@ and <em class="parameter"><code>b</code></em>
 are logically equal, FALSE otherwise.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch12.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-is-glob-pattern"></a><h3>modulemd_is_glob_pattern ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_is_glob_pattern (<em class="parameter"><code>const <span class="type">char</span> *pattern</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-is-glob-pattern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>pattern</p></td>
+<td class="parameter_description"><p>(nullable) A string to check for glob patterns as defined by
+[glob(7)[(https://www.mankier.com/7/glob)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-is-glob-pattern.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>pattern</code></em>
+contains any globbing characters. FALSE
+otherwise.</p>
+</div>
+<p class="since">Since: 2.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="compare-streams"></a><h3>compare_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+compare_streams (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> b</code></em>);</pre>
+<p>Sorting function for GPtrArrays of <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects.</p>
+<div class="refsect3">
+<a name="compare-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>The first <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> to sort</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>The second <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> to sort</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-fnmatch"></a><h3>modulemd_fnmatch ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_fnmatch (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pattern</code></em>,
+                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+<p>A wrapper around <code class="function">fnmatch()</code> for use with modulemd.</p>
+<div class="refsect3">
+<a name="modulemd-fnmatch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pattern</p></td>
+<td class="parameter_description"><p>(nullable) A string to check for glob patterns as defined by
+[glob(7)[(https://www.mankier.com/7/glob)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>(nullable) A string to check for matches.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-fnmatch.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if <em class="parameter"><code>pattern</code></em>
+matched for this string or if <em class="parameter"><code>pattern</code></em>
+is NULL.
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a> if <em class="parameter"><code>pattern</code></em>
+did not match or <em class="parameter"><code>string</code></em>
+is NULL.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-rpm-match"></a><h3>modulemd_rpm_match ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_rpm_match (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> key</code></em>);</pre>
+<p>This is a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHRFunc"><span class="type">GHRFunc</span></a> for use with <a href="../glib/glib-Hash-Tables.html#g-hash-table-find"><code class="function">g_hash_table_find()</code></a> to search for RPMs. It
+is a wrapper around <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-fnmatch" title="modulemd_fnmatch ()"><code class="function">modulemd_fnmatch()</code></a>.</p>
+<div class="refsect3">
+<a name="modulemd-rpm-match.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The key in the RPM artifacts hash table.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The value in the RPM artifacts hash table (should be the same
+as <em class="parameter"><code>key</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>A <a class="ulink" href="https://www.mankier.com/3/glob" target="_top">glob</a>
+pattern to match against the NEVRA strings of the RPM artifacts in <em class="parameter"><code>self</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-rpm-match.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>key</code></em>
+is a match for the pattern in <em class="parameter"><code>user_data</code></em>
+.</p>
+</div>
 </div>
 <hr>
 <div class="refsect2">

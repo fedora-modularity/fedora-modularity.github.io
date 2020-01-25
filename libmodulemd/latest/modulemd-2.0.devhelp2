@@ -195,6 +195,8 @@
     <keyword type="function" name="modulemd_module_get_streams_by_stream_name_as_list ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-streams-by-stream-name-as-list" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_stream_by_NSVC ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVC" deprecated="2.2" since="2.0"/>
     <keyword type="function" name="modulemd_module_search_streams ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams" since="2.5"/>
+    <keyword type="function" name="modulemd_module_search_streams_by_glob ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams-by-glob" since="2.9"/>
+    <keyword type="function" name="modulemd_module_search_streams_by_nsvca_glob ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams-by-nsvca-glob" since="2.9"/>
     <keyword type="function" name="modulemd_module_get_stream_by_NSVCA ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVCA" since="2.2"/>
     <keyword type="function" name="modulemd_module_remove_streams_by_NSVCA ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-NSVCA" since="2.3"/>
     <keyword type="macro" name="modulemd_module_remove_streams_by_name()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-name" since="2.3"/>
@@ -216,6 +218,9 @@
     <keyword type="function" name="modulemd_module_index_dump_to_custom ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-custom" since="2.3"/>
     <keyword type="function" name="modulemd_module_index_get_module_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module-names-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_get_module ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_search_streams ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-search-streams" since="2.9"/>
+    <keyword type="function" name="modulemd_module_index_search_streams_by_nsvca_glob ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-search-streams-by-nsvca-glob" since="2.9"/>
+    <keyword type="function" name="modulemd_module_index_search_rpms ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-search-rpms" since="2.9"/>
     <keyword type="function" name="modulemd_module_index_remove_module ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-remove-module" since="2.2"/>
     <keyword type="function" name="modulemd_module_index_add_module_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-module-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_add_defaults ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-defaults" since="2.0"/>
@@ -537,8 +542,10 @@
     <keyword type="macro" name="STREAM_REPLACE_HASHTABLE()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-REPLACE-HASHTABLE:CAPS" since="2.0"/>
     <keyword type="macro" name="COPY_HASHTABLE_BY_VALUE_ADDER()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#COPY-HASHTABLE-BY-VALUE-ADDER:CAPS" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_emit_yaml_base ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-emit-yaml-base" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-includes-nevra" since="2.9"/>
     <keyword type="function" name="modulemd_module_stream_v1_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-emit-yaml" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v1_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-includes-nevra" since="2.9"/>
     <keyword type="struct" name="ModulemdModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1-struct"/>
     <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--arch"/>
     <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#ModulemdModuleStreamV1--buildopts"/>
@@ -553,6 +560,7 @@
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_artifacts ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-artifacts" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-filters" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-dependencies" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-includes-nevra" since="2.9"/>
     <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2-struct"/>
     <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--arch"/>
     <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--buildopts"/>
@@ -587,6 +595,7 @@
     <keyword type="function" name="modulemd_translation_emit_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml" since="2.0"/>
+    <keyword type="macro" name="UNUSED()" link="modulemd-2.0-Modulemd-Utility-Functions.html#UNUSED:CAPS"/>
     <keyword type="function" name="modulemd_error_quark ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-error-quark" since="2.0"/>
     <keyword type="function" name="modulemd_trace_init ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" since="2.0"/>
     <keyword type="function" name="modulemd_trace_free ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" since="2.0"/>
@@ -605,6 +614,10 @@
     <keyword type="function" name="modulemd_hash_table_unref ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-unref" since="2.0"/>
     <keyword type="function" name="modulemd_validate_nevra ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-validate-nevra" since="2.0"/>
     <keyword type="function" name="modulemd_boolean_equals ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-boolean-equals" since="2.7"/>
+    <keyword type="function" name="modulemd_is_glob_pattern ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-is-glob-pattern" since="2.9"/>
+    <keyword type="function" name="compare_streams ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#compare-streams" since="2.9"/>
+    <keyword type="function" name="modulemd_fnmatch ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-fnmatch"/>
+    <keyword type="function" name="modulemd_rpm_match ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-rpm-match"/>
     <keyword type="macro" name="MODULEMD_REPLACE_SET()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" since="2.0"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_EXT()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" since="2.2"/>
