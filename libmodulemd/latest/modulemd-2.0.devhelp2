@@ -121,10 +121,12 @@
     <keyword type="property" name="The “repository” property" link="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule--repository"/>
     <keyword type="function" name="modulemd_component_rpm_new ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-new" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_add_restricted_arch ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-add-restricted-arch" since="2.0"/>
-    <keyword type="function" name="modulemd_component_rpm_reset_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-arches" since="2.0"/>
+    <keyword type="function" name="modulemd_component_rpm_reset_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-arches" deprecated="2.9" since="2.0"/>
+    <keyword type="function" name="modulemd_component_rpm_clear_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-clear-arches" since="2.9"/>
     <keyword type="function" name="modulemd_component_rpm_get_arches_as_strv ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-arches-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_add_multilib_arch ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-add-multilib-arch" since="2.0"/>
-    <keyword type="function" name="modulemd_component_rpm_reset_multilib_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-multilib-arches" since="2.0"/>
+    <keyword type="function" name="modulemd_component_rpm_reset_multilib_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-multilib-arches" deprecated="2.9" since="2.0"/>
+    <keyword type="function" name="modulemd_component_rpm_clear_multilib_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-clear-multilib-arches" since="2.9"/>
     <keyword type="function" name="modulemd_component_rpm_get_multilib_arches_as_strv ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-multilib-arches-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_set_cache ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-cache" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_get_cache ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-cache" since="2.0"/>
