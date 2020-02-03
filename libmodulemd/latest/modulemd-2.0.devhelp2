@@ -121,11 +121,11 @@
     <keyword type="property" name="The “repository” property" link="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule--repository"/>
     <keyword type="function" name="modulemd_component_rpm_new ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-new" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_add_restricted_arch ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-add-restricted-arch" since="2.0"/>
-    <keyword type="function" name="modulemd_component_rpm_reset_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-arches" deprecated="2.9" since="2.0"/>
+    <keyword type="function" name="modulemd_component_rpm_reset_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-arches" deprecated="2.9: Use modulemd_component_rpm_clear_arches() instead." since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_clear_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-clear-arches" since="2.9"/>
     <keyword type="function" name="modulemd_component_rpm_get_arches_as_strv ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-arches-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_add_multilib_arch ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-add-multilib-arch" since="2.0"/>
-    <keyword type="function" name="modulemd_component_rpm_reset_multilib_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-multilib-arches" deprecated="2.9" since="2.0"/>
+    <keyword type="function" name="modulemd_component_rpm_reset_multilib_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-reset-multilib-arches" deprecated="2.9: Use modulemd_component_rpm_clear_multilib_arches() instead." since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_clear_multilib_arches ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-clear-multilib-arches" since="2.9"/>
     <keyword type="function" name="modulemd_component_rpm_get_multilib_arches_as_strv ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-get-multilib-arches-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_component_rpm_set_cache ()" link="modulemd-2.0-Modulemd.ComponentRpm.html#modulemd-component-rpm-set-cache" since="2.0"/>
@@ -195,7 +195,7 @@
     <keyword type="function" name="modulemd_module_get_module_name ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-module-name" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_all_streams ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-all-streams" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_streams_by_stream_name_as_list ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-streams-by-stream-name-as-list" since="2.0"/>
-    <keyword type="function" name="modulemd_module_get_stream_by_NSVC ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVC" deprecated="2.2" since="2.0"/>
+    <keyword type="function" name="modulemd_module_get_stream_by_NSVC ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVC" deprecated="2.2: Use modulemd_module_get_stream_by_NSVCA() instead." since="2.0"/>
     <keyword type="function" name="modulemd_module_search_streams ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams" since="2.5"/>
     <keyword type="function" name="modulemd_module_search_streams_by_glob ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams-by-glob" since="2.9"/>
     <keyword type="function" name="modulemd_module_search_streams_by_nsvca_glob ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams-by-nsvca-glob" since="2.9"/>
@@ -323,8 +323,8 @@
     <keyword type="function" name="modulemd_module_stream_v1_clear_servicelevels ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-clear-servicelevels" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_get_servicelevel_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-servicelevel-names-as-strv" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_get_servicelevel ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-servicelevel" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_v1_set_eol ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-eol" deprecated="2.0" since="2.0"/>
-    <keyword type="function" name="modulemd_module_stream_v1_get_eol ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-eol" deprecated="2.0" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v1_set_eol ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-set-eol" deprecated="2.0: Use modulemd_module_stream_v1_add_servicelevel() instead." since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v1_get_eol ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-eol" deprecated="2.0: Use modulemd_module_stream_v1_get_servicelevel() instead." since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_add_buildtime_requirement ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-buildtime-requirement" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_add_runtime_requirement ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-runtime-requirement" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_remove_buildtime_requirement ()" link="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-remove-buildtime-requirement" since="2.0"/>

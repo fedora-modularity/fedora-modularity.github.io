@@ -2240,7 +2240,10 @@ module stream. NULL otherwise. </p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 modulemd_module_stream_v1_set_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>,
                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a> *eol</code></em>);</pre>
-<div class="warning"><p><code class="literal">modulemd_module_stream_v1_set_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p></div>
+<div class="warning">
+<p><code class="literal">modulemd_module_stream_v1_set_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-add-servicelevel" title="modulemd_module_stream_v1_add_servicelevel ()"><code class="function">modulemd_module_stream_v1_add_servicelevel()</code></a> instead.</p>
+</div>
 <p>Comptibility function with early iterations of modulemd v1. This function is
 a wrapper for <code class="literal">modulemd_module_stream_v1_add_servicelevel("rawhide", eol)</code>.</p>
 <div class="refsect3">
@@ -2272,7 +2275,10 @@ a wrapper for <code class="literal">modulemd_module_stream_v1_add_servicelevel("
 <a name="modulemd-module-stream-v1-get-eol"></a><h3>modulemd_module_stream_v1_get_eol ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Date-and-Time-Functions.html#GDate"><span class="returnvalue">GDate</span></a> *
 modulemd_module_stream_v1_get_eol (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> *self</code></em>);</pre>
-<div class="warning"><p><code class="literal">modulemd_module_stream_v1_get_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p></div>
+<div class="warning">
+<p><code class="literal">modulemd_module_stream_v1_get_eol</code> has been deprecated since version 2.0 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#modulemd-module-stream-v1-get-servicelevel" title="modulemd_module_stream_v1_get_servicelevel ()"><code class="function">modulemd_module_stream_v1_get_servicelevel()</code></a> instead.</p>
+</div>
 <p>Compatibility function with early iterations of modulemd v1. This function
 is a wrapper for <code class="literal">modulemd_module_stream_v1_get_servicelevel("rawhide")</code>.</p>
 <div class="refsect3">
