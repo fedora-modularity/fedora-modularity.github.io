@@ -187,8 +187,14 @@
     <keyword type="function" name="modulemd_dependencies_get_runtime_streams_as_strv ()" link="modulemd-2.0-Modulemd.Dependencies.html#modulemd-dependencies-get-runtime-streams-as-strv" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_DEPENDENCIES" link="modulemd-2.0-Modulemd.Dependencies.html#MODULEMD-TYPE-DEPENDENCIES:CAPS"/>
     <keyword type="struct" name="ModulemdDependencies" link="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies-struct"/>
-    <keyword type="enum" name="enum ModulemdErrorEnum" link="modulemd-2.0-Modulemd-Errors.html#ModulemdErrorEnum" since="2.0"/>
-    <keyword type="enum" name="enum ModulemdYamlErrorEnum" link="modulemd-2.0-Modulemd-Errors.html#ModulemdYamlErrorEnum" since="2.0"/>
+    <keyword type="function" name="modulemd_error_quark ()" link="modulemd-2.0-Modulemd-Errors.html#modulemd-error-quark" since="2.9"/>
+    <keyword type="function" name="modulemd_yaml_error_quark ()" link="modulemd-2.0-Modulemd-Errors.html#modulemd-yaml-error-quark" since="2.9"/>
+    <keyword type="macro" name="MODULEMD_ERROR" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR:CAPS" since="2.9"/>
+    <keyword type="enum" name="enum ModulemdError" link="modulemd-2.0-Modulemd-Errors.html#ModulemdError" since="2.9"/>
+    <keyword type="enum" name="enum ModulemdErrorEnum" link="modulemd-2.0-Modulemd-Errors.html#ModulemdErrorEnum" deprecated="" since="2.0"/>
+    <keyword type="macro" name="MODULEMD_YAML_ERROR" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-YAML-ERROR:CAPS" since="2.9"/>
+    <keyword type="enum" name="enum ModulemdYamlError" link="modulemd-2.0-Modulemd-Errors.html#ModulemdYamlError" since="2.9"/>
+    <keyword type="enum" name="enum ModulemdYamlErrorEnum" link="modulemd-2.0-Modulemd-Errors.html#ModulemdYamlErrorEnum" deprecated="" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_stream_names_as_strv ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-names-as-strv" since="2.6"/>
     <keyword type="function" name="modulemd_module_copy ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-copy" since="2.0"/>
     <keyword type="function" name="modulemd_module_validate ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-validate" since="2.0"/>
@@ -598,7 +604,6 @@
     <keyword type="function" name="modulemd_translation_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml" since="2.0"/>
     <keyword type="macro" name="UNUSED()" link="modulemd-2.0-Modulemd-Utility-Functions.html#UNUSED:CAPS"/>
-    <keyword type="function" name="modulemd_error_quark ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-error-quark" since="2.0"/>
     <keyword type="function" name="modulemd_trace_init ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" since="2.0"/>
     <keyword type="function" name="modulemd_trace_free ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" since="2.0"/>
     <keyword type="macro" name="MODULEMD_INIT_TRACE" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" since="2.0"/>
@@ -624,8 +629,6 @@
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_EXT()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_STATIC()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" since="2.2"/>
-    <keyword type="macro" name="MODULEMD_ERROR" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-ERROR:CAPS"/>
-    <keyword type="function" name="modulemd_yaml_error_quark ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-error-quark" since="2.0"/>
     <keyword type="function" name="write_yaml_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#write-yaml-string" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_string_free ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-string-free" since="2.0"/>
     <keyword type="function" name="mmd_yaml_get_event_name ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-yaml-get-event-name" since="2.0"/>
@@ -692,7 +695,6 @@
     <keyword type="macro" name="EMIT_STRING_SET_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-STRING-SET-FULL:CAPS" since="2.1"/>
     <keyword type="macro" name="EMIT_ARRAY_VALUES()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES:CAPS" since="2.0"/>
     <keyword type="macro" name="EMIT_ARRAY_VALUES_IF_NON_EMPTY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-ARRAY-VALUES-IF-NON-EMPTY:CAPS" since="2.0"/>
-    <keyword type="macro" name="MODULEMD_YAML_ERROR" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR:CAPS" since="2.0"/>
     <keyword type="enum" name="enum ModulemdYamlDocumentTypeEnum" link="modulemd-2.0-YAML-Manipulation-Tools.html#ModulemdYamlDocumentTypeEnum" since="2.0"/>
     <keyword type="function" name="modulemd_test_signal_handler ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#modulemd-test-signal-handler" since="2.0"/>
     <keyword type="function" name="parser_skip_headers ()" link="modulemd-2.0-Internal-Unit-Test-Utilities.html#parser-skip-headers" since="2.0"/>
@@ -710,6 +712,14 @@
     <keyword type="constant" name="MD_DEFAULTS_VERSION_UNSET" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-UNSET:CAPS"/>
     <keyword type="constant" name="MD_DEFAULTS_VERSION_ONE" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-ONE:CAPS"/>
     <keyword type="constant" name="MD_DEFAULTS_VERSION_LATEST" link="ModulemdDefaults.html#MD-DEFAULTS-VERSION-LATEST:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_UPGRADE" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-UPGRADE:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_VALIDATE" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-VALIDATE:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_FILE_ACCESS" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-FILE-ACCESS:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_NO_MATCHES" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-NO-MATCHES:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_TOO_MANY_MATCHES" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-TOO-MANY-MATCHES:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_MAGIC" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-MAGIC:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_NOT_IMPLEMENTED" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-NOT-IMPLEMENTED:CAPS"/>
+    <keyword type="constant" name="MMD_ERROR_MISSING_REQUIRED" link="modulemd-2.0-Modulemd-Errors.html#MMD-ERROR-MISSING-REQUIRED:CAPS"/>
     <keyword type="constant" name="MODULEMD_ERROR_UPGRADE" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-UPGRADE:CAPS"/>
     <keyword type="constant" name="MODULEMD_ERROR_VALIDATE" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-VALIDATE:CAPS"/>
     <keyword type="constant" name="MODULEMD_ERROR_FILE_ACCESS" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-FILE-ACCESS:CAPS"/>
@@ -717,6 +727,15 @@
     <keyword type="constant" name="MODULEMD_ERROR_TOO_MANY_MATCHES" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-TOO-MANY-MATCHES:CAPS"/>
     <keyword type="constant" name="MODULEMD_ERROR_MAGIC" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-MAGIC:CAPS"/>
     <keyword type="constant" name="MODULEMD_ERROR_NOT_IMPLEMENTED" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-ERROR-NOT-IMPLEMENTED:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_OPEN" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-OPEN:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_PROGRAMMING" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-PROGRAMMING:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_UNPARSEABLE" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-UNPARSEABLE:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_PARSE" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-PARSE:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_EMIT" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-EMIT:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_MISSING_REQUIRED" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-MISSING-REQUIRED:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_EVENT_INIT" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-EVENT-INIT:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_INCONSISTENT" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-INCONSISTENT:CAPS"/>
+    <keyword type="constant" name="MMD_YAML_ERROR_UNKNOWN_ATTR" link="modulemd-2.0-Modulemd-Errors.html#MMD-YAML-ERROR-UNKNOWN-ATTR:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_ERROR_OPEN" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-YAML-ERROR-OPEN:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_ERROR_PROGRAMMING" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-YAML-ERROR-PROGRAMMING:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_ERROR_UNPARSEABLE" link="modulemd-2.0-Modulemd-Errors.html#MODULEMD-YAML-ERROR-UNPARSEABLE:CAPS"/>
@@ -734,5 +753,6 @@
     <keyword type="constant" name="MODULEMD_YAML_DOC_MODULESTREAM" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-MODULESTREAM:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_DEFAULTS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-DEFAULTS:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_TRANSLATIONS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-TRANSLATIONS:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_DOC_PACKAGER" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-PACKAGER:CAPS"/>
   </functions>
 </book>

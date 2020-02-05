@@ -48,14 +48,6 @@ documented ways.
 <tbody>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-error-quark" title="modulemd_yaml_error_quark ()">modulemd_yaml_error_quark</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
 <span class="returnvalue">int</span>
 </td>
 <td class="function_name">
@@ -515,16 +507,10 @@ documented ways.
 <col width="150px" class="other_proto_type">
 <col class="other_proto_name">
 </colgroup>
-<tbody>
-<tr>
-<td class="define_keyword">#define</td>
-<td class="function_name"><a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-ERROR:CAPS" title="MODULEMD_YAML_ERROR">MODULEMD_YAML_ERROR</a></td>
-</tr>
-<tr>
+<tbody><tr>
 <td class="datatype_keyword">enum</td>
 <td class="function_name"><a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#ModulemdYamlDocumentTypeEnum" title="enum ModulemdYamlDocumentTypeEnum">ModulemdYamlDocumentTypeEnum</a></td>
-</tr>
-</tbody>
+</tr></tbody>
 </table></div>
 </div>
 <div class="refsect1">
@@ -532,17 +518,6 @@ documented ways.
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-YAML-Manipulation-Tools.functions_details"></a><h2>Functions</h2>
-<div class="refsect2">
-<a name="modulemd-yaml-error-quark"></a><h3>modulemd_yaml_error_quark ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
-modulemd_yaml_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<div class="refsect3">
-<a name="modulemd-yaml-error-quark.returns"></a><h4>Returns</h4>
-<p> A <a href="https://developer.gnome.org/glib/stable/glib-Quarks.html#GQuark"><span class="type">GQuark</span></a> used to identify an error in the modulemd yaml domain.</p>
-</div>
-<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
-</div>
-<hr>
 <div class="refsect2">
 <a name="write-yaml-string"></a><h3>write_yaml_string ()</h3>
 <pre class="programlisting"><span class="returnvalue">int</span>
@@ -1099,7 +1074,8 @@ appropriately.</p>
 <hr>
 <div class="refsect2">
 <a name="MMD-YAML-ERROR-EVENT-EXIT-FULL:CAPS"></a><h3>MMD_YAML_ERROR_EVENT_EXIT_FULL()</h3>
-<pre class="programlisting">#define             MMD_YAML_ERROR_EVENT_EXIT_FULL(_error, _event, _returnval, ...)</pre>
+<pre class="programlisting">#define             MMD_YAML_ERROR_EVENT_EXIT_FULL(                                       \
+              _error, _errorcode, _event, _returnval, ...)</pre>
 <p>DIRECT USE OF THIS MACRO SHOULD BE AVOIDED. This is the internal
 implementation for <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT:CAPS" title="MMD_YAML_ERROR_EVENT_EXIT()"><code class="literal">MMD_YAML_ERROR_EVENT_EXIT</code></a>,
 <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-BOOL:CAPS" title="MMD_YAML_ERROR_EVENT_EXIT_BOOL()"><code class="literal">MMD_YAML_ERROR_EVENT_EXIT_BOOL</code></a>, and <a class="link" href="modulemd-2.0-YAML-Manipulation-Tools.html#MMD-YAML-ERROR-EVENT-EXIT-INT:CAPS" title="MMD_YAML_ERROR_EVENT_EXIT_INT()"><code class="literal">MMD_YAML_ERROR_EVENT_EXIT_INT</code></a> which
@@ -1117,6 +1093,12 @@ should be used instead.</p>
 <td class="parameter_name"><p>_error</p></td>
 <td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for the error. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_errorcode</p></td>
+<td class="parameter_description"><p>The exact error code that should be set on <em class="parameter"><code>_error</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>_event</p></td>
@@ -3292,14 +3274,6 @@ appropriately.</p>
 <div class="refsect1">
 <a name="modulemd-2.0-YAML-Manipulation-Tools.other_details"></a><h2>Types and Values</h2>
 <div class="refsect2">
-<a name="MODULEMD-YAML-ERROR:CAPS"></a><h3>MODULEMD_YAML_ERROR</h3>
-<pre class="programlisting">#define MODULEMD_YAML_ERROR modulemd_yaml_error_quark ()
-</pre>
-<p>A convenience macro for identifying an error in the modulemd yaml domain.</p>
-<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
-</div>
-<hr>
-<div class="refsect2">
 <a name="ModulemdYamlDocumentTypeEnum"></a><h3>enum ModulemdYamlDocumentTypeEnum</h3>
 <div class="refsect3">
 <a name="ModulemdYamlDocumentTypeEnum.members"></a><h4>Members</h4>
@@ -3338,6 +3312,15 @@ appropriately.</p>
 <td class="enum_member_description">
 <p>Represents a <code class="literal">modulemd-translations</code> (see
 <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a>) YAML document type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-YAML-DOC-PACKAGER:CAPS"></a>MODULEMD_YAML_DOC_PACKAGER</p></td>
+<td class="enum_member_description">
+<p>Represents a <code class="literal">modulemd-packager</code> document,
+which is a subset of <span class="type">ModuleStream</span> containing only the attributes that a
+package maintainer should modify. Since: 2.9</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
