@@ -66,8 +66,9 @@
       <sub name="2.6 API Index" link="ch11.html"/>
       <sub name="2.7 API Index" link="ch12.html"/>
       <sub name="2.8 API Index" link="ch13.html"/>
-      <sub name="Deprecated API Index" link="ch14.html"/>
-      <sub name="Full API Index" link="ch15.html"/>
+      <sub name="2.9 API Index" link="ch14.html"/>
+      <sub name="Deprecated API Index" link="ch15.html"/>
+      <sub name="Full API Index" link="ch16.html"/>
     </sub>
   </chapters>
   <functions>
