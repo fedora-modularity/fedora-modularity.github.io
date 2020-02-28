@@ -144,10 +144,9 @@ metadata sources, possibly with varying priorities.</p>
 metadata from all of the added <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> instances.</p>
 <p>When merging module streams, entries will be deduplicated based on whether
 they share the same module name, stream name, version number, and context.
-At present, libmodulemd does not interrogate more closely to determine if
-they have the same content, so if the repository configuration is broken and
-there exists two <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> entries that have different content
-for the same NSVC, the behavior is undefined.</p>
+If the repository configuration is broken and there exists two
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> entries that have different content for the same
+NSVCA, the behavior is undefined.</p>
 <p>Merging <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> entries behaves as follows (note that this
 behavior has changed slightly as of 2.8.1):</p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
