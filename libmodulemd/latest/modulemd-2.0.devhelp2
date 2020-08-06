@@ -535,6 +535,7 @@
     <keyword type="function" name="modulemd_module_get_translated_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translated-streams" since="2.0"/>
     <keyword type="function" name="modulemd_module_add_stream ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_upgrade_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-upgrade-streams" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_update_from_file_ext ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-update-from-file-ext" since="2.9"/>
     <keyword type="function" name="modulemd_module_index_update_from_parser ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-update-from-parser" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_merge ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-merge" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_set_module_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-module-name" since="2.0"/>
