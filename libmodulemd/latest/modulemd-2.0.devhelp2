@@ -67,12 +67,15 @@
       <sub name="2.7 API Index" link="ch12.html"/>
       <sub name="2.8 API Index" link="ch13.html"/>
       <sub name="2.9 API Index" link="ch14.html"/>
-      <sub name="Deprecated API Index" link="ch15.html"/>
-      <sub name="Full API Index" link="ch16.html"/>
+      <sub name="2.10 API Index" link="ch15.html"/>
+      <sub name="Deprecated API Index" link="ch16.html"/>
+      <sub name="Full API Index" link="ch17.html"/>
     </sub>
   </chapters>
   <functions>
     <keyword type="function" name="modulemd_get_version ()" link="modulemd-2.0-Modulemd.html#modulemd-get-version" since="2.0"/>
+    <keyword type="function" name="modulemd_load_file ()" link="modulemd-2.0-Modulemd.html#modulemd-load-file" since="2.10"/>
+    <keyword type="function" name="modulemd_load_string ()" link="modulemd-2.0-Modulemd.html#modulemd-load-string" since="2.10"/>
     <keyword type="function" name="modulemd_buildopts_new ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-new" since="2.0"/>
     <keyword type="function" name="modulemd_buildopts_equals ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-equals" since="2.2"/>
     <keyword type="function" name="modulemd_buildopts_copy ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-copy" since="2.0"/>
