@@ -25,6 +25,7 @@
         <sub name="Modulemd.SubdocumentInfo" link="modulemd-2.0-Modulemd.SubdocumentInfo.html"/>
         <sub name="Modulemd.Translation" link="modulemd-2.0-Modulemd.Translation.html"/>
         <sub name="Modulemd.TranslationEntry" link="modulemd-2.0-Modulemd.TranslationEntry.html"/>
+        <sub name="Modulemd.Obsoletes" link="modulemd-2.0-Modulemd.Obsoletes.html"/>
       </sub>
       <sub name="Modulemd 2.0 Private Object Methods" link="ch02.html">
         <sub name="Modulemd.Buildopts (Private)" link="modulemd-2.0-Modulemd.Buildopts-(Private).html"/>
@@ -46,6 +47,7 @@
         <sub name="Modulemd.SubdocumentInfo (Private)" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html"/>
         <sub name="Modulemd.Translation (Private)" link="modulemd-2.0-Modulemd.Translation-(Private).html"/>
         <sub name="Modulemd.TranslationEntry (Private)" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html"/>
+        <sub name="Modulemd.Obsoletes (Private)" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html"/>
       </sub>
       <sub name="Modulemd 2.0 Private Developer Utilities" link="ch03.html">
         <sub name="Modulemd Utility Functions" link="modulemd-2.0-Modulemd-Utility-Functions.html"/>
@@ -214,6 +216,8 @@
     <keyword type="macro" name="modulemd_module_remove_streams_by_name()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-name" since="2.3"/>
     <keyword type="function" name="modulemd_module_get_defaults ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-defaults" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_translation ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-translation" since="2.8"/>
+    <keyword type="function" name="modulemd_module_get_obsoletes ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-obsoletes" since="2.10"/>
+    <keyword type="function" name="modulemd_module_get_newest_active_obsoletes ()" link="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-newest-active-obsoletes" since="2.10"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE" link="modulemd-2.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS"/>
     <keyword type="struct" name="ModulemdModule" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule-struct"/>
     <keyword type="property" name="The “module-name” property" link="modulemd-2.0-Modulemd.Module.html#ModulemdModule--module-name"/>
@@ -236,6 +240,7 @@
     <keyword type="function" name="modulemd_module_index_remove_module ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-remove-module" since="2.2"/>
     <keyword type="function" name="modulemd_module_index_add_module_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-module-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_add_defaults ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-defaults" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_add_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-obsoletes" since="2.10"/>
     <keyword type="function" name="modulemd_module_index_get_default_streams_as_hash_table ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-default-streams-as-hash-table" since="2.5"/>
     <keyword type="function" name="modulemd_module_index_add_translation ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_get_defaults_mdversion ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" since="2.0"/>
@@ -369,6 +374,7 @@
     <keyword type="function" name="modulemd_module_stream_v2_get_summary ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-summary" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_set_tracker ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-set-tracker" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_tracker ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-tracker" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_get_obsoletes_resolved ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-obsoletes-resolved" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_v2_add_component ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-add-component" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_remove_module_component ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-remove-module-component" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_clear_module_components ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-clear-module-components"/>
@@ -502,6 +508,35 @@
     <keyword type="property" name="The “description” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--description"/>
     <keyword type="property" name="The “locale” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--locale"/>
     <keyword type="property" name="The “summary” property" link="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--summary"/>
+    <keyword type="function" name="modulemd_obsoletes_new ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-new" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_copy ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-copy" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_validate ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-validate" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_module_context ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-get-module-context" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_module_context ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-set-module-context" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_modified ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-set-modified" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_reset ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-set-reset" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_reset ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-get-reset" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_eol_date ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-set-eol-date" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_eol_date ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-get-eol-date" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_message ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-get-message" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_obsoleted_by ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-set-obsoleted-by" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_obsoleted_by_module_name ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-get-obsoleted-by-module-name" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_obsoleted_by_module_stream ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-get-obsoleted-by-module-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_modified ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-get-modified" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_is_active ()" link="modulemd-2.0-Modulemd.Obsoletes.html#modulemd-obsoletes-is-active" since="2.10"/>
+    <keyword type="macro" name="MODULEMD_TYPE_OBSOLETES" link="modulemd-2.0-Modulemd.Obsoletes.html#MODULEMD-TYPE-OBSOLETES:CAPS"/>
+    <keyword type="enum" name="enum ModulemdObsoletesVersionEnum" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletesVersionEnum" since="2.10"/>
+    <keyword type="struct" name="ModulemdObsoletes" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes-struct"/>
+    <keyword type="property" name="The “eol-date” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--eol-date"/>
+    <keyword type="property" name="The “mdversion” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--mdversion"/>
+    <keyword type="property" name="The “message” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--message"/>
+    <keyword type="property" name="The “modified” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--modified"/>
+    <keyword type="property" name="The “module-context” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--module-context"/>
+    <keyword type="property" name="The “module-name” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--module-name"/>
+    <keyword type="property" name="The “module-stream” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--module-stream"/>
+    <keyword type="property" name="The “obsoleted-by-module-name” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--obsoleted-by-module-name"/>
+    <keyword type="property" name="The “obsoleted-by-module-stream” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--obsoleted-by-module-stream"/>
+    <keyword type="property" name="The “override-previous” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--override-previous"/>
     <keyword type="function" name="modulemd_buildopts_parse_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_buildopts_emit_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_parse_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildafter" since="2.2"/>
@@ -536,6 +571,7 @@
     <keyword type="function" name="modulemd_module_set_defaults ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-set-defaults" since="2.0"/>
     <keyword type="function" name="modulemd_module_add_translation ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-translation" since="2.0"/>
     <keyword type="function" name="modulemd_module_get_translated_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translated-streams" since="2.0"/>
+    <keyword type="function" name="modulemd_module_add_obsoletes ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-obsoletes" since="2.10"/>
     <keyword type="function" name="modulemd_module_add_stream ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_upgrade_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-upgrade-streams" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_update_from_file_ext ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-update-from-file-ext" since="2.9"/>
@@ -575,6 +611,8 @@
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-filters" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-dependencies" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-includes-nevra" since="2.9"/>
+    <keyword type="function" name="modulemd_module_stream_v2_associate_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-associate-obsoletes" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v2_get_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-get-obsoletes" since="2.10"/>
     <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2-struct"/>
     <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--arch"/>
     <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--buildopts"/>
@@ -609,6 +647,14 @@
     <keyword type="function" name="modulemd_translation_emit_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml" since="2.0"/>
+    <keyword type="function" name="modulemd_obsoletes_get_mdversion ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-get-mdversion" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_module_name ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-get-module-name" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_get_module_stream ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-get-module-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_message ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-set-message" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_obsoleted_by_module_name ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-set-obsoleted-by-module-name" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_set_obsoleted_by_module_stream ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-set-obsoleted-by-module-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_parse_yaml ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-parse-yaml" since="2.10"/>
+    <keyword type="function" name="modulemd_obsoletes_emit_yaml ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-emit-yaml" since="2.10"/>
     <keyword type="macro" name="UNUSED()" link="modulemd-2.0-Modulemd-Utility-Functions.html#UNUSED:CAPS"/>
     <keyword type="function" name="modulemd_trace_init ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" since="2.0"/>
     <keyword type="function" name="modulemd_trace_free ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" since="2.0"/>
@@ -631,6 +677,8 @@
     <keyword type="function" name="compare_streams ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#compare-streams" since="2.9"/>
     <keyword type="function" name="modulemd_fnmatch ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-fnmatch"/>
     <keyword type="function" name="modulemd_rpm_match ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-rpm-match"/>
+    <keyword type="function" name="modulemd_iso8601date_to_guint64 ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-iso8601date-to-guint64" since="2.10"/>
+    <keyword type="function" name="modulemd_guint64_to_iso8601date ()" link="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-guint64-to-iso8601date" since="2.10"/>
     <keyword type="macro" name="MODULEMD_REPLACE_SET()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" since="2.0"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING_EXT()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" since="2.2"/>
     <keyword type="macro" name="MODULEMD_SETTER_GETTER_STRING()" link="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" since="2.2"/>
@@ -755,10 +803,15 @@
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_ONE" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ONE:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_TWO" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-TWO:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_LATEST" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-LATEST:CAPS"/>
+    <keyword type="constant" name="MD_OBSOLETES_VERSION_ERROR" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-ERROR:CAPS"/>
+    <keyword type="constant" name="MD_OBSOLETES_VERSION_UNSET" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-UNSET:CAPS"/>
+    <keyword type="constant" name="MD_OBSOLETES_VERSION_ONE" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-ONE:CAPS"/>
+    <keyword type="constant" name="MD_OBSOLETES_VERSION_LATEST" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-LATEST:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_UNKNOWN" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-UNKNOWN:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_MODULESTREAM" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-MODULESTREAM:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_DEFAULTS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-DEFAULTS:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_TRANSLATIONS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-TRANSLATIONS:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_PACKAGER" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-PACKAGER:CAPS"/>
+    <keyword type="constant" name="MODULEMD_YAML_DOC_OBSOLETES" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-OBSOLETES:CAPS"/>
   </functions>
 </book>

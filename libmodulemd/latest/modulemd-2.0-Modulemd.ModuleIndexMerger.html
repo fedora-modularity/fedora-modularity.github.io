@@ -207,6 +207,18 @@ and stream. Whichever has the higher value will be used. Any translation
 containing the empty string will be interpreted as removing the
 translation. Subsequent processing of a higher modified value may restore
 it.</p></li></ul></div>
+<p>Merging <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> entries with identical module, stream, context
+and modified values behaves as follows (when accessed through module):</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Any obsoletes object that is provided by a single <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>
+will be the obsoletes object in the resulting merged <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>.</p></li>
+<li class="listitem"><p>If the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> inputs have different priorities (not common),
+then the obsoletes from the highest priority <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> will be
+used and the others entirely discarded. (Priority is intended for providing
+a total override, including an on-disk configuration).</p></li>
+<li class="listitem"><p>If the repos have the same priority (such as "fedora" and "updates" in the
+Fedora Project) the behaviour is undefined.</p></li>
+</ul></div>
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.ModuleIndexMerger.functions_details"></a><h2>Functions</h2>

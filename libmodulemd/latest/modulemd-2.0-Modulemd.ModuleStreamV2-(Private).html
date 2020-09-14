@@ -121,6 +121,22 @@ documented ways.
 <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-includes-nevra" title="modulemd_module_stream_v2_includes_nevra ()">modulemd_module_stream_v2_includes_nevra</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-associate-obsoletes" title="modulemd_module_stream_v2_associate_obsoletes ()">modulemd_module_stream_v2_associate_obsoletes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="returnvalue">ModulemdObsoletes</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-get-obsoletes" title="modulemd_module_stream_v2_get_obsoletes ()">modulemd_module_stream_v2_get_obsoletes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -544,6 +560,69 @@ matches <em class="parameter"><code>nevra_pattern</code></em>
 . FALSE otherwise.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v2-associate-obsoletes"></a><h3>modulemd_module_stream_v2_associate_obsoletes ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v2_associate_obsoletes
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> *obsoletes</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v2-associate-obsoletes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obsoletes</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> information to associate with
+this object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v2-get-obsoletes"></a><h3>modulemd_module_stream_v2_get_obsoletes ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="returnvalue">ModulemdObsoletes</span></a> *
+modulemd_module_stream_v2_get_obsoletes
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v2-get-obsoletes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v2-get-obsoletes.returns"></a><h4>Returns</h4>
+<p>The <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> information associated with this
+object. This function doesn't resolve the reset attribute of obsoletes, this means
+even if obsoletes associated with this stream has attribute reset set the obsoletes
+object is still returned. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">

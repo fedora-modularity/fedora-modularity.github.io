@@ -81,6 +81,14 @@ documented ways.
 </tr>
 <tr>
 <td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-obsoletes" title="modulemd_module_add_obsoletes ()">modulemd_module_add_obsoletes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
 </td>
 <td class="function_name">
@@ -258,6 +266,45 @@ been added, sorted by stream name. </p>
 </div>
 <hr>
 <div class="refsect2">
+<a name="modulemd-module-add-obsoletes"></a><h3>modulemd_module_add_obsoletes ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_add_obsoletes (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                               <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> *obsoletes</code></em>);</pre>
+<p>This function copies the <em class="parameter"><code>obsoletes</code></em>
+ object into <em class="parameter"><code>self</code></em>
+. In addition if <em class="parameter"><code>obsoletes</code></em>
+ is
+the newest active obsoletes for existing <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> in <em class="parameter"><code>self</code></em>
+, the stream is
+upgraded to at least version two and <em class="parameter"><code>obsoletes</code></em>
+ is associated with it.</p>
+<div class="refsect3">
+<a name="modulemd-module-add-obsoletes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obsoletes</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> object which is copied into the
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
 <a name="modulemd-module-add-stream"></a><h3>modulemd_module_add_stream ()</h3>
 <pre class="programlisting"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
 modulemd_module_add_stream (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
@@ -265,7 +312,9 @@ modulemd_module_add_stream (<em class="parameter"><code><a class="link" href="mo
                             <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> index_mdversion</code></em>,
                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>This function takes a stream object, upgrades it to index_mdversion if
-needed and then adds it to the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>. If it cannot upgrade it
+needed (if the module contains active obsoletes for this <em class="parameter"><code>stream</code></em>
+ it is upgraded
+to at least version two) and then adds it to the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>. If it cannot upgrade it
 safely or the defaults are not for this module, it will return an
 appropriate error.</p>
 <div class="refsect3">
@@ -293,7 +342,9 @@ does not match this module, it will also be rejected.</p></td>
 <tr>
 <td class="parameter_name"><p>index_mdversion</p></td>
 <td class="parameter_description"><p>The <a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> of the highest
-stream version added so far in the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>. If non-zero,
+stream version added so far in the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>. When obsoletes is present
+for <em class="parameter"><code>stream</code></em>
+it is set to at least version two. If non-zero,
 perform an upgrade to this version while adding <em class="parameter"><code>stream</code></em>
 to <em class="parameter"><code>self</code></em>
 . If

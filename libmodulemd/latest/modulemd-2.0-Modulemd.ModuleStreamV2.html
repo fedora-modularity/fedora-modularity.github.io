@@ -168,6 +168,14 @@ justifications.
 </tr>
 <tr>
 <td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="returnvalue">ModulemdObsoletes</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-obsoletes-resolved" title="modulemd_module_stream_v2_get_obsoletes_resolved ()">modulemd_module_stream_v2_get_obsoletes_resolved</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <span class="returnvalue">void</span>
 </td>
 <td class="function_name">
@@ -1085,6 +1093,38 @@ modulemd_module_stream_v2_get_tracker (<em class="parameter"><code><a class="lin
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v2-get-obsoletes-resolved"></a><h3>modulemd_module_stream_v2_get_obsoletes_resolved ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="returnvalue">ModulemdObsoletes</span></a> *
+modulemd_module_stream_v2_get_obsoletes_resolved
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-v2-get-obsoletes-resolved.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-v2-get-obsoletes-resolved.returns"></a><h4>Returns</h4>
+<p>The <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> information associated with
+this object. If the associated obsoletes has reset attribute set, this
+function doesn't return it. From outside obsoletes with reset looks like
+there is no obsoletes set for this stream. Every obsoletes (even with reset) can
+be accessed from the streams module. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
