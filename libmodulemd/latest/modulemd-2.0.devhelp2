@@ -844,6 +844,7 @@
     <keyword type="function" name="mmd_variant_from_scalar ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-variant-from-scalar" since="2.0"/>
     <keyword type="function" name="mmd_variant_from_mapping ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-variant-from-mapping" since="2.0"/>
     <keyword type="function" name="mmd_variant_from_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-variant-from-sequence" since="2.0"/>
+    <keyword type="function" name="mmd_parse_xmd ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-parse-xmd" since="2.10"/>
     <keyword type="function" name="skip_unknown_yaml ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#skip-unknown-yaml"/>
     <keyword type="macro" name="SKIP_UNKNOWN()" link="modulemd-2.0-YAML-Manipulation-Tools.html#SKIP-UNKNOWN:CAPS" since="2.0"/>
     <keyword type="macro" name="NON_EMPTY_TABLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#NON-EMPTY-TABLE:CAPS" since="2.0"/>
