@@ -19,6 +19,7 @@
         <sub name="Modulemd.ModuleStream" link="ModulemdModuleStream.html"/>
         <sub name="Modulemd.ModuleStreamV1" link="modulemd-2.0-Modulemd.ModuleStreamV1.html"/>
         <sub name="Modulemd.ModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2.html"/>
+        <sub name="Modulemd.ModuleStreamV3" link="modulemd-2.0-Modulemd.ModuleStreamV3.html"/>
         <sub name="Modulemd.Profile" link="modulemd-2.0-Modulemd.Profile.html"/>
         <sub name="Modulemd.RpmMapEntry" link="modulemd-2.0-Modulemd.RpmMapEntry.html"/>
         <sub name="Modulemd.ServiceLevel" link="modulemd-2.0-Modulemd.ServiceLevel.html"/>
@@ -28,6 +29,7 @@
         <sub name="Modulemd.Obsoletes" link="modulemd-2.0-Modulemd.Obsoletes.html"/>
       </sub>
       <sub name="Modulemd 2.0 Private Object Methods" link="ch02.html">
+        <sub name="Modulemd.BuildConfig" link="modulemd-2.0-Modulemd.BuildConfig.html"/>
         <sub name="Modulemd.Buildopts (Private)" link="modulemd-2.0-Modulemd.Buildopts-(Private).html"/>
         <sub name="Modulemd.Component (Private)" link="modulemd-2.0-Modulemd.Component-(Private).html"/>
         <sub name="Modulemd.ComponentModule (Private)" link="modulemd-2.0-Modulemd.ComponentModule-(Private).html"/>
@@ -41,6 +43,7 @@
         <sub name="Modulemd.ModuleStream (Private)" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html"/>
         <sub name="Modulemd.ModuleStreamV1 (Private)" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html"/>
         <sub name="Modulemd.ModuleStreamV2 (Private)" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html"/>
+        <sub name="Modulemd.ModuleStreamV3 (Private)" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html"/>
         <sub name="Modulemd.Profile (Private)" link="modulemd-2.0-Modulemd.Profile-(Private).html"/>
         <sub name="Modulemd.RpmMapEntry (Private)" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html"/>
         <sub name="Modulemd.ServiceLevel (Private)" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html"/>
@@ -276,6 +279,7 @@
     <keyword type="function" name="modulemd_module_stream_get_NSVCA_as_string ()" link="ModulemdModuleStream.html#modulemd-module-stream-get-NSVCA-as-string" since="2.2"/>
     <keyword type="function" name="modulemd_module_stream_depends_on_stream ()" link="ModulemdModuleStream.html#modulemd-module-stream-depends-on-stream" since="2.1" stability="Unstable"/>
     <keyword type="function" name="modulemd_module_stream_build_depends_on_stream ()" link="ModulemdModuleStream.html#modulemd-module-stream-build-depends-on-stream" since="2.1" stability="Unstable"/>
+    <keyword type="macro" name="MMD_MAXCONTEXTLEN" link="ModulemdModuleStream.html#MMD-MAXCONTEXTLEN:CAPS" since="2.10"/>
     <keyword type="enum" name="enum ModulemdModuleStreamVersionEnum" link="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" since="2.0"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_STREAM" link="ModulemdModuleStream.html#MODULEMD-TYPE-MODULE-STREAM:CAPS"/>
     <keyword type="struct" name="struct ModulemdModuleStreamClass" link="ModulemdModuleStream.html#ModulemdModuleStreamClass"/>
@@ -428,6 +432,80 @@
     <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--community"/>
     <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--documentation"/>
     <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--tracker"/>
+    <keyword type="function" name="modulemd_module_stream_v3_new ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-new" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_arch ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-arch" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_arch ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-arch" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_buildopts ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-buildopts" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_buildopts ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-buildopts" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_community ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-community" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_community ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-community" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_description ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-description" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_description ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-description" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_documentation ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-documentation" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_documentation ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-documentation" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_summary ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-summary" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_summary ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-summary" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_tracker ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-tracker" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_tracker ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-tracker" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_platform ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-platform" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_platform ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-platform" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_obsoletes_resolved ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-obsoletes-resolved" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_component ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-component" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_module_component ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-module-component" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_module_components ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-module-components"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_rpm_component ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-rpm-component" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_rpm_components ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-rpm-components"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_module_component_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-module-component-names-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_rpm_component_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-rpm-component-names-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_module_component ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-module-component" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_rpm_component ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-rpm-component" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_content_license ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-content-license" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_module_license ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-module-license" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_content_license ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-content-license" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_module_license ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-module-license" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_content_licenses ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-content-licenses" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_module_licenses ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-module-licenses" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_content_licenses_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-content-licenses-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_module_licenses_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-module-licenses-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_profile ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-profile" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_profiles ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-profiles" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_profile_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-profile-names-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_profile ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-profile" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_search_profiles ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-search-profiles"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_rpm_api ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_rpm_api ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_rpm_api ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_rpm_api_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-rpm-api-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_rpm_artifact ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-rpm-artifact" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_rpm_artifact ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-rpm-artifact" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_rpm_artifacts ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-rpm-artifacts" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_rpm_artifacts_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-rpm-artifacts-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_rpm_artifact_map_entry ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-rpm-artifact-map-entry" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_rpm_artifact_map_entry ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-rpm-artifact-map-entry" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_rpm_filter ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-rpm-filter" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_rpm_filter ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-rpm-filter" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-rpm-filters" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_rpm_filters_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-rpm-filters-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_buildtime_requirement ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-buildtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_add_runtime_requirement ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-add-runtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_buildtime_requirement ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-buildtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_remove_runtime_requirement ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-remove-runtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_buildtime_requirements ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-buildtime-requirements" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_clear_runtime_requirements ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-clear-runtime-requirements" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_buildtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-buildtime-modules-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_runtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-runtime-modules-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_buildtime_requirement_stream ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-buildtime-requirement-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_runtime_requirement_stream ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-runtime-requirement-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_set_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-xmd" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-xmd"/>
+    <keyword type="macro" name="MODULEMD_TYPE_MODULE_STREAM_V3" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#MODULEMD-TYPE-MODULE-STREAM-V3:CAPS"/>
+    <keyword type="struct" name="ModulemdModuleStreamV3" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3-struct"/>
+    <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3--arch"/>
+    <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3--buildopts"/>
+    <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3--community"/>
+    <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3--documentation"/>
+    <keyword type="property" name="The “platform” property" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3--platform"/>
+    <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3--tracker"/>
     <keyword type="function" name="modulemd_profile_equals ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-equals" since="2.2"/>
     <keyword type="function" name="modulemd_profile_new ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-new" since="2.0"/>
     <keyword type="function" name="modulemd_profile_copy ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-copy" since="2.0"/>
@@ -537,6 +615,28 @@
     <keyword type="property" name="The “obsoleted-by-module-name” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--obsoleted-by-module-name"/>
     <keyword type="property" name="The “obsoleted-by-module-stream” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--obsoleted-by-module-stream"/>
     <keyword type="property" name="The “override-previous” property" link="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes--override-previous"/>
+    <keyword type="function" name="modulemd_build_config_new ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-new" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_set_context ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-context" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_get_context ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-context" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_set_platform ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-platform" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_get_platform ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-platform" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_add_runtime_requirement ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-add-runtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_remove_runtime_requirement ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-remove-runtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_clear_runtime_requirements ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-clear-runtime-requirements" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_get_runtime_requirement_stream ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-runtime-requirement-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_get_runtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-runtime-modules-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_add_buildtime_requirement ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-add-buildtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_remove_buildtime_requirement ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-remove-buildtime-requirement" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_clear_buildtime_requirements ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-clear-buildtime-requirements" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_get_buildtime_requirement_stream ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-buildtime-requirement-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_get_buildtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-buildtime-modules-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_set_buildopts ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-buildopts" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_get_buildopts ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-buildopts" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_parse_yaml ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-parse-yaml" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_validate ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-validate" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_copy ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-copy" since="2.10"/>
+    <keyword type="macro" name="MODULEMD_TYPE_BUILD_CONFIG" link="modulemd-2.0-Modulemd.BuildConfig.html#MODULEMD-TYPE-BUILD-CONFIG:CAPS"/>
+    <keyword type="struct" name="ModulemdBuildConfig" link="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig-struct"/>
     <keyword type="function" name="modulemd_buildopts_parse_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_buildopts_emit_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_component_parse_buildafter ()" link="modulemd-2.0-Modulemd.Component-(Private).html#modulemd-component-parse-buildafter" since="2.2"/>
@@ -619,6 +719,23 @@
     <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--community"/>
     <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--documentation"/>
     <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--tracker"/>
+    <keyword type="function" name="modulemd_module_stream_v3_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-parse-yaml" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-emit-yaml" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_replace_content_licenses ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-replace-content-licenses" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_replace_module_licenses ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-replace-module-licenses" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_replace_rpm_api ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-replace-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_replace_rpm_artifacts ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-replace-rpm-artifacts" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-replace-rpm-filters" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-includes-nevra" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_associate_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-associate-obsoletes" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#modulemd-module-stream-v3-get-obsoletes" since="2.10"/>
+    <keyword type="struct" name="ModulemdModuleStreamV3" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3-struct"/>
+    <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--arch"/>
+    <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--buildopts"/>
+    <keyword type="property" name="The “community” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--community"/>
+    <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--documentation"/>
+    <keyword type="property" name="The “platform” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--platform"/>
+    <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--tracker"/>
     <keyword type="function" name="modulemd_profile_parse_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_emit_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_equals_wrapper ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" since="2.5"/>
@@ -802,6 +919,7 @@
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_UNSET" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-UNSET:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_ONE" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ONE:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_TWO" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-TWO:CAPS"/>
+    <keyword type="constant" name="MD_MODULESTREAM_VERSION_THREE" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-THREE:CAPS"/>
     <keyword type="constant" name="MD_MODULESTREAM_VERSION_LATEST" link="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-LATEST:CAPS"/>
     <keyword type="constant" name="MD_OBSOLETES_VERSION_ERROR" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-ERROR:CAPS"/>
     <keyword type="constant" name="MD_OBSOLETES_VERSION_UNSET" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-UNSET:CAPS"/>

@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.BuildConfig: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
+<link rel="prev" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
+<link rel="next" href="modulemd-2.0-Modulemd.Buildopts-(Private).html" title="Modulemd.Buildopts (Private)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.BuildConfig.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.BuildConfig.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch02.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.Buildopts-(Private).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.BuildConfig"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.BuildConfig.top_of_page"></a>Modulemd.BuildConfig</span></h2>
+<p>Modulemd.BuildConfig — Internal representation of a module build configuration</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.BuildConfig.stability-level"></a><h2>Stability Level</h2>
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.BuildConfig.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-new" title="modulemd_build_config_new ()">modulemd_build_config_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-context" title="modulemd_build_config_set_context ()">modulemd_build_config_set_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-context" title="modulemd_build_config_get_context ()">modulemd_build_config_get_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-platform" title="modulemd_build_config_set_platform ()">modulemd_build_config_set_platform</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-platform" title="modulemd_build_config_get_platform ()">modulemd_build_config_get_platform</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-add-runtime-requirement" title="modulemd_build_config_add_runtime_requirement ()">modulemd_build_config_add_runtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-remove-runtime-requirement" title="modulemd_build_config_remove_runtime_requirement ()">modulemd_build_config_remove_runtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-clear-runtime-requirements" title="modulemd_build_config_clear_runtime_requirements ()">modulemd_build_config_clear_runtime_requirements</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-runtime-requirement-stream" title="modulemd_build_config_get_runtime_requirement_stream ()">modulemd_build_config_get_runtime_requirement_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-runtime-modules-as-strv" title="modulemd_build_config_get_runtime_modules_as_strv ()">modulemd_build_config_get_runtime_modules_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-add-buildtime-requirement" title="modulemd_build_config_add_buildtime_requirement ()">modulemd_build_config_add_buildtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-remove-buildtime-requirement" title="modulemd_build_config_remove_buildtime_requirement ()">modulemd_build_config_remove_buildtime_requirement</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-clear-buildtime-requirements" title="modulemd_build_config_clear_buildtime_requirements ()">modulemd_build_config_clear_buildtime_requirements</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-buildtime-requirement-stream" title="modulemd_build_config_get_buildtime_requirement_stream ()">modulemd_build_config_get_buildtime_requirement_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-buildtime-modules-as-strv" title="modulemd_build_config_get_buildtime_modules_as_strv ()">modulemd_build_config_get_buildtime_modules_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-buildopts" title="modulemd_build_config_set_buildopts ()">modulemd_build_config_set_buildopts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-buildopts" title="modulemd_build_config_get_buildopts ()">modulemd_build_config_get_buildopts</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-parse-yaml" title="modulemd_build_config_parse_yaml ()">modulemd_build_config_parse_yaml</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-validate" title="modulemd_build_config_validate ()">modulemd_build_config_validate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-copy" title="modulemd_build_config_copy ()">modulemd_build_config_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ModulemdBuildConfig"></a><div class="refsect1">
+<a name="modulemd-2.0-Modulemd.BuildConfig.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#MODULEMD-TYPE-BUILD-CONFIG:CAPS" title="MODULEMD_TYPE_BUILD_CONFIG">MODULEMD_TYPE_BUILD_CONFIG</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig-struct" title="ModulemdBuildConfig">ModulemdBuildConfig</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.BuildConfig.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ModulemdBuildConfig
+</pre>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.BuildConfig.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.BuildConfig.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-build-config-new"></a><h3>modulemd_build_config_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+modulemd_build_config_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Initialize a new <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> representing a module build
+configuration.</p>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-set-context"></a><h3>modulemd_build_config_set_context ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_set_context (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>);</pre>
+<p>Set the context that this build configuration produces.</p>
+<p>Note: For consistency in the API, this function does not validate the input
+<em class="parameter"><code>context</code></em>
+. This validation will be performed as part of the
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-validate" title="modulemd_build_config_validate ()"><code class="function">modulemd_build_config_validate()</code></a> routine where it can be reported cleanly.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-set-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>A string of up to ten alphanumeric characters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-get-context"></a><h3>modulemd_build_config_get_context ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_build_config_get_context (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<p>Get the context that this build configuration produces.</p>
+<p>Note: This function returns the context as stored internally. If you want to
+be sure that it is in the correct format, call
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-validate" title="modulemd_build_config_validate ()"><code class="function">modulemd_build_config_validate()</code></a> first.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-get-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-get-context.returns"></a><h4>Returns</h4>
+<p>The string representing the context that this
+build configuration produces. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-set-platform"></a><h3>modulemd_build_config_set_platform ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_set_platform (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *platform</code></em>);</pre>
+<p>Set the platform that this build configuration applies to.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-set-platform.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>platform</p></td>
+<td class="parameter_description"><p>A string of up to ten alphanumeric characters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-get-platform"></a><h3>modulemd_build_config_get_platform ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_build_config_get_platform (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<p>Get the platform that this build configuration applies to.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-get-platform.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-get-platform.returns"></a><h4>Returns</h4>
+<p>The string representing the platform that this
+build configuration applies to. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-add-runtime-requirement"></a><h3>modulemd_build_config_add_runtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_add_runtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<p>Add a build-time dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-add-runtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the module stream to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-remove-runtime-requirement"></a><h3>modulemd_build_config_remove_runtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_remove_runtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Remove a run-time dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-remove-runtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to be removed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-clear-runtime-requirements"></a><h3>modulemd_build_config_clear_runtime_requirements ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_clear_runtime_requirements
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<p>Remove all run-time dependencies for this module.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-clear-runtime-requirements.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-get-runtime-requirement-stream"></a><h3>modulemd_build_config_get_runtime_requirement_stream ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_build_config_get_runtime_requirement_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-build-config-get-runtime-requirement-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module this module depends on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-get-runtime-requirement-stream.returns"></a><h4>Returns</h4>
+<p>The name of the stream matching this module name
+in the run-time dependencies. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-get-runtime-modules-as-strv"></a><h3>modulemd_build_config_get_runtime_modules_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_build_config_get_runtime_modules_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-build-config-get-runtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
+module depends on at run-time. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-add-buildtime-requirement"></a><h3>modulemd_build_config_add_buildtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_add_buildtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<p>Add a build-time dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-add-buildtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the module stream to depend on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-remove-buildtime-requirement"></a><h3>modulemd_build_config_remove_buildtime_requirement ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_remove_buildtime_requirement
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Remove a build-time dependency for this module.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-remove-buildtime-requirement.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to be removed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-clear-buildtime-requirements"></a><h3>modulemd_build_config_clear_buildtime_requirements ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_clear_buildtime_requirements
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<p>Remove all build-time dependencies for this module.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-clear-buildtime-requirements.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-get-buildtime-requirement-stream"></a><h3>modulemd_build_config_get_buildtime_requirement_stream ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_build_config_get_buildtime_requirement_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-build-config-get-buildtime-requirement-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module this module depends on. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-get-buildtime-requirement-stream.returns"></a><h4>Returns</h4>
+<p>The name of the stream matching this module name
+in the build-time dependencies. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-get-buildtime-modules-as-strv"></a><h3>modulemd_build_config_get_buildtime_modules_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_build_config_get_buildtime_modules_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-build-config-get-buildtime-modules-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
+module depends on at build-time. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-set-buildopts"></a><h3>modulemd_build_config_set_buildopts ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_build_config_set_buildopts (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>,
+                                     <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *buildopts</code></em>);</pre>
+<p>Set build options for this module's components.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-set-buildopts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buildopts</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object describing
+build options that apply globally to components in this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-get-buildopts"></a><h3>modulemd_build_config_get_buildopts ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+modulemd_build_config_get_buildopts (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-build-config-get-buildopts.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-get-buildopts.returns"></a><h4>Returns</h4>
+<p>The build options for this module's components. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-parse-yaml"></a><h3>modulemd_build_config_parse_yaml ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+modulemd_build_config_parse_yaml (<em class="parameter"><code><span class="type">yaml_parser_t</span> *parser</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-build-config-parse-yaml.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parser</p></td>
+<td class="parameter_description"><p>A <span class="type">yaml_parser_t</span> positioned at the start of a configuration
+entry of a ModulemdPackager v3 YAML document.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether to ignore unknown keys in the YAML</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> explaining any failure to complete the parsing. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-parse-yaml.returns"></a><h4>Returns</h4>
+<p>A newly-constructed <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object
+populated from the data in the provided YAML. Returns NULL and sets <em class="parameter"><code>error</code></em>
+appropriately if the document couldn't be parsed successfully or failed
+validation. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-validate"></a><h3>modulemd_build_config_validate ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_build_config_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *buildconfig</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Determine if this <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> is valid according to the YAML
+specification.</p>
+<div class="refsect3">
+<a name="modulemd-build-config-validate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> explaining any validation failure. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-validate.returns"></a><h4>Returns</h4>
+<p> TRUE if validation passes. Returns FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately on validation failure.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-build-config-copy"></a><h3>modulemd_build_config_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+modulemd_build_config_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-build-config-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-build-config-copy.returns"></a><h4>Returns</h4>
+<p>A deep copy of <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.BuildConfig.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-BUILD-CONFIG:CAPS"></a><h3>MODULEMD_TYPE_BUILD_CONFIG</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_BUILD_CONFIG (modulemd_build_config_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdBuildConfig-struct"></a><h3>ModulemdBuildConfig</h3>
+<pre class="programlisting">typedef struct _ModulemdBuildConfig ModulemdBuildConfig;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>
