@@ -633,8 +633,10 @@
     <keyword type="function" name="modulemd_build_config_set_buildopts ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-buildopts" since="2.10"/>
     <keyword type="function" name="modulemd_build_config_get_buildopts ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-buildopts" since="2.10"/>
     <keyword type="function" name="modulemd_build_config_parse_yaml ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-parse-yaml" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_emit_yaml ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-emit-yaml" since="2.10"/>
     <keyword type="function" name="modulemd_build_config_validate ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-validate" since="2.10"/>
     <keyword type="function" name="modulemd_build_config_copy ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-copy" since="2.10"/>
+    <keyword type="function" name="modulemd_build_config_equals ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-equals" since="2.10"/>
     <keyword type="macro" name="MODULEMD_TYPE_BUILD_CONFIG" link="modulemd-2.0-Modulemd.BuildConfig.html#MODULEMD-TYPE-BUILD-CONFIG:CAPS"/>
     <keyword type="struct" name="ModulemdBuildConfig" link="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig-struct"/>
     <keyword type="function" name="modulemd_buildopts_parse_yaml ()" link="modulemd-2.0-Modulemd.Buildopts-(Private).html#modulemd-buildopts-parse-yaml" since="2.0"/>
