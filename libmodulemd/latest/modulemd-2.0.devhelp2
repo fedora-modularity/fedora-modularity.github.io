@@ -44,6 +44,7 @@
         <sub name="Modulemd.ModuleStreamV1 (Private)" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html"/>
         <sub name="Modulemd.ModuleStreamV2 (Private)" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html"/>
         <sub name="Modulemd.ModuleStreamV3 (Private)" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html"/>
+        <sub name="Modulemd.PackagerV3" link="modulemd-2.0-Modulemd.PackagerV3.html"/>
         <sub name="Modulemd.Profile (Private)" link="modulemd-2.0-Modulemd.Profile-(Private).html"/>
         <sub name="Modulemd.RpmMapEntry (Private)" link="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html"/>
         <sub name="Modulemd.ServiceLevel (Private)" link="modulemd-2.0-Modulemd.ServiceLevel-(Private).html"/>
@@ -512,6 +513,9 @@
     <keyword type="function" name="modulemd_profile_get_name ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-get-name" since="2.0"/>
     <keyword type="function" name="modulemd_profile_set_description ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-set-description" since="2.0"/>
     <keyword type="function" name="modulemd_profile_get_description ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-get-description" since="2.0"/>
+    <keyword type="function" name="modulemd_profile_set_default ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-set-default" since="2.10"/>
+    <keyword type="function" name="modulemd_profile_unset_default ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-unset-default" since="2.10"/>
+    <keyword type="function" name="modulemd_profile_is_default ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-is-default" since="2.10"/>
     <keyword type="function" name="modulemd_profile_add_rpm ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-add-rpm" since="2.0"/>
     <keyword type="function" name="modulemd_profile_remove_rpm ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-remove-rpm" since="2.0"/>
     <keyword type="function" name="modulemd_profile_clear_rpms ()" link="modulemd-2.0-Modulemd.Profile.html#modulemd-profile-clear-rpms" since="2.5"/>
@@ -738,6 +742,59 @@
     <keyword type="property" name="The “documentation” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--documentation"/>
     <keyword type="property" name="The “platform” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--platform"/>
     <keyword type="property" name="The “tracker” property" link="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html#ModulemdModuleStreamV3--tracker"/>
+    <keyword type="function" name="modulemd_packager_v3_new ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-new" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_copy ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-copy" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_set_module_name ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-module-name" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_module_name ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-name" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_set_stream_name ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-stream-name" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_stream_name ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-stream-name" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_set_summary ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-summary" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_summary ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-summary" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_set_description ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-description" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_description ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-description" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_add_module_license ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-module-license" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_remove_module_license ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-module-license" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_module_licenses ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-module-licenses" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_module_licenses_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-licenses-as-strv"/>
+    <keyword type="function" name="modulemd_packager_v3_set_xmd ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-xmd" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_xmd ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-xmd" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_add_build_config ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-build-config" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_build_configs ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-build-configs" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_build_config_contexts_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-build-config-contexts-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_build_config ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-build-config" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_set_community ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-community" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_community ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-community" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_set_documentation ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-documentation" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_documentation ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-documentation" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_set_tracker ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-tracker" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_tracker ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-tracker" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_add_profile ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-profile" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_profiles ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-profiles" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_profile_names_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-profile-names-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_profile ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-profile" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_add_rpm_api ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_remove_rpm_api ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_rpm_api ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_replace_rpm_api ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-replace-rpm-api" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_rpm_api_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-api-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_add_rpm_filter ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-rpm-filter" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_remove_rpm_filter ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-rpm-filter" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_rpm_filters ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-rpm-filters" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_rpm_filters_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-filters-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-replace-rpm-filters" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_add_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-component" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_remove_module_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-module-component" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_module_components ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-module-components" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_remove_rpm_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-rpm-component" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_rpm_components ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-rpm-components" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_module_component_names_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-component-names-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_rpm_component_names_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-component-names-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_module_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-component" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_get_rpm_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-component" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_parse_yaml ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-parse-yaml" since="2.10"/>
+    <keyword type="macro" name="MODULEMD_TYPE_PACKAGER_V3" link="modulemd-2.0-Modulemd.PackagerV3.html#MODULEMD-TYPE-PACKAGER-V3:CAPS"/>
+    <keyword type="enum" name="enum ModulemdPackagerVersionEnum" link="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerVersionEnum" since="2.10"/>
+    <keyword type="struct" name="ModulemdPackagerV3" link="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3-struct"/>
     <keyword type="function" name="modulemd_profile_parse_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_emit_yaml ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_profile_equals_wrapper ()" link="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" since="2.5"/>
@@ -928,6 +985,11 @@
     <keyword type="constant" name="MD_OBSOLETES_VERSION_UNSET" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-UNSET:CAPS"/>
     <keyword type="constant" name="MD_OBSOLETES_VERSION_ONE" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-ONE:CAPS"/>
     <keyword type="constant" name="MD_OBSOLETES_VERSION_LATEST" link="modulemd-2.0-Modulemd.Obsoletes.html#MD-OBSOLETES-VERSION-LATEST:CAPS"/>
+    <keyword type="constant" name="MD_PACKAGER_VERSION_ERROR" link="modulemd-2.0-Modulemd.PackagerV3.html#MD-PACKAGER-VERSION-ERROR:CAPS"/>
+    <keyword type="constant" name="MD_PACKAGER_VERSION_UNSET" link="modulemd-2.0-Modulemd.PackagerV3.html#MD-PACKAGER-VERSION-UNSET:CAPS"/>
+    <keyword type="constant" name="MD_PACKAGER_VERSION_TWO" link="modulemd-2.0-Modulemd.PackagerV3.html#MD-PACKAGER-VERSION-TWO:CAPS"/>
+    <keyword type="constant" name="MD_PACKAGER_VERSION_THREE" link="modulemd-2.0-Modulemd.PackagerV3.html#MD-PACKAGER-VERSION-THREE:CAPS"/>
+    <keyword type="constant" name="MD_PACKAGER_VERSION_LATEST" link="modulemd-2.0-Modulemd.PackagerV3.html#MD-PACKAGER-VERSION-LATEST:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_UNKNOWN" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-UNKNOWN:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_MODULESTREAM" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-MODULESTREAM:CAPS"/>
     <keyword type="constant" name="MODULEMD_YAML_DOC_DEFAULTS" link="modulemd-2.0-YAML-Manipulation-Tools.html#MODULEMD-YAML-DOC-DEFAULTS:CAPS"/>
