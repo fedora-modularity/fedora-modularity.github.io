@@ -274,10 +274,6 @@ justifications.
 </colgroup>
 <tbody>
 <tr>
-<td class="define_keyword">#define</td>
-<td class="function_name"><a class="link" href="ModulemdModuleStream.html#MMD-MAXCONTEXTLEN:CAPS" title="MMD_MAXCONTEXTLEN">MMD_MAXCONTEXTLEN</a></td>
-</tr>
-<tr>
 <td class="datatype_keyword">enum</td>
 <td class="function_name"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum">ModulemdModuleStreamVersionEnum</a></td>
 </tr>
@@ -303,8 +299,7 @@ justifications.
     <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ModulemdModuleStream
         <span class="lineart">├──</span> <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1">ModulemdModuleStreamV1</a>
-        <span class="lineart">├──</span> <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2">ModulemdModuleStreamV2</a>
-        <span class="lineart">╰──</span> <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3">ModulemdModuleStreamV3</a>
+        <span class="lineart">╰──</span> <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2">ModulemdModuleStreamV2</a>
 </pre>
 </div>
 <div class="refsect1">
@@ -1161,15 +1156,6 @@ mentioned in the release notes for the affected release.
 <div class="refsect1">
 <a name="ModulemdModuleStream.other_details"></a><h2>Types and Values</h2>
 <div class="refsect2">
-<a name="MMD-MAXCONTEXTLEN:CAPS"></a><h3>MMD_MAXCONTEXTLEN</h3>
-<pre class="programlisting">#define MMD_MAXCONTEXTLEN 10
-</pre>
-<p>The ModuleStream v3 specification defines the maximum lenth of the context
-field.</p>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
 <a name="ModulemdModuleStreamVersionEnum"></a><h3>enum ModulemdModuleStreamVersionEnum</h3>
 <div class="refsect3">
 <a name="ModulemdModuleStreamVersionEnum.members"></a><h4>Members</h4>
@@ -1208,14 +1194,6 @@ metadata format.</p>
 <td class="enum_member_description">
 <p>Represents v2 of the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>
 metadata format.</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="MD-MODULESTREAM-VERSION-THREE:CAPS"></a>MD_MODULESTREAM_VERSION_THREE</p></td>
-<td class="enum_member_description">
-<p>Represents v3 of the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>
-metadata format. Since: 2.10</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
@@ -1301,7 +1279,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <p>The metadata version of this ModuleStream object. Read-only.</p>
 <p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read</p>
-<p>Allowed values: &lt;= 3</p>
+<p>Allowed values: &lt;= 2</p>
 <p>Default value: 0</p>
 </div>
 <hr>
