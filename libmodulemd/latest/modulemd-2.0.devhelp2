@@ -80,6 +80,8 @@
   </chapters>
   <functions>
     <keyword type="function" name="modulemd_get_version ()" link="modulemd-2.0-Modulemd.html#modulemd-get-version" since="2.0"/>
+    <keyword type="function" name="modulemd_set_default_stream_mdversion ()" link="modulemd-2.0-Modulemd.html#modulemd-set-default-stream-mdversion" since="2.10"/>
+    <keyword type="function" name="modulemd_get_default_stream_mdversion ()" link="modulemd-2.0-Modulemd.html#modulemd-get-default-stream-mdversion" since="2.10"/>
     <keyword type="function" name="modulemd_load_file ()" link="modulemd-2.0-Modulemd.html#modulemd-load-file" since="2.10"/>
     <keyword type="function" name="modulemd_load_string ()" link="modulemd-2.0-Modulemd.html#modulemd-load-string" since="2.10"/>
     <keyword type="function" name="modulemd_buildopts_new ()" link="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-new" since="2.0"/>
@@ -791,6 +793,11 @@
     <keyword type="function" name="modulemd_packager_v3_get_rpm_component_names_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-component-names-as-strv" since="2.10"/>
     <keyword type="function" name="modulemd_packager_v3_get_module_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-component" since="2.10"/>
     <keyword type="function" name="modulemd_packager_v3_get_rpm_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-component" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_to_defaults ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-defaults" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_to_stream_v2 ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-stream-v2" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_to_stream_v2_ext ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-stream-v2-ext" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_to_stream_v3 ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-stream-v3" since="2.10"/>
+    <keyword type="function" name="modulemd_packager_v3_to_stream_v3_ext ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-stream-v3-ext"/>
     <keyword type="function" name="modulemd_packager_v3_parse_yaml ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-parse-yaml" since="2.10"/>
     <keyword type="macro" name="MODULEMD_TYPE_PACKAGER_V3" link="modulemd-2.0-Modulemd.PackagerV3.html#MODULEMD-TYPE-PACKAGER-V3:CAPS"/>
     <keyword type="enum" name="enum ModulemdPackagerVersionEnum" link="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerVersionEnum" since="2.10"/>
