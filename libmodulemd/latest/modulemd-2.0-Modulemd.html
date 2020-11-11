@@ -58,22 +58,6 @@ justifications.
 </tr>
 <tr>
 <td class="function_type">
-<span class="returnvalue">void</span>
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.html#modulemd-set-default-stream-mdversion" title="modulemd_set_default_stream_mdversion ()">modulemd_set_default_stream_mdversion</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.html#modulemd-get-default-stream-mdversion" title="modulemd_get_default_stream_mdversion ()">modulemd_get_default_stream_mdversion</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
 </td>
 <td class="function_name">
@@ -542,48 +526,6 @@ modulemd_get_version (<em class="parameter"><code><span class="type">void</span>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-set-default-stream-mdversion"></a><h3>modulemd_set_default_stream_mdversion ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_set_default_stream_mdversion (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> mdversion</code></em>);</pre>
-<p>Used to set the default module stream metadata version to use when creating a
-new <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>, when reading a modulemd-packager v3 document
-directly to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object, etc.</p>
-<p>Warning: May not be thread-safe.</p>
-<div class="refsect3">
-<a name="modulemd-set-default-stream-mdversion.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>mdversion</p></td>
-<td class="parameter_description"><p>The default stream metadata version to set. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr></tbody>
-</table></div>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-get-default-stream-mdversion"></a><h3>modulemd_get_default_stream_mdversion ()</h3>
-<pre class="programlisting"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
-modulemd_get_default_stream_mdversion (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<div class="refsect3">
-<a name="modulemd-get-default-stream-mdversion.returns"></a><h4>Returns</h4>
-<p> The default module stream metadata version to use when creating a
-new <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>, when reading a modulemd-packager v3 document
-directly to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object, etc.</p>
-<p>If a default stream metadata version has not been explicitly set using
-<a class="link" href="modulemd-2.0-Modulemd.html#modulemd-set-default-stream-mdversion" title="modulemd_set_default_stream_mdversion ()"><code class="function">modulemd_set_default_stream_mdversion()</code></a>, the value returned will be a compile-time
-default.</p>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
