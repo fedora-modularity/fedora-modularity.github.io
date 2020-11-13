@@ -499,6 +499,8 @@
     <keyword type="function" name="modulemd_module_stream_v3_get_runtime_modules_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-runtime-modules-as-strv" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_v3_get_buildtime_requirement_stream ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-buildtime-requirement-stream" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_v3_get_runtime_requirement_stream ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-runtime-requirement-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_buildtime_requirement_streams_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-buildtime-requirement-streams-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_v3_get_runtime_requirement_streams_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-runtime-requirement-streams-as-strv" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_v3_set_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-set-xmd" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_v3_get_xmd ()" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#modulemd-module-stream-v3-get-xmd"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_STREAM_V3" link="modulemd-2.0-Modulemd.ModuleStreamV3.html#MODULEMD-TYPE-MODULE-STREAM-V3:CAPS"/>
@@ -904,6 +906,8 @@
     <keyword type="function" name="modulemd_yaml_parse_string_set ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-string-set" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_string_set_from_map ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-string-set-from-map" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_string_string_map ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-string-string-map" since="2.0"/>
+    <keyword type="function" name="modulemd_yaml_parse_nested_set ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-nested-set" since="2.10"/>
+    <keyword type="function" name="modulemd_yaml_emit_nested_set ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-emit-nested-set" since="2.10"/>
     <keyword type="function" name="modulemd_yaml_parse_document_type ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-document-type" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_emit_document_headers ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-emit-document-headers" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_emit_variant ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-emit-variant" since="2.0"/>
