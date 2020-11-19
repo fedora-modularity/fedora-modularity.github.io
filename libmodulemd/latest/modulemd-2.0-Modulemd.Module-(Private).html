@@ -341,19 +341,15 @@ does not match this module, it will also be rejected.</p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>index_mdversion</p></td>
-<td class="parameter_description"><p>The <a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> stream_mdversion
-of the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> to which <em class="parameter"><code>stream</code></em>
-is being added. If the version
-of <em class="parameter"><code>stream</code></em>
-is less than <em class="parameter"><code>index_mdversion</code></em>
-, an upgrade to this version will be
-performed while adding <em class="parameter"><code>stream</code></em>
+<td class="parameter_description"><p>The <a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> of the highest
+stream version added so far in the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>. When obsoletes is present
+for <em class="parameter"><code>stream</code></em>
+it is set to at least version two. If non-zero,
+perform an upgrade to this version while adding <em class="parameter"><code>stream</code></em>
 to <em class="parameter"><code>self</code></em>
-. If <em class="parameter"><code>stream</code></em>
-already has the same
-version, it is just copied. When obsoletes is present for <em class="parameter"><code>stream</code></em>
-it must be
-set to at least version two. </p></td>
+. If
+the <em class="parameter"><code>stream</code></em>
+already has the same or a higher version, just copy it. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -367,15 +363,13 @@ failed. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-add-stream.returns"></a><h4>Returns</h4>
-<p> The mdversion of the stream that was added, which will be
-<em class="parameter"><code>index_mdversion</code></em>
-unless an error occurred. Returns
-<a class="link" href="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ERROR:CAPS"><code class="literal">MD_MODULESTREAM_VERSION_ERROR</code></a> and sets <em class="parameter"><code>error</code></em>
+<p> The mdversion of the stream that was added. Returns
+<code class="literal">MD_MODULE_STREAM_VERSION_ERROR</code> and sets <em class="parameter"><code>error</code></em>
 if the module name didn't
 match, the module and stream names were unset or the stream object couldn't
 be upgraded successfully to the <em class="parameter"><code>index_mdversion</code></em>
 . Returns
-<a class="link" href="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-UNSET:CAPS"><code class="literal">MD_MODULESTREAM_VERSION_UNSET</code></a> if <em class="parameter"><code>stream</code></em>
+<code class="literal">MD_MODULE_STREAM_VERSION_UNSET</code> if <em class="parameter"><code>stream</code></em>
 was NULL.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>

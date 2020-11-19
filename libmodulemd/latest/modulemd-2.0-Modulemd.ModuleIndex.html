@@ -291,23 +291,18 @@ justifications.
 <a name="modulemd-2.0-Modulemd.ModuleIndex.description"></a><h2>Description</h2>
 <p>This object provides an interface to the complete metadata read from a
 repository or manually added to this object.</p>
-<p>NOTE: When adding or updating this object from YAML, all
-<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> will be automatically upgraded to match the stream
-mdversion set for the index, and all <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> objects imported will
-be automatically upgraded to match the highest version of that object that
-has been previously seen. This means, for example, that if the repository
-has a mix of <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects,
-and the index's stream mdversion is set to V2, the index will contain only
-<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>. You can check the versions the index upgraded to
-with the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" title="modulemd_module_index_get_stream_mdversion ()"><code class="function">modulemd_module_index_get_stream_mdversion()</code></a> and
+<p>NOTE: When adding or updating this object from YAML, all objects imported
+will be automatically upgraded to match the highest version of that object
+that is seen. This means that if the repository has a mix of
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects, the index will
+contain only <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>. You can check the versions the index
+upgraded to with the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" title="modulemd_module_index_get_stream_mdversion ()"><code class="function">modulemd_module_index_get_stream_mdversion()</code></a> and
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" title="modulemd_module_index_get_defaults_mdversion ()"><code class="function">modulemd_module_index_get_defaults_mdversion()</code></a>. If your application would
 prefer to always work with a particular stream or defaults version (such as
-to avoid extra branching logic), <a class="link" href="modulemd-2.0-Modulemd.html#modulemd-set-default-stream-mdversion" title="modulemd_set_default_stream_mdversion ()"><code class="function">modulemd_set_default_stream_mdversion()</code></a> can
-be used before creating the index to force <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects to
-be upgraded to the desired stream mdversion and
-<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()"><code class="function">modulemd_module_index_upgrade_defaults()</code></a> function can be used to force the
-contents of the index to upgrade <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> to the specified version.
-Interacting with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> is relatively simple. A common Python
+to avoid extra branching logic), the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-streams" title="modulemd_module_index_upgrade_streams ()"><code class="function">modulemd_module_index_upgrade_streams()</code></a>
+and <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()"><code class="function">modulemd_module_index_upgrade_defaults()</code></a> functions can be used to force
+the contents of the index to upgrade to those versions.</p>
+<p>Interacting with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> is relatively simple. A common Python
 example for working with Fedora repodata might be (assuming the metadata has
 already been read into strings):</p>
 <div class="informalexample">
@@ -1468,10 +1463,6 @@ index.</p>
 modulemd_module_index_upgrade_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
                                        <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> mdversion</code></em>,
                                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<div class="warning">
-<p><code class="literal">modulemd_module_index_upgrade_streams</code> has been deprecated since version 2.10 and should not be used in newly-written code.</p>
-<p>Use <a class="link" href="modulemd-2.0-Modulemd.html#modulemd-set-default-stream-mdversion" title="modulemd_set_default_stream_mdversion ()"><code class="function">modulemd_set_default_stream_mdversion()</code></a> instead.</p>
-</div>
 <p>Upgrades all <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects in this index to <em class="parameter"><code>mdversion</code></em>
  if
 they are not already at that version.</p>
