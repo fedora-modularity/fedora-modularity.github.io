@@ -836,6 +836,7 @@
     <keyword type="function" name="modulemd_subdocument_info_set_yaml ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-set-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_set_gerror ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-set-gerror" since="2.0"/>
     <keyword type="function" name="modulemd_subdocument_info_get_data_parser ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-get-data-parser" since="2.0"/>
+    <keyword type="function" name="modulemd_subdocument_info_debug_dump_failures ()" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html#modulemd-subdocument-info-debug-dump-failures" since="2.10"/>
     <keyword type="function" name="modulemd_translation_get_version ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-version" since="2.0"/>
     <keyword type="function" name="modulemd_translation_get_module_name ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-name" since="2.0"/>
     <keyword type="function" name="modulemd_translation_get_module_stream ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-get-module-stream" since="2.0"/>
