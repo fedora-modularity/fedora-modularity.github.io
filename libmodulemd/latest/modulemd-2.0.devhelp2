@@ -51,6 +51,7 @@
         <sub name="Modulemd.SubdocumentInfo (Private)" link="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html"/>
         <sub name="Modulemd.Translation (Private)" link="modulemd-2.0-Modulemd.Translation-(Private).html"/>
         <sub name="Modulemd.TranslationEntry (Private)" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html"/>
+        <sub name="Modulemd.UpgradeHelper" link="modulemd-2.0-Modulemd.UpgradeHelper.html"/>
         <sub name="Modulemd.Obsoletes (Private)" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html"/>
       </sub>
       <sub name="Modulemd 2.0 Private Developer Utilities" link="ch03.html">
@@ -253,6 +254,7 @@
     <keyword type="function" name="modulemd_module_index_get_stream_mdversion ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_upgrade_streams ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-streams" deprecated="2.10: Use modulemd_set_default_stream_mdversion() instead." since="2.0"/>
     <keyword type="function" name="modulemd_module_index_upgrade_defaults ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" since="2.0"/>
+    <keyword type="function" name="modulemd_module_index_add_known_stream ()" link="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-known-stream" since="2.10"/>
     <keyword type="macro" name="MODULEMD_TYPE_MODULE_INDEX" link="modulemd-2.0-Modulemd.ModuleIndex.html#MODULEMD-TYPE-MODULE-INDEX:CAPS"/>
     <keyword type="struct" name="ModulemdModuleIndex" link="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex-struct"/>
     <keyword type="function" name="modulemd_module_index_merger_new ()" link="modulemd-2.0-Modulemd.ModuleIndexMerger.html#modulemd-module-index-merger-new" since="2.0"/>
@@ -687,6 +689,7 @@
     <keyword type="function" name="modulemd_module_add_obsoletes ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-obsoletes" since="2.10"/>
     <keyword type="function" name="modulemd_module_add_stream ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-stream" since="2.0"/>
     <keyword type="function" name="modulemd_module_upgrade_streams ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-upgrade-streams" since="2.0"/>
+    <keyword type="function" name="modulemd_module_associate_upgrade_helper ()" link="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-associate-upgrade-helper" since="2.10"/>
     <keyword type="function" name="modulemd_module_index_update_from_file_ext ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-update-from-file-ext" since="2.9"/>
     <keyword type="function" name="modulemd_module_index_update_from_parser ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-update-from-parser" since="2.0"/>
     <keyword type="function" name="modulemd_module_index_merge ()" link="modulemd-2.0-Modulemd.ModuleIndex-(Private).html#modulemd-module-index-merge" since="2.0"/>
@@ -714,6 +717,7 @@
     <keyword type="function" name="modulemd_module_stream_is_autogen_stream_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-is-autogen-stream-name" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_clear_autogen_module_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-clear-autogen-module-name" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_clear_autogen_stream_name ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-clear-autogen-stream-name" since="2.10"/>
+    <keyword type="function" name="modulemd_module_stream_associate_upgrade_helper ()" link="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-associate-upgrade-helper" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_v1_parse_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_emit_yaml ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v1_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html#modulemd-module-stream-v1-includes-nevra" since="2.9"/>
@@ -845,6 +849,13 @@
     <keyword type="function" name="modulemd_translation_emit_yaml ()" link="modulemd-2.0-Modulemd.Translation-(Private).html#modulemd-translation-emit-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_parse_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-parse-yaml" since="2.0"/>
     <keyword type="function" name="modulemd_translation_entry_emit_yaml ()" link="modulemd-2.0-Modulemd.TranslationEntry-(Private).html#modulemd-translation-entry-emit-yaml" since="2.0"/>
+    <keyword type="function" name="modulemd_upgrade_helper_new ()" link="modulemd-2.0-Modulemd.UpgradeHelper.html#modulemd-upgrade-helper-new" since="2.10"/>
+    <keyword type="function" name="modulemd_upgrade_helper_add_known_stream ()" link="modulemd-2.0-Modulemd.UpgradeHelper.html#modulemd-upgrade-helper-add-known-stream" since="2.10"/>
+    <keyword type="function" name="modulemd_upgrade_helper_get_known_modules_as_strv ()" link="modulemd-2.0-Modulemd.UpgradeHelper.html#modulemd-upgrade-helper-get-known-modules-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_upgrade_helper_get_known_streams_as_strv ()" link="modulemd-2.0-Modulemd.UpgradeHelper.html#modulemd-upgrade-helper-get-known-streams-as-strv" since="2.10"/>
+    <keyword type="function" name="modulemd_upgrade_helper_get_known_streams_as_array ()" link="modulemd-2.0-Modulemd.UpgradeHelper.html#modulemd-upgrade-helper-get-known-streams-as-array" since="2.10"/>
+    <keyword type="macro" name="MODULEMD_TYPE_UPGRADE_HELPER" link="modulemd-2.0-Modulemd.UpgradeHelper.html#MODULEMD-TYPE-UPGRADE-HELPER:CAPS"/>
+    <keyword type="struct" name="ModulemdUpgradeHelper" link="modulemd-2.0-Modulemd.UpgradeHelper.html#ModulemdUpgradeHelper-struct"/>
     <keyword type="function" name="modulemd_obsoletes_get_mdversion ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-get-mdversion" since="2.10"/>
     <keyword type="function" name="modulemd_obsoletes_get_module_name ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-get-module-name" since="2.10"/>
     <keyword type="function" name="modulemd_obsoletes_get_module_stream ()" link="modulemd-2.0-Modulemd.Obsoletes-(Private).html#modulemd-obsoletes-get-module-stream" since="2.10"/>
