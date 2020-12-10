@@ -7,7 +7,7 @@
 <link rel="home" href="index.html" title="Modulemd Reference Manual">
 <link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
 <link rel="prev" href="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html" title="Modulemd.ModuleStreamV1 (Private)">
-<link rel="next" href="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html" title="Modulemd.ModuleStreamV3 (Private)">
+<link rel="next" href="modulemd-2.0-Modulemd.PackagerV3.html" title="Modulemd.PackagerV3">
 <meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -22,7 +22,7 @@
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
 <td><a accesskey="p" href="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="modulemd-2.0-Modulemd.ModuleStreamV3-(Private).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.PackagerV3.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
 <a name="modulemd-2.0-Modulemd.ModuleStreamV2-(Private)"></a><div class="titlepage"></div>
@@ -171,6 +171,11 @@ documented ways.
 <td class="property_type">
 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--documentation" title="The “documentation” property">documentation</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2--static-context" title="The “static-context” property">static-context</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
 <tr>
@@ -667,6 +672,15 @@ object is still returned. </p>
 <p>Owner: ModulemdModuleStreamV2</p>
 <p>Flags: Read / Write / Construct</p>
 <p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdModuleStreamV2--static-context"></a><h3>The <code class="literal">“static-context”</code> property</h3>
+<pre class="programlisting">  “static-context”           <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the context is static.</p>
+<p>Owner: ModulemdModuleStreamV2</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
 </div>
 <hr>
 <div class="refsect2">

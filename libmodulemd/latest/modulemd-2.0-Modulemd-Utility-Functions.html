@@ -134,7 +134,23 @@ documented ways.
 <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 </td>
 <td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-compare" title="modulemd_hash_table_compare ()">modulemd_hash_table_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()">modulemd_strcmp_sort</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-wrapper" title="modulemd_strcmp_wrapper ()">modulemd_strcmp_wrapper</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -602,6 +618,14 @@ differ.</p>
 </div>
 <hr>
 <div class="refsect2">
+<a name="modulemd-hash-table-compare"></a><h3>modulemd_hash_table_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+modulemd_hash_table_compare (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> value_compare_func</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
 <a name="modulemd-strcmp-sort"></a><h3>modulemd_strcmp_sort ()</h3>
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
 modulemd_strcmp_sort (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
@@ -640,6 +664,47 @@ is greater than <em class="parameter"><code>b</code></em>
 .</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-strcmp-wrapper"></a><h3>modulemd_strcmp_wrapper ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+modulemd_strcmp_wrapper (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-strcmp-wrapper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-strcmp-wrapper.returns"></a><h4>Returns</h4>
+<p> 0 if <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are identical strings, a negative value if <em class="parameter"><code>a</code></em>
+is less
+than <em class="parameter"><code>b</code></em>
+, and a positive value if <em class="parameter"><code>a</code></em>
+is greater than <em class="parameter"><code>b</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">

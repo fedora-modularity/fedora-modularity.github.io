@@ -259,14 +259,6 @@ justifications.
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()">modulemd_module_index_upgrade_defaults</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
-<tr>
-<td class="function_type">
-<span class="returnvalue">void</span>
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-known-stream" title="modulemd_module_index_add_known_stream ()">modulemd_module_index_add_known_stream</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
 </tbody>
 </table></div>
 </div>
@@ -310,7 +302,7 @@ and the index's stream mdversion is set to V2, the index will contain only
 with the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" title="modulemd_module_index_get_stream_mdversion ()"><code class="function">modulemd_module_index_get_stream_mdversion()</code></a> and
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" title="modulemd_module_index_get_defaults_mdversion ()"><code class="function">modulemd_module_index_get_defaults_mdversion()</code></a>. If your application would
 prefer to always work with a particular stream or defaults version (such as
-to avoid extra branching logic), <a class="link" href="modulemd-2.0-Modulemd.html#modulemd-set-default-stream-mdversion" title="modulemd_set_default_stream_mdversion ()"><code class="function">modulemd_set_default_stream_mdversion()</code></a> can
+to avoid extra branching logic), <code class="function">modulemd_set_default_stream_mdversion()</code> can
 be used before creating the index to force <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects to
 be upgraded to the desired stream mdversion and
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()"><code class="function">modulemd_module_index_upgrade_defaults()</code></a> function can be used to force the
@@ -1476,10 +1468,6 @@ index.</p>
 modulemd_module_index_upgrade_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
                                        <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> mdversion</code></em>,
                                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<div class="warning">
-<p><code class="literal">modulemd_module_index_upgrade_streams</code> has been deprecated since version 2.10 and should not be used in newly-written code.</p>
-<p>Use <a class="link" href="modulemd-2.0-Modulemd.html#modulemd-set-default-stream-mdversion" title="modulemd_set_default_stream_mdversion ()"><code class="function">modulemd_set_default_stream_mdversion()</code></a> instead.</p>
-</div>
 <p>Upgrades all <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects in this index to <em class="parameter"><code>mdversion</code></em>
  if
 they are not already at that version.</p>
@@ -1553,64 +1541,6 @@ not be upgraded in the event of an error. </p></td>
 </table></div>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-module-index-add-known-stream"></a><h3>modulemd_module_index_add_known_stream ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>
-modulemd_module_index_add_known_stream
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
-                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
-<p>This function adds a <code class="literal">module:stream</code> entry to the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>.
-It will be used if and when libmodulemd needs to upgrade a
-<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object to a <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV3.html#ModulemdModuleStreamV3"><span class="type">ModulemdModuleStreamV3</span></a> object if it
-encounters a module dependency that is specified as either <code class="literal">[ ]</code>
-(all streams) or <code class="literal">[ -streamname ]</code> (all but some exclusions).</p>
-<p>When using the python bindings, a simplified way to set these values is to
-call:</p>
-<div class="informalexample">
-  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr>
-        <td class="listing_lines" align="right"><pre>1
-2</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="n">idx</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
-<span class="n">idx</span><span class="p">.</span><span class="n">set_known_streams</span><span class="p">({</span><span class="s">&quot;module_name&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s">&quot;stream1&quot;</span><span class="p">,</span> <span class="s">&quot;stream2&quot;</span><span class="p">]})</span></pre></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<p></p>
-<div class="refsect3">
-<a name="modulemd-module-index-add-known-stream.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>module_name</p></td>
-<td class="parameter_description"><p>The name of the known module being added. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>stream_name</p></td>
-<td class="parameter_description"><p>The name of the known module stream being added. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
 </div>
 <div class="refsect1">
