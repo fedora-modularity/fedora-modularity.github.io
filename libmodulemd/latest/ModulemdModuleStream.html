@@ -380,7 +380,17 @@ modulemd_module_stream_read_file (<em class="parameter"><code>const <a href="htt
                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>,
                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">modulemd_module_stream_read_file</code> has been deprecated since version 2.11 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="modulemd-2.0-Modulemd.html#modulemd-read-packager-file" title="modulemd_read_packager_file ()"><code class="function">modulemd_read_packager_file()</code></a> instead.</p>
+</div>
 <p>Create a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object from a YAML file.</p>
+<p>Note: This function also reads modulemd-packager v2 and v3 documents, which
+are transparently returned as <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> (V2) objects. However,
+if a modulemd-packager v3 document (<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a>) is encountered and
+it uses buildopts (<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a>) in one or more build configurations,
+only the buildopts present in the first listed configuration (if any) will be
+applied to the returned <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object.</p>
 <div class="refsect3">
 <a name="modulemd-module-stream-read-file.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -445,7 +455,17 @@ modulemd_module_stream_read_string (<em class="parameter"><code>const <a href="h
                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_stream</code></em>,
                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">modulemd_module_stream_read_string</code> has been deprecated since version 2.11 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="modulemd-2.0-Modulemd.html#modulemd-read-packager-string" title="modulemd_read_packager_string ()"><code class="function">modulemd_read_packager_string()</code></a> instead.</p>
+</div>
 <p>Create a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object from a YAML string.</p>
+<p>Note: This function also reads modulemd-packager v2 and v3 documents, which
+are transparently returned as <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> (V2) objects. However,
+if a modulemd-packager v3 document (<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a>) is encountered and
+it uses buildopts (<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a>) in one or more build configurations,
+only the buildopts present in the first listed configuration (if any) will be
+applied to the returned <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object.</p>
 <div class="refsect3">
 <a name="modulemd-module-stream-read-string.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">

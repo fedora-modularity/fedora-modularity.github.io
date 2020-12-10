@@ -5,9 +5,9 @@
 <title>Modulemd.PackagerV3: Modulemd Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
 <link rel="home" href="index.html" title="Modulemd Reference Manual">
-<link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
-<link rel="prev" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html" title="Modulemd.ModuleStreamV2 (Private)">
-<link rel="next" href="modulemd-2.0-Modulemd.Profile-(Private).html" title="Modulemd.Profile (Private)">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.ModuleStreamV2.html" title="Modulemd.ModuleStreamV2">
+<link rel="next" href="modulemd-2.0-Modulemd.Profile.html" title="Modulemd.Profile">
 <meta name="generator" content="GTK-Doc V1.32 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -19,9 +19,9 @@
                   <a href="#modulemd-2.0-Modulemd.PackagerV3.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="modulemd-2.0-Modulemd.Profile-(Private).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.ModuleStreamV2.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.Profile.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
 <a name="modulemd-2.0-Modulemd.PackagerV3"></a><div class="titlepage"></div>
@@ -435,34 +435,10 @@ documented ways.
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-defaults" title="modulemd_packager_v3_to_defaults ()">modulemd_packager_v3_to_defaults</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="returnvalue">ModulemdModuleStreamV2</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-stream-v2" title="modulemd_packager_v3_to_stream_v2 ()">modulemd_packager_v3_to_stream_v2</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
 </td>
 <td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-to-stream-v2-ext" title="modulemd_packager_v3_to_stream_v2_ext ()">modulemd_packager_v3_to_stream_v2_ext</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="returnvalue">ModulemdPackagerV3</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-parse-yaml" title="modulemd_packager_v3_parse_yaml ()">modulemd_packager_v3_parse_yaml</a> <span class="c_punctuation">()</span>
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-convert-to-index" title="modulemd_packager_v3_convert_to_index ()">modulemd_packager_v3_convert_to_index</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 </tbody>
@@ -497,7 +473,9 @@ documented ways.
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.PackagerV3.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> ModulemdPackagerVersionEnum
+    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> ModulemdPackagerV3
 </pre>
 </div>
@@ -516,7 +494,7 @@ modulemd_packager_v3_new (<em class="parameter"><code><span class="type">void</s
 object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -524,12 +502,27 @@ object must be freed with <a href="https://developer.gnome.org/gobject/stable/go
 <pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="returnvalue">ModulemdPackagerV3</span></a> *
 modulemd_packager_v3_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
 <div class="refsect3">
+<a name="modulemd-packager-v3-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
 <a name="modulemd-packager-v3-copy.returns"></a><h4>Returns</h4>
 <p>A newly-allocated deep-copy of this
 <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -560,7 +553,7 @@ modulemd_packager_v3_set_module_name (<em class="parameter"><code><a class="link
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -587,7 +580,7 @@ modulemd_packager_v3_get_module_name (<em class="parameter"><code><a class="link
 <p>The module name. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -618,7 +611,7 @@ modulemd_packager_v3_set_stream_name (<em class="parameter"><code><a class="link
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -645,7 +638,7 @@ modulemd_packager_v3_get_stream_name (<em class="parameter"><code><a class="link
 <p>The module stream name. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -676,7 +669,7 @@ modulemd_packager_v3_set_summary (<em class="parameter"><code><a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -702,7 +695,7 @@ modulemd_packager_v3_get_summary (<em class="parameter"><code><a class="link" hr
 <a name="modulemd-packager-v3-get-summary.returns"></a><h4>Returns</h4>
 <p> The short description of the module.</p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -733,7 +726,7 @@ modulemd_packager_v3_set_description (<em class="parameter"><code><a class="link
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -759,7 +752,7 @@ modulemd_packager_v3_get_description (<em class="parameter"><code><a class="link
 <a name="modulemd-packager-v3-get-description.returns"></a><h4>Returns</h4>
 <p> The long description of the module.</p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -790,7 +783,7 @@ modulemd_packager_v3_add_module_license
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -822,7 +815,7 @@ license is not present. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -847,7 +840,7 @@ modulemd_packager_v3_clear_module_licenses
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -855,6 +848,28 @@ modulemd_packager_v3_clear_module_licenses
 <pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
 modulemd_packager_v3_get_module_licenses_as_strv
                                (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-licenses-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-licenses-as-strv.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> of module licenses associated with this
+module stream. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -889,7 +904,7 @@ freed by the caller.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -916,7 +931,7 @@ modulemd_packager_v3_get_xmd (<em class="parameter"><code><a class="link" href="
 <p>The extensible metadata block as a <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a>. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -946,7 +961,7 @@ modulemd_packager_v3_add_build_config (<em class="parameter"><code><a class="lin
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -971,7 +986,7 @@ modulemd_packager_v3_clear_build_configs
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1000,7 +1015,7 @@ modulemd_packager_v3_get_build_config_contexts_as_strv
 configurations. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1038,7 +1053,7 @@ from <em class="parameter"><code>self</code></em>
 or NULL if it was not present. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1069,7 +1084,7 @@ modulemd_packager_v3_set_community (<em class="parameter"><code><a class="link" 
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1096,7 +1111,7 @@ modulemd_packager_v3_get_community (<em class="parameter"><code><a class="link" 
 <p>The module community website address. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1128,7 +1143,7 @@ modulemd_packager_v3_set_documentation
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1156,7 +1171,7 @@ modulemd_packager_v3_get_documentation
 <p>The module documentation website address. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1187,7 +1202,7 @@ modulemd_packager_v3_set_tracker (<em class="parameter"><code><a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1214,7 +1229,7 @@ modulemd_packager_v3_get_tracker (<em class="parameter"><code><a class="link" hr
 <p>The module bug tracker website address. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1245,7 +1260,7 @@ modulemd_packager_v3_add_profile (<em class="parameter"><code><a class="link" hr
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1268,7 +1283,7 @@ modulemd_packager_v3_clear_profiles (<em class="parameter"><code><a class="link"
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1297,7 +1312,7 @@ modulemd_packager_v3_get_profile_names_as_strv
 with this <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1333,7 +1348,7 @@ modulemd_packager_v3_get_profile (<em class="parameter"><code><a class="link" hr
 <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. NULL otherwise. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1364,7 +1379,7 @@ considered stable public API. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1394,7 +1409,7 @@ modulemd_packager_v3_remove_rpm_api (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1417,7 +1432,7 @@ modulemd_packager_v3_clear_rpm_api (<em class="parameter"><code><a class="link" 
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1452,7 +1467,7 @@ considered stable public API. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1481,7 +1496,7 @@ modulemd_packager_v3_get_rpm_api_as_strv
 form the public API of this module stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1511,7 +1526,7 @@ modulemd_packager_v3_add_rpm_filter (<em class="parameter"><code><a class="link"
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1542,7 +1557,7 @@ modulemd_packager_v3_remove_rpm_filter
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1566,7 +1581,7 @@ modulemd_packager_v3_clear_rpm_filters
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1595,7 +1610,7 @@ modulemd_packager_v3_get_rpm_filters_as_strv
 are filtered out of this module stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1631,7 +1646,7 @@ module stream. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1663,7 +1678,7 @@ module stream. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1696,7 +1711,7 @@ stream. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1720,7 +1735,7 @@ modulemd_packager_v3_clear_module_components
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1753,7 +1768,7 @@ stream. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1777,7 +1792,7 @@ modulemd_packager_v3_clear_rpm_components
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1807,7 +1822,7 @@ modulemd_packager_v3_get_module_component_names_as_strv
 included in this stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1837,7 +1852,7 @@ modulemd_packager_v3_get_rpm_component_names_as_strv
 included in this stream. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1875,7 +1890,7 @@ if
 it exists, else NULL. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1913,114 +1928,16 @@ if it
 exists, else NULL. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="modulemd-packager-v3-to-defaults"></a><h3>modulemd_packager_v3_to_defaults ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-modulemd_packager_v3_to_defaults (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
-                                  <em class="parameter"><code><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> **defaults</code></em>,
-                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Sets <em class="parameter"><code>defaults_ptr</code></em>
- to point to a newly-allocated <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object
-corresponding to the <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object <em class="parameter"><code>self</code></em>
- if <em class="parameter"><code>self</code></em>
- contains any
-profiles marked as default. Leaves <em class="parameter"><code>defaults_ptr</code></em>
- pointing to NULL if <em class="parameter"><code>self</code></em>
-
-contained no default profiles.</p>
-<div class="refsect3">
-<a name="modulemd-packager-v3-to-defaults.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>defaults_ptr</p></td>
-<td class="parameter_description"><p>(transfer-full): A pointer to a pointer to a new
-<a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object. Must be a valid pointer to a NULL object when
-called. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a conversion error. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="modulemd-packager-v3-to-defaults.returns"></a><h4>Returns</h4>
-<p> TRUE if the conversion succeeded, including the case where there
-<em class="parameter"><code>self</code></em>
-contains no default profiles. FALSE otherwise and <em class="parameter"><code>error</code></em>
-will be set.</p>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-packager-v3-to-stream-v2"></a><h3>modulemd_packager_v3_to_stream_v2 ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="returnvalue">ModulemdModuleStreamV2</span></a> *
-modulemd_packager_v3_to_stream_v2 (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
-                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<div class="refsect3">
-<a name="modulemd-packager-v3-to-stream-v2.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>self</p></td>
-<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a conversion error. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="modulemd-packager-v3-to-stream-v2.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
-corresponding to the <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object <em class="parameter"><code>self</code></em>
-. NULL if there was an
-error doing the mapping and sets <em class="parameter"><code>error</code></em>
-appropriately. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-packager-v3-to-stream-v2-ext"></a><h3>modulemd_packager_v3_to_stream_v2_ext ()</h3>
+<a name="modulemd-packager-v3-convert-to-index"></a><h3>modulemd_packager_v3_convert_to_index ()</h3>
 <pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
-modulemd_packager_v3_to_stream_v2_ext (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+modulemd_packager_v3_convert_to_index (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
                                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Note: If buildopts (<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a>) are in use in one or more build
-configurations in the <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object <em class="parameter"><code>self</code></em>
-, only the buildopts
-present in the first listed configuration (if any) will be applied to the
-<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object in the returned index.</p>
 <div class="refsect3">
-<a name="modulemd-packager-v3-to-stream-v2-ext.parameters"></a><h4>Parameters</h4>
+<a name="modulemd-packager-v3-convert-to-index.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -2042,58 +1959,16 @@ present in the first listed configuration (if any) will be applied to the
 </table></div>
 </div>
 <div class="refsect3">
-<a name="modulemd-packager-v3-to-stream-v2-ext.returns"></a><h4>Returns</h4>
+<a name="modulemd-packager-v3-convert-to-index.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object
-containing a <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object and possibly a
-<a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object corresponding to the <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object
+containing a set of one or more <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects and possibly
+a <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object corresponding to the <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object
 <em class="parameter"><code>self</code></em>
 . NULL if there was an error doing the mapping and sets <em class="parameter"><code>error</code></em>
 appropriately. </p>
 <p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-packager-v3-parse-yaml"></a><h3>modulemd_packager_v3_parse_yaml ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="returnvalue">ModulemdPackagerV3</span></a> *
-modulemd_packager_v3_parse_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> *subdoc</code></em>,
-                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Parse a <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> document. This parser always operates in strict
-mode, since it should only be used as input for a build-system.</p>
-<div class="refsect3">
-<a name="modulemd-packager-v3-parse-yaml.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>subdoc</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> representing a packager v3
-document. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
-validation error. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="modulemd-packager-v3-parse-yaml.returns"></a><h4>Returns</h4>
-<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object
-read from the YAML. NULL if a parse or validation error occurred and sets
-<em class="parameter"><code>error</code></em>
-appropriately. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -2108,8 +1983,8 @@ appropriately. </p>
 <a name="MMD-PACKAGER-DEFAULT-MODULE-LICENSE:CAPS"></a><h3>MMD_PACKAGER_DEFAULT_MODULE_LICENSE</h3>
 <pre class="programlisting">#define MMD_PACKAGER_DEFAULT_MODULE_LICENSE "MIT"
 </pre>
-<p>The ModulePackager v3 default module metadata license.</p>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p>The <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> default module metadata license.</p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -2141,16 +2016,16 @@ version.</p>
 <tr>
 <td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-TWO:CAPS"></a>MD_PACKAGER_VERSION_TWO</p></td>
 <td class="enum_member_description">
-<p>Represents v2 of the <span class="type">ModulemdPackager</span>
-metadata format. Since: 2.10</p>
+<p>Represents v2 of the ModulePackager
+metadata format. Since: 2.11</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-THREE:CAPS"></a>MD_PACKAGER_VERSION_THREE</p></td>
 <td class="enum_member_description">
-<p>Represents v3 of the <span class="type">ModulemdPackager</span>
-metadata format. Since: 2.10</p>
+<p>Represents v3 of the ModulePackager
+metadata format. Since: 2.11</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
@@ -2158,14 +2033,14 @@ metadata format. Since: 2.10</p>
 <td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-LATEST:CAPS"></a>MD_PACKAGER_VERSION_LATEST</p></td>
 <td class="enum_member_description">
 <p>Represents the highest-supported version of
-the <span class="type">ModulemdPackager</span> metadata format.</p>
+the ModulePackager metadata format.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 <hr>
 <div class="refsect2">

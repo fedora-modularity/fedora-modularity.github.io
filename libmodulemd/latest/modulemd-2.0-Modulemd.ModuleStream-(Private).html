@@ -163,22 +163,6 @@ documented ways.
 </tr>
 <tr>
 <td class="function_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-expand-v2-to-v3-deps" title="modulemd_module_stream_expand_v2_to_v3_deps ()">modulemd_module_stream_expand_v2_to_v3_deps</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-upgrade-v2-to-v3-ext" title="modulemd_module_stream_upgrade_v2_to_v3_ext ()">modulemd_module_stream_upgrade_v2_to_v3_ext</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
 <span class="returnvalue">void</span>
 </td>
 <td class="function_name">
@@ -223,6 +207,14 @@ documented ways.
 </td>
 <td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-clear-autogen-stream-name" title="modulemd_module_stream_clear_autogen_stream_name ()">modulemd_module_stream_clear_autogen_stream_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-upgrade-v1-to-v2" title="modulemd_module_stream_upgrade_v1_to_v2 ()">modulemd_module_stream_upgrade_v1_to_v2</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 </tbody>
@@ -492,8 +484,8 @@ implementation for <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Pri
 <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET-WITH-LOCALE:CAPS" title="STREAM_COPY_IF_SET_WITH_LOCALE()"><code class="literal">STREAM_COPY_IF_SET_WITH_LOCALE</code></a>, and <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-WITH-LOCALE:CAPS" title="STREAM_UPGRADE_IF_SET_WITH_LOCALE()"><code class="literal">STREAM_UPGRADE_IF_SET_WITH_LOCALE</code></a>
 which should be used instead.</p>
 <p>This is a helper macro to simplify the coding when copying/upgrading
-properties between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, and
-<span class="type">ModulemdModuleStreamV3</span> objects.</p>
+properties between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>
+objects.</p>
 <p>Does nothing if the <em class="parameter"><code>src</code></em>
  <em class="parameter"><code>property</code></em>
  is NULL.</p>
@@ -509,31 +501,29 @@ properties between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.ht
 <tr>
 <td class="parameter_name"><p>oldversion</p></td>
 <td class="parameter_description"><p>The stream version of <em class="parameter"><code>src</code></em>
-. Must be literal "v1", "v2", or "v3"
+. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>newversion</p></td>
 <td class="parameter_description"><p>The stream version of <em class="parameter"><code>dest</code></em>
-. Must be literal "v1", "v2", or "v3"
+. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the destination to which <em class="parameter"><code>property</code></em>
-is
-to be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>src</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the source from which <em class="parameter"><code>property</code></em>
-is to
-be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -577,24 +567,22 @@ version.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>version</p></td>
-<td class="parameter_description"><p>The stream version being copied. Must be literal "v1", "v2", or "v3"
+<td class="parameter_description"><p>The stream version being copied. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the destination to which <em class="parameter"><code>property</code></em>
-is
-to be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>src</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the source from which <em class="parameter"><code>property</code></em>
-is to
-be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -613,8 +601,8 @@ name, in lower case, without quotes.</p></td>
 <a name="STREAM-UPGRADE-IF-SET:CAPS"></a><h3>STREAM_UPGRADE_IF_SET()</h3>
 <pre class="programlisting">#define             STREAM_UPGRADE_IF_SET(oldversion, newversion, dest, src, property)</pre>
 <p>This is a convenience macro to simplify the coding when copying properties
-between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, and
-<span class="type">ModulemdModuleStreamV3</span> objects when <em class="parameter"><code>src</code></em>
+between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects when
+<em class="parameter"><code>src</code></em>
  and <em class="parameter"><code>dest</code></em>
  are different versions.</p>
 <p>Does nothing if the <em class="parameter"><code>src</code></em>
@@ -632,31 +620,29 @@ between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#Modulemd
 <tr>
 <td class="parameter_name"><p>oldversion</p></td>
 <td class="parameter_description"><p>The stream version of <em class="parameter"><code>src</code></em>
-. Must be literal "v1", "v2", or "v3"
+. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>newversion</p></td>
 <td class="parameter_description"><p>The stream version of <em class="parameter"><code>dest</code></em>
-. Must be literal "v1", "v2", or "v3"
+. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the destination to which <em class="parameter"><code>property</code></em>
-is
-to be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>src</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the source from which <em class="parameter"><code>property</code></em>
-is to
-be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -675,14 +661,14 @@ name, in lower case, without quotes.</p></td>
 <a name="STREAM-COPY-IF-SET-WITH-LOCALE:CAPS"></a><h3>STREAM_COPY_IF_SET_WITH_LOCALE()</h3>
 <pre class="programlisting">#define             STREAM_COPY_IF_SET_WITH_LOCALE(version, dest, src, property)</pre>
 <p>This is a convenience macro to simplify the coding when copying properties
-between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, and
-<span class="type">ModulemdModuleStreamV3</span> objects when both <em class="parameter"><code>src</code></em>
+between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects when
+both <em class="parameter"><code>src</code></em>
  and <em class="parameter"><code>dest</code></em>
- are the same version
-and <em class="parameter"><code>property</code></em>
- has possible translations. Only the untranslated (<code class="literal">"C"</code> locale)
-version of <em class="parameter"><code>property</code></em>
- will be copied.</p>
+ are the same version and <em class="parameter"><code>property</code></em>
+ has possible
+translations. Only the untranslated (<code class="literal">"C"</code> locale) version of <em class="parameter"><code>property</code></em>
+ will
+be copied.</p>
 <p>Does nothing if the <em class="parameter"><code>src</code></em>
  <em class="parameter"><code>property</code></em>
  is NULL.</p>
@@ -697,24 +683,22 @@ version of <em class="parameter"><code>property</code></em>
 <tbody>
 <tr>
 <td class="parameter_name"><p>version</p></td>
-<td class="parameter_description"><p>The stream version being copied. Must be literal "v1", "v2", or "v3"
+<td class="parameter_description"><p>The stream version being copied. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the destination to which <em class="parameter"><code>property</code></em>
-is
-to be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>src</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the source from which <em class="parameter"><code>property</code></em>
-is to
-be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -734,14 +718,14 @@ name, in lower case, without quotes.</p></td>
 <pre class="programlisting">#define             STREAM_UPGRADE_IF_SET_WITH_LOCALE(                                    \
               oldversion, newversion, dest, src, property)</pre>
 <p>This is a convenience macro to simply the coding when copying properties
-between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, and
-<span class="type">ModulemdModuleStreamV3</span> objects when <em class="parameter"><code>src</code></em>
+between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects when
+<em class="parameter"><code>src</code></em>
  and <em class="parameter"><code>dest</code></em>
- are different versions
-and <em class="parameter"><code>property</code></em>
- has possible translations. Only the untranslated (<code class="literal">"C"</code> locale)
-version of <em class="parameter"><code>property</code></em>
- will be copied.</p>
+ are different versions and <em class="parameter"><code>property</code></em>
+ has possible
+translations. Only the untranslated (<code class="literal">"C"</code> locale) version of <em class="parameter"><code>property</code></em>
+ will
+be copied.</p>
 <p>Does nothing if the <em class="parameter"><code>src</code></em>
  <em class="parameter"><code>property</code></em>
  is NULL.</p>
@@ -757,31 +741,29 @@ version of <em class="parameter"><code>property</code></em>
 <tr>
 <td class="parameter_name"><p>oldversion</p></td>
 <td class="parameter_description"><p>The stream version of <em class="parameter"><code>src</code></em>
-. Must be literal "v1", "v2", or "v3"
+. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>newversion</p></td>
 <td class="parameter_description"><p>The stream version of <em class="parameter"><code>dest</code></em>
-. Must be literal "v1", "v2", or "v3"
+. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the destination to which <em class="parameter"><code>property</code></em>
-is
-to be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>src</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the source from which <em class="parameter"><code>property</code></em>
-is to
-be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -800,11 +782,10 @@ name, in lower case, without quotes.</p></td>
 <a name="STREAM-REPLACE-HASHTABLE:CAPS"></a><h3>STREAM_REPLACE_HASHTABLE()</h3>
 <pre class="programlisting">#define             STREAM_REPLACE_HASHTABLE(version, dest, src, property)</pre>
 <p>This is a convenience macro to simply the coding when replacing <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>
-properties of <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, and
-<span class="type">ModulemdModuleStreamV3</span> objects when both <em class="parameter"><code>src</code></em>
+properties of <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects
+when both <em class="parameter"><code>src</code></em>
  and <em class="parameter"><code>dest</code></em>
- are the same
-version.</p>
+ are the same version.</p>
 <div class="refsect3">
 <a name="STREAM-REPLACE-HASHTABLE.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -816,24 +797,22 @@ version.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>version</p></td>
-<td class="parameter_description"><p>The stream version being replaced. Must be literal "v1", "v2", or "v3"
+<td class="parameter_description"><p>The stream version being replaced. Must be literal "v1" or "v2"
 without the quotes.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the destination at which <em class="parameter"><code>property</code></em>
-is
-being replaced. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination at which <em class="parameter"><code>property</code></em>
+is being replaced. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>src</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the source from which <em class="parameter"><code>property</code></em>
-is
-being replaced. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is being replaced. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -852,9 +831,8 @@ literal property name, in lower case, without quotes.</p></td>
 <a name="COPY-HASHTABLE-BY-VALUE-ADDER:CAPS"></a><h3>COPY_HASHTABLE_BY_VALUE_ADDER()</h3>
 <pre class="programlisting">#define             COPY_HASHTABLE_BY_VALUE_ADDER(dest, src, property, adder)</pre>
 <p>This is a convenience macro to simply the coding when copying <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>
-properties between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, and
-<span class="type">ModulemdModuleStreamV3</span> objects when the property is set by using add-on
-values.</p>
+properties between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>
+objects when the property is set by using add-on values.</p>
 <div class="refsect3">
 <a name="COPY-HASHTABLE-BY-VALUE-ADDER.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -866,18 +844,16 @@ values.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>dest</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the destination to which <em class="parameter"><code>property</code></em>
-is
-to be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>src</p></td>
-<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>, or
-<span class="type">ModulemdModuleStreamV3</span> object that is the source from which <em class="parameter"><code>property</code></em>
-is to
-be copied. </p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -982,106 +958,6 @@ matches <em class="parameter"><code>nevra_pattern</code></em>
 . FALSE otherwise.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-module-stream-expand-v2-to-v3-deps"></a><h3>modulemd_module_stream_expand_v2_to_v3_deps ()</h3>
-<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
-modulemd_module_stream_expand_v2_to_v3_deps
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *v2_stream</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>Stream V2 dependencies can be a list of <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a>, each of which
-consists of a list of buildtime and runtime modules, each of which can have
-multiple streams specified. Stream V3 dependencies are much simpler compared
-to Stream V2, and have just a single list of buildtime modules and single
-list of runtime modules. Additionally, each dependent module in Stream V3 can
-specify only a single stream. Furthermore, Stream V2 dependencies treated
-"platform" the same as any other module dependency, while Stream V3
-dependencies have "platform" as a seperate property.</p>
-<p>This function takes the Stream V2 dependencies and expands them into a
-<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> objects representing the flattened
-combinations of module:stream dependencies, explicitly extracting
-"platform" from the list of dependent modules and using it to set the
-seperate "platform" property.</p>
-<div class="refsect3">
-<a name="modulemd-module-stream-expand-v2-to-v3-deps.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>v2_stream</p></td>
-<td class="parameter_description"><p>A pointer to a <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that is to
-have its dependencies expanded. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an expansion error. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="modulemd-module-stream-expand-v2-to-v3-deps.returns"></a><h4>Returns</h4>
-<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> objects
-containing the fully stream expanded version of <em class="parameter"><code>v2_stream</code></em>
-, else NULL
-if an error occurred and <em class="parameter"><code>error</code></em>
-will be set accordingly. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="modulemd-module-stream-upgrade-v2-to-v3-ext"></a><h3>modulemd_module_stream_upgrade_v2_to_v3_ext ()</h3>
-<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
-modulemd_module_stream_upgrade_v2_to_v3_ext
-                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *from</code></em>,
-                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
-<p>This function takes <em class="parameter"><code>v2_stream</code></em>
- and maps it into one or more
-<span class="type">ModulemdModuleStreamV3</span> objects representing the flattened combinations of
-module:stream dependencies found in the <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object,
-along with explicitly setting the "platform" property. These
-<span class="type">ModulemdModuleStreamV3</span> objects are bundled together in a <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>
-object that is returned to the caller.</p>
-<div class="refsect3">
-<a name="modulemd-module-stream-upgrade-v2-to-v3-ext.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>from</p></td>
-<td class="parameter_description"><p>A pointer to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object (must be
-<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>) that is to be upgraded to <span class="type">ModulemdModuleStreamV3</span>. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
-</tr>
-<tr>
-<td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an expansion error. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="modulemd-module-stream-upgrade-v2-to-v3-ext.returns"></a><h4>Returns</h4>
-<p>A <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> containing one or more <span class="type">StreamV3</span>
-objects, else NULL if an error occured and <em class="parameter"><code>error</code></em>
-will be set accordingly. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1268,6 +1144,46 @@ does nothing.</p>
 </table></div>
 </div>
 <p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-upgrade-v1-to-v2"></a><h3>modulemd_module_stream_upgrade_v1_to_v2 ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+modulemd_module_stream_upgrade_v1_to_v2
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *from</code></em>);</pre>
+<p>Return an upgraded copy of this object. Does not modify the original.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-upgrade-v1-to-v2.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>from (in)</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an upgrade error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-upgrade-v1-to-v2.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> copy of
+<em class="parameter"><code>from</code></em>
+upgraded to V2. Returns NULL and sets <em class="parameter"><code>error</code></em>
+appropriately if the
+upgrade could not be completed automatically. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
 </div>
 </div>
