@@ -482,6 +482,7 @@
     <keyword type="function" name="modulemd_packager_v3_get_module_licenses_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-licenses-as-strv" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_set_xmd ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-xmd" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_get_xmd ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-xmd" since="2.11"/>
+    <keyword type="function" name="modulemd_packager_v3_get_mdversion ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-mdversion" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_add_build_config ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-build-config" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_clear_build_configs ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-build-configs" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_get_build_config_contexts_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-build-config-contexts-as-strv" since="2.11"/>
