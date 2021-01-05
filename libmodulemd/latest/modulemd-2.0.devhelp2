@@ -84,7 +84,9 @@
     <keyword type="function" name="modulemd_load_file ()" link="modulemd-2.0-Modulemd.html#modulemd-load-file" since="2.10"/>
     <keyword type="function" name="modulemd_load_string ()" link="modulemd-2.0-Modulemd.html#modulemd-load-string" since="2.10"/>
     <keyword type="function" name="modulemd_read_packager_file ()" link="modulemd-2.0-Modulemd.html#modulemd-read-packager-file" since="2.11"/>
+    <keyword type="function" name="modulemd_read_packager_file_ext ()" link="modulemd-2.0-Modulemd.html#modulemd-read-packager-file-ext" since="2.11"/>
     <keyword type="function" name="modulemd_read_packager_string ()" link="modulemd-2.0-Modulemd.html#modulemd-read-packager-string" since="2.11"/>
+    <keyword type="function" name="modulemd_read_packager_string_ext ()" link="modulemd-2.0-Modulemd.html#modulemd-read-packager-string-ext" since="2.11"/>
     <keyword type="function" name="modulemd_build_config_new ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-new" since="2.11"/>
     <keyword type="function" name="modulemd_build_config_set_context ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-set-context" since="2.11"/>
     <keyword type="function" name="modulemd_build_config_get_context ()" link="modulemd-2.0-Modulemd.BuildConfig.html#modulemd-build-config-get-context" since="2.11"/>
