@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.DefaultsV1 (Private): Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
+<link rel="prev" href="modulemd-2.0-Modulemd.Defaults-(Private).html" title="Modulemd.Defaults (Private)">
+<link rel="next" href="modulemd-2.0-Modulemd.Module-(Private).html" title="Modulemd.Module (Private)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.DefaultsV1-(Private).description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.Defaults-(Private).html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.Module-(Private).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.DefaultsV1-(Private)"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.DefaultsV1-(Private).top_of_page"></a>Modulemd.DefaultsV1 (Private)</span></h2>
+<p>Modulemd.DefaultsV1 (Private) — <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> methods that should only be used by
+internal consumers.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.DefaultsV1-(Private).stability-level"></a><h2>Stability Level</h2>
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.DefaultsV1-(Private).functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="returnvalue">ModulemdDefaultsV1</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#modulemd-defaults-v1-parse-yaml" title="modulemd_defaults_v1_parse_yaml ()">modulemd_defaults_v1_parse_yaml</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#modulemd-defaults-v1-emit-yaml" title="modulemd_defaults_v1_emit_yaml ()">modulemd_defaults_v1_emit_yaml</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#modulemd-defaults-v1-merge" title="modulemd_defaults_v1_merge ()">modulemd_defaults_v1_merge</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.DefaultsV1-(Private).other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html#DEFAULT-MERGE-CONFLICT:CAPS" title="DEFAULT_MERGE_CONFLICT">DEFAULT_MERGE_CONFLICT</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.DefaultsV1-(Private).description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.DefaultsV1-(Private).functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-defaults-v1-parse-yaml"></a><h3>modulemd_defaults_v1_parse_yaml ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="returnvalue">ModulemdDefaultsV1</span></a> *
+modulemd_defaults_v1_parse_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> *subdoc</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-v1-parse-yaml.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>subdoc</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> representing a defaults document
+of metadata version 1. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-v1-parse-yaml.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> object read
+from the YAML. NULL if a parse or validation error occurred and sets <em class="parameter"><code>error</code></em>
+appropriately. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-v1-emit-yaml"></a><h3>modulemd_defaults_v1_emit_yaml ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_defaults_v1_emit_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> *self</code></em>,
+                                <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-defaults-v1-emit-yaml.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a Defaults (v1)
+data section belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an emission or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-v1-emit-yaml.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> was emitted successfully. FALSE and
+sets <em class="parameter"><code>error</code></em>
+appropriately if the YAML could not be emitted.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-defaults-v1-merge"></a><h3>modulemd_defaults_v1_merge ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_defaults_v1_merge (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> *from</code></em>,
+                            <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> *into</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict_default_streams</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Performs a merge of two <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> objects representing the
+defaults for a single module name. See the documentation for
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> for details on the merge algorithm used.</p>
+<div class="refsect3">
+<a name="modulemd-defaults-v1-merge.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> object to merge from. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>into</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> object being merged into. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict_default_streams</p></td>
+<td class="parameter_description"><p>Whether a stream conflict should throw an
+error or just unset the default stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason for an unresolvable merge
+conflict. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-defaults-v1-merge.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.DefaultsV1.html#ModulemdDefaultsV1"><span class="type">ModulemdDefaultsV1</span></a> object
+containing the merged values of <em class="parameter"><code>from</code></em>
+and <em class="parameter"><code>into</code></em>
+. If this function encounters
+an unresolvable merge conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
+appropriately. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.DefaultsV1-(Private).other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="DEFAULT-MERGE-CONFLICT:CAPS"></a><h3>DEFAULT_MERGE_CONFLICT</h3>
+<pre class="programlisting">#define DEFAULT_MERGE_CONFLICT "__merge_conflict__"
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

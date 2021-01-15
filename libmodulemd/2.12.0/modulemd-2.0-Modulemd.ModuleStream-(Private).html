@@ -1,0 +1,1193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.ModuleStream (Private): Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
+<link rel="prev" href="modulemd-2.0-Modulemd.ModuleIndex-(Private).html" title="Modulemd.ModuleIndex (Private)">
+<link rel="next" href="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html" title="Modulemd.ModuleStreamV1 (Private)">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ModuleStream-(Private).description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.ModuleIndex-(Private).html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.ModuleStream-(Private)"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.ModuleStream-(Private).top_of_page"></a>Modulemd.ModuleStream (Private)</span></h2>
+<p>Modulemd.ModuleStream (Private) — <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> methods that should only be used
+by internal consumers.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStream-(Private).stability-level"></a><h2>Stability Level</h2>
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStream-(Private).functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-module-name" title="modulemd_module_stream_set_module_name ()">modulemd_module_stream_set_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-stream-name" title="modulemd_module_stream_set_stream_name ()">modulemd_module_stream_set_stream_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-associate-translation" title="modulemd_module_stream_associate_translation ()">modulemd_module_stream_associate_translation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="returnvalue">ModulemdTranslation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation" title="modulemd_module_stream_get_translation ()">modulemd_module_stream_get_translation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="returnvalue">ModulemdTranslationEntry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-get-translation-entry" title="modulemd_module_stream_get_translation_entry ()">modulemd_module_stream_get_translation_entry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-components" title="modulemd_module_stream_validate_components ()">modulemd_module_stream_validate_components</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-validate-component-rpm-arches" title="modulemd_module_stream_validate_component_rpm_arches ()">modulemd_module_stream_validate_component_rpm_arches</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-FULL:CAPS" title="STREAM_UPGRADE_IF_SET_FULL()">STREAM_UPGRADE_IF_SET_FULL</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET:CAPS" title="STREAM_COPY_IF_SET()">STREAM_COPY_IF_SET</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET:CAPS" title="STREAM_UPGRADE_IF_SET()">STREAM_UPGRADE_IF_SET</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET-WITH-LOCALE:CAPS" title="STREAM_COPY_IF_SET_WITH_LOCALE()">STREAM_COPY_IF_SET_WITH_LOCALE</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-WITH-LOCALE:CAPS" title="STREAM_UPGRADE_IF_SET_WITH_LOCALE()">STREAM_UPGRADE_IF_SET_WITH_LOCALE</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-REPLACE-HASHTABLE:CAPS" title="STREAM_REPLACE_HASHTABLE()">STREAM_REPLACE_HASHTABLE</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#COPY-HASHTABLE-BY-VALUE-ADDER:CAPS" title="COPY_HASHTABLE_BY_VALUE_ADDER()">COPY_HASHTABLE_BY_VALUE_ADDER</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-emit-yaml-base" title="modulemd_module_stream_emit_yaml_base ()">modulemd_module_stream_emit_yaml_base</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-includes-nevra" title="modulemd_module_stream_includes_nevra ()">modulemd_module_stream_includes_nevra</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-autogen-module-name" title="modulemd_module_stream_set_autogen_module_name ()">modulemd_module_stream_set_autogen_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-autogen-stream-name" title="modulemd_module_stream_set_autogen_stream_name ()">modulemd_module_stream_set_autogen_stream_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-is-autogen-module-name" title="modulemd_module_stream_is_autogen_module_name ()">modulemd_module_stream_is_autogen_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-is-autogen-stream-name" title="modulemd_module_stream_is_autogen_stream_name ()">modulemd_module_stream_is_autogen_stream_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-clear-autogen-module-name" title="modulemd_module_stream_clear_autogen_module_name ()">modulemd_module_stream_clear_autogen_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-clear-autogen-stream-name" title="modulemd_module_stream_clear_autogen_stream_name ()">modulemd_module_stream_clear_autogen_stream_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-upgrade-v1-to-v2" title="modulemd_module_stream_upgrade_v1_to_v2 ()">modulemd_module_stream_upgrade_v1_to_v2</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStream-(Private).description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleStream-(Private).functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-module-stream-set-module-name"></a><h3>modulemd_module_stream_set_module_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_set_module_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-set-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The module name this object represents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-set-stream-name"></a><h3>modulemd_module_stream_set_stream_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_set_stream_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-set-stream-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The stream name this object represents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-associate-translation"></a><h3>modulemd_module_stream_associate_translation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_associate_translation
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> *translation</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-associate-translation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>translation</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> information to associate with
+this object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-get-translation"></a><h3>modulemd_module_stream_get_translation ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="returnvalue">ModulemdTranslation</span></a> *
+modulemd_module_stream_get_translation
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-get-translation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-get-translation.returns"></a><h4>Returns</h4>
+<p> The <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> information to associated with this object.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-get-translation-entry"></a><h3>modulemd_module_stream_get_translation_entry ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="returnvalue">ModulemdTranslationEntry</span></a> *
+modulemd_module_stream_get_translation_entry
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *locale</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-get-translation-entry.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locale</p></td>
+<td class="parameter_description"><p>The locale of the translation to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-get-translation-entry.returns"></a><h4>Returns</h4>
+<p>The module stream <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> for
+the requested locale, or NULL if the locale was unknown. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-validate-components"></a><h3>modulemd_module_stream_validate_components ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_stream_validate_components
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *components</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Verifies that each of the <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> objects in <em class="parameter"><code>components</code></em>
+
+validates correctly via <a class="link" href="ModulemdComponent.html#modulemd-component-validate" title="modulemd_component_validate ()"><code class="function">modulemd_component_validate()</code></a>, verifies that any
+buildafter components are also present in <em class="parameter"><code>components</code></em>
+, and verifies that
+buildorder and buildafter aren't mixed.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-validate-components.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>components</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> of <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> objects. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-validate-components.returns"></a><h4>Returns</h4>
+<p> TRUE if the component objects passed validation. FALSE and sets
+<em class="parameter"><code>error</code></em>
+appropriately if validation fails.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-validate-component-rpm-arches"></a><h3>modulemd_module_stream_validate_component_rpm_arches ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_stream_validate_component_rpm_arches
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *components</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> module_arches</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Verifies that for each of the <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> RPM objects in <em class="parameter"><code>components</code></em>
+,
+any arches specified must be a subset of <em class="parameter"><code>module_arches</code></em>
+. If <em class="parameter"><code>module_arches</code></em>
+
+is empty, all arches are allowed.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-validate-component-rpm-arches.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>components</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> of <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> objects. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_arches</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of arches for which to build the module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-validate-component-rpm-arches.returns"></a><h4>Returns</h4>
+<p> TRUE if the component objects passed validation. FALSE and sets
+<em class="parameter"><code>error</code></em>
+appropriately if validation fails.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="STREAM-UPGRADE-IF-SET-FULL:CAPS"></a><h3>STREAM_UPGRADE_IF_SET_FULL()</h3>
+<pre class="programlisting">#define             STREAM_UPGRADE_IF_SET_FULL(                                           \
+              oldversion, newversion, dest, src, property, locale...)</pre>
+<p>DIRECT USE OF THIS MACRO SHOULD BE AVOIDED. This is the internal
+implementation for <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET:CAPS" title="STREAM_COPY_IF_SET()"><code class="literal">STREAM_COPY_IF_SET</code></a>, <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET:CAPS" title="STREAM_UPGRADE_IF_SET()"><code class="literal">STREAM_UPGRADE_IF_SET</code></a>,
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-COPY-IF-SET-WITH-LOCALE:CAPS" title="STREAM_COPY_IF_SET_WITH_LOCALE()"><code class="literal">STREAM_COPY_IF_SET_WITH_LOCALE</code></a>, and <a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#STREAM-UPGRADE-IF-SET-WITH-LOCALE:CAPS" title="STREAM_UPGRADE_IF_SET_WITH_LOCALE()"><code class="literal">STREAM_UPGRADE_IF_SET_WITH_LOCALE</code></a>
+which should be used instead.</p>
+<p>This is a helper macro to simplify the coding when copying/upgrading
+properties between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>
+objects.</p>
+<p>Does nothing if the <em class="parameter"><code>src</code></em>
+ <em class="parameter"><code>property</code></em>
+ is NULL.</p>
+<div class="refsect3">
+<a name="STREAM-UPGRADE-IF-SET-FULL.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>oldversion</p></td>
+<td class="parameter_description"><p>The stream version of <em class="parameter"><code>src</code></em>
+. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newversion</p></td>
+<td class="parameter_description"><p>The stream version of <em class="parameter"><code>dest</code></em>
+. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>The name of the property to copy. Must be the literal property
+name, in lower case, without quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locale...</p></td>
+<td class="parameter_description"><p>An optional locale that can be provided when <em class="parameter"><code>property</code></em>
+has
+possible translations. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="STREAM-COPY-IF-SET:CAPS"></a><h3>STREAM_COPY_IF_SET()</h3>
+<pre class="programlisting">#define             STREAM_COPY_IF_SET(version, dest, src, property)</pre>
+<p>This is a convenience macro to simplify the coding when copying properties
+between <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects when both <em class="parameter"><code>src</code></em>
+ and <em class="parameter"><code>dest</code></em>
+ are the same
+version.</p>
+<p>Does nothing if the <em class="parameter"><code>src</code></em>
+ <em class="parameter"><code>property</code></em>
+ is NULL.</p>
+<div class="refsect3">
+<a name="STREAM-COPY-IF-SET.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The stream version being copied. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>The name of the property to copy. Must be the literal property
+name, in lower case, without quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="STREAM-UPGRADE-IF-SET:CAPS"></a><h3>STREAM_UPGRADE_IF_SET()</h3>
+<pre class="programlisting">#define             STREAM_UPGRADE_IF_SET(oldversion, newversion, dest, src, property)</pre>
+<p>This is a convenience macro to simplify the coding when copying properties
+between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects when
+<em class="parameter"><code>src</code></em>
+ and <em class="parameter"><code>dest</code></em>
+ are different versions.</p>
+<p>Does nothing if the <em class="parameter"><code>src</code></em>
+ <em class="parameter"><code>property</code></em>
+ is NULL.</p>
+<div class="refsect3">
+<a name="STREAM-UPGRADE-IF-SET.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>oldversion</p></td>
+<td class="parameter_description"><p>The stream version of <em class="parameter"><code>src</code></em>
+. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newversion</p></td>
+<td class="parameter_description"><p>The stream version of <em class="parameter"><code>dest</code></em>
+. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>The name of the property to copy. Must be the literal property
+name, in lower case, without quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="STREAM-COPY-IF-SET-WITH-LOCALE:CAPS"></a><h3>STREAM_COPY_IF_SET_WITH_LOCALE()</h3>
+<pre class="programlisting">#define             STREAM_COPY_IF_SET_WITH_LOCALE(version, dest, src, property)</pre>
+<p>This is a convenience macro to simplify the coding when copying properties
+between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects when
+both <em class="parameter"><code>src</code></em>
+ and <em class="parameter"><code>dest</code></em>
+ are the same version and <em class="parameter"><code>property</code></em>
+ has possible
+translations. Only the untranslated (<code class="literal">"C"</code> locale) version of <em class="parameter"><code>property</code></em>
+ will
+be copied.</p>
+<p>Does nothing if the <em class="parameter"><code>src</code></em>
+ <em class="parameter"><code>property</code></em>
+ is NULL.</p>
+<div class="refsect3">
+<a name="STREAM-COPY-IF-SET-WITH-LOCALE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The stream version being copied. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>The name of the property to copy. Must be the literal property
+name, in lower case, without quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="STREAM-UPGRADE-IF-SET-WITH-LOCALE:CAPS"></a><h3>STREAM_UPGRADE_IF_SET_WITH_LOCALE()</h3>
+<pre class="programlisting">#define             STREAM_UPGRADE_IF_SET_WITH_LOCALE(                                    \
+              oldversion, newversion, dest, src, property)</pre>
+<p>This is a convenience macro to simply the coding when copying properties
+between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects when
+<em class="parameter"><code>src</code></em>
+ and <em class="parameter"><code>dest</code></em>
+ are different versions and <em class="parameter"><code>property</code></em>
+ has possible
+translations. Only the untranslated (<code class="literal">"C"</code> locale) version of <em class="parameter"><code>property</code></em>
+ will
+be copied.</p>
+<p>Does nothing if the <em class="parameter"><code>src</code></em>
+ <em class="parameter"><code>property</code></em>
+ is NULL.</p>
+<div class="refsect3">
+<a name="STREAM-UPGRADE-IF-SET-WITH-LOCALE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>oldversion</p></td>
+<td class="parameter_description"><p>The stream version of <em class="parameter"><code>src</code></em>
+. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>newversion</p></td>
+<td class="parameter_description"><p>The stream version of <em class="parameter"><code>dest</code></em>
+. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>The name of the property to copy. Must be the literal property
+name, in lower case, without quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="STREAM-REPLACE-HASHTABLE:CAPS"></a><h3>STREAM_REPLACE_HASHTABLE()</h3>
+<pre class="programlisting">#define             STREAM_REPLACE_HASHTABLE(version, dest, src, property)</pre>
+<p>This is a convenience macro to simply the coding when replacing <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>
+properties of <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects
+when both <em class="parameter"><code>src</code></em>
+ and <em class="parameter"><code>dest</code></em>
+ are the same version.</p>
+<div class="refsect3">
+<a name="STREAM-REPLACE-HASHTABLE.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The stream version being replaced. Must be literal "v1" or "v2"
+without the quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination at which <em class="parameter"><code>property</code></em>
+is being replaced. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is being replaced. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>The name of the <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> property to replace. Must be the
+literal property name, in lower case, without quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="COPY-HASHTABLE-BY-VALUE-ADDER:CAPS"></a><h3>COPY_HASHTABLE_BY_VALUE_ADDER()</h3>
+<pre class="programlisting">#define             COPY_HASHTABLE_BY_VALUE_ADDER(dest, src, property, adder)</pre>
+<p>This is a convenience macro to simply the coding when copying <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>
+properties between <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>
+objects when the property is set by using add-on values.</p>
+<div class="refsect3">
+<a name="COPY-HASHTABLE-BY-VALUE-ADDER.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object
+that is the destination to which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> or <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object that
+is the source from which <em class="parameter"><code>property</code></em>
+is to be copied. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>The name of the <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> property to copy. Must be the literal
+property name, in lower case, without quotes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>adder</p></td>
+<td class="parameter_description"><p>A pointer to a method of <em class="parameter"><code>dest</code></em>
+that supports add-on property
+values. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-emit-yaml-base"></a><h3>modulemd_module_stream_emit_yaml_base ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_stream_emit_yaml_base (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                       <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Emit the common non-version specific YAML components for the Module Stream
+document.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-emit-yaml-base.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a Module Stream
+document belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an emission or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-emit-yaml-base.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> components were emitted
+successfully. FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately if the YAML could not be
+emitted.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-includes-nevra"></a><h3>modulemd_module_stream_includes_nevra ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_stream_includes_nevra (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nevra_pattern</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-includes-nevra.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nevra_pattern</p></td>
+<td class="parameter_description"><p>A <a class="ulink" href="https://www.mankier.com/3/glob" target="_top">glob</a>
+pattern to match against the NEVRA strings of the rpm artifacts in <em class="parameter"><code>self</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL must not be passed as the value in, out, in-out; or as a return value."><span class="acronym">not nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-includes-nevra.returns"></a><h4>Returns</h4>
+<p> TRUE if this stream includes at least one RPM artifact that
+matches <em class="parameter"><code>nevra_pattern</code></em>
+. FALSE otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-set-autogen-module-name"></a><h3>modulemd_module_stream_set_autogen_module_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_set_autogen_module_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> id</code></em>);</pre>
+<p>If <em class="parameter"><code>self</code></em>
+ already has a module name set, this function does nothing.
+Otherwise, a module name will be generated and set for <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-set-autogen-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A pointer to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>An unsigned integer to be used as a unique identifier if a module
+name is generated. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-set-autogen-stream-name"></a><h3>modulemd_module_stream_set_autogen_stream_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_set_autogen_stream_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> id</code></em>);</pre>
+<p>If <em class="parameter"><code>self</code></em>
+ already has a stream name set, this function does nothing.
+Otherwise, a stream name will be generated and set for <em class="parameter"><code>self</code></em>
+.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-set-autogen-stream-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A pointer to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>An unsigned integer to be used as a unique identifier if a stream
+name is generated. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-is-autogen-module-name"></a><h3>modulemd_module_stream_is_autogen_module_name ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_stream_is_autogen_module_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-is-autogen-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A pointer to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-is-autogen-module-name.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>self</code></em>
+has a module name that matches the format used if
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-autogen-module-name" title="modulemd_module_stream_set_autogen_module_name ()"><code class="function">modulemd_module_stream_set_autogen_module_name()</code></a> created the name.
+Otherwise FALSE.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-is-autogen-stream-name"></a><h3>modulemd_module_stream_is_autogen_stream_name ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_stream_is_autogen_stream_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-stream-is-autogen-stream-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A pointer to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-is-autogen-stream-name.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>self</code></em>
+has a stream name that matches the format used if
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-autogen-stream-name" title="modulemd_module_stream_set_autogen_stream_name ()"><code class="function">modulemd_module_stream_set_autogen_stream_name()</code></a> created the name.
+Otherwise FALSE.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-clear-autogen-module-name"></a><h3>modulemd_module_stream_clear_autogen_module_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_clear_autogen_module_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>);</pre>
+<p>Clears <em class="parameter"><code>self</code></em>
+'s module name if it matches the format used if
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-autogen-module-name" title="modulemd_module_stream_set_autogen_module_name ()"><code class="function">modulemd_module_stream_set_autogen_module_name()</code></a> created the name, else
+does nothing.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-clear-autogen-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A pointer to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-clear-autogen-stream-name"></a><h3>modulemd_module_stream_clear_autogen_stream_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_clear_autogen_stream_name
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *self</code></em>);</pre>
+<p>Clears <em class="parameter"><code>self</code></em>
+'s stream name if it matches the format used if
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html#modulemd-module-stream-set-autogen-stream-name" title="modulemd_module_stream_set_autogen_stream_name ()"><code class="function">modulemd_module_stream_set_autogen_stream_name()</code></a> created the name, else
+does nothing.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-clear-autogen-stream-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A pointer to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-upgrade-v1-to-v2"></a><h3>modulemd_module_stream_upgrade_v1_to_v2 ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+modulemd_module_stream_upgrade_v1_to_v2
+                               (<em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *from</code></em>);</pre>
+<p>Return an upgraded copy of this object. Does not modify the original.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-upgrade-v1-to-v2.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>from (in)</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an upgrade error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-stream-upgrade-v1-to-v2.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> copy of
+<em class="parameter"><code>from</code></em>
+upgraded to V2. Returns NULL and sets <em class="parameter"><code>error</code></em>
+appropriately if the
+upgrade could not be completed automatically. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>
