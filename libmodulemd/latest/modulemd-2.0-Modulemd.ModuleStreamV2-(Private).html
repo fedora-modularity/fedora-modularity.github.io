@@ -194,10 +194,16 @@ documented ways.
 <col width="150px" class="other_proto_type">
 <col class="other_proto_name">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#MODULEMD-MODULE-STREAM-V2-MAXCONTEXTLEN:CAPS" title="MODULEMD_MODULE_STREAM_V2_MAXCONTEXTLEN">MODULEMD_MODULE_STREAM_V2_MAXCONTEXTLEN</a></td>
+</tr>
+<tr>
 <td class="datatype_keyword"> </td>
 <td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2-struct" title="ModulemdModuleStreamV2">ModulemdModuleStreamV2</a></td>
-</tr></tbody>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect1">
@@ -632,6 +638,16 @@ object is still returned. </p>
 </div>
 <div class="refsect1">
 <a name="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-MODULE-STREAM-V2-MAXCONTEXTLEN:CAPS"></a><h3>MODULEMD_MODULE_STREAM_V2_MAXCONTEXTLEN</h3>
+<pre class="programlisting">#define MODULEMD_MODULE_STREAM_V2_MAXCONTEXTLEN (MMD_MAXCONTEXTLEN + 3)
+</pre>
+<p>The ModuleStream v3 specification defines the maximum lenth of the context
+field. Just before building, the v3 format is converted to v2 format.  But
+if a scratch build was requested, an underscore with a decimal number (e.g.
+"_1") is appended to the v2 context. Allow up to 99 scratch builds here.</p>
+</div>
+<hr>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV2-struct"></a><h3>ModulemdModuleStreamV2</h3>
 <pre class="programlisting">typedef struct _ModulemdModuleStreamV2 ModulemdModuleStreamV2;</pre>

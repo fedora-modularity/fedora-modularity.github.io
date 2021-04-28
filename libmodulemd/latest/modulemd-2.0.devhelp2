@@ -721,6 +721,7 @@
     <keyword type="function" name="modulemd_module_stream_v2_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-includes-nevra" since="2.9"/>
     <keyword type="function" name="modulemd_module_stream_v2_associate_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-associate-obsoletes" since="2.10"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-get-obsoletes" since="2.10"/>
+    <keyword type="macro" name="MODULEMD_MODULE_STREAM_V2_MAXCONTEXTLEN" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#MODULEMD-MODULE-STREAM-V2-MAXCONTEXTLEN:CAPS"/>
     <keyword type="struct" name="ModulemdModuleStreamV2" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2-struct"/>
     <keyword type="property" name="The “arch” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--arch"/>
     <keyword type="property" name="The “buildopts” property" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#ModulemdModuleStreamV2--buildopts"/>
