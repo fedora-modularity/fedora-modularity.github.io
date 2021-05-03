@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd Compression Helpers: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.ComponentRpm.html" title="Modulemd.ComponentRpm">
+<link rel="next" href="ModulemdDefaults.html" title="Modulemd.Defaults">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd-Compression-Helpers.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd-Compression-Helpers.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.ComponentRpm.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ModulemdDefaults.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd-Compression-Helpers.top_of_page"></a>Modulemd Compression Helpers</span></h2>
+<p>Modulemd Compression Helpers — Utility functions for working with compressed files.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers.stability-level"></a><h2>Stability Level</h2>
+<acronym title="The intention of a Stable interface is to enable arbitrary third parties to
+develop applications to these interfaces, release them, and have confidence that
+they will run on all minor releases of the product (after the one in which the
+interface was introduced, and within the same major release). Even at a major
+release, incompatible changes are expected to be rare, and to have strong
+justifications.
+"><span class="acronym">Stable</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd-Compression-Helpers.html#ModulemdCompressionTypeEnum" title="enum ModulemdCompressionTypeEnum"><span class="returnvalue">ModulemdCompressionTypeEnum</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Compression-Helpers.html#modulemd-compression-type" title="modulemd_compression_type ()">modulemd_compression_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Compression-Helpers.html#ModulemdCompressionTypeEnum" title="enum ModulemdCompressionTypeEnum">ModulemdCompressionTypeEnum</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> ModulemdCompressionTypeEnum
+</pre>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-compression-type"></a><h3>modulemd_compression_type ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd-Compression-Helpers.html#ModulemdCompressionTypeEnum" title="enum ModulemdCompressionTypeEnum"><span class="returnvalue">ModulemdCompressionTypeEnum</span></a>
+modulemd_compression_type (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-compression-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of the compression type. Valid options are:
+"gz", "gzip", "bz2", "bzip2", "xz" and "zck". </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-compression-type.returns"></a><h4>Returns</h4>
+<p> The <a class="link" href="modulemd-2.0-Modulemd-Compression-Helpers.html#ModulemdCompressionTypeEnum" title="enum ModulemdCompressionTypeEnum"><span class="type">ModulemdCompressionTypeEnum</span></a> value corresponding to the
+provided string if available or
+<a class="link" href="modulemd-2.0-Modulemd-Compression-Helpers.html#MODULEMD-COMPRESSION-TYPE-UNKNOWN-COMPRESSION:CAPS"><span class="type">MODULEMD_COMPRESSION_TYPE_UNKNOWN_COMPRESSION</span></a> if the string does not match
+a known type.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch13.html#api-index-2.8">2.8</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Compression-Helpers.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="ModulemdCompressionTypeEnum"></a><h3>enum ModulemdCompressionTypeEnum</h3>
+<div class="refsect3">
+<a name="ModulemdCompressionTypeEnum.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-DETECTION-FAILED:CAPS"></a>MODULEMD_COMPRESSION_TYPE_DETECTION_FAILED</p></td>
+<td class="enum_member_description">
+<p>Autodetection failure</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-UNKNOWN-COMPRESSION:CAPS"></a>MODULEMD_COMPRESSION_TYPE_UNKNOWN_COMPRESSION</p></td>
+<td class="enum_member_description">
+<p>Unknown compression</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-NO-COMPRESSION:CAPS"></a>MODULEMD_COMPRESSION_TYPE_NO_COMPRESSION</p></td>
+<td class="enum_member_description">
+<p>No compression</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-GZ-COMPRESSION:CAPS"></a>MODULEMD_COMPRESSION_TYPE_GZ_COMPRESSION</p></td>
+<td class="enum_member_description">
+<p>gzip compression</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-BZ2-COMPRESSION:CAPS"></a>MODULEMD_COMPRESSION_TYPE_BZ2_COMPRESSION</p></td>
+<td class="enum_member_description">
+<p>bzip2 compression</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-XZ-COMPRESSION:CAPS"></a>MODULEMD_COMPRESSION_TYPE_XZ_COMPRESSION</p></td>
+<td class="enum_member_description">
+<p>LZMA compression</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-ZCK-COMPRESSION:CAPS"></a>MODULEMD_COMPRESSION_TYPE_ZCK_COMPRESSION</p></td>
+<td class="enum_member_description">
+<p>zchunk compression</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-SENTINEL:CAPS"></a>MODULEMD_COMPRESSION_TYPE_SENTINEL</p></td>
+<td class="enum_member_description">
+<p>Enum list terminator</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch13.html#api-index-2.8">2.8</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>
