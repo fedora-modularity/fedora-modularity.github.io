@@ -447,6 +447,10 @@
     <keyword type="function" name="modulemd_module_stream_v2_remove_rpm_filter ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-remove-rpm-filter" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_clear_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-clear-rpm-filters" since="2.5"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_rpm_filters_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-rpm-filters-as-strv" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_add_demodularized_rpm ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-add-demodularized-rpm" since="2.13"/>
+    <keyword type="function" name="modulemd_module_stream_v2_remove_demodularized_rpm ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-remove-demodularized-rpm" since="2.13"/>
+    <keyword type="function" name="modulemd_module_stream_v2_clear_demodularized_rpms ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-clear-demodularized-rpms" since="2.13"/>
+    <keyword type="function" name="modulemd_module_stream_v2_get_demodularized_rpms ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-demodularized-rpms" since="2.13"/>
     <keyword type="function" name="modulemd_module_stream_v2_add_servicelevel ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-add-servicelevel" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_clear_servicelevels ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-clear-servicelevels" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_get_servicelevel_names_as_strv ()" link="modulemd-2.0-Modulemd.ModuleStreamV2.html#modulemd-module-stream-v2-get-servicelevel-names-as-strv" since="2.0"/>
@@ -509,6 +513,11 @@
     <keyword type="function" name="modulemd_packager_v3_clear_rpm_filters ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-rpm-filters" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_get_rpm_filters_as_strv ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-filters-as-strv" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-replace-rpm-filters" since="2.11"/>
+    <keyword type="function" name="modulemd_packager_v3_add_demodularized_rpm ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-demodularized-rpm" since="2.13"/>
+    <keyword type="function" name="modulemd_packager_v3_remove_demodularized_rpm ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-demodularized-rpm" since="2.13"/>
+    <keyword type="function" name="modulemd_packager_v3_clear_demodularized_rpms ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-demodularized-rpms" since="2.13"/>
+    <keyword type="function" name="modulemd_packager_v3_get_demodularized_rpms ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-demodularized-rpms" since="2.13"/>
+    <keyword type="function" name="modulemd_packager_v3_replace_demodularized_rpms ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-replace-demodularized-rpms" since="2.13"/>
     <keyword type="function" name="modulemd_packager_v3_add_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-component" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_remove_module_component ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-module-component" since="2.11"/>
     <keyword type="function" name="modulemd_packager_v3_clear_module_components ()" link="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-module-components" since="2.11"/>
@@ -717,6 +726,7 @@
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_api ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-api" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_artifacts ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-artifacts" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_rpm_filters ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-rpm-filters" since="2.0"/>
+    <keyword type="function" name="modulemd_module_stream_v2_replace_demodularized_rpms ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-demodularized-rpms" since="2.13"/>
     <keyword type="function" name="modulemd_module_stream_v2_replace_dependencies ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-dependencies" since="2.0"/>
     <keyword type="function" name="modulemd_module_stream_v2_includes_nevra ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-includes-nevra" since="2.9"/>
     <keyword type="function" name="modulemd_module_stream_v2_associate_obsoletes ()" link="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-associate-obsoletes" since="2.10"/>

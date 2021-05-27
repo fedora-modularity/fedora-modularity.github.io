@@ -110,6 +110,14 @@ documented ways.
 <span class="returnvalue">void</span>
 </td>
 <td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-demodularized-rpms" title="modulemd_module_stream_v2_replace_demodularized_rpms ()">modulemd_module_stream_v2_replace_demodularized_rpms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
 <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html#modulemd-module-stream-v2-replace-dependencies" title="modulemd_module_stream_v2_replace_dependencies ()">modulemd_module_stream_v2_replace_dependencies</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
@@ -496,6 +504,41 @@ module stream. </p></td>
 </table></div>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-stream-v2-replace-demodularized-rpms"></a><h3>modulemd_module_stream_v2_replace_demodularized_rpms ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_stream_v2_replace_demodularized_rpms
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
+<p>Any existing demodularized binary RPM package names associated with module
+stream <em class="parameter"><code>self</code></em>
+ are removed and replaced by <em class="parameter"><code>set</code></em>
+.</p>
+<div class="refsect3">
+<a name="modulemd-module-stream-v2-replace-demodularized-rpms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> set of names of binary RPM packages to demodularize. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.13</p>
 </div>
 <hr>
 <div class="refsect2">
