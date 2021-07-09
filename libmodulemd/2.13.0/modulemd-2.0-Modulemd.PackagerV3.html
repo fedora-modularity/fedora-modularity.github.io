@@ -1,0 +1,2281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.PackagerV3: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.ModuleStreamV2.html" title="Modulemd.ModuleStreamV2">
+<link rel="next" href="modulemd-2.0-Modulemd.Profile.html" title="Modulemd.Profile">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.PackagerV3.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.PackagerV3.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.ModuleStreamV2.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.Profile.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.PackagerV3"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.PackagerV3.top_of_page"></a>Modulemd.PackagerV3</span></h2>
+<p>Modulemd.PackagerV3 — Internal representation of the modulemd-packager v3
+format.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.PackagerV3.stability-level"></a><h2>Stability Level</h2>
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.PackagerV3.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="returnvalue">ModulemdPackagerV3</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-new" title="modulemd_packager_v3_new ()">modulemd_packager_v3_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="returnvalue">ModulemdPackagerV3</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-copy" title="modulemd_packager_v3_copy ()">modulemd_packager_v3_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-module-name" title="modulemd_packager_v3_set_module_name ()">modulemd_packager_v3_set_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-name" title="modulemd_packager_v3_get_module_name ()">modulemd_packager_v3_get_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-stream-name" title="modulemd_packager_v3_set_stream_name ()">modulemd_packager_v3_set_stream_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-stream-name" title="modulemd_packager_v3_get_stream_name ()">modulemd_packager_v3_get_stream_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-summary" title="modulemd_packager_v3_set_summary ()">modulemd_packager_v3_set_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-summary" title="modulemd_packager_v3_get_summary ()">modulemd_packager_v3_get_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-description" title="modulemd_packager_v3_set_description ()">modulemd_packager_v3_set_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-description" title="modulemd_packager_v3_get_description ()">modulemd_packager_v3_get_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-module-license" title="modulemd_packager_v3_add_module_license ()">modulemd_packager_v3_add_module_license</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-module-license" title="modulemd_packager_v3_remove_module_license ()">modulemd_packager_v3_remove_module_license</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-module-licenses" title="modulemd_packager_v3_clear_module_licenses ()">modulemd_packager_v3_clear_module_licenses</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-licenses-as-strv" title="modulemd_packager_v3_get_module_licenses_as_strv ()">modulemd_packager_v3_get_module_licenses_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-xmd" title="modulemd_packager_v3_set_xmd ()">modulemd_packager_v3_set_xmd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-xmd" title="modulemd_packager_v3_get_xmd ()">modulemd_packager_v3_get_xmd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-mdversion" title="modulemd_packager_v3_get_mdversion ()">modulemd_packager_v3_get_mdversion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-build-config" title="modulemd_packager_v3_add_build_config ()">modulemd_packager_v3_add_build_config</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-build-configs" title="modulemd_packager_v3_clear_build_configs ()">modulemd_packager_v3_clear_build_configs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-build-config-contexts-as-strv" title="modulemd_packager_v3_get_build_config_contexts_as_strv ()">modulemd_packager_v3_get_build_config_contexts_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-build-config" title="modulemd_packager_v3_get_build_config ()">modulemd_packager_v3_get_build_config</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-community" title="modulemd_packager_v3_set_community ()">modulemd_packager_v3_set_community</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-community" title="modulemd_packager_v3_get_community ()">modulemd_packager_v3_get_community</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-documentation" title="modulemd_packager_v3_set_documentation ()">modulemd_packager_v3_set_documentation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-documentation" title="modulemd_packager_v3_get_documentation ()">modulemd_packager_v3_get_documentation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-set-tracker" title="modulemd_packager_v3_set_tracker ()">modulemd_packager_v3_set_tracker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-tracker" title="modulemd_packager_v3_get_tracker ()">modulemd_packager_v3_get_tracker</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-profile" title="modulemd_packager_v3_add_profile ()">modulemd_packager_v3_add_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-profiles" title="modulemd_packager_v3_clear_profiles ()">modulemd_packager_v3_clear_profiles</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-profile-names-as-strv" title="modulemd_packager_v3_get_profile_names_as_strv ()">modulemd_packager_v3_get_profile_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-profile" title="modulemd_packager_v3_get_profile ()">modulemd_packager_v3_get_profile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-rpm-api" title="modulemd_packager_v3_add_rpm_api ()">modulemd_packager_v3_add_rpm_api</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-rpm-api" title="modulemd_packager_v3_remove_rpm_api ()">modulemd_packager_v3_remove_rpm_api</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-rpm-api" title="modulemd_packager_v3_clear_rpm_api ()">modulemd_packager_v3_clear_rpm_api</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-replace-rpm-api" title="modulemd_packager_v3_replace_rpm_api ()">modulemd_packager_v3_replace_rpm_api</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-api-as-strv" title="modulemd_packager_v3_get_rpm_api_as_strv ()">modulemd_packager_v3_get_rpm_api_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-rpm-filter" title="modulemd_packager_v3_add_rpm_filter ()">modulemd_packager_v3_add_rpm_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-rpm-filter" title="modulemd_packager_v3_remove_rpm_filter ()">modulemd_packager_v3_remove_rpm_filter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-rpm-filters" title="modulemd_packager_v3_clear_rpm_filters ()">modulemd_packager_v3_clear_rpm_filters</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-filters-as-strv" title="modulemd_packager_v3_get_rpm_filters_as_strv ()">modulemd_packager_v3_get_rpm_filters_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-replace-rpm-filters" title="modulemd_packager_v3_replace_rpm_filters ()">modulemd_packager_v3_replace_rpm_filters</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-demodularized-rpm" title="modulemd_packager_v3_add_demodularized_rpm ()">modulemd_packager_v3_add_demodularized_rpm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-demodularized-rpm" title="modulemd_packager_v3_remove_demodularized_rpm ()">modulemd_packager_v3_remove_demodularized_rpm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-demodularized-rpms" title="modulemd_packager_v3_clear_demodularized_rpms ()">modulemd_packager_v3_clear_demodularized_rpms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-demodularized-rpms" title="modulemd_packager_v3_get_demodularized_rpms ()">modulemd_packager_v3_get_demodularized_rpms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-replace-demodularized-rpms" title="modulemd_packager_v3_replace_demodularized_rpms ()">modulemd_packager_v3_replace_demodularized_rpms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-add-component" title="modulemd_packager_v3_add_component ()">modulemd_packager_v3_add_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-module-component" title="modulemd_packager_v3_remove_module_component ()">modulemd_packager_v3_remove_module_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-module-components" title="modulemd_packager_v3_clear_module_components ()">modulemd_packager_v3_clear_module_components</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-remove-rpm-component" title="modulemd_packager_v3_remove_rpm_component ()">modulemd_packager_v3_remove_rpm_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-clear-rpm-components" title="modulemd_packager_v3_clear_rpm_components ()">modulemd_packager_v3_clear_rpm_components</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-component-names-as-strv" title="modulemd_packager_v3_get_module_component_names_as_strv ()">modulemd_packager_v3_get_module_component_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-component-names-as-strv" title="modulemd_packager_v3_get_rpm_component_names_as_strv ()">modulemd_packager_v3_get_rpm_component_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule"><span class="returnvalue">ModulemdComponentModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-module-component" title="modulemd_packager_v3_get_module_component ()">modulemd_packager_v3_get_module_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm"><span class="returnvalue">ModulemdComponentRpm</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-get-rpm-component" title="modulemd_packager_v3_get_rpm_component ()">modulemd_packager_v3_get_rpm_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#modulemd-packager-v3-convert-to-index" title="modulemd_packager_v3_convert_to_index ()">modulemd_packager_v3_convert_to_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ModulemdPackagerV3"></a><div class="refsect1">
+<a name="modulemd-2.0-Modulemd.PackagerV3.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#MODULEMD-TYPE-PACKAGER-V3:CAPS" title="MODULEMD_TYPE_PACKAGER_V3">MODULEMD_TYPE_PACKAGER_V3</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#MMD-PACKAGER-DEFAULT-MODULE-LICENSE:CAPS" title="MMD_PACKAGER_DEFAULT_MODULE_LICENSE">MMD_PACKAGER_DEFAULT_MODULE_LICENSE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerVersionEnum" title="enum ModulemdPackagerVersionEnum">ModulemdPackagerVersionEnum</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3-struct" title="ModulemdPackagerV3">ModulemdPackagerV3</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.PackagerV3.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> ModulemdPackagerVersionEnum
+    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ModulemdPackagerV3
+</pre>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.PackagerV3.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.PackagerV3.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-packager-v3-new"></a><h3>modulemd_packager_v3_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="returnvalue">ModulemdPackagerV3</span></a> *
+modulemd_packager_v3_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. This
+object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-copy"></a><h3>modulemd_packager_v3_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="returnvalue">ModulemdPackagerV3</span></a> *
+modulemd_packager_v3_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated deep-copy of this
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-module-name"></a><h3>modulemd_packager_v3_set_module_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_module_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Sets the module name that this <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object references.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-module-name"></a><h3>modulemd_packager_v3_get_module_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_packager_v3_get_module_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-name.returns"></a><h4>Returns</h4>
+<p>The module name. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-stream-name"></a><h3>modulemd_packager_v3_set_stream_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_stream_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<p>Sets the stream name that this <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object references.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-stream-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-stream-name"></a><h3>modulemd_packager_v3_get_stream_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_packager_v3_get_stream_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-stream-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-stream-name.returns"></a><h4>Returns</h4>
+<p>The module stream name. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-summary"></a><h3>modulemd_packager_v3_set_summary ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_summary (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *summary</code></em>);</pre>
+<p>Sets the module's short description.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-summary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>summary</p></td>
+<td class="parameter_description"><p>A short description of the module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-summary"></a><h3>modulemd_packager_v3_get_summary ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_packager_v3_get_summary (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-summary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-summary.returns"></a><h4>Returns</h4>
+<p> The short description of the module.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-description"></a><h3>modulemd_packager_v3_set_description ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_description (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>);</pre>
+<p>Sets the module's long description.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>A complete description of the module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-description"></a><h3>modulemd_packager_v3_get_description ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_packager_v3_get_description (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-description.returns"></a><h4>Returns</h4>
+<p> The long description of the module.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-add-module-license"></a><h3>modulemd_packager_v3_add_module_license ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_add_module_license
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *license</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-add-module-license.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>license</p></td>
+<td class="parameter_description"><p>A license under which this module stream is distributed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-remove-module-license"></a><h3>modulemd_packager_v3_remove_module_license ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_remove_module_license
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *license</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-remove-module-license.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>license</p></td>
+<td class="parameter_description"><p>A license to remove from the list. Has no effect if the
+license is not present. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-module-licenses"></a><h3>modulemd_packager_v3_clear_module_licenses ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_module_licenses
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Remove all module licenses from <em class="parameter"><code>self</code></em>
+</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-module-licenses.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-module-licenses-as-strv"></a><h3>modulemd_packager_v3_get_module_licenses_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_module_licenses_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-licenses-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-licenses-as-strv.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> of module licenses associated with this
+module stream. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-xmd"></a><h3>modulemd_packager_v3_set_xmd ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_xmd (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> *xmd</code></em>);</pre>
+<p>Sets the eXtensible MetaData (XMD) for this module. XMD is arbitrary YAML
+data that will be set and returned as-is (with the exception that the
+ordering of mapping keys is not defined). Useful for carrying private data.</p>
+<p>This function assumes ownership of the XMD <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> and thus should not be
+freed by the caller.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-xmd.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xmd</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> representing arbitrary YAML. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-xmd"></a><h3>modulemd_packager_v3_get_xmd ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+modulemd_packager_v3_get_xmd (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-xmd.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-xmd.returns"></a><h4>Returns</h4>
+<p>The extensible metadata block as a <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-mdversion"></a><h3>modulemd_packager_v3_get_mdversion ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+modulemd_packager_v3_get_mdversion (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-mdversion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-mdversion.returns"></a><h4>Returns</h4>
+<p> The metadata version of this <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-add-build-config"></a><h3>modulemd_packager_v3_add_build_config ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_add_build_config (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> *buildconfig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-add-build-config.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buildconfig</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> to include. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-build-configs"></a><h3>modulemd_packager_v3_clear_build_configs ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_build_configs
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Remove all added <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> objects from <em class="parameter"><code>self</code></em>
+</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-build-configs.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-build-config-contexts-as-strv"></a><h3>modulemd_packager_v3_get_build_config_contexts_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_build_config_contexts_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-build-config-contexts-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-build-config-contexts-as-strv.returns"></a><h4>Returns</h4>
+<p>A list of contexts associated with the build
+configurations. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-build-config"></a><h3>modulemd_packager_v3_get_build_config ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="returnvalue">ModulemdBuildConfig</span></a> *
+modulemd_packager_v3_get_build_config (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-build-config.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> to retrieve
+from <em class="parameter"><code>self</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-build-config.returns"></a><h4>Returns</h4>
+<p>A <a class="link" href="modulemd-2.0-Modulemd.BuildConfig.html#ModulemdBuildConfig"><span class="type">ModulemdBuildConfig</span></a> with the provided <em class="parameter"><code>context</code></em>
+or NULL if it was not present. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-community"></a><h3>modulemd_packager_v3_set_community ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_community (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *community</code></em>);</pre>
+<p>Set the module community website address.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-community.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>community</p></td>
+<td class="parameter_description"><p>The upstream community website for this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-community"></a><h3>modulemd_packager_v3_get_community ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_packager_v3_get_community (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-community.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-community.returns"></a><h4>Returns</h4>
+<p>The module community website address. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-documentation"></a><h3>modulemd_packager_v3_set_documentation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_documentation
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *documentation</code></em>);</pre>
+<p>Set the module documentation website address.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-documentation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>documentation</p></td>
+<td class="parameter_description"><p>The upstream documentation website for this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-documentation"></a><h3>modulemd_packager_v3_get_documentation ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_packager_v3_get_documentation
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-documentation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-documentation.returns"></a><h4>Returns</h4>
+<p>The module documentation website address. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-set-tracker"></a><h3>modulemd_packager_v3_set_tracker ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_set_tracker (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tracker</code></em>);</pre>
+<p>Set the module bug tracker website address.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-set-tracker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tracker</p></td>
+<td class="parameter_description"><p>The upstream bug tracker website for this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-tracker"></a><h3>modulemd_packager_v3_get_tracker ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_packager_v3_get_tracker (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-tracker.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-tracker.returns"></a><h4>Returns</h4>
+<p>The module bug tracker website address. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-add-profile"></a><h3>modulemd_packager_v3_add_profile ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_add_profile (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                  <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> *profile</code></em>);</pre>
+<p>Adds a <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> to this <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-add-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>The new <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> to add.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-profiles"></a><h3>modulemd_packager_v3_clear_profiles ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_profiles (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Removes all <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> objects from this <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-profiles.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-profile-names-as-strv"></a><h3>modulemd_packager_v3_get_profile_names_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_profile_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-profile-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-profile-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of profile names associated
+with this <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-profile"></a><h3>modulemd_packager_v3_get_profile ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+modulemd_packager_v3_get_profile (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *profile_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-profile.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile_name</p></td>
+<td class="parameter_description"><p>The name of a profile to retrieve. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-profile.returns"></a><h4>Returns</h4>
+<p>The requested profile definition if present in the
+<a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. NULL otherwise. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-add-rpm-api"></a><h3>modulemd_packager_v3_add_rpm_api ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_add_rpm_api (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-add-rpm-api.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>The name of a binary RPM present in this module that is
+considered stable public API. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-remove-rpm-api"></a><h3>modulemd_packager_v3_remove_rpm_api ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_remove_rpm_api (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-remove-rpm-api.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>A binary RPM name to remove from the list of stable public API. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-rpm-api"></a><h3>modulemd_packager_v3_clear_rpm_api ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_rpm_api (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Remove all RPMs from the list of stable public API.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-rpm-api.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-replace-rpm-api"></a><h3>modulemd_packager_v3_replace_rpm_api ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_replace_rpm_api (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
+<p>Any existing API RPMs associated with module stream <em class="parameter"><code>self</code></em>
+ are removed and
+replaced by <em class="parameter"><code>set</code></em>
+.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-replace-rpm-api.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> set of binary RPMs present in this module stream that is
+considered stable public API. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-rpm-api-as-strv"></a><h3>modulemd_packager_v3_get_rpm_api_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_rpm_api_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-api-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-api-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of binary RPM names that
+form the public API of this module stream. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-add-rpm-filter"></a><h3>modulemd_packager_v3_add_rpm_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_add_rpm_filter (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-add-rpm-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>The name of a binary RPM to filter out of this module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-remove-rpm-filter"></a><h3>modulemd_packager_v3_remove_rpm_filter ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_remove_rpm_filter
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-remove-rpm-filter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>A binary RPM name to remove from the filter list. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-rpm-filters"></a><h3>modulemd_packager_v3_clear_rpm_filters ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_rpm_filters
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Remove all RPMs from the filter list.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-rpm-filters.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-rpm-filters-as-strv"></a><h3>modulemd_packager_v3_get_rpm_filters_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_rpm_filters_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-filters-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-filters-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of binary RPM names that
+are filtered out of this module stream. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-replace-rpm-filters"></a><h3>modulemd_packager_v3_replace_rpm_filters ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_replace_rpm_filters
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
+<p>Any existing filtered binary RPM names associated with module stream <em class="parameter"><code>self</code></em>
+
+are removed and replaced by <em class="parameter"><code>set</code></em>
+.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-replace-rpm-filters.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> set of names of binary RPMs to filter out of this
+module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-add-demodularized-rpm"></a><h3>modulemd_packager_v3_add_demodularized_rpm ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_add_demodularized_rpm
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<p>Add a binary package name to a list of demodularized packages.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-add-demodularized-rpm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>A name of a binary RPM package to become non-modular. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.13</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-remove-demodularized-rpm"></a><h3>modulemd_packager_v3_remove_demodularized_rpm ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_remove_demodularized_rpm
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<p>Remove a binary package name from a list of demodularized packages.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-remove-demodularized-rpm.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>A binary RPM package name to remove from a demodularized list. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.13</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-demodularized-rpms"></a><h3>modulemd_packager_v3_clear_demodularized_rpms ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_demodularized_rpms
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Remove all RPM packages from a demodularized list of the object.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-demodularized-rpms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.13</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-demodularized-rpms"></a><h3>modulemd_packager_v3_get_demodularized_rpms ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_demodularized_rpms
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-demodularized-rpms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-demodularized-rpms.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of binary RPM package names
+that became non-modular. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: 2.13</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-replace-demodularized-rpms"></a><h3>modulemd_packager_v3_replace_demodularized_rpms ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_replace_demodularized_rpms
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *set</code></em>);</pre>
+<p>Any existing demodularized binary RPM package names associated with module
+stream <em class="parameter"><code>self</code></em>
+ are removed and replaced by <em class="parameter"><code>set</code></em>
+.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-replace-demodularized-rpms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>set</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> set of names of binary RPM packages to demodularize. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: 2.13</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-add-component"></a><h3>modulemd_packager_v3_add_component ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_add_component (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> *component</code></em>);</pre>
+<p>Add a component definition to the module.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-add-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> to be added to this
+module stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-remove-module-component"></a><h3>modulemd_packager_v3_remove_module_component ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_remove_module_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<p>Remove a component from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-remove-module-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to remove from the module
+stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-module-components"></a><h3>modulemd_packager_v3_clear_module_components ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_module_components
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Remove all module components from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-module-components.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-remove-rpm-component"></a><h3>modulemd_packager_v3_remove_rpm_component ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_remove_rpm_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<p>Remove a component from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-remove-rpm-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to remove from the module
+stream. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-clear-rpm-components"></a><h3>modulemd_packager_v3_clear_rpm_components ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_packager_v3_clear_rpm_components
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p>Remove all RPM components from this module stream.</p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-clear-rpm-components.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-module-component-names-as-strv"></a><h3>modulemd_packager_v3_get_module_component_names_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_module_component_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_packager_v3_get_module_component_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-component-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-component-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module component names
+included in this stream. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-rpm-component-names-as-strv"></a><h3>modulemd_packager_v3_get_rpm_component_names_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_packager_v3_get_rpm_component_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_packager_v3_get_rpm_component_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-component-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-component-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of RPM component names
+included in this stream. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-module-component"></a><h3>modulemd_packager_v3_get_module_component ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ComponentModule.html#ModulemdComponentModule"><span class="returnvalue">ModulemdComponentModule</span></a> *
+modulemd_packager_v3_get_module_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to retrieve. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-module-component.returns"></a><h4>Returns</h4>
+<p>The module component matching <em class="parameter"><code>component_name</code></em>
+if
+it exists, else NULL. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-get-rpm-component"></a><h3>modulemd_packager_v3_get_rpm_component ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm"><span class="returnvalue">ModulemdComponentRpm</span></a> *
+modulemd_packager_v3_get_rpm_component
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *component_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-component.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_name</p></td>
+<td class="parameter_description"><p>The name of the component to retrieve. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-get-rpm-component.returns"></a><h4>Returns</h4>
+<p>The RPM component matching <em class="parameter"><code>component_name</code></em>
+if it
+exists, else NULL. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-packager-v3-convert-to-index"></a><h3>modulemd_packager_v3_convert_to_index ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+modulemd_packager_v3_convert_to_index (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-packager-v3-convert-to-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a conversion error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-packager-v3-convert-to-index.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object
+containing a set of one or more <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects and possibly
+a <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object corresponding to the <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> object
+<em class="parameter"><code>self</code></em>
+. NULL if there was an error doing the mapping and sets <em class="parameter"><code>error</code></em>
+appropriately. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.PackagerV3.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-PACKAGER-V3:CAPS"></a><h3>MODULEMD_TYPE_PACKAGER_V3</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_PACKAGER_V3 (modulemd_packager_v3_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MMD-PACKAGER-DEFAULT-MODULE-LICENSE:CAPS"></a><h3>MMD_PACKAGER_DEFAULT_MODULE_LICENSE</h3>
+<pre class="programlisting">#define MMD_PACKAGER_DEFAULT_MODULE_LICENSE "MIT"
+</pre>
+<p>The <a class="link" href="modulemd-2.0-Modulemd.PackagerV3.html#ModulemdPackagerV3"><span class="type">ModulemdPackagerV3</span></a> default module metadata license.</p>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdPackagerVersionEnum"></a><h3>enum ModulemdPackagerVersionEnum</h3>
+<div class="refsect3">
+<a name="ModulemdPackagerVersionEnum.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-ERROR:CAPS"></a>MD_PACKAGER_VERSION_ERROR</p></td>
+<td class="enum_member_description">
+<p>Represents an error handling module stream
+version.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-UNSET:CAPS"></a>MD_PACKAGER_VERSION_UNSET</p></td>
+<td class="enum_member_description">
+<p>Represents an unset module stream version.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-TWO:CAPS"></a>MD_PACKAGER_VERSION_TWO</p></td>
+<td class="enum_member_description">
+<p>Represents v2 of the ModulePackager
+metadata format. Since: 2.11</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-THREE:CAPS"></a>MD_PACKAGER_VERSION_THREE</p></td>
+<td class="enum_member_description">
+<p>Represents v3 of the ModulePackager
+metadata format. Since: 2.11</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MD-PACKAGER-VERSION-LATEST:CAPS"></a>MD_PACKAGER_VERSION_LATEST</p></td>
+<td class="enum_member_description">
+<p>Represents the highest-supported version of
+the ModulePackager metadata format.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdPackagerV3-struct"></a><h3>ModulemdPackagerV3</h3>
+<pre class="programlisting">typedef struct _ModulemdPackagerV3 ModulemdPackagerV3;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>

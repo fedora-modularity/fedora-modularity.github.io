@@ -1,0 +1,955 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Module: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd-Errors.html" title="Modulemd Errors">
+<link rel="next" href="modulemd-2.0-Modulemd.ModuleIndex.html" title="Modulemd.ModuleIndex">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Module.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Module.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Module.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd-Errors.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.ModuleIndex.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.Module"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Module.top_of_page"></a>Modulemd.Module</span></h2>
+<p>Modulemd.Module — Collects all information about a module: all of its streams, defaults, etc.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.stability-level"></a><h2>Stability Level</h2>
+<acronym title="The intention of a Stable interface is to enable arbitrary third parties to
+develop applications to these interfaces, release them, and have confidence that
+they will run on all minor releases of the product (after the one in which the
+interface was introduced, and within the same major release). Even at a major
+release, incompatible changes are expected to be rare, and to have strong
+justifications.
+"><span class="acronym">Stable</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-names-as-strv" title="modulemd_module_get_stream_names_as_strv ()">modulemd_module_get_stream_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-copy" title="modulemd_module_copy ()">modulemd_module_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-validate" title="modulemd_module_validate ()">modulemd_module_validate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-module-name" title="modulemd_module_get_module_name ()">modulemd_module_get_module_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-all-streams" title="modulemd_module_get_all_streams ()">modulemd_module_get_all_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-streams-by-stream-name-as-list" title="modulemd_module_get_streams_by_stream_name_as_list ()">modulemd_module_get_streams_by_stream_name_as_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVC" title="modulemd_module_get_stream_by_NSVC ()">modulemd_module_get_stream_by_NSVC</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams" title="modulemd_module_search_streams ()">modulemd_module_search_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams-by-glob" title="modulemd_module_search_streams_by_glob ()">modulemd_module_search_streams_by_glob</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-search-streams-by-nsvca-glob" title="modulemd_module_search_streams_by_nsvca_glob ()">modulemd_module_search_streams_by_nsvca_glob</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVCA" title="modulemd_module_get_stream_by_NSVCA ()">modulemd_module_get_stream_by_NSVCA</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-NSVCA" title="modulemd_module_remove_streams_by_NSVCA ()">modulemd_module_remove_streams_by_NSVCA</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-remove-streams-by-name" title="modulemd_module_remove_streams_by_name()">modulemd_module_remove_streams_by_name</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-defaults" title="modulemd_module_get_defaults ()">modulemd_module_get_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="returnvalue">ModulemdTranslation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-translation" title="modulemd_module_get_translation ()">modulemd_module_get_translation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-obsoletes" title="modulemd_module_get_obsoletes ()">modulemd_module_get_obsoletes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="returnvalue">ModulemdObsoletes</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-newest-active-obsoletes" title="modulemd_module_get_newest_active_obsoletes ()">modulemd_module_get_newest_active_obsoletes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule--module-name" title="The “module-name” property">module-name</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="ModulemdModule"></a><div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Module.html#MODULEMD-TYPE-MODULE:CAPS" title="MODULEMD_TYPE_MODULE">MODULEMD_TYPE_MODULE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule-struct" title="ModulemdModule">ModulemdModule</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ModulemdModule
+</pre>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-module-get-stream-names-as-strv"></a><h3>modulemd_module_get_stream_names_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_get_stream_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_module_get_stream_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-get-stream-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-stream-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of stream names in this
+module. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch11.html#api-index-2.6">2.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-copy"></a><h3>modulemd_module_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+modulemd_module_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-copy.returns"></a><h4>Returns</h4>
+<p>A deep copy of this <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-validate"></a><h3>modulemd_module_validate ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_validate (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-validate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the object failed validation.
+NULL if the validation passed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-validate.returns"></a><h4>Returns</h4>
+<p> TRUE if validation passed, FALSE and sets <em class="parameter"><code>error</code></em>
+if failed.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-module-name"></a><h3>modulemd_module_get_module_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_get_module_name (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-module-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-module-name.returns"></a><h4>Returns</h4>
+<p>The module name. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-all-streams"></a><h3>modulemd_module_get_all_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_get_all_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-all-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-all-streams.returns"></a><h4>Returns</h4>
+<p>A list of all available stream objects associated with
+this module. There may be multiple streams with the same name and different version and
+context. The order of items in this list is not guaranteed. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-streams-by-stream-name-as-list"></a><h3>modulemd_module_get_streams_by_stream_name_as_list ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_get_streams_by_stream_name_as_list
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_module_get_streams_by_stream_name]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-get-streams-by-stream-name-as-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-streams-by-stream-name-as-list.returns"></a><h4>Returns</h4>
+<p>A list of all available stream objects associated with a
+particular stream name, sorted highest to lowest by the version. The same version may have
+more than one associated context. </p>
+<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-stream-by-NSVC"></a><h3>modulemd_module_get_stream_by_NSVC ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+modulemd_module_get_stream_by_NSVC (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> version</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">modulemd_module_get_stream_by_NSVC</code> has been deprecated since version 2.2 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="modulemd-2.0-Modulemd.Module.html#modulemd-module-get-stream-by-NSVCA" title="modulemd_module_get_stream_by_NSVCA ()"><code class="function">modulemd_module_get_stream_by_NSVCA()</code></a> instead.</p>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-stream-by-NSVC.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-stream-by-NSVC.returns"></a><h4>Returns</h4>
+<p>The requested stream object or NULL if no match was found. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-search-streams"></a><h3>modulemd_module_search_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_search_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> version</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-search-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the stream to retrieve. If set to zero,
+the version is not included in the search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the stream to retrieve. If NULL, the
+context is not included in the search. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>The processor architecture of the stream to retrieve. If
+NULL, the architecture is not included in the search. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-search-streams.returns"></a><h4>Returns</h4>
+<p>The list
+of stream objects matching the requested parameters. This function cannot
+fail, but it may return a zero-length list if no matches were found. The
+returned streams will be in a predictable order, sorted first by stream
+name, then by version (highest to lowest), then by context and finally by
+architecture. </p>
+<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-search-streams-by-glob"></a><h3>modulemd_module_search_streams_by_glob ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_search_streams_by_glob
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *version</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<p>All arguments to this method will be compared using
+<a class="ulink" href="https://www.mankier.com/3/fnmatch" target="_top">fnmatch(3)</a>.</p>
+<div class="refsect3">
+<a name="modulemd-module-search-streams-by-glob.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve. If NULL, will
+search all streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the stream to retrieve. If NULL, will
+search all versions. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the stream to retrieve. If NULL, will
+search all contexts. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>The processor architecture of the stream to retrieve. If
+NULL, the architecture is not included in the search. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-search-streams-by-glob.returns"></a><h4>Returns</h4>
+<p>The list
+of stream objects matching all of the requested parameters. This function
+cannot fail, but it may return a zero-length list if no matches were found.
+The returned streams will be in a predictable order, sorted first by module
+name, then stream name, then by version (highest first), then by context
+and finally by architecture. </p>
+<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-search-streams-by-nsvca-glob"></a><h3>modulemd_module_search_streams_by_nsvca_glob ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_search_streams_by_nsvca_glob
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nsvca_pattern</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-search-streams-by-nsvca-glob.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsvca_pattern</p></td>
+<td class="parameter_description"><p>A <a class="ulink" href="https://www.mankier.com/3/glob" target="_top">glob</a>
+pattern to match against the NSVCA strings of the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>
+objects in this module. If NULL, this will match all NSVCAs. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-search-streams-by-nsvca-glob.returns"></a><h4>Returns</h4>
+<p>An array
+of <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects whose NSVCA string matches the provided
+pattern. This function cannot fail, but may return an array of zero entries
+if the pattern did not match any streams. The returned streams will be in a
+predictable order, sorted first by module name, then stream name, then by
+version (highest first), then by context and finally by architecture. </p>
+<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-stream-by-NSVCA"></a><h3>modulemd_module_get_stream_by_NSVCA ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="returnvalue">ModulemdModuleStream</span></a> *
+modulemd_module_get_stream_by_NSVCA (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> version</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-stream-by-NSVCA.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the stream to retrieve. If set to zero, the version
+is not included in the search.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the stream to retrieve. If NULL, the
+context is not included in the search. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>The processor architecture of the stream to retrieve. If
+NULL, the architecture is not included in the search. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> indicating the reason this function failed to
+retrieve exactly one <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-stream-by-NSVCA.returns"></a><h4>Returns</h4>
+<p>The requested stream object. NULL and sets <em class="parameter"><code>error</code></em>
+appropriately if the provided information is not sufficient to return
+exactly one <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> result. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-remove-streams-by-NSVCA"></a><h3>modulemd_module_remove_streams_by_NSVCA ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_remove_streams_by_NSVCA
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> version</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<p>Remove one or more <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects from this <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>
+that match the provided parameters.</p>
+<div class="refsect3">
+<a name="modulemd-module-remove-streams-by-NSVCA.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to remove. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL must not be passed as the value in, out, in-out; or as a return value."><span class="acronym">not nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the stream to remove. If set to zero, matches all
+versions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the stream to remove. If NULL, matches
+all stream contexts. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>The processor architecture of the stream to remove. If
+NULL, matches all architectures. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-remove-streams-by-name"></a><h3>modulemd_module_remove_streams_by_name()</h3>
+<pre class="programlisting">#define             modulemd_module_remove_streams_by_name(self, stream_name)</pre>
+<p>Remove one or more <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects from this <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>
+that match the provided stream name.</p>
+<div class="refsect3">
+<a name="modulemd-module-remove-streams-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to remove. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL must not be passed as the value in, out, in-out; or as a return value."><span class="acronym">not nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-defaults"></a><h3>modulemd_module_get_defaults ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="returnvalue">ModulemdDefaults</span></a> *
+modulemd_module_get_defaults (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-defaults.returns"></a><h4>Returns</h4>
+<p>The defaults of this module. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-translation"></a><h3>modulemd_module_get_translation ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="returnvalue">ModulemdTranslation</span></a> *
+modulemd_module_get_translation (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-translation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The stream to look up translations for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-translation.returns"></a><h4>Returns</h4>
+<p>The set of translations attached to streams. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch13.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-obsoletes"></a><h3>modulemd_module_get_obsoletes ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_get_obsoletes (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-obsoletes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-obsoletes.returns"></a><h4>Returns</h4>
+<p>A list of all obsoletes attached
+to this module. These are pointers to the internal memory objects and must not be modified or freed. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdObsoletes]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-newest-active-obsoletes"></a><h3>modulemd_module_get_newest_active_obsoletes ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="returnvalue">ModulemdObsoletes</span></a> *
+modulemd_module_get_newest_active_obsoletes
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-newest-active-obsoletes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The stream to look up obsoletes for. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The stream context to look up obsoletes for. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-newest-active-obsoletes.returns"></a><h4>Returns</h4>
+<p>The newest active obsoletes attached to this module with
+specified stream and context (when eol_date is not set or it already occured
+the obsoletes is active). If no context is passed it matches obsoletes without context. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-MODULE:CAPS"></a><h3>MODULEMD_TYPE_MODULE</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_MODULE (modulemd_module_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdModule-struct"></a><h3>ModulemdModule</h3>
+<pre class="programlisting">typedef struct _ModulemdModule ModulemdModule;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ModulemdModule--module-name"></a><h3>The <code class="literal">“module-name”</code> property</h3>
+<pre class="programlisting">  “module-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The name of this module.</p>
+<p>Owner: ModulemdModule</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>
