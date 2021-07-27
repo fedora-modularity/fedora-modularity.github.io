@@ -245,13 +245,19 @@ specification for a full list of information that can be retrieved.</p>
 3
 4
 5
-6</pre></td>
+6
+7
+8
+9</pre></td>
         <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModule</span> <span class="o">*</span><span class="n">module</span> <span class="o">=</span>
   <span class="n">modulemd_module_index_get_module</span> <span class="p">(</span><span class="n">merged_index</span><span class="p">,</span> <span class="s">&quot;modulename&quot;</span><span class="p">);</span>
 <span class="n">ModulemdDefaults</span> <span class="o">*</span><span class="n">defaults</span> <span class="o">=</span> <span class="n">modulemd_module_get_defaults</span> <span class="p">(</span><span class="n">module</span><span class="p">);</span>
-<span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Default stream for modulename is %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
-        <span class="n">modulemd_defaults_v1_get_default_stream</span> <span class="p">(</span>
-          <span class="n">MODULEMD_DEFAULTS_V1</span> <span class="p">(</span><span class="n">defaults</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">));</span></pre></td>
+<span class="k">if</span> <span class="p">(</span><span class="n">defaults</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">printf</span> <span class="p">(</span><span class="s">&quot;Default stream for modulename is %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
+            <span class="n">modulemd_defaults_v1_get_default_stream</span> <span class="p">(</span>
+              <span class="n">MODULEMD_DEFAULTS_V1</span> <span class="p">(</span><span class="n">defaults</span><span class="p">),</span> <span class="nb">NULL</span><span class="p">));</span>
+  <span class="p">}</span></pre></td>
       </tr>
     </tbody>
   </table>
