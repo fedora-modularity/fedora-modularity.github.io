@@ -485,8 +485,8 @@ modulemd_module_index_update_from_file
 </tr>
 <tr>
 <td class="parameter_name"><p>yaml_file</p></td>
-<td class="parameter_description"><p>A YAML file containing the module metadata and other
-related information such as default streams. </p></td>
+<td class="parameter_description"><p>A name of a YAML file containing the module metadata and
+other related information such as default streams. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr>
 <tr>
@@ -497,14 +497,21 @@ unknown mapping key or if it should ignore it. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>failures</p></td>
-<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
-See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
 <td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
-fails in a way that prevents program continuation. </p></td>
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -512,10 +519,11 @@ fails in a way that prevents program continuation. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-index-update-from-file.returns"></a><h4>Returns</h4>
-<p> TRUE if the update was successful. Returns FALSE and sets <em class="parameter"><code>failures</code></em>
-appropriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
-if
-there was a fatal parse error.</p>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -557,14 +565,21 @@ unknown mapping key or if it should ignore it. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>failures</p></td>
-<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
-See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
 <td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
-fails in a way that prevents program continuation. </p></td>
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -572,10 +587,11 @@ fails in a way that prevents program continuation. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-index-update-from-string.returns"></a><h4>Returns</h4>
-<p> TRUE if the update was successful. Returns FALSE and sets <em class="parameter"><code>failures</code></em>
-appropriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
-if
-there was a fatal parse error.</p>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -618,14 +634,21 @@ unknown mapping key or if it should ignore it. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>failures</p></td>
-<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
-See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
 <td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
-fails in a way that prevents program continuation. </p></td>
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -633,10 +656,11 @@ fails in a way that prevents program continuation. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-index-update-from-stream.returns"></a><h4>Returns</h4>
-<p> TRUE if the update was successful. Returns FALSE and sets <em class="parameter"><code>failures</code></em>
-appropriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
-if
-there was a fatal parse error.</p>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -684,14 +708,21 @@ unknown mapping key or if it should ignore it. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>failures</p></td>
-<td class="parameter_description"><p>An array containing any subdocuments from the YAML file that failed to parse.
-See <a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a> for more details. </p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
 <td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
-fails in a way that prevents program continuation. </p></td>
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -699,10 +730,11 @@ fails in a way that prevents program continuation. </p></td>
 </div>
 <div class="refsect3">
 <a name="modulemd-module-index-update-from-custom.returns"></a><h4>Returns</h4>
-<p> TRUE if the update was successful. Returns FALSE and sets <em class="parameter"><code>failures</code></em>
-appropriately if any of the YAML subdocuments were invalid or sets <em class="parameter"><code>error</code></em>
-if
-there was a fatal parse error.</p>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
 </div>
 <p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
 </div>
@@ -721,7 +753,7 @@ modulemd_module_index_update_from_defaults_directory
 adding any files with the suffix ".yaml" to <em class="parameter"><code>self</code></em>
 . If <em class="parameter"><code>overrides_path</code></em>
  is
-non-NULL, it will also open any files with the suffix ".yaml" in that
+non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it will also open any files with the suffix ".yaml" in that
 location and import them, overriding any conflicts with the existing
 defaults.</p>
 <p>Note: If you need detailed information about what failed and why, it is
@@ -755,14 +787,17 @@ unknown mapping key or a conflict in module default streams. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>overrides_path</p></td>
-<td class="parameter_description"><p>If non-NULL, the path to a directory
+<td class="parameter_description"><p>If non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the path to a directory
 containing defaults documents that should override those in <em class="parameter"><code>path</code></em>
 . </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> indicating why this function failed. </p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> indicating why this function failed. On input, it
+must be <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to
+know the error). On output, it will become allocated only if an error
+occured. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -770,8 +805,8 @@ containing defaults documents that should override those in <em class="parameter
 </div>
 <div class="refsect3">
 <a name="modulemd-module-index-update-from-defaults-directory.returns"></a><h4>Returns</h4>
-<p> TRUE if all ".yaml" files in the directory were imported
-successfully (this includes if no ".yaml" files were present). FALSE if one
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if all ".yaml" files in the directory were imported
+successfully (this includes if no ".yaml" files were present). <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if one
 or more files could not be read successfully and sets <em class="parameter"><code>error</code></em>
 appropriately.</p>
 </div>
