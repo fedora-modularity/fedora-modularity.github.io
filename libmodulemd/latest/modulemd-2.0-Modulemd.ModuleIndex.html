@@ -1541,7 +1541,11 @@ modulemd_module_index_upgrade_defaults
                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>Upgrades all <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> objects in this index to <em class="parameter"><code>mdversion</code></em>
  if they
-are not already at that version.</p>
+are not already at that version. An attempt to downgrade or an attempt to
+upgrade beyond the latest supported version will report an error. In the
+case of a failure to upgrade a particular <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object of the
+index, an error will be reported and the index will be left in an undefined
+state.</p>
 <div class="refsect3">
 <a name="modulemd-module-index-upgrade-defaults.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1563,9 +1567,9 @@ are not already at that version.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>error</p></td>
-<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that contains information on why the index could
-not be upgraded in the event of an error. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that contains information on why the
+index could not be upgraded in the event of an error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
