@@ -118,6 +118,9 @@ repositories, called "fedora" and "updates" for demonstrative purposes. It
 will assume that the content of the YAML module metadata from those two
 repositories have been loaded into string variables <code class="literal">fedora_yaml</code> and
 <code class="literal">updates_yaml</code>, respectively.</p>
+<p>Tools such as DNF that are consuming data from a repository should always
+set <code class="literal">strict=False</code>, so that it can safely handle minor,
+backwards-compatible changes to the modulemd format.</p>
 <p>First step is to load the metadata from these two repositories into
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects. This is done as follows:</p>
 <p>In C:</p>
@@ -134,11 +137,11 @@ repositories have been loaded into string variables <code class="literal">fedora
 7</pre></td>
         <td class="listing_code"><pre class="programlisting"><span class="n">ModulemdModuleIndex</span> <span class="o">*</span><span class="n">fedora_index</span> <span class="o">=</span> <span class="n">modulemd_module_index_new</span> <span class="p">();</span>
 <span class="n">gboolean</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">modulemd_module_index_update_from_string</span> <span class="p">(</span>
-  <span class="n">fedora_index</span><span class="p">,</span> <span class="n">fedora_yaml</span><span class="p">,</span> <span class="n">TRUE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">failures</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+  <span class="n">fedora_index</span><span class="p">,</span> <span class="n">fedora_yaml</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">failures</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
 
 <span class="n">ModulemdModuleIndex</span> <span class="o">*</span><span class="n">updates_index</span> <span class="o">=</span> <span class="n">modulemd_module_index_new</span> <span class="p">();</span>
 <span class="n">gboolean</span> <span class="n">ret2</span> <span class="o">=</span> <span class="n">modulemd_module_index_update_from_string</span> <span class="p">(</span>
-  <span class="n">updates_index</span><span class="p">,</span> <span class="n">updates_yaml</span><span class="p">,</span> <span class="n">TRUE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">failures</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span></pre></td>
+  <span class="n">updates_index</span><span class="p">,</span> <span class="n">updates_yaml</span><span class="p">,</span> <span class="n">FALSE</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">failures</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">error</span><span class="p">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -156,10 +159,10 @@ repositories have been loaded into string variables <code class="literal">fedora
 4
 5</pre></td>
         <td class="listing_code"><pre class="programlisting"><span class="n">fedora_index</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
-<span class="n">ret</span><span class="p">,</span> <span class="n">failures</span> <span class="o">=</span> <span class="n">fedora_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">fedora_yaml</span><span class="p">,</span> <span class="n">True</span><span class="p">)</span>
+<span class="n">ret</span><span class="p">,</span> <span class="n">failures</span> <span class="o">=</span> <span class="n">fedora_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">fedora_yaml</span><span class="p">,</span> <span class="n">False</span><span class="p">)</span>
 
 <span class="n">updates_index</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
-<span class="n">ret</span><span class="p">,</span> <span class="n">failures</span> <span class="o">=</span> <span class="n">updates_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">updates_yaml</span><span class="p">,</span> <span class="n">True</span><span class="p">)</span></pre></td>
+<span class="n">ret</span><span class="p">,</span> <span class="n">failures</span> <span class="o">=</span> <span class="n">updates_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">updates_yaml</span><span class="p">,</span> <span class="n">False</span><span class="p">)</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -234,7 +237,7 @@ upgraded internally).</p>
 give only a brief overview of the most common operations. See the API
 specification for a full list of information that can be retrieved.</p>
 <div class="refsect3">
-<a name="id-1.2.3.2.5.2.20"></a><h4>Discover the default stream for a particular module.</h4>
+<a name="id-1.2.3.2.5.2.21"></a><h4>Discover the default stream for a particular module.</h4>
 <p>In C:</p>
 <div class="informalexample">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
@@ -283,7 +286,7 @@ specification for a full list of information that can be retrieved.</p>
 <p></p>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.2.5.2.21"></a><h4>Get the list of RPMs defining the public API for a particular module NSVCA</h4>
+<a name="id-1.2.3.2.5.2.22"></a><h4>Get the list of RPMs defining the public API for a particular module NSVCA</h4>
 <p>First, query the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> for the module with a given name.</p>
 <p>In C:</p>
 <div class="informalexample">
@@ -415,7 +418,7 @@ properties that can be accessed directly.</p>
 <p></p>
 </div>
 <div class="refsect3">
-<a name="id-1.2.3.2.5.2.22"></a><h4>Retrieve the modular runtime dependencies for a particular module NSVCA</h4>
+<a name="id-1.2.3.2.5.2.23"></a><h4>Retrieve the modular runtime dependencies for a particular module NSVCA</h4>
 <p>In C:</p>
 <div class="informalexample">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
