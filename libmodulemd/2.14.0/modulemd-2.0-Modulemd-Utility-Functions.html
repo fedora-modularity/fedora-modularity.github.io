@@ -1,0 +1,1321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd Utility Functions: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch03.html" title="Modulemd 2.0 Private Developer Utilities">
+<link rel="prev" href="ch03.html" title="Modulemd 2.0 Private Developer Utilities">
+<link rel="next" href="modulemd-2.0-YAML-Manipulation-Tools.html" title="YAML Manipulation Tools">
+<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd-Utility-Functions.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch03.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-YAML-Manipulation-Tools.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd-Utility-Functions"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd-Utility-Functions.top_of_page"></a>Modulemd Utility Functions</span></h2>
+<p>Modulemd Utility Functions — Provides private utility functions for use within
+libmodulemd.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.stability-level"></a><h2>Stability Level</h2>
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#UNUSED:CAPS" title="UNUSED()">UNUSED</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">modulemd_tracer</span> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" title="modulemd_trace_init ()">modulemd_trace_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" title="modulemd_trace_free ()">modulemd_trace_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" title="MODULEMD_INIT_TRACE">MODULEMD_INIT_TRACE</a></td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()">modulemd_hash_table_deep_str_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-set-copy" title="modulemd_hash_table_deep_set_copy ()">modulemd_hash_table_deep_set_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-set-copy" title="modulemd_hash_table_deep_str_set_copy ()">modulemd_hash_table_deep_str_set_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-str-set-copy" title="modulemd_hash_table_deep_str_str_set_copy ()">modulemd_hash_table_deep_str_str_set_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal-wrapper" title="modulemd_hash_table_sets_are_equal_wrapper ()">modulemd_hash_table_sets_are_equal_wrapper</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-sets-are-equal" title="modulemd_hash_table_sets_are_equal ()">modulemd_hash_table_sets_are_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-equals" title="modulemd_hash_table_equals ()">modulemd_hash_table_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-compare" title="modulemd_hash_table_compare ()">modulemd_hash_table_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()">modulemd_strcmp_sort</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-wrapper" title="modulemd_strcmp_wrapper ()">modulemd_strcmp_wrapper</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys" title="modulemd_ordered_str_keys ()">modulemd_ordered_str_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-ordered-str-keys-as-strv" title="modulemd_ordered_str_keys_as_strv ()">modulemd_ordered_str_keys_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-variant-deep-copy" title="modulemd_variant_deep_copy ()">modulemd_variant_deep_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-unref" title="modulemd_hash_table_unref ()">modulemd_hash_table_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-validate-nevra" title="modulemd_validate_nevra ()">modulemd_validate_nevra</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-boolean-equals" title="modulemd_boolean_equals ()">modulemd_boolean_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-is-glob-pattern" title="modulemd_is_glob_pattern ()">modulemd_is_glob_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#compare-streams" title="compare_streams ()">compare_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-fnmatch" title="modulemd_fnmatch ()">modulemd_fnmatch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-rpm-match" title="modulemd_rpm_match ()">modulemd_rpm_match</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-iso8601date-to-guint64" title="modulemd_iso8601date_to_guint64 ()">modulemd_iso8601date_to_guint64</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-guint64-to-iso8601date" title="modulemd_guint64_to_iso8601date ()">modulemd_guint64_to_iso8601date</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-REPLACE-SET:CAPS" title="MODULEMD_REPLACE_SET()">MODULEMD_REPLACE_SET</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-EXT:CAPS" title="MODULEMD_SETTER_GETTER_STRING_EXT()">MODULEMD_SETTER_GETTER_STRING_EXT</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" title="MODULEMD_SETTER_GETTER_STRING()">MODULEMD_SETTER_GETTER_STRING</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" title="MODULEMD_SETTER_GETTER_STRING_STATIC()">MODULEMD_SETTER_GETTER_STRING_STATIC</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-str-set-new" title="modulemd_str_set_new">modulemd_str_set_new</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#FALLTHROUGH:CAPS" title="FALLTHROUGH">FALLTHROUGH</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="UNUSED:CAPS"></a><h3>UNUSED()</h3>
+<pre class="programlisting">#define UNUSED(x) UNUSED_##x __attribute__ ((__unused__))
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-trace-init"></a><h3>modulemd_trace_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">modulemd_tracer</span> *
+modulemd_trace_init (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *function_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-trace-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>function_name</p></td>
+<td class="parameter_description"><p>The name of the function being traced.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-trace-init.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <span class="type">modulemd_tracer</span> object.</p>
+<p>Allocates and returns a new <span class="type">modulemd_tracer</span> that tracks the provided
+<em class="parameter"><code>function_name</code></em>
+. Also writes a <a href="https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-debug"><code class="function">g_debug()</code></a> trace message indicating
+<em class="parameter"><code>function_name</code></em>
+has been entered.</p>
+<p>DIRECT USE OF THIS FUNCTION SHOULD BE AVOIDED. Instead use
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" title="MODULEMD_INIT_TRACE"><code class="literal">MODULEMD_INIT_TRACE</code></a>--which makes use of this function as part of its
+internal implementation. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-trace-free"></a><h3>modulemd_trace_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_trace_free (<em class="parameter"><code><span class="type">modulemd_tracer</span> *tracer</code></em>);</pre>
+<p>Writes a <a href="https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-debug"><code class="function">g_debug()</code></a> trace message indicating the function name associated
+with <em class="parameter"><code>tracer</code></em>
+ is being exited and frees <em class="parameter"><code>tracer</code></em>
+.</p>
+<p>DIRECT USE OF THIS FUNCTION SHOULD BE AVOIDED. Instead use
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" title="MODULEMD_INIT_TRACE"><code class="literal">MODULEMD_INIT_TRACE</code></a>--which makes use of this function as part of its
+internal implementation.</p>
+<div class="refsect3">
+<a name="modulemd-trace-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tracer</p></td>
+<td class="parameter_description"><p>A <span class="type">modulemd_tracer</span> object representing a function being traced.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-INIT-TRACE:CAPS"></a><h3>MODULEMD_INIT_TRACE</h3>
+<pre class="programlisting">#define             MODULEMD_INIT_TRACE()</pre>
+<p>When used at the beginning of a function, automatically writes <a href="https://developer.gnome.org/glib/stable/glib-Message-Logging.html#g-debug"><code class="function">g_debug()</code></a>
+trace messages when entering and leaving that function. Makes use of
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-init" title="modulemd_trace_init ()"><code class="function">modulemd_trace_init()</code></a> and <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-trace-free" title="modulemd_trace_free ()"><code class="function">modulemd_trace_free()</code></a>.</p>
+<p>This macro manages the memory of the hidden <span class="type">modulemd_tracer</span> object it
+creates, so the caller should not attempt to modify that object in any way.</p>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-str-copy"></a><h3>modulemd_hash_table_deep_str_copy ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_str_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys and string values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of both the keys and values from <em class="parameter"><code>orig</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-set-copy"></a><h3>modulemd_hash_table_deep_set_copy ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_set_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-set-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-set-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of the keys from <em class="parameter"><code>orig</code></em>
+. The values from <em class="parameter"><code>orig</code></em>
+are ignored, and the
+values in the copy are set the same as the corresponding keys so the
+returned <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> can be used as a set. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-str-set-copy"></a><h3>modulemd_hash_table_deep_str_set_copy ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_str_set_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-set-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys and <a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-set-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of the keys from <em class="parameter"><code>orig</code></em>
+. The corresponding <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> value for each
+key is deep copied via <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()"><code class="function">modulemd_hash_table_deep_str_copy()</code></a> for use as a set. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-deep-str-str-set-copy"></a><h3>modulemd_hash_table_deep_str_str_set_copy ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_hash_table_deep_str_str_set_copy
+                               (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *orig</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-str-set-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> to copy, containing string keys and <a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> values
+that are nested two levels deep.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-deep-str-str-set-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
+copy of the keys from <em class="parameter"><code>orig</code></em>
+. Each corresponding <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> value is deep
+copied, with the second level <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> copied for use as a set as
+described in <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()"><code class="function">modulemd_hash_table_deep_str_copy()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-sets-are-equal-wrapper"></a><h3>modulemd_hash_table_sets_are_equal_wrapper ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_hash_table_sets_are_equal_wrapper
+                               (<em class="parameter"><code>const <span class="type">void</span> *a</code></em>,
+                                <em class="parameter"><code>const <span class="type">void</span> *b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal-wrapper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A void pointer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A void pointer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal-wrapper.returns"></a><h4>Returns</h4>
+<p> TRUE if both <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+(considered as <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>s) contain
+an identical set of keys, FALSE if they differ.</p>
+<p>Only the keys of <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are compared. The values are ignored.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-sets-are-equal"></a><h3>modulemd_hash_table_sets_are_equal ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_hash_table_sets_are_equal (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-sets-are-equal.returns"></a><h4>Returns</h4>
+<p> TRUE if both <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+contain an identical set of keys, FALSE if
+they differ.</p>
+<p>Only the keys of <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are compared. The values are ignored.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-equals"></a><h3>modulemd_hash_table_equals ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_hash_table_equals (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GEqualFunc"><span class="type">GEqualFunc</span></a> compare_func</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-hash-table-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>compare_func</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GEqualFunc"><span class="type">GEqualFunc</span></a> function that is called to determine the
+equivalence of pairs of <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-hash-table-equals.returns"></a><h4>Returns</h4>
+<p> TRUE if both <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+contain identical keys and identical
+corresponding values (as determined by <em class="parameter"><code>compare_func</code></em>
+), FALSE if they
+differ.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-compare"></a><h3>modulemd_hash_table_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+modulemd_hash_table_compare (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *a</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *b</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> value_compare_func</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-strcmp-sort"></a><h3>modulemd_strcmp_sort ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+modulemd_strcmp_sort (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-strcmp-sort.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-strcmp-sort.returns"></a><h4>Returns</h4>
+<p> 0 if <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are pointers to identical strings, a negative value
+if <em class="parameter"><code>a</code></em>
+is less than <em class="parameter"><code>b</code></em>
+, and a positive value if <em class="parameter"><code>a</code></em>
+is greater than <em class="parameter"><code>b</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-strcmp-wrapper"></a><h3>modulemd_strcmp_wrapper ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+modulemd_strcmp_wrapper (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-strcmp-wrapper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-strcmp-wrapper.returns"></a><h4>Returns</h4>
+<p> 0 if <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are identical strings, a negative value if <em class="parameter"><code>a</code></em>
+is less
+than <em class="parameter"><code>b</code></em>
+, and a positive value if <em class="parameter"><code>a</code></em>
+is greater than <em class="parameter"><code>b</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-ordered-str-keys"></a><h3>modulemd_ordered_str_keys ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_ordered_str_keys (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *htable</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> compare_func</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>htable</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>compare_func</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Doubly-Linked-Lists.html#GCompareFunc"><span class="type">GCompareFunc</span></a> function that is called to determine the
+equivalence of pairs of <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> keys from <em class="parameter"><code>htable</code></em>
+. This should almost
+always be passed as <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()"><code class="function">modulemd_strcmp_sort()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> of the keys from <em class="parameter"><code>htable</code></em>
+sorted
+according to <em class="parameter"><code>compare_func</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-ordered-str-keys-as-strv"></a><h3>modulemd_ordered_str_keys_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_ordered_str_keys_as_strv (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *htable</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>htable</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-ordered-str-keys-as-strv.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of the keys from <em class="parameter"><code>htable</code></em>
+sorted
+according to <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()"><code class="function">modulemd_strcmp_sort()</code></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-variant-deep-copy"></a><h3>modulemd_variant_deep_copy ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *
+modulemd_variant_deep_copy (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> *variant</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-variant-deep-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>variant</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> opaque data structure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-variant-deep-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated deep copy of <em class="parameter"><code>variant</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-hash-table-unref"></a><h3>modulemd_hash_table_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_hash_table_unref (<em class="parameter"><code><span class="type">void</span> *table</code></em>);</pre>
+<p>Decrements the reference count of <em class="parameter"><code>table</code></em>
+ (considered as a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>). If
+the reference count drops to 0, all keys, values, and memory associated with
+<em class="parameter"><code>table</code></em>
+ will be released.</p>
+<p>The main purpose of this function is to provide a <a href="https://developer.gnome.org/glib/stable/glib-Datasets.html#GDestroyNotify"><code class="function">GDestroyNotify()</code></a> function
+for <a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a>, <a href="../glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>, and similar object types.</p>
+<div class="refsect3">
+<a name="modulemd-hash-table-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>table</p></td>
+<td class="parameter_description"><p>A void pointer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-validate-nevra"></a><h3>modulemd_validate_nevra ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_validate_nevra (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nevra</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-validate-nevra.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nevra</p></td>
+<td class="parameter_description"><p>A NEVRA (Name, Epoch, Version, Release, Architecture) string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-validate-nevra.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>nevra</code></em>
+is in proper N-E:V-R.A format, FALSE otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-boolean-equals"></a><h3>modulemd_boolean_equals ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_boolean_equals (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> a</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> b</code></em>);</pre>
+<p>Since a <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> could contain any value represented by a <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>, <em class="parameter"><code>a</code></em>
+ and <em class="parameter"><code>b</code></em>
+
+are compared for logical equivalence.</p>
+<div class="refsect3">
+<a name="modulemd-boolean-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-boolean-equals.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>a</code></em>
+and <em class="parameter"><code>b</code></em>
+are logically equal, FALSE otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch12.html#api-index-2.7">2.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-is-glob-pattern"></a><h3>modulemd_is_glob_pattern ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_is_glob_pattern (<em class="parameter"><code>const <span class="type">char</span> *pattern</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-is-glob-pattern.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>pattern</p></td>
+<td class="parameter_description"><p>(nullable) A string to check for glob patterns as defined by
+[glob(7)[(https://www.mankier.com/7/glob)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-is-glob-pattern.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>pattern</code></em>
+contains any globbing characters. FALSE
+otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="compare-streams"></a><h3>compare_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+compare_streams (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> a</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> b</code></em>);</pre>
+<p>Sorting function for GPtrArrays of <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects.</p>
+<div class="refsect3">
+<a name="compare-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>The first <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> to sort</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>The second <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> to sort</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-fnmatch"></a><h3>modulemd_fnmatch ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_fnmatch (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pattern</code></em>,
+                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+<p>A wrapper around <code class="function">fnmatch()</code> for use with modulemd.</p>
+<div class="refsect3">
+<a name="modulemd-fnmatch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pattern</p></td>
+<td class="parameter_description"><p>(nullable) A string to check for glob patterns as defined by
+[glob(7)[(https://www.mankier.com/7/glob)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>(nullable) A string to check for matches.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-fnmatch.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> if <em class="parameter"><code>pattern</code></em>
+matched for this string or if <em class="parameter"><code>pattern</code></em>
+is NULL.
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a> if <em class="parameter"><code>pattern</code></em>
+did not match or <em class="parameter"><code>string</code></em>
+is NULL.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-rpm-match"></a><h3>modulemd_rpm_match ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_rpm_match (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> key</code></em>);</pre>
+<p>This is a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHRFunc"><span class="type">GHRFunc</span></a> for use with <a href="../glib/glib-Hash-Tables.html#g-hash-table-find"><code class="function">g_hash_table_find()</code></a> to search for RPMs. It
+is a wrapper around <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-fnmatch" title="modulemd_fnmatch ()"><code class="function">modulemd_fnmatch()</code></a>.</p>
+<div class="refsect3">
+<a name="modulemd-rpm-match.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>The key in the RPM artifacts hash table.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>The value in the RPM artifacts hash table (should be the same
+as <em class="parameter"><code>key</code></em>
+).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>A <a class="ulink" href="https://www.mankier.com/3/glob" target="_top">glob</a>
+pattern to match against the NEVRA strings of the RPM artifacts in <em class="parameter"><code>self</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-rpm-match.returns"></a><h4>Returns</h4>
+<p> TRUE if <em class="parameter"><code>key</code></em>
+is a match for the pattern in <em class="parameter"><code>user_data</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-iso8601date-to-guint64"></a><h3>modulemd_iso8601date_to_guint64 ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+modulemd_iso8601date_to_guint64 (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *iso8601</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-iso8601date-to-guint64.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>iso8601</p></td>
+<td class="parameter_description"><p>string containing a date in ISO 8601 format. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-iso8601date-to-guint64.returns"></a><h4>Returns</h4>
+<p> date represented as a 64-bit integer (such as 201807011200).</p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-guint64-to-iso8601date"></a><h3>modulemd_guint64_to_iso8601date ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_guint64_to_iso8601date (<em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> date</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-guint64-to-iso8601date.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>date</p></td>
+<td class="parameter_description"><p>date represented as a 64-bit integer (such as 201807011200). </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-guint64-to-iso8601date.returns"></a><h4>Returns</h4>
+<p>A newly-allocated string containing a date in ISO 8601 format. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-REPLACE-SET:CAPS"></a><h3>MODULEMD_REPLACE_SET()</h3>
+<pre class="programlisting">#define             MODULEMD_REPLACE_SET(_dest, _set)</pre>
+<p>Frees the existing <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> at <em class="parameter"><code>_dest</code></em>
+. If <em class="parameter"><code>_set</code></em>
+ is not NULL, assigns a
+deep copy of <em class="parameter"><code>_set</code></em>
+'s keys for use as a set.</p>
+<p>This helper function is intended for use in <code class="function">GOBJECT_copy()</code> functions to
+simplify copying internal set variables and avoid code duplication.</p>
+<div class="refsect3">
+<a name="MODULEMD-REPLACE-SET.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>_dest</p></td>
+<td class="parameter_description"><p>A reference to a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_set</p></td>
+<td class="parameter_description"><p>A reference to a <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING-EXT:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_EXT()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_EXT(                                    \
+              is_static, ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+<p>A convenience macro for defining standard set and get methods for a string
+attribute of an object.</p>
+<p>This is the internal implementation for <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING:CAPS" title="MODULEMD_SETTER_GETTER_STRING()"><code class="literal">MODULEMD_SETTER_GETTER_STRING</code></a> and
+<a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS" title="MODULEMD_SETTER_GETTER_STRING_STATIC()"><code class="literal">MODULEMD_SETTER_GETTER_STRING_STATIC</code></a> which should be used instead.</p>
+<div class="refsect3">
+<a name="MODULEMD-SETTER-GETTER-STRING-EXT.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>is_static</p></td>
+<td class="parameter_description"><p>static for private methods, or empty comment for public.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ObjName</p></td>
+<td class="parameter_description"><p>The name of the object type, in camel case.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obj_name</p></td>
+<td class="parameter_description"><p>The name of the object type, in lowercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>OBJ_NAME</p></td>
+<td class="parameter_description"><p>The name of the object type, in uppercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>attr</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in lowercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ATTR</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in uppercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING(                                        \
+              ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+<p>A convenience macro for defining standard <span class="emphasis"><em>public</em></span> set
+and get methods for a string attribute of an object.</p>
+<div class="refsect3">
+<a name="MODULEMD-SETTER-GETTER-STRING.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ObjName</p></td>
+<td class="parameter_description"><p>The name of the object type, in camel case.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obj_name</p></td>
+<td class="parameter_description"><p>The name of the object type, in lowercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>OBJ_NAME</p></td>
+<td class="parameter_description"><p>The name of the object type, in uppercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>attr</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in lowercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ATTR</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in uppercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MODULEMD-SETTER-GETTER-STRING-STATIC:CAPS"></a><h3>MODULEMD_SETTER_GETTER_STRING_STATIC()</h3>
+<pre class="programlisting">#define             MODULEMD_SETTER_GETTER_STRING_STATIC(                                 \
+              ObjName, obj_name, OBJ_NAME, attr, ATTR)</pre>
+<p>A is a convenience macro for defining standard <span class="emphasis"><em>private</em></span>
+(static) set and get methods for a string attribute of an object.</p>
+<div class="refsect3">
+<a name="MODULEMD-SETTER-GETTER-STRING-STATIC.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>ObjName</p></td>
+<td class="parameter_description"><p>The name of the object type, in camel case.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obj_name</p></td>
+<td class="parameter_description"><p>The name of the object type, in lowercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>OBJ_NAME</p></td>
+<td class="parameter_description"><p>The name of the object type, in uppercase with words separated
+by '_'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>attr</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in lowercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ATTR</p></td>
+<td class="parameter_description"><p>The name of the object attribute, in uppercase.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-str-set-new"></a><h3>modulemd_str_set_new</h3>
+<pre class="programlisting">#define             modulemd_str_set_new()</pre>
+<p>A convenience macro to simplify the common operation of setting up a hash
+table in libmodulemd for containing a <code class="function">set()</code> of unique strings.</p>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd-Utility-Functions.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="FALLTHROUGH:CAPS"></a><h3>FALLTHROUGH</h3>
+<pre class="programlisting">#define FALLTHROUGH __attribute__ ((fallthrough));
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.32</div>
+</body>
+</html>
