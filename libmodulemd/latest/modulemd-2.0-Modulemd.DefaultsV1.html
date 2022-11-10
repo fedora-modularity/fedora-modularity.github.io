@@ -204,8 +204,10 @@ module. If NULL, it will remove the default stream. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>intent</p></td>
-<td class="parameter_description"><p>If non-NULL, this indicates the system-intent to
-apply this default stream. If NULL, it will be added as common defaults. </p></td>
+<td class="parameter_description"><p>If non-NULL, this indicates the system intent to
+apply this default stream. If NULL, it will be added as common defaults.
+System intents are deprecated and calls with this non-NULL argument will
+become void in the future. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -238,7 +240,9 @@ modulemd_defaults_v1_get_default_stream
 <td class="parameter_name"><p>intent</p></td>
 <td class="parameter_description"><p>The name of the system intent whose default stream
 will be retrieved. If left NULL or the specified intent has no different
-default, it will return the generic default stream for this module. </p></td>
+default, it will return the generic default stream for this module.
+System intents are deprecated and this argument will be ignored in the
+future. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -278,7 +282,8 @@ modulemd_defaults_v1_get_streams_with_default_profiles_as_strv
 <td class="parameter_description"><p>The name of the system intent whose stream
 profiles will be retrieved. If left NULL or the specified intent has no
 separate defaults for this module, it will return the generic stream
-profiles. </p></td>
+profiles. System intents are deprecated and this argument will be ignored
+in the future. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -333,7 +338,8 @@ default profile. </p></td>
 <td class="parameter_name"><p>intent</p></td>
 <td class="parameter_description"><p>The name of the system intent to add profile
 defaults to. If NULL, this sets the generic fallback profiles for the
-stream. </p></td>
+stream. System intents are deprecated and calls with this non-NULL argument
+will become void in the future. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -375,7 +381,8 @@ default profiles. </p></td>
 <tr>
 <td class="parameter_name"><p>intent</p></td>
 <td class="parameter_description"><p>The name of the system intent from which to clear
-the profile defaults for this stream. </p></td>
+the profile defaults for this stream. System intents are deprecated and
+calls with this non-NULL argument will become void in the future. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -416,7 +423,8 @@ default profiles. </p></td>
 <tr>
 <td class="parameter_name"><p>intent</p></td>
 <td class="parameter_description"><p>The name of the system intent from which to remove
-the profile defaults for this stream. </p></td>
+the profile defaults for this stream. System intents are deprecated and
+calls with this non-NULL arugment will become void in the future. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
@@ -455,8 +463,9 @@ for. </p></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>intent</p></td>
-<td class="parameter_description"><p>The name of the system intent from which to
-retrieve the profile defaults for this stream. </p></td>
+<td class="parameter_description"><p>The name of the system intent for which to
+retrieve the profile defaults for this stream. System intents are
+deprecated and this argument will be ignored in the future. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 </tbody>
