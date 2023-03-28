@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html" title="Modulemd.ModuleIndexMerger">
 <link rel="next" href="modulemd-2.0-Modulemd.ModuleStreamV1.html" title="Modulemd.ModuleStreamV1">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -238,19 +238,19 @@ justifications.
 <tbody>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule--module-name" title="The “module-name” property">module-name</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStream--arch" title="The “arch” property">arch</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStream--context" title="The “context” property">context</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
@@ -261,13 +261,13 @@ justifications.
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStream--module-name" title="The “module-name” property">module-name</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStream--stream-name" title="The “stream-name” property">stream-name</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
@@ -367,7 +367,7 @@ modulemd_module_stream_new (<em class="parameter"><code><a href="https://develop
 <a name="modulemd-module-stream-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object of
 the requested metadata version. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -442,7 +442,7 @@ subdocument. NULL if the document fails validation or multiple documents are
 encountered and sets <em class="parameter"><code>error</code></em>
 appropriately. See <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> for
 functions to read in multiple-subdocument YAML. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -517,7 +517,7 @@ subdocument. NULL if the document fails validation or multiple documents are
 encountered and sets <em class="parameter"><code>error</code></em>
 appropriately. See <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> for
 functions to read in multiple-subdocument YAML. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -582,7 +582,7 @@ the YAML file was valid and contained exactly one <code class="literal">document
 subdocument. NULL if the document fails validation or multiple documents are
 encountered and sets NULL appropriately. See <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> for
 functions to read in multiple-subdocument YAML. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -665,7 +665,7 @@ copied stream. </p></td>
 <p>A newly-allocated <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object
 that is a complete copy of <em class="parameter"><code>self</code></em>
 , optionally with a new stream name. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -714,7 +714,7 @@ the highest-supported version. </p></td>
 <p>A newly-allocated <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> copy of
 this object upgraded to the requested version. Returns NULL and sets <em class="parameter"><code>error</code></em>
 appropriately if the upgrade could not be completed automatically. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -762,7 +762,7 @@ of this object upgraded to the requested version, possibly with multiple
 streams. Returns NULL and sets <em class="parameter"><code>error</code></em>
 appropriately if the upgrade could not
 be completed automatically. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
@@ -855,7 +855,7 @@ modulemd_module_stream_get_module_name
 <div class="refsect3">
 <a name="modulemd-module-stream-get-module-name.returns"></a><h4>Returns</h4>
 <p>The name of the module. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -883,7 +883,7 @@ modulemd_module_stream_get_stream_name
 <div class="refsect3">
 <a name="modulemd-module-stream-get-stream-name.returns"></a><h4>Returns</h4>
 <p>The name of this stream. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1001,7 +1001,7 @@ modulemd_module_stream_get_context (<em class="parameter"><code><a class="link" 
 The context flag serves to distinguish module builds with the same name,
 stream and version and plays an important role in automatic module stream
 name expansion. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1062,7 +1062,7 @@ modulemd_module_stream_get_arch (<em class="parameter"><code><a class="link" hre
 <p>Module architecture object.
 Indicates to which processor architecture this <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>
 applies. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
@@ -1097,7 +1097,7 @@ within a repository.</p>
 <a name="modulemd-module-stream-get-nsvc-as-string.returns"></a><h4>Returns</h4>
 <p>The NSVC (name:stream:version[:context]) of this
 module stream. NULL if module name or stream stream is unknown. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1129,7 +1129,7 @@ modulemd_module_stream_get_NSVCA_as_string
 format is described
 <a class="ulink" href="https://docs.fedoraproject.org/en-US/modularity/architecture/consuming/naming-policy/#_forms" target="_top">here</a>.
 NULL if module name or stream stream is unknown. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
@@ -1366,7 +1366,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <a name="ModulemdModuleStream.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ModulemdModule--module-name"></a><h3>The <code class="literal">“module-name”</code> property</h3>
-<pre class="programlisting">  “module-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “module-name”              <span class="type">char</span> *</pre>
 <p>The name of this module.</p>
 <p>Owner: ModulemdModule</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -1375,7 +1375,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStream--arch"></a><h3>The <code class="literal">“arch”</code> property</h3>
-<pre class="programlisting">  “arch”                     <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “arch”                     <span class="type">char</span> *</pre>
 <p>The processor architecture of this module stream.</p>
 <p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read / Write / Construct</p>
@@ -1384,7 +1384,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStream--context"></a><h3>The <code class="literal">“context”</code> property</h3>
-<pre class="programlisting">  “context”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “context”                  <span class="type">char</span> *</pre>
 <p>The context of this module stream. Distinguishes between streams with the same version but different dependencies due to module stream expansion.</p>
 <p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read / Write / Construct</p>
@@ -1403,7 +1403,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStream--module-name"></a><h3>The <code class="literal">“module-name”</code> property</h3>
-<pre class="programlisting">  “module-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “module-name”              <span class="type">char</span> *</pre>
 <p>The name of the module providing this stream.</p>
 <p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -1412,7 +1412,7 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStream--stream-name"></a><h3>The <code class="literal">“stream-name”</code> property</h3>
-<pre class="programlisting">  “stream-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “stream-name”              <span class="type">char</span> *</pre>
 <p>The name of this module stream.</p>
 <p>Owner: ModulemdModuleStream</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -1430,6 +1430,6 @@ the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStrea
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

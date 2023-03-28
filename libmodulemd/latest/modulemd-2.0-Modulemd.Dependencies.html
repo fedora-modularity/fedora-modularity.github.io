@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.DefaultsV1.html" title="Modulemd.DefaultsV1">
 <link rel="next" href="modulemd-2.0-Modulemd-Errors.html" title="Modulemd Errors">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -195,7 +195,7 @@ modulemd_dependencies_new (<em class="parameter"><code><span class="type">void</
 <a name="modulemd-dependencies-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object.
 This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -260,7 +260,7 @@ modulemd_dependencies_copy (<em class="parameter"><code><a class="link" href="mo
 <div class="refsect3">
 <a name="modulemd-dependencies-copy.returns"></a><h4>Returns</h4>
 <p>The copied <a class="link" href="modulemd-2.0-Modulemd.Dependencies.html#ModulemdDependencies"><span class="type">ModulemdDependencies</span></a> object. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -387,7 +387,7 @@ modulemd_dependencies_get_buildtime_modules_as_strv
 <a name="modulemd-dependencies-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names of
 build-time dependencies. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -426,7 +426,7 @@ modulemd_dependencies_get_buildtime_streams_as_strv
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module
 streams associated with the specified module that are required at
 build-time. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -553,7 +553,7 @@ modulemd_dependencies_get_runtime_modules_as_strv
 <a name="modulemd-dependencies-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names of run-time
 dependencies. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -591,7 +591,7 @@ modulemd_dependencies_get_runtime_streams_as_strv
 <a name="modulemd-dependencies-get-runtime-streams-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module streams
 associated with the specified module that are required at run-time. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -611,6 +611,6 @@ associated with the specified module that are required at run-time. </p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

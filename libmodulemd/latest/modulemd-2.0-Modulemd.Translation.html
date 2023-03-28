@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.SubdocumentInfo.html" title="Modulemd.SubdocumentInfo">
 <link rel="next" href="modulemd-2.0-Modulemd.TranslationEntry.html" title="Modulemd.TranslationEntry">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -126,13 +126,13 @@ justifications.
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--module-name" title="The “module-name” property">module-name</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation--module-stream" title="The “module-stream” property">module-stream</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
@@ -218,7 +218,7 @@ modulemd_translation_new (<em class="parameter"><code><a href="https://developer
 <a name="modulemd-translation-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object.
 This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -246,7 +246,7 @@ modulemd_translation_copy (<em class="parameter"><code><a class="link" href="mod
 <div class="refsect3">
 <a name="modulemd-translation-copy.returns"></a><h4>Returns</h4>
 <p>The copied <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -341,7 +341,7 @@ modulemd_translation_get_locales_as_strv
 <a name="modulemd-translation-get-locales-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of locales known to this
 <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -408,7 +408,7 @@ modulemd_translation_get_translation_entry
 <div class="refsect3">
 <a name="modulemd-translation-get-translation-entry.returns"></a><h4>Returns</h4>
 <p>The translation entry for the requested locale, or NULL if the locale was unknown. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -439,7 +439,7 @@ modulemd_translation_get_translation_entry
 <hr>
 <div class="refsect2">
 <a name="ModulemdTranslation--module-name"></a><h3>The <code class="literal">“module-name”</code> property</h3>
-<pre class="programlisting">  “module-name”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “module-name”              <span class="type">char</span> *</pre>
 <p>The name of the module to which these translations apply.</p>
 <p>Owner: ModulemdTranslation</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -448,7 +448,7 @@ modulemd_translation_get_translation_entry
 <hr>
 <div class="refsect2">
 <a name="ModulemdTranslation--module-stream"></a><h3>The <code class="literal">“module-stream”</code> property</h3>
-<pre class="programlisting">  “module-stream”            <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “module-stream”            <span class="type">char</span> *</pre>
 <p>The name of the module stream to which these translations apply.</p>
 <p>Owner: ModulemdTranslation</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -466,6 +466,6 @@ modulemd_translation_get_translation_entry
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

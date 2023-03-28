@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.ModuleIndex.html" title="Modulemd.ModuleIndex">
 <link rel="next" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -127,13 +127,13 @@ metadata sources, possibly with varying priorities.</p>
 5
 6
 7</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="n">merger</span> <span class="o">=</span> <span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndexMerger</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">merger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndexMerger</span><span class="p">.</span><span class="n">new</span><span class="p">()</span><span class="w"></span>
 
-<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">fedora_repo_index</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">updates_repo_index</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">updates_testing_repo_index</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">fedora_repo_index</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">updates_repo_index</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="n">merger</span><span class="p">.</span><span class="n">associate_index</span><span class="p">(</span><span class="n">updates_testing_repo_index</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
 
-<span class="n">merged_index</span> <span class="o">=</span> <span class="n">merger</span><span class="p">.</span><span class="n">resolve</span><span class="p">()</span></pre></td>
+<span class="n">merged_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">merger</span><span class="p">.</span><span class="n">resolve</span><span class="p">()</span><span class="w"></span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -231,7 +231,7 @@ modulemd_module_index_merger_new (<em class="parameter"><code><span class="type"
 <a name="modulemd-module-index-merger-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a>
 object. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -272,7 +272,7 @@ reading the module metadata from a repository with
 on <em class="parameter"><code>index</code></em>
 , so the caller must not modify it while the
 <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> is in use. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 <tr>
 <td class="parameter_name"><p>priority</p></td>
@@ -333,7 +333,7 @@ merges. </p></td>
 containing the merged results. If this function encounters an unresolvable
 merge conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
 appropriately. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -387,7 +387,7 @@ merges. </p></td>
 containing the merged results. If this function encounters an unresolvable
 merge conflict, it will return NULL and set <em class="parameter"><code>error</code></em>
 appropriately. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch11.html#api-index-2.6">2.6</a></p>
 </div>
@@ -406,6 +406,6 @@ appropriately. </p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

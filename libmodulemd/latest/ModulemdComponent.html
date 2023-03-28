@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.Buildopts.html" title="Modulemd.Buildopts">
 <link rel="next" href="modulemd-2.0-Modulemd.ComponentModule.html" title="Modulemd.ComponentModule">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -192,13 +192,13 @@ justifications.
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="ModulemdComponent.html#ModulemdComponent--name" title="The “name” property">name</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="ModulemdComponent.html#ModulemdComponent--rationale" title="The “rationale” property">rationale</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -308,7 +308,7 @@ used as the lookup key when this component is attached to a
 <a name="modulemd-component-copy.returns"></a><h4>Returns</h4>
 <p>A newly-allocated copy of <em class="parameter"><code>self</code></em>
 . </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -432,7 +432,7 @@ modulemd_component_get_buildafter_as_strv
 <a name="modulemd-component-get-buildafter-as-strv.returns"></a><h4>Returns</h4>
 <p>The set of component keys that this component
 depends upon. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
@@ -612,7 +612,7 @@ modulemd_component_get_name (<em class="parameter"><code><a class="link" href="M
 different from the key used to save this component to a
 <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>. If you specifically need the key, use
 <a class="link" href="ModulemdComponent.html#modulemd-component-get-key" title="modulemd_component_get_key ()"><code class="function">modulemd_component_get_key()</code></a> instead. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -640,7 +640,7 @@ modulemd_component_get_key (<em class="parameter"><code><a class="link" href="Mo
 <a name="modulemd-component-get-key.returns"></a><h4>Returns</h4>
 <p>The name of the key used to attach this component
 to a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
 </div>
@@ -698,7 +698,7 @@ modulemd_component_get_rationale (<em class="parameter"><code><a class="link" hr
 <div class="refsect3">
 <a name="modulemd-component-get-rationale.returns"></a><h4>Returns</h4>
 <p>The rationale. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -756,7 +756,7 @@ modulemd_component_get_rationale (<em class="parameter"><code><a class="link" hr
 <hr>
 <div class="refsect2">
 <a name="ModulemdComponent--name"></a><h3>The <code class="literal">“name”</code> property</h3>
-<pre class="programlisting">  “name”                     <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “name”                     <span class="type">char</span> *</pre>
 <p>The name of the component. This is the real name of the component and may differ from the key used to associate this component with the ModuleStream.</p>
 <p>Owner: ModulemdComponent</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -765,7 +765,7 @@ modulemd_component_get_rationale (<em class="parameter"><code><a class="link" hr
 <hr>
 <div class="refsect2">
 <a name="ModulemdComponent--rationale"></a><h3>The <code class="literal">“rationale”</code> property</h3>
-<pre class="programlisting">  “rationale”                <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “rationale”                <span class="type">char</span> *</pre>
 <p>A description of the reason this component is part of the module stream.</p>
 <p>Owner: ModulemdComponent</p>
 <p>Flags: Read / Write</p>
@@ -774,6 +774,6 @@ modulemd_component_get_rationale (<em class="parameter"><code><a class="link" hr
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

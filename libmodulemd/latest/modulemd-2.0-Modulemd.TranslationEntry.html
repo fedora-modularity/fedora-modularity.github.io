@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.Translation.html" title="Modulemd.Translation">
 <link rel="next" href="modulemd-2.0-Modulemd.Obsoletes.html" title="Modulemd.Obsoletes">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -141,19 +141,19 @@ justifications.
 <tbody>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--description" title="The “description” property">description</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--locale" title="The “locale” property">locale</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--summary" title="The “summary” property">summary</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -214,7 +214,7 @@ It must correspond to the format specified by libc locale names. </p></td>
 <a name="modulemd-translation-entry-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a>
 object. This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -242,7 +242,7 @@ modulemd_translation_entry_copy (<em class="parameter"><code><a class="link" hre
 <div class="refsect3">
 <a name="modulemd-translation-entry-copy.returns"></a><h4>Returns</h4>
 <p>The copied <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -271,7 +271,7 @@ modulemd_translation_entry_get_locale (<em class="parameter"><code><a class="lin
 <a name="modulemd-translation-entry-get-locale.returns"></a><h4>Returns</h4>
 <p>The locale of this translation entry. This is a pointer
 to the internal memory location and must not be freed. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -333,7 +333,7 @@ modulemd_translation_entry_get_summary
 <a name="modulemd-translation-entry-get-summary.returns"></a><h4>Returns</h4>
 <p>The summary of this module stream translated into
 the language specified by locale. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -395,7 +395,7 @@ modulemd_translation_entry_get_description
 <a name="modulemd-translation-entry-get-description.returns"></a><h4>Returns</h4>
 <p>The description of this module stream translated
 into the language specified by locale. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -426,7 +426,7 @@ modulemd_translation_entry_get_profiles_as_strv
 <a name="modulemd-translation-entry-get-profiles-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of profiles for which
 descriptions have been translated for this locale. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -493,7 +493,7 @@ modulemd_translation_entry_get_profile_description
 <a name="modulemd-2.0-Modulemd.TranslationEntry.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ModulemdTranslationEntry--description"></a><h3>The <code class="literal">“description”</code> property</h3>
-<pre class="programlisting">  “description”              <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “description”              <span class="type">char</span> *</pre>
 <p>The description of this module stream translated into the language specified by locale.</p>
 <p>Owner: ModulemdTranslationEntry</p>
 <p>Flags: Read / Write</p>
@@ -502,7 +502,7 @@ modulemd_translation_entry_get_profile_description
 <hr>
 <div class="refsect2">
 <a name="ModulemdTranslationEntry--locale"></a><h3>The <code class="literal">“locale”</code> property</h3>
-<pre class="programlisting">  “locale”                   <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “locale”                   <span class="type">char</span> *</pre>
 <p>The locale for this translation entry. It must correspond to the format specified by libc locale names. This field may only be set on object construction and is immutable afterwards.</p>
 <p>Owner: ModulemdTranslationEntry</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -511,7 +511,7 @@ modulemd_translation_entry_get_profile_description
 <hr>
 <div class="refsect2">
 <a name="ModulemdTranslationEntry--summary"></a><h3>The <code class="literal">“summary”</code> property</h3>
-<pre class="programlisting">  “summary”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “summary”                  <span class="type">char</span> *</pre>
 <p>The summary of this module stream translated into the language specified by locale.</p>
 <p>Owner: ModulemdTranslationEntry</p>
 <p>Flags: Read / Write</p>
@@ -520,6 +520,6 @@ modulemd_translation_entry_get_profile_description
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

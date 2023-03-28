@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream">
 <link rel="next" href="modulemd-2.0-Modulemd.ModuleStreamV2.html" title="Modulemd.ModuleStreamV2">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -586,7 +586,7 @@ justifications.
 <tbody>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--arch" title="The “arch” property">arch</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
@@ -598,19 +598,19 @@ justifications.
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--community" title="The “community” property">community</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--documentation" title="The “documentation” property">documentation</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--tracker" title="The “tracker” property">tracker</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
@@ -679,7 +679,7 @@ modulemd_module_stream_v1_new (<em class="parameter"><code>const <a href="https:
 <a name="modulemd-module-stream-v1-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> object,
 with the specified module and stream names, if provided. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -737,7 +737,7 @@ modulemd_module_stream_v1_get_arch (<em class="parameter"><code><a class="link" 
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-arch.returns"></a><h4>Returns</h4>
 <p>The module artifact architecture. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -767,7 +767,7 @@ modulemd_module_stream_v1_set_buildopts
 <td class="parameter_name"><p>buildopts</p></td>
 <td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object describing
 build options that apply globally to components in this module. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -798,7 +798,7 @@ modulemd_module_stream_v1_get_buildopts
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-buildopts.returns"></a><h4>Returns</h4>
 <p>The build options for this module's components. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -858,7 +858,7 @@ modulemd_module_stream_v1_get_community
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-community.returns"></a><h4>Returns</h4>
 <p>The module community website address. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -931,7 +931,7 @@ untranslated string, they should pass <code class="literal">"C"</code> for the l
 <p>The module description, translated to the
 requested locale if available. Translation information is managed by the
 <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> and <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> objects. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -991,7 +991,7 @@ modulemd_module_stream_v1_get_documentation
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-documentation.returns"></a><h4>Returns</h4>
 <p>The module documentation website address. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1062,7 +1062,7 @@ untranslated string, they should pass <code class="literal">"C"</code> for the l
 <p>The module summary, translated to the requested
 locale if available. Translation information is managed by the
 <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> and <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> objects. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1120,7 +1120,7 @@ modulemd_module_stream_v1_get_tracker (<em class="parameter"><code><a class="lin
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-tracker.returns"></a><h4>Returns</h4>
 <p>The module bug tracker website address. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1150,7 +1150,7 @@ modulemd_module_stream_v1_add_component
 <td class="parameter_name"><p>component</p></td>
 <td class="parameter_description"><p>A <a class="link" href="ModulemdComponent.html" title="Modulemd.Component"><span class="type">ModulemdComponent</span></a> to be added to this
 module stream. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -1297,7 +1297,7 @@ modulemd_module_stream_v1_get_module_component_names_as_strv
 <a name="modulemd-module-stream-v1-get-module-component-names-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module component names
 included in this stream. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1327,7 +1327,7 @@ modulemd_module_stream_v1_get_rpm_component_names_as_strv
 <a name="modulemd-module-stream-v1-get-rpm-component-names-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of RPM component names
 included in this stream. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1365,7 +1365,7 @@ modulemd_module_stream_v1_get_module_component
 <p>The module component matching <em class="parameter"><code>component_name</code></em>
 if
 it exists, else NULL. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1403,7 +1403,7 @@ modulemd_module_stream_v1_get_rpm_component
 <p>The RPM component matching <em class="parameter"><code>component_name</code></em>
 if it
 exists, else NULL. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1608,7 +1608,7 @@ modulemd_module_stream_v1_get_content_licenses_as_strv
 <a name="modulemd-module-stream-v1-get-content-licenses-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of licenses under which one
 or more components of this module stream are released. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1638,7 +1638,7 @@ modulemd_module_stream_v1_get_module_licenses_as_strv
 <a name="modulemd-module-stream-v1-get-module-licenses-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of licenses under which
 this module stream is released. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1666,7 +1666,7 @@ modulemd_module_stream_v1_add_profile (<em class="parameter"><code><a class="lin
 <tr>
 <td class="parameter_name"><p>profile</p></td>
 <td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> for this module stream. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -1723,7 +1723,7 @@ modulemd_module_stream_v1_get_profile_names_as_strv
 <a name="modulemd-module-stream-v1-get-profile-names-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of profile names associated
 with this module stream. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1759,7 +1759,7 @@ modulemd_module_stream_v1_get_profile (<em class="parameter"><code><a class="lin
 <a name="modulemd-module-stream-v1-get-profile.returns"></a><h4>Returns</h4>
 <p>The requested profile definition if present in the
 module stream. NULL otherwise. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1875,7 +1875,7 @@ modulemd_module_stream_v1_get_rpm_api_as_strv
 <a name="modulemd-module-stream-v1-get-rpm-api-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of binary RPM names that
 forms the public API of this module stream. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1991,7 +1991,7 @@ modulemd_module_stream_v1_get_rpm_artifacts_as_strv
 <a name="modulemd-module-stream-v1-get-rpm-artifacts-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of RPM NEVRs are included
 in this module stream. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2107,7 +2107,7 @@ modulemd_module_stream_v1_get_rpm_filters_as_strv
 <a name="modulemd-module-stream-v1-get-rpm-filters-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of binary RPM names that
 are filtered out of this module stream. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2136,7 +2136,7 @@ modulemd_module_stream_v1_add_servicelevel
 <tr>
 <td class="parameter_name"><p>servicelevel</p></td>
 <td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> for this module stream. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -2193,7 +2193,7 @@ modulemd_module_stream_v1_get_servicelevel_names_as_strv
 <a name="modulemd-module-stream-v1-get-servicelevel-names-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of servicelevel names
 associated with this module stream. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2230,7 +2230,7 @@ modulemd_module_stream_v1_get_servicelevel
 <a name="modulemd-module-stream-v1-get-servicelevel.returns"></a><h4>Returns</h4>
 <p>The requested servicelevel definition if present in the
 module stream. NULL otherwise. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2300,7 +2300,7 @@ is a wrapper for <code class="literal">modulemd_module_stream_v1_get_serviceleve
 <a name="modulemd-module-stream-v1-get-eol.returns"></a><h4>Returns</h4>
 <p>The end-of-life date for the "rawhide" service
 level. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2518,7 +2518,7 @@ modulemd_module_stream_v1_get_buildtime_modules_as_strv
 <a name="modulemd-module-stream-v1-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
 module depends on at build-time. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2548,7 +2548,7 @@ modulemd_module_stream_v1_get_runtime_modules_as_strv
 <a name="modulemd-module-stream-v1-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
 module depends on at runtime. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2585,7 +2585,7 @@ modulemd_module_stream_v1_get_buildtime_requirement_stream
 <a name="modulemd-module-stream-v1-get-buildtime-requirement-stream.returns"></a><h4>Returns</h4>
 <p>The name of the stream matching this module name
 in the build-time dependencies. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -2625,7 +2625,7 @@ freed by the caller.</p>
 <tr>
 <td class="parameter_name"><p>xmd</p></td>
 <td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> representing arbitrary YAML. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -2655,7 +2655,7 @@ modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" h
 <div class="refsect3">
 <a name="modulemd-module-stream-v1-get-xmd.returns"></a><h4>Returns</h4>
 <p>The extensible metadata block as a <a href="https://developer.gnome.org/glib/stable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a>. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
 </div>
@@ -2676,7 +2676,7 @@ modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" h
 <a name="modulemd-2.0-Modulemd.ModuleStreamV1.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--arch"></a><h3>The <code class="literal">“arch”</code> property</h3>
-<pre class="programlisting">  “arch”                     <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “arch”                     <span class="type">char</span> *</pre>
 <p>The architecture of the produced artifacts.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -2693,7 +2693,7 @@ modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" h
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--community"></a><h3>The <code class="literal">“community”</code> property</h3>
-<pre class="programlisting">  “community”                <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “community”                <span class="type">char</span> *</pre>
 <p>The website address of the upstream community for this module.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -2702,7 +2702,7 @@ modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" h
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--documentation"></a><h3>The <code class="literal">“documentation”</code> property</h3>
-<pre class="programlisting">  “documentation”            <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “documentation”            <span class="type">char</span> *</pre>
 <p>The website address of the upstream documentation for this module.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -2711,7 +2711,7 @@ modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" h
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--tracker"></a><h3>The <code class="literal">“tracker”</code> property</h3>
-<pre class="programlisting">  “tracker”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “tracker”                  <span class="type">char</span> *</pre>
 <p>The website address of the upstream bug tracker for this module.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -2720,6 +2720,6 @@ modulemd_module_stream_v1_get_xmd (<em class="parameter"><code><a class="link" h
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

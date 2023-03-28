@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.BuildConfig.html" title="Modulemd.BuildConfig">
 <link rel="next" href="ModulemdComponent.html" title="Modulemd.Component">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -167,7 +167,7 @@ justifications.
 </colgroup>
 <tbody><tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts--rpm-macros" title="The “rpm-macros” property">rpm-macros</a></td>
 <td class="property_flags">Read / Write</td>
 </tr></tbody>
@@ -211,7 +211,7 @@ modulemd_buildopts_new (<em class="parameter"><code><span class="type">void</spa
 <a name="modulemd-buildopts-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object. This
 object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -276,7 +276,7 @@ modulemd_buildopts_copy (<em class="parameter"><code><a class="link" href="modul
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object that
 is a copy of <em class="parameter"><code>self</code></em>
 . </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -335,7 +335,7 @@ modulemd_buildopts_get_rpm_macros (<em class="parameter"><code><a class="link" h
 <a name="modulemd-buildopts-get-rpm-macros.returns"></a><h4>Returns</h4>
 <p>A string containing RPM build macros in the form
 that they would appear in an RPM macros file on-disk. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -450,7 +450,7 @@ modulemd_buildopts_get_rpm_whitelist_as_strv
 <div class="refsect3">
 <a name="modulemd-buildopts-get-rpm-whitelist-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of all RPMs in the whitelist. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -567,7 +567,7 @@ modulemd_buildopts_get_arches_as_strv (<em class="parameter"><code><a class="lin
 <p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of architectures for which this
 module should be built. If empty, this module should be built for all
 architectures. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
 </div>
@@ -589,7 +589,7 @@ architectures. </p>
 <a name="modulemd-2.0-Modulemd.Buildopts.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ModulemdBuildopts--rpm-macros"></a><h3>The <code class="literal">“rpm-macros”</code> property</h3>
-<pre class="programlisting">  “rpm-macros”               <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “rpm-macros”               <span class="type">char</span> *</pre>
 <p>A string containing RPM build macros in the form that they would appear in an RPM macros file on-disk.</p>
 <p>Owner: ModulemdBuildopts</p>
 <p>Flags: Read / Write</p>
@@ -598,6 +598,6 @@ architectures. </p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

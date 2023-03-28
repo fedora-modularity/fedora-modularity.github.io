@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.RpmMapEntry.html" title="Modulemd.RpmMapEntry">
 <link rel="next" href="modulemd-2.0-Modulemd.SubdocumentInfo.html" title="Modulemd.SubdocumentInfo">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -135,7 +135,7 @@ justifications.
 </colgroup>
 <tbody><tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel--name" title="The “name” property">name</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr></tbody>
@@ -194,7 +194,7 @@ modulemd_service_level_new (<em class="parameter"><code>const <a href="https://d
 <a name="modulemd-service-level-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> object.
 This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -222,7 +222,7 @@ modulemd_service_level_copy (<em class="parameter"><code><a class="link" href="m
 <div class="refsect3">
 <a name="modulemd-service-level-copy.returns"></a><h4>Returns</h4>
 <p>The copied <a class="link" href="modulemd-2.0-Modulemd.ServiceLevel.html#ModulemdServiceLevel"><span class="type">ModulemdServiceLevel</span></a> object. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -251,7 +251,7 @@ modulemd_service_level_get_name (<em class="parameter"><code><a class="link" hre
 <a name="modulemd-service-level-get-name.returns"></a><h4>Returns</h4>
 <p>The name of this service level. This is a pointer
 to the internal memory location and must not be freed. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -375,7 +375,7 @@ modulemd_service_level_get_eol (<em class="parameter"><code><a class="link" href
 <div class="refsect3">
 <a name="modulemd-service-level-get-eol.returns"></a><h4>Returns</h4>
 <p>The end date of the service level as a <a href="https://developer.gnome.org/glib/stable/glib-Date-and-Time-Functions.html#GDate"><span class="type">GDate</span></a>. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -404,7 +404,7 @@ modulemd_service_level_get_eol_as_string
 <a name="modulemd-service-level-get-eol-as-string.returns"></a><h4>Returns</h4>
 <p>The end date of the service level as a
 string of the form "YYYY-MM-DD" or NULL if the date is unset or invalid. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -460,7 +460,7 @@ modulemd_service_level_equals (<em class="parameter"><code><a class="link" href=
 <a name="modulemd-2.0-Modulemd.ServiceLevel.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ModulemdServiceLevel--name"></a><h3>The <code class="literal">“name”</code> property</h3>
-<pre class="programlisting">  “name”                     <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “name”                     <span class="type">char</span> *</pre>
 <p>A human-readable name for this servicelevel.</p>
 <p>Owner: ModulemdServiceLevel</p>
 <p>Flags: Read / Write / Construct Only</p>
@@ -469,6 +469,6 @@ modulemd_service_level_equals (<em class="parameter"><code><a class="link" href=
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

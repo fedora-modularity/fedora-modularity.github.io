@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.ComponentModule.html" title="Modulemd.ComponentModule">
 <link rel="next" href="modulemd-2.0-Modulemd-Compression-Helpers.html" title="Modulemd Compression Helpers">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -219,19 +219,19 @@ justifications.
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--cache" title="The “cache” property">cache</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--ref" title="The “ref” property">ref</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm--repository" title="The “repository” property">repository</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
@@ -297,7 +297,7 @@ components from a <a class="link" href="ModulemdModuleStream.html" title="Module
 <div class="refsect3">
 <a name="modulemd-component-rpm-new.returns"></a><h4>Returns</h4>
 <p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ComponentRpm.html#ModulemdComponentRpm"><span class="type">ModulemdComponentRpm</span></a> object. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -412,7 +412,7 @@ modulemd_component_rpm_get_arches_as_strv
 <a name="modulemd-component-rpm-get-arches-as-strv.returns"></a><h4>Returns</h4>
 <p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of architectures on which this RPM
 should be available. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -528,7 +528,7 @@ modulemd_component_rpm_get_multilib_arches_as_strv
 <a name="modulemd-component-rpm-get-multilib-arches-as-strv.returns"></a><h4>Returns</h4>
 <p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of architectures on which multilib
 should be available. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -585,7 +585,7 @@ modulemd_component_rpm_get_cache (<em class="parameter"><code><a class="link" hr
 <div class="refsect3">
 <a name="modulemd-component-rpm-get-cache.returns"></a><h4>Returns</h4>
 <p>The lookaside cache URL. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -642,7 +642,7 @@ modulemd_component_rpm_get_ref (<em class="parameter"><code><a class="link" href
 <div class="refsect3">
 <a name="modulemd-component-rpm-get-ref.returns"></a><h4>Returns</h4>
 <p>The commit ID in the SCM repository. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -699,7 +699,7 @@ modulemd_component_rpm_get_repository (<em class="parameter"><code><a class="lin
 <div class="refsect3">
 <a name="modulemd-component-rpm-get-repository.returns"></a><h4>Returns</h4>
 <p>The URI of the SCM repository. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -847,7 +847,7 @@ modulemd_component_rpm_get_srpm_buildroot
 <hr>
 <div class="refsect2">
 <a name="ModulemdComponentRpm--cache"></a><h3>The <code class="literal">“cache”</code> property</h3>
-<pre class="programlisting">  “cache”                    <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “cache”                    <span class="type">char</span> *</pre>
 <p>The lookaside cache URL.</p>
 <p>Owner: ModulemdComponentRpm</p>
 <p>Flags: Read / Write</p>
@@ -856,7 +856,7 @@ modulemd_component_rpm_get_srpm_buildroot
 <hr>
 <div class="refsect2">
 <a name="ModulemdComponentRpm--ref"></a><h3>The <code class="literal">“ref”</code> property</h3>
-<pre class="programlisting">  “ref”                      <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “ref”                      <span class="type">char</span> *</pre>
 <p>The commit ID in the SCM repository.</p>
 <p>Owner: ModulemdComponentRpm</p>
 <p>Flags: Read / Write</p>
@@ -865,7 +865,7 @@ modulemd_component_rpm_get_srpm_buildroot
 <hr>
 <div class="refsect2">
 <a name="ModulemdComponentRpm--repository"></a><h3>The <code class="literal">“repository”</code> property</h3>
-<pre class="programlisting">  “repository”               <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “repository”               <span class="type">char</span> *</pre>
 <p>The URI of the SCM repository.</p>
 <p>Owner: ModulemdComponentRpm</p>
 <p>Flags: Read / Write</p>
@@ -883,6 +883,6 @@ modulemd_component_rpm_get_srpm_buildroot
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

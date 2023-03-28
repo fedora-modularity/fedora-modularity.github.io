@@ -8,7 +8,7 @@
 <link rel="up" href="ch03.html" title="Modulemd 2.0 Private Developer Utilities">
 <link rel="prev" href="ch03.html" title="Modulemd 2.0 Private Developer Utilities">
 <link rel="next" href="modulemd-2.0-YAML-Manipulation-Tools.html" title="YAML Manipulation Tools">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -334,7 +334,7 @@ has been entered.</p>
 <p>DIRECT USE OF THIS FUNCTION SHOULD BE AVOIDED. Instead use
 <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#MODULEMD-INIT-TRACE:CAPS" title="MODULEMD_INIT_TRACE"><code class="literal">MODULEMD_INIT_TRACE</code></a>--which makes use of this function as part of its
 internal implementation. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -403,7 +403,7 @@ modulemd_hash_table_deep_str_copy (<em class="parameter"><code><a href="https://
 <p>A newly-allocated <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> containing a deep
 copy of both the keys and values from <em class="parameter"><code>orig</code></em>
 . </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -435,7 +435,7 @@ copy of the keys from <em class="parameter"><code>orig</code></em>
 are ignored, and the
 values in the copy are set the same as the corresponding keys so the
 returned <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> can be used as a set. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -465,7 +465,7 @@ modulemd_hash_table_deep_str_set_copy (<em class="parameter"><code><a href="http
 copy of the keys from <em class="parameter"><code>orig</code></em>
 . The corresponding <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> value for each
 key is deep copied via <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()"><code class="function">modulemd_hash_table_deep_str_copy()</code></a> for use as a set. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -498,7 +498,7 @@ copy of the keys from <em class="parameter"><code>orig</code></em>
 . Each corresponding <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> value is deep
 copied, with the second level <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> copied for use as a set as
 described in <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-hash-table-deep-str-copy" title="modulemd_hash_table_deep_str_copy ()"><code class="function">modulemd_hash_table_deep_str_copy()</code></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -756,7 +756,7 @@ always be passed as <a class="link" href="modulemd-2.0-Modulemd-Utility-Function
 sorted
 according to <em class="parameter"><code>compare_func</code></em>
 . </p>
-<p><span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -785,7 +785,7 @@ modulemd_ordered_str_keys_as_strv (<em class="parameter"><code><a href="https://
 <p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of the keys from <em class="parameter"><code>htable</code></em>
 sorted
 according to <a class="link" href="modulemd-2.0-Modulemd-Utility-Functions.html#modulemd-strcmp-sort" title="modulemd_strcmp_sort ()"><code class="function">modulemd_strcmp_sort()</code></a>. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -813,7 +813,7 @@ modulemd_variant_deep_copy (<em class="parameter"><code><a href="https://develop
 <a name="modulemd-variant-deep-copy.returns"></a><h4>Returns</h4>
 <p>A newly-allocated deep copy of <em class="parameter"><code>variant</code></em>
 . </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -1107,7 +1107,7 @@ modulemd_guint64_to_iso8601date (<em class="parameter"><code><a href="https://de
 <div class="refsect3">
 <a name="modulemd-guint64-to-iso8601date.returns"></a><h4>Returns</h4>
 <p>A newly-allocated string containing a date in ISO 8601 format. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
 </div>
@@ -1316,6 +1316,6 @@ table in libmodulemd for containing a <code class="function">set()</code> of uni
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

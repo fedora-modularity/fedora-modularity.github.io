@@ -8,7 +8,7 @@
 <link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
 <link rel="prev" href="modulemd-2.0-Modulemd.ModuleStream-(Private).html" title="Modulemd.ModuleStream (Private)">
 <link rel="next" href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html" title="Modulemd.ModuleStreamV2 (Private)">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -87,7 +87,7 @@ documented ways.
 <tbody>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--arch" title="The “arch” property">arch</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
@@ -99,19 +99,19 @@ documented ways.
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--community" title="The “community” property">community</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--documentation" title="The “documentation” property">documentation</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
 <tr>
 <td class="property_type">
-<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1--tracker" title="The “tracker” property">tracker</a></td>
 <td class="property_flags">Read / Write / Construct</td>
 </tr>
@@ -185,7 +185,7 @@ validation error. </p></td>
 read from the YAML. NULL if a parse or validation error occurred and sets
 <em class="parameter"><code>error</code></em>
 appropriately. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
 </div>
@@ -284,7 +284,7 @@ matches <em class="parameter"><code>nevra_pattern</code></em>
 <a name="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--arch"></a><h3>The <code class="literal">“arch”</code> property</h3>
-<pre class="programlisting">  “arch”                     <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “arch”                     <span class="type">char</span> *</pre>
 <p>The architecture of the produced artifacts.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -301,7 +301,7 @@ matches <em class="parameter"><code>nevra_pattern</code></em>
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--community"></a><h3>The <code class="literal">“community”</code> property</h3>
-<pre class="programlisting">  “community”                <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “community”                <span class="type">char</span> *</pre>
 <p>The website address of the upstream community for this module.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -310,7 +310,7 @@ matches <em class="parameter"><code>nevra_pattern</code></em>
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--documentation"></a><h3>The <code class="literal">“documentation”</code> property</h3>
-<pre class="programlisting">  “documentation”            <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “documentation”            <span class="type">char</span> *</pre>
 <p>The website address of the upstream documentation for this module.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -319,7 +319,7 @@ matches <em class="parameter"><code>nevra_pattern</code></em>
 <hr>
 <div class="refsect2">
 <a name="ModulemdModuleStreamV1--tracker"></a><h3>The <code class="literal">“tracker”</code> property</h3>
-<pre class="programlisting">  “tracker”                  <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<pre class="programlisting">  “tracker”                  <span class="type">char</span> *</pre>
 <p>The website address of the upstream bug tracker for this module.</p>
 <p>Owner: ModulemdModuleStreamV1</p>
 <p>Flags: Read / Write / Construct</p>
@@ -328,6 +328,6 @@ matches <em class="parameter"><code>nevra_pattern</code></em>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>

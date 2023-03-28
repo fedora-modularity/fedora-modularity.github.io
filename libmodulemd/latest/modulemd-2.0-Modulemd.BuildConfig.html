@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
 <link rel="prev" href="modulemd-2.0-Modulemd.html" title="Modulemd">
 <link rel="next" href="modulemd-2.0-Modulemd.Buildopts.html" title="Modulemd.Buildopts">
-<meta name="generator" content="GTK-Doc V1.32 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -315,7 +315,7 @@ be sure that it is in the correct format, call
 <a name="modulemd-build-config-get-context.returns"></a><h4>Returns</h4>
 <p>The string representing the context that this
 build configuration produces. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -375,7 +375,7 @@ modulemd_build_config_get_platform (<em class="parameter"><code><a class="link" 
 <a name="modulemd-build-config-get-platform.returns"></a><h4>Returns</h4>
 <p>The string representing the platform that this
 build configuration applies to. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -506,7 +506,7 @@ modulemd_build_config_get_runtime_requirement_stream
 <a name="modulemd-build-config-get-runtime-requirement-stream.returns"></a><h4>Returns</h4>
 <p>The name of the stream matching this module name
 in the run-time dependencies. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -535,7 +535,7 @@ modulemd_build_config_get_runtime_modules_as_strv
 <a name="modulemd-build-config-get-runtime-modules-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
 module depends on at run-time. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -666,7 +666,7 @@ modulemd_build_config_get_buildtime_requirement_stream
 <a name="modulemd-build-config-get-buildtime-requirement-stream.returns"></a><h4>Returns</h4>
 <p>The name of the stream matching this module name
 in the build-time dependencies. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -695,7 +695,7 @@ modulemd_build_config_get_buildtime_modules_as_strv
 <a name="modulemd-build-config-get-buildtime-modules-as-strv.returns"></a><h4>Returns</h4>
 <p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of module names that this
 module depends on at build-time. </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -724,7 +724,7 @@ modulemd_build_config_set_buildopts (<em class="parameter"><code><a class="link"
 <td class="parameter_name"><p>buildopts</p></td>
 <td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object describing
 build options that apply globally to components in this module. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -754,7 +754,7 @@ modulemd_build_config_get_buildopts (<em class="parameter"><code><a class="link"
 <div class="refsect3">
 <a name="modulemd-build-config-get-buildopts.returns"></a><h4>Returns</h4>
 <p>The build options for this module's components. </p>
-<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -819,7 +819,7 @@ modulemd_build_config_copy (<em class="parameter"><code><a class="link" href="mo
 <a name="modulemd-build-config-copy.returns"></a><h4>Returns</h4>
 <p>A deep copy of <em class="parameter"><code>self</code></em>
 . </p>
-<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="ch16.html#api-index-2.11">2.11</a></p>
 </div>
@@ -915,6 +915,6 @@ is greater than <em class="parameter"><code>self_2</code></em>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.32</div>
+<hr>Generated by GTK-Doc V1.33.1</div>
 </body>
 </html>
