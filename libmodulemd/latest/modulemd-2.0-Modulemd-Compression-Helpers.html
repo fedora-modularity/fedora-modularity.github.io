@@ -98,7 +98,7 @@ modulemd_compression_type (<em class="parameter"><code>const <a href="https://de
 <tbody><tr>
 <td class="parameter_name"><p>name</p></td>
 <td class="parameter_description"><p>The name of the compression type. Valid options are:
-"gz", "gzip", "bz2", "bzip2", "xz" and "zck". </p></td>
+"gz", "gzip", "bz2", "bzip2", "xz", "zck", and "zstd". </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
 </tr></tbody>
 </table></div>
@@ -126,6 +126,13 @@ a known type.</p>
 <col width="200px" class="enum_members_annotations">
 </colgroup>
 <tbody>
+<tr>
+<td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-ZSTD-COMPRESSION:CAPS"></a>MODULEMD_COMPRESSION_TYPE_ZSTD_COMPRESSION</p></td>
+<td class="enum_member_description">
+<p>Zstandard compression; since 2.15</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
 <tr>
 <td class="enum_member_name"><p><a name="MODULEMD-COMPRESSION-TYPE-DETECTION-FAILED:CAPS"></a>MODULEMD_COMPRESSION_TYPE_DETECTION_FAILED</p></td>
 <td class="enum_member_description">
