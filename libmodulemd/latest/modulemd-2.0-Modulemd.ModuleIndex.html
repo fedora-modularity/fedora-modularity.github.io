@@ -325,14 +325,14 @@ already been read into strings):</p>
 6
 7
 8</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="n">fedora_repo_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span><span class="w"></span>
-<span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">fedora_modulemd</span><span class="p">,</span><span class="w"> </span><span class="n">True</span><span class="p">)</span><span class="w"></span>
+        <td class="listing_code"><pre class="programlisting"><span class="n">fedora_repo_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">fedora_modulemd</span><span class="p">,</span><span class="w"> </span><span class="n">True</span><span class="p">)</span>
 
 <span class="cp"># Get the list of all module names in the index</span>
-<span class="n">module_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">get_module_names</span><span class="p">()</span><span class="w"></span>
+<span class="n">module_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">get_module_names</span><span class="p">()</span>
 
 <span class="cp"># Retrieve information about a particular module from the index</span>
-<span class="n">module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">get_module</span><span class="p">(</span><span class="err">&#39;</span><span class="n">module_name</span><span class="err">&#39;</span><span class="p">)</span><span class="w"></span></pre></td>
+<span class="n">module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">get_module</span><span class="p">(</span><span class="err">&#39;</span><span class="n">module_name</span><span class="err">&#39;</span><span class="p">)</span></pre></td>
       </tr>
     </tbody>
   </table>

@@ -847,6 +847,7 @@
     <keyword type="function" name="mmd_emitter_start_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-start-sequence" since="2.0"/>
     <keyword type="function" name="mmd_emitter_end_sequence ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-end-sequence" since="2.0"/>
     <keyword type="function" name="mmd_emitter_scalar ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-scalar" since="2.0"/>
+    <keyword type="function" name="mmd_emitter_scalar_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-scalar-string" since="2.15"/>
     <keyword type="function" name="mmd_emitter_strv ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#mmd-emitter-strv" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_date ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-date" since="2.0"/>
     <keyword type="function" name="modulemd_yaml_parse_string ()" link="modulemd-2.0-YAML-Manipulation-Tools.html#modulemd-yaml-parse-string" since="2.0"/>
@@ -871,9 +872,12 @@
     <keyword type="macro" name="NON_EMPTY_ARRAY()" link="modulemd-2.0-YAML-Manipulation-Tools.html#NON-EMPTY-ARRAY:CAPS" since="2.0"/>
     <keyword type="macro" name="EMIT_SCALAR_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SCALAR-FULL:CAPS" since="2.1"/>
     <keyword type="macro" name="EMIT_SCALAR()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SCALAR:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_SCALAR_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-SCALAR-STRING:CAPS" since="2.15"/>
     <keyword type="macro" name="EMIT_KEY_VALUE_FULL()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-FULL:CAPS" since="2.1"/>
     <keyword type="macro" name="EMIT_KEY_VALUE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_KEY_VALUE_STRING()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-STRING:CAPS" since="2.15"/>
     <keyword type="macro" name="EMIT_KEY_VALUE_IF_SET()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-IF-SET:CAPS" since="2.0"/>
+    <keyword type="macro" name="EMIT_KEY_VALUE_STRING_IF_SET()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-KEY-VALUE-STRING-IF-SET:CAPS" since="2.15"/>
     <keyword type="macro" name="EMIT_MAPPING_START_WITH_STYLE()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-START-WITH-STYLE:CAPS" since="2.0"/>
     <keyword type="macro" name="EMIT_MAPPING_START()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-START:CAPS" since="2.0"/>
     <keyword type="macro" name="EMIT_MAPPING_END()" link="modulemd-2.0-YAML-Manipulation-Tools.html#EMIT-MAPPING-END:CAPS" since="2.0"/>
