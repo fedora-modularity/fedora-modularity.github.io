@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd 2.0 Private Object Methods: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="modulemd-2.0.html" title="libmodulemd">
+<link rel="prev" href="modulemd-2.0-Modulemd.Obsoletes.html" title="Modulemd.Obsoletes">
+<link rel="next" href="modulemd-2.0-modulemd-build-config-private.html" title="modulemd-build-config-private">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="modulemd-2.0.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.Obsoletes.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-modulemd-build-config-private.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="id-1.2.4"></a>Modulemd 2.0 Private Object Methods</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-modulemd-build-config-private.html">modulemd-build-config-private</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Buildopts-(Private).html">Modulemd.Buildopts (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdBuildopts</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Component-(Private).html">Modulemd.Component (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdComponent</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ComponentModule-(Private).html">Modulemd.ComponentModule (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdComponentModule</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ComponentRpm-(Private).html">Modulemd.ComponentRpm (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdComponentRpm</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd-Compression-Helpers-(Private).html">Modulemd Compression Helpers (Private)</a></span><span class="refpurpose"> — Internal utility functions for working with compressed
+files.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Dependencies-(Private).html">Modulemd.Dependencies (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdDependencies</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Defaults-(Private).html">Modulemd.Defaults (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdDefaults</span> methods that should only be used by
+internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html">Modulemd.DefaultsV1 (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdDefaults</span> methods that should only be used by
+internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Module-(Private).html">Modulemd.Module (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModule</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleIndex-(Private).html">Modulemd.ModuleIndex (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleIndex</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStream-(Private).html">Modulemd.ModuleStream (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleStream</span> methods that should only be used
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStreamV1-(Private).html">Modulemd.ModuleStreamV1 (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleStreamV1</span> methods that should only be
+used by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ModuleStreamV2-(Private).html">Modulemd.ModuleStreamV2 (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdModuleStreamV2</span> methods that should only be
+used by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.PackagerV3-(Private).html">Modulemd.PackagerV3 (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdPackagerV3</span> methods that should only be used by
+internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Profile-(Private).html">Modulemd.Profile (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdProfile</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html">Modulemd.RpmMapEntry (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdRpmMapEntry</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.ServiceLevel-(Private).html">Modulemd.ServiceLevel (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdServiceLevel</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.SubdocumentInfo-(Private).html">Modulemd.SubdocumentInfo (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdSubdocumentInfo</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Translation-(Private).html">Modulemd.Translation (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdTranslation</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.TranslationEntry-(Private).html">Modulemd.TranslationEntry (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdTranslationEntry</span> methods that should be used only
+by internal consumers.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="modulemd-2.0-Modulemd.Obsoletes-(Private).html">Modulemd.Obsoletes (Private)</a></span><span class="refpurpose"> — <span class="type">ModulemdObsoletes</span> methods that should only be used by
+internal consumers.</span>
+</dt>
+</dl></div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

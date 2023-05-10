@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Buildopts: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.BuildConfig.html" title="Modulemd.BuildConfig">
+<link rel="next" href="ModulemdComponent.html" title="Modulemd.Component">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Buildopts.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Buildopts.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Buildopts.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.BuildConfig.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ModulemdComponent.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.Buildopts"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Buildopts.top_of_page"></a>Modulemd.Buildopts</span></h2>
+<p>Modulemd.Buildopts — Provides hints to the build-system on how to build this module.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.stability-level"></a><h2>Stability Level</h2>
+<acronym title="The intention of a Stable interface is to enable arbitrary third parties to
+develop applications to these interfaces, release them, and have confidence that
+they will run on all minor releases of the product (after the one in which the
+interface was introduced, and within the same major release). Even at a major
+release, incompatible changes are expected to be rare, and to have strong
+justifications.
+"><span class="acronym">Stable</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-new" title="modulemd_buildopts_new ()">modulemd_buildopts_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-equals" title="modulemd_buildopts_equals ()">modulemd_buildopts_equals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-copy" title="modulemd_buildopts_copy ()">modulemd_buildopts_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-set-rpm-macros" title="modulemd_buildopts_set_rpm_macros ()">modulemd_buildopts_set_rpm_macros</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-macros" title="modulemd_buildopts_get_rpm_macros ()">modulemd_buildopts_get_rpm_macros</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-add-rpm-to-whitelist" title="modulemd_buildopts_add_rpm_to_whitelist ()">modulemd_buildopts_add_rpm_to_whitelist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-remove-rpm-from-whitelist" title="modulemd_buildopts_remove_rpm_from_whitelist ()">modulemd_buildopts_remove_rpm_from_whitelist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-rpm-whitelist" title="modulemd_buildopts_clear_rpm_whitelist ()">modulemd_buildopts_clear_rpm_whitelist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-rpm-whitelist-as-strv" title="modulemd_buildopts_get_rpm_whitelist_as_strv ()">modulemd_buildopts_get_rpm_whitelist_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-add-arch" title="modulemd_buildopts_add_arch ()">modulemd_buildopts_add_arch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-remove-arch" title="modulemd_buildopts_remove_arch ()">modulemd_buildopts_remove_arch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-arches" title="modulemd_buildopts_clear_arches ()">modulemd_buildopts_clear_arches</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-get-arches-as-strv" title="modulemd_buildopts_get_arches_as_strv ()">modulemd_buildopts_get_arches_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts--rpm-macros" title="The “rpm-macros” property">rpm-macros</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="ModulemdBuildopts"></a><div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#MODULEMD-TYPE-BUILDOPTS:CAPS" title="MODULEMD_TYPE_BUILDOPTS">MODULEMD_TYPE_BUILDOPTS</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts-struct" title="ModulemdBuildopts">ModulemdBuildopts</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ModulemdBuildopts
+</pre>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-buildopts-new"></a><h3>modulemd_buildopts_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+modulemd_buildopts_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-buildopts-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object. This
+object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-equals"></a><h3>modulemd_buildopts_equals ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_buildopts_equals (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self_1</code></em>,
+                           <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self_2</code></em>);</pre>
+<p>Check for equality for two <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> objects.</p>
+<div class="refsect3">
+<a name="modulemd-buildopts-equals.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self_1</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>self_2</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-buildopts-equals.returns"></a><h4>Returns</h4>
+<p> TRUE if both objects are equal, FALSE otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-copy"></a><h3>modulemd_buildopts_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="returnvalue">ModulemdBuildopts</span></a> *
+modulemd_buildopts_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p>
+<div class="refsect3">
+<a name="modulemd-buildopts-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-buildopts-copy.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object that
+is a copy of <em class="parameter"><code>self</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-set-rpm-macros"></a><h3>modulemd_buildopts_set_rpm_macros ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_set_rpm_macros (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm_macros</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-buildopts-set-rpm-macros.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm_macros</p></td>
+<td class="parameter_description"><p>A string containing RPM build macros in the form that they
+would appear in an RPM macros file on-disk.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-get-rpm-macros"></a><h3>modulemd_buildopts_get_rpm_macros ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_buildopts_get_rpm_macros (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-rpm-macros.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-rpm-macros.returns"></a><h4>Returns</h4>
+<p>A string containing RPM build macros in the form
+that they would appear in an RPM macros file on-disk. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-add-rpm-to-whitelist"></a><h3>modulemd_buildopts_add_rpm_to_whitelist ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_add_rpm_to_whitelist
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-buildopts-add-rpm-to-whitelist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>An RPM name to add to the whitelist.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-remove-rpm-from-whitelist"></a><h3>modulemd_buildopts_remove_rpm_from_whitelist ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_remove_rpm_from_whitelist
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rpm</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-buildopts-remove-rpm-from-whitelist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rpm</p></td>
+<td class="parameter_description"><p>An RPM name to remove from the whitelist.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-clear-rpm-whitelist"></a><h3>modulemd_buildopts_clear_rpm_whitelist ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_clear_rpm_whitelist
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<p>Remove all RPMs from the whitelist.</p>
+<div class="refsect3">
+<a name="modulemd-buildopts-clear-rpm-whitelist.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-get-rpm-whitelist-as-strv"></a><h3>modulemd_buildopts_get_rpm_whitelist_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_buildopts_get_rpm_whitelist_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_buildopts_get_rpm_whitelist]</span></p>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-rpm-whitelist-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-rpm-whitelist-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of all RPMs in the whitelist. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-add-arch"></a><h3>modulemd_buildopts_add_arch ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_add_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<p>Restrict the list of architectures for which to build this module. It may be
+called any number of times to indicate support on additional architectures.
+Use <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#modulemd-buildopts-clear-arches" title="modulemd_buildopts_clear_arches ()"><code class="function">modulemd_buildopts_clear_arches()</code></a> to return to "all architectures".</p>
+<div class="refsect3">
+<a name="modulemd-buildopts-add-arch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>An architecture for which to build this module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-remove-arch"></a><h3>modulemd_buildopts_remove_arch ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_remove_arch (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-buildopts-remove-arch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>An architecture to remove from the list of architectures for which to
+build this module.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-clear-arches"></a><h3>modulemd_buildopts_clear_arches ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_buildopts_clear_arches (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<p>Indicate that this module should be built for all architectures.</p>
+<div class="refsect3">
+<a name="modulemd-buildopts-clear-arches.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-buildopts-get-arches-as-strv"></a><h3>modulemd_buildopts_get_arches_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_buildopts_get_arches_as_strv (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_buildopts_get_arches]</span></p>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-arches-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Buildopts.html#ModulemdBuildopts"><span class="type">ModulemdBuildopts</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-buildopts-get-arches-as-strv.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of architectures for which this
+module should be built. If empty, this module should be built for all
+architectures. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-BUILDOPTS:CAPS"></a><h3>MODULEMD_TYPE_BUILDOPTS</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_BUILDOPTS (modulemd_buildopts_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdBuildopts-struct"></a><h3>ModulemdBuildopts</h3>
+<pre class="programlisting">typedef struct _ModulemdBuildopts ModulemdBuildopts;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Buildopts.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ModulemdBuildopts--rpm-macros"></a><h3>The <code class="literal">“rpm-macros”</code> property</h3>
+<pre class="programlisting">  “rpm-macros”               <span class="type">char</span> *</pre>
+<p>A string containing RPM build macros in the form that they would appear in an RPM macros file on-disk.</p>
+<p>Owner: ModulemdBuildopts</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "__BUILDOPTS_RPM_MACROS_UNSET__"</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

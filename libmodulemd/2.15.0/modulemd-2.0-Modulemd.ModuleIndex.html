@@ -1,0 +1,1635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.ModuleIndex: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.Module.html" title="Modulemd.Module">
+<link rel="next" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html" title="Modulemd.ModuleIndexMerger">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ModuleIndex.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.ModuleIndex.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.Module.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.ModuleIndex"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.ModuleIndex.top_of_page"></a>Modulemd.ModuleIndex</span></h2>
+<p>Modulemd.ModuleIndex — The primary interface to dealing with repodata in the
+module metadata format.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.stability-level"></a><h2>Stability Level</h2>
+<acronym title="The intention of a Stable interface is to enable arbitrary third parties to
+develop applications to these interfaces, release them, and have confidence that
+they will run on all minor releases of the product (after the one in which the
+interface was introduced, and within the same major release). Even at a major
+release, incompatible changes are expected to be rare, and to have strong
+justifications.
+"><span class="acronym">Stable</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()">*ModulemdReadHandler</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()">*ModulemdWriteHandler</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-new" title="modulemd_module_index_new ()">modulemd_module_index_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-file" title="modulemd_module_index_update_from_file ()">modulemd_module_index_update_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-string" title="modulemd_module_index_update_from_string ()">modulemd_module_index_update_from_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-stream" title="modulemd_module_index_update_from_stream ()">modulemd_module_index_update_from_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-custom" title="modulemd_module_index_update_from_custom ()">modulemd_module_index_update_from_custom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-defaults-directory" title="modulemd_module_index_update_from_defaults_directory ()">modulemd_module_index_update_from_defaults_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-string" title="modulemd_module_index_dump_to_string ()">modulemd_module_index_dump_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-stream" title="modulemd_module_index_dump_to_stream ()">modulemd_module_index_dump_to_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-dump-to-custom" title="modulemd_module_index_dump_to_custom ()">modulemd_module_index_dump_to_custom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module-names-as-strv" title="modulemd_module_index_get_module_names_as_strv ()">modulemd_module_index_get_module_names_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-module" title="modulemd_module_index_get_module ()">modulemd_module_index_get_module</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-search-streams" title="modulemd_module_index_search_streams ()">modulemd_module_index_search_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-search-streams-by-nsvca-glob" title="modulemd_module_index_search_streams_by_nsvca_glob ()">modulemd_module_index_search_streams_by_nsvca_glob</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-search-rpms" title="modulemd_module_index_search_rpms ()">modulemd_module_index_search_rpms</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-remove-module" title="modulemd_module_index_remove_module ()">modulemd_module_index_remove_module</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-module-stream" title="modulemd_module_index_add_module_stream ()">modulemd_module_index_add_module_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-defaults" title="modulemd_module_index_add_defaults ()">modulemd_module_index_add_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-obsoletes" title="modulemd_module_index_add_obsoletes ()">modulemd_module_index_add_obsoletes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-default-streams-as-hash-table" title="modulemd_module_index_get_default_streams_as_hash_table ()">modulemd_module_index_get_default_streams_as_hash_table</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-add-translation" title="modulemd_module_index_add_translation ()">modulemd_module_index_add_translation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="returnvalue">ModulemdDefaultsVersionEnum</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" title="modulemd_module_index_get_defaults_mdversion ()">modulemd_module_index_get_defaults_mdversion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" title="modulemd_module_index_get_stream_mdversion ()">modulemd_module_index_get_stream_mdversion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-streams" title="modulemd_module_index_upgrade_streams ()">modulemd_module_index_upgrade_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()">modulemd_module_index_upgrade_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-clear-xmds" title="modulemd_module_index_clear_xmds ()">modulemd_module_index_clear_xmds</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ModulemdModuleIndex"></a><div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#MODULEMD-TYPE-MODULE-INDEX:CAPS" title="MODULEMD_TYPE_MODULE_INDEX">MODULEMD_TYPE_MODULE_INDEX</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex-struct" title="ModulemdModuleIndex">ModulemdModuleIndex</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ModulemdModuleIndex
+</pre>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.description"></a><h2>Description</h2>
+<p>This object provides an interface to the complete metadata read from a
+repository or manually added to this object.</p>
+<p>NOTE: When adding or updating this object from YAML, all objects imported
+will be automatically upgraded to match the highest version of that object
+that is seen. This means that if the repository has a mix of
+<a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV1.html#ModulemdModuleStreamV1"><span class="type">ModulemdModuleStreamV1</span></a> and <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a> objects, the index will
+contain only <a class="link" href="modulemd-2.0-Modulemd.ModuleStreamV2.html#ModulemdModuleStreamV2"><span class="type">ModulemdModuleStreamV2</span></a>. You can check the versions the index
+upgraded to with the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-stream-mdversion" title="modulemd_module_index_get_stream_mdversion ()"><code class="function">modulemd_module_index_get_stream_mdversion()</code></a> and
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-get-defaults-mdversion" title="modulemd_module_index_get_defaults_mdversion ()"><code class="function">modulemd_module_index_get_defaults_mdversion()</code></a>. If your application would
+prefer to always work with a particular stream or defaults version (such as
+to avoid extra branching logic), the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-streams" title="modulemd_module_index_upgrade_streams ()"><code class="function">modulemd_module_index_upgrade_streams()</code></a>
+and <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-upgrade-defaults" title="modulemd_module_index_upgrade_defaults ()"><code class="function">modulemd_module_index_upgrade_defaults()</code></a> functions can be used to force
+the contents of the index to upgrade to those versions.</p>
+<p>Interacting with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> is relatively simple. A common Python
+example for working with Fedora repodata might be (assuming the metadata has
+already been read into strings):</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">fedora_repo_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modulemd</span><span class="p">.</span><span class="n">ModuleIndex</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+<span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">update_from_string</span><span class="p">(</span><span class="n">fedora_modulemd</span><span class="p">,</span><span class="w"> </span><span class="n">True</span><span class="p">)</span>
+
+<span class="cp"># Get the list of all module names in the index</span>
+<span class="n">module_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">get_module_names</span><span class="p">()</span>
+
+<span class="cp"># Retrieve information about a particular module from the index</span>
+<span class="n">module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fedora_repo_index</span><span class="p">.</span><span class="n">get_module</span><span class="p">(</span><span class="err">&#39;</span><span class="n">module_name</span><span class="err">&#39;</span><span class="p">)</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>See the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> documentation for details on retrieving information
+about specific modules, including how to get <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> information
+and retrieve individual <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects.</p>
+<p>See the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> documentation for details on merging
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> objects from separate repositories together.</p>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ModulemdReadHandler"></a><h3>ModulemdReadHandler ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="c_punctuation">(</span>*ModulemdReadHandler<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span> *data</code></em>,
+                        <em class="parameter"><code>unsigned <span class="type">char</span> *buffer</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> size</code></em>,
+                        <em class="parameter"><code><span class="type">size_t</span> *size_read</code></em>);</pre>
+<p>The prototype of a read handler.</p>
+<p>The read handler is called when the parser needs to read more bytes from the
+source. The handler should write not more than <em class="parameter"><code>size</code></em>
+ bytes to the <em class="parameter"><code>buffer</code></em>
+.
+The number of written bytes should be set to the <em class="parameter"><code>size_read</code></em>
+ variable.</p>
+<p>This handler is identical to a
+<a class="ulink" href="https://github.com/yaml/libyaml/blob/2c891fc7a770e8ba2fec34fc6b545c672beb37e6/include/yaml.h#L988" target="_top">yaml_read_handler_t in yaml.h header of
+libyaml</a>
+but is included here to avoid depending on yaml.h in modulemd headers.</p>
+<div class="refsect3">
+<a name="ModulemdReadHandler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A private pointer to the data being read. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>The buffer to write the data from the source. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of the buffer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size_read</p></td>
+<td class="parameter_description"><p>The actual number of bytes read from the source. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="ModulemdReadHandler.returns"></a><h4>Returns</h4>
+<p> On success, the handler must return 1. If the handler failed,
+the returned value must be 0.  On EOF, the handler must set the
+<em class="parameter"><code>size_read</code></em>
+to 0 and return 1.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdWriteHandler"></a><h3>ModulemdWriteHandler ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="c_punctuation">(</span>*ModulemdWriteHandler<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span> *data</code></em>,
+                         <em class="parameter"><code>unsigned <span class="type">char</span> *buffer</code></em>,
+                         <em class="parameter"><code><span class="type">size_t</span> size</code></em>);</pre>
+<p>The prototype of a write handler.</p>
+<p>The write handler is called when the emitter needs to flush the accumulated
+characters to the output.  The handler should write <em class="parameter"><code>size</code></em>
+ bytes of the
+<em class="parameter"><code>buffer</code></em>
+ to the output.</p>
+<p>This handler is identical to a
+<a class="ulink" href="https://github.com/yaml/libyaml/blob/2c891fc7a770e8ba2fec34fc6b545c672beb37e6/include/yaml.h#L1478" target="_top">yaml_write_handler_t in yaml.h header of
+libyaml</a>
+but is included here to avoid depending on yaml.h in modulemd headers.</p>
+<div class="refsect3">
+<a name="ModulemdWriteHandler.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>A private pointer that includes the data source. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>The buffer with bytes to be written. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>The size of the buffer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="ModulemdWriteHandler.returns"></a><h4>Returns</h4>
+<p> On success, the handler must return 1. If the handler failed,
+the returned value must be 0.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-new"></a><h3>modulemd_module_index_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="returnvalue">ModulemdModuleIndex</span></a> *
+modulemd_module_index_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-file"></a><h3>modulemd_module_index_update_from_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_update_from_file
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_file</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_file</p></td>
+<td class="parameter_description"><p>A name of a YAML file containing the module metadata and
+other related information such as default streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-file.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-string"></a><h3>modulemd_module_index_update_from_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_update_from_string
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *yaml_string</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_string</p></td>
+<td class="parameter_description"><p>A YAML string containing the module metadata and other
+related information such as default streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-string.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-stream"></a><h3>modulemd_module_index_update_from_stream ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_update_from_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><span class="type">FILE</span> *yaml_stream</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_stream</p></td>
+<td class="parameter_description"><p>A YAML stream containing the module metadata and other
+related information such as default streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-stream.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-custom"></a><h3>modulemd_module_index_update_from_custom ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_update_from_custom
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()"><span class="type">ModulemdReadHandler</span></a> custom_read_fn</code></em>,
+                                <em class="parameter"><code><span class="type">void</span> *custom_pvt_data</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="type">GPtrArray</span></a> **failures</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-custom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_read_fn</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()"><span class="type">ModulemdReadHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_pvt_data</p></td>
+<td class="parameter_description"><p>The private data needed by the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdReadHandler" title="ModulemdReadHandler ()"><span class="type">ModulemdReadHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>failures</p></td>
+<td class="parameter_description"><p>On output, an array containing any subdocuments (pointers to
+<a class="link" href="modulemd-2.0-Modulemd.SubdocumentInfo.html#ModulemdSubdocumentInfo"><span class="type">ModulemdSubdocumentInfo</span></a>) from the YAML file that failed to parse. On
+input, it must be a non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> pointer. If that pointer points to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this
+call will allocate a new array (regardless of any failures) with an element
+destructor set to <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. Otherwise, the pointed array is reused
+without emptying before adding the failed subdocuments. The caller is
+responsible for freeing the array. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdSubdocumentInfo][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing additional information if this function
+fails in a way that prevents program continuation. On input, it must be
+<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to know the
+error). On output, it will become allocated only if an error occured. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-custom.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the update was successful. Returns <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> and sets
+<em class="parameter"><code>failures</code></em>
+appropriately if any of the YAML subdocuments were invalid or
+sets <em class="parameter"><code>error</code></em>
+if there was a fatal parse error.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-update-from-defaults-directory"></a><h3>modulemd_module_index_update_from_defaults_directory ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_update_from_defaults_directory
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *overrides_path</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>This function will open the directory at <em class="parameter"><code>path</code></em>
+ and iterate through it,
+adding any files with the suffix ".yaml" to <em class="parameter"><code>self</code></em>
+. If <em class="parameter"><code>overrides_path</code></em>
+ is
+non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it will also open any files with the suffix ".yaml" in that
+location and import them, overriding any conflicts with the existing
+defaults.</p>
+<p>Note: If you need detailed information about what failed and why, it is
+better to implement the directory traversal yourself and use the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#modulemd-module-index-update-from-file" title="modulemd_module_index_update_from_file ()"><code class="function">modulemd_module_index_update_from_file()</code></a> function, as it will return the
+failures information.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-defaults-directory.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>The path to a directory containing defaults documents. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or a conflict in module default streams. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>overrides_path</p></td>
+<td class="parameter_description"><p>If non-<a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the path to a directory
+containing defaults documents that should override those in <em class="parameter"><code>path</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> indicating why this function failed. On input, it
+must be <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you don't care) or a pointer to <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (if you want to
+know the error). On output, it will become allocated only if an error
+occured. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-update-from-defaults-directory.returns"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if all ".yaml" files in the directory were imported
+successfully (this includes if no ".yaml" files were present). <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if one
+or more files could not be read successfully and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch13.html#api-index-2.8">2.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-dump-to-string"></a><h3>modulemd_module_index_dump_to_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_module_index_dump_to_string (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the function failed, NULL if
+the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-string.returns"></a><h4>Returns</h4>
+<p>A YAML representation of the index as a string. In
+the event of an error, sets <em class="parameter"><code>error</code></em>
+appropriately and returns NULL. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-dump-to-stream"></a><h3>modulemd_module_index_dump_to_stream ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_dump_to_stream (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                      <em class="parameter"><code><span class="type">FILE</span> *yaml_stream</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>yaml_stream</p></td>
+<td class="parameter_description"><p>A stream to write the module metadata and other related
+information to. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the function failed, NULL if
+the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if written successfully, FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately in
+the event of an error.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-dump-to-custom"></a><h3>modulemd_module_index_dump_to_custom ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_dump_to_custom (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()"><span class="type">ModulemdWriteHandler</span></a> custom_write_fn</code></em>,
+                                      <em class="parameter"><code><span class="type">void</span> *custom_pvt_data</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-custom.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_write_fn</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()"><span class="type">ModulemdWriteHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>custom_pvt_data</p></td>
+<td class="parameter_description"><p>The private data needed by the
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdWriteHandler" title="ModulemdWriteHandler ()"><span class="type">ModulemdWriteHandler</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the function failed, NULL if
+the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-dump-to-custom.returns"></a><h4>Returns</h4>
+<p> TRUE if written successfully, FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately in
+the event of an error.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch08.html#api-index-2.3">2.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-module-names-as-strv"></a><h3>modulemd_module_index_get_module_names_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_module_index_get_module_names_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_module_index_get_module_names]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module-names-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module-names-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered list of string keys in this index. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-module"></a><h3>modulemd_module_index_get_module ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+modulemd_module_index_get_module (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The module name to look up in the index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-module.returns"></a><h4>Returns</h4>
+<p>The <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object matching the provided
+module name or NULL if the key was not present in the index. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-search-streams"></a><h3>modulemd_module_index_search_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_index_search_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *stream_name</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *version</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *context</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *arch</code></em>);</pre>
+<p>All arguments to this method will be compared using
+<a class="ulink" href="https://www.mankier.com/3/fnmatch" target="_top">fnmatch(3)</a>.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-search-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to retrieve. If NULL, will
+search all modules in the index. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_name</p></td>
+<td class="parameter_description"><p>The name of the stream to retrieve. If NULL, will
+search all streams in a module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>version</p></td>
+<td class="parameter_description"><p>The version of the stream to retrieve. If NULL, will
+search all versions. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>The context of the stream to retrieve. If NULL, will
+search all contexts. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arch</p></td>
+<td class="parameter_description"><p>The processor architecture of the stream to retrieve. If
+NULL, the architecture is not included in the search. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-search-streams.returns"></a><h4>Returns</h4>
+<p>The list
+of stream objects matching all of the requested parameters. This function
+cannot fail, but it may return a zero-length list if no matches were found.
+The returned streams will be in a predictable order, sorted first by module
+name, then stream name, then by version (highest first), then by context
+and finally by architecture. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-search-streams-by-nsvca-glob"></a><h3>modulemd_module_index_search_streams_by_nsvca_glob ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_index_search_streams_by_nsvca_glob
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nsvca_pattern</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-search-streams-by-nsvca-glob.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nsvca_pattern</p></td>
+<td class="parameter_description"><p>A <a class="ulink" href="https://www.mankier.com/3/glob" target="_top">glob</a>
+pattern to match against the NSVCA strings of the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>
+objects in this module. If NULL, this will match all NSVCAs. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-search-streams-by-nsvca-glob.returns"></a><h4>Returns</h4>
+<p>The list
+of stream objects matching all of the requested parameters. This function
+cannot fail, but it may return a zero-length list if no matches were found.
+The returned streams will be in a predictable order, sorted first by module
+name, then stream name, then by version (highest first), then by context
+and finally by architecture. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-search-rpms"></a><h3>modulemd_module_index_search_rpms ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_index_search_rpms (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nevra_pattern</code></em>);</pre>
+<p>All arguments to this method will be compared using
+<a class="ulink" href="https://www.mankier.com/3/fnmatch" target="_top">fnmatch(3)</a>.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-search-rpms.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nevra_pattern</p></td>
+<td class="parameter_description"><p>A <a class="ulink" href="https://www.mankier.com/3/glob" target="_top">glob</a>
+pattern to match against the NEVRA strings of the rpm artifacts in the
+<a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects in this module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL must not be passed as the value in, out, in-out; or as a return value."><span class="acronym">not nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-search-rpms.returns"></a><h4>Returns</h4>
+<p>The list
+of stream objects containing an RPM that matches the <em class="parameter"><code>nevra_pattern</code></em>
+.
+This function cannot fail, but it may return a zero-length list if no
+matches were found.
+The returned streams will be in a predictable order, sorted first by module
+name, then stream name, then by version (highest first), then by context
+and finally by architecture. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> ModulemdModuleStream]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch14.html#api-index-2.9">2.9</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-remove-module"></a><h3>modulemd_module_index_remove_module ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_remove_module (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<p>Remove a module, including all of its streams, its defaults and its
+translations from a <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-remove-module.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module to remove from the index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-remove-module.returns"></a><h4>Returns</h4>
+<p> TRUE if the module name was present in the index. FALSE if it was
+not.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch07.html#api-index-2.2">2.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-add-module-stream"></a><h3>modulemd_module_index_add_module_stream ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_add_module_stream
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *stream</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Add a <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> to the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>. While being added,
+the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> will be upgraded to <a class="link" href="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-LATEST:CAPS"><code class="literal">MD_MODULESTREAM_VERSION_LATEST</code></a>
+to ensure that merges done with <a class="link" href="modulemd-2.0-Modulemd.ModuleIndexMerger.html#ModulemdModuleIndexMerger"><span class="type">ModulemdModuleIndexMerger</span></a> will always occur
+between streams of the same version. If this upgrade cannot be performed,
+the function will return <em class="parameter"><code>error</code></em>
+ set appropriately.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-add-module-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> to add to the index. The stream added
+must have a module name and stream name set on it or it will be rejected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a>
+object could not be added or NULL if the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-add-module-stream.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> was added successfully. If the
+stream already existed in the index, it will be replaced by the new one. On
+failure, returns FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-add-defaults"></a><h3>modulemd_module_index_add_defaults ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_add_defaults (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> *defaults</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-add-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>defaults</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object to add to the index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object
+could not be added or NULL if the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-add-defaults.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> was added successfully. If the defaults
+already existed in the index, it will be replaced by the new one. On failure,
+returns FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-add-obsoletes"></a><h3>modulemd_module_index_add_obsoletes ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_add_obsoletes (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                     <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> *obsoletes</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-add-obsoletes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obsoletes</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> object to add to the index. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> object
+could not be added or NULL if the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-add-obsoletes.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> was added successfully. If the obsoletes
+already existed in the index, it will be replaced by the new one. On failure,
+returns FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-default-streams-as-hash-table"></a><h3>modulemd_module_index_get_default_streams_as_hash_table ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="returnvalue">GHashTable</span></a> *
+modulemd_module_index_get_default_streams_as_hash_table
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *intent</code></em>);</pre>
+<p>Get a dictionary of all modules in the index that have a default stream.</p>
+<p>This function cannot fail, but may return an empty (non-NULL) <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a>.</p>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_module_index_get_default_streams]</span></p>
+<div class="refsect3">
+<a name="modulemd-module-index-get-default-streams-as-hash-table.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>intent</p></td>
+<td class="parameter_description"><p>The name of the system intent whose default stream
+will be retrieved. If left NULL or the specified intent has no separate
+default, it will return the generic default stream for this module.
+System intents are deprecated and this argument will be ignored in the
+future. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-default-streams-as-hash-table.returns"></a><h4>Returns</h4>
+<p>A <a href="https://developer.gnome.org/glib/stable/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> with
+the module name as the key and the default stream as the value for all
+modules with a default stream in the index. Modules without a default stream
+will not appear in this table. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8 utf8]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-add-translation"></a><h3>modulemd_module_index_add_translation ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_add_translation (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> *translation</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-add-translation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>translation</p></td>
+<td class="parameter_description"><p>The <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object to add to the index.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason the <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a>
+object could not be added or NULL if the function succeeded. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-add-translation.returns"></a><h4>Returns</h4>
+<p> TRUE if the <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> was added successfully. If the
+translation already existed in the index, it will be replaced by the new one.
+On failure, returns FALSE and sets <em class="parameter"><code>error</code></em>
+appropriately.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-defaults-mdversion"></a><h3>modulemd_module_index_get_defaults_mdversion ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="returnvalue">ModulemdDefaultsVersionEnum</span></a>
+modulemd_module_index_get_defaults_mdversion
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-get-defaults-mdversion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-defaults-mdversion.returns"></a><h4>Returns</h4>
+<p> The metadata version of <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> in use for this index.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-get-stream-mdversion"></a><h3>modulemd_module_index_get_stream_mdversion ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
+modulemd_module_index_get_stream_mdversion
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-index-get-stream-mdversion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-index-get-stream-mdversion.returns"></a><h4>Returns</h4>
+<p> The metadata version of <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> in use for this
+index.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-upgrade-streams"></a><h3>modulemd_module_index_upgrade_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_upgrade_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                       <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> mdversion</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Upgrades all <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> objects in this index to <em class="parameter"><code>mdversion</code></em>
+ if
+they are not already at that version.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-upgrade-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mdversion</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> metadata version to upgrade to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that contains information on why the index could
+not be upgraded in the event of an error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-upgrade-defaults"></a><h3>modulemd_module_index_upgrade_defaults ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_index_upgrade_defaults
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>,
+                                <em class="parameter"><code><a class="link" href="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="type">ModulemdDefaultsVersionEnum</span></a> mdversion</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Upgrades all <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> objects in this index to <em class="parameter"><code>mdversion</code></em>
+ if they
+are not already at that version. An attempt to downgrade or an attempt to
+upgrade beyond the latest supported version will report an error. In the
+case of a failure to upgrade a particular <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object of the
+index, an error will be reported and the index will be left in an undefined
+state.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-upgrade-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mdversion</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> metadata version to upgrade to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that contains information on why the
+index could not be upgraded in the event of an error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-index-clear-xmds"></a><h3>modulemd_module_index_clear_xmds ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_index_clear_xmds (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> *self</code></em>);</pre>
+<p>Iterates through all <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> entries in this
+<a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> and removes any XMD sections that are present. This is
+generally done to trim down the metadata to only the portions that are
+useful to the package manager.</p>
+<div class="refsect3">
+<a name="modulemd-module-index-clear-xmds.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch18.html#api-index-2.14">2.14</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.ModuleIndex.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-MODULE-INDEX:CAPS"></a><h3>MODULEMD_TYPE_MODULE_INDEX</h3>
+<pre class="programlisting">#define MODULEMD_TYPE_MODULE_INDEX (modulemd_module_index_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdModuleIndex-struct"></a><h3>ModulemdModuleIndex</h3>
+<pre class="programlisting">typedef struct _ModulemdModuleIndex ModulemdModuleIndex;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>
