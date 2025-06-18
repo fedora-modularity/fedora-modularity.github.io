@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Profile (Private): Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
+<link rel="prev" href="modulemd-2.0-Modulemd.PackagerV3-(Private).html" title="Modulemd.PackagerV3 (Private)">
+<link rel="next" href="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html" title="Modulemd.RpmMapEntry (Private)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Profile-(Private).description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.PackagerV3-(Private).html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.RpmMapEntry-(Private).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.Profile-(Private)"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Profile-(Private).top_of_page"></a>Modulemd.Profile (Private)</span></h2>
+<p>Modulemd.Profile (Private) — <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> methods that should be used only
+by internal consumers.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile-(Private).stability-level"></a><h2>Stability Level</h2>
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile-(Private).functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-parse-yaml" title="modulemd_profile_parse_yaml ()">modulemd_profile_parse_yaml</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-emit-yaml" title="modulemd_profile_emit_yaml ()">modulemd_profile_emit_yaml</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-equals-wrapper" title="modulemd_profile_equals_wrapper ()">modulemd_profile_equals_wrapper</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Profile-(Private).html#modulemd-profile-set-owner" title="modulemd_profile_set_owner ()">modulemd_profile_set_owner</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile-(Private).description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Profile-(Private).functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-profile-parse-yaml"></a><h3>modulemd_profile_parse_yaml ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="returnvalue">ModulemdProfile</span></a> *
+modulemd_profile_parse_yaml (<em class="parameter"><code><span class="type">yaml_parser_t</span> *parser</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> strict</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-parse-yaml.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parser</p></td>
+<td class="parameter_description"><p>A libyaml parser object positioned at the beginning of a
+Profile entry in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>The name of this profile. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strict</p></td>
+<td class="parameter_description"><p>Whether the parser should return failure if it encounters an
+unknown mapping key or if it should ignore it. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for a parsing or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-parse-yaml.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object
+read from the YAML. NULL if a parse or validation error occurred and sets
+<em class="parameter"><code>error</code></em>
+appropriately. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-emit-yaml"></a><h3>modulemd_profile_emit_yaml ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_profile_emit_yaml (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>,
+                            <em class="parameter"><code><span class="type">yaml_emitter_t</span> *emitter</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-emit-yaml.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>emitter</p></td>
+<td class="parameter_description"><p>A libyaml emitter object positioned where a Profile
+belongs in the YAML document. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input and for returning results. Default is transfer full."><span class="acronym">inout</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> that will return the reason for an emission or
+validation error. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-emit-yaml.returns"></a><h4>Returns</h4>
+<p> TRUE if the profile was emitted successfully. FALSE and sets
+<em class="parameter"><code>error</code></em>
+appropriately if the YAML could not be emitted.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-equals-wrapper"></a><h3>modulemd_profile_equals_wrapper ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_profile_equals_wrapper (<em class="parameter"><code>const <span class="type">void</span> *a</code></em>,
+                                 <em class="parameter"><code>const <span class="type">void</span> *b</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-equals-wrapper.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>A const void pointer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-profile-equals-wrapper.returns"></a><h4>Returns</h4>
+<p> TRUE, if both arguments are pointers to <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> objects
+and all elements of both objects are equal. FALSE, otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch10.html#api-index-2.5">2.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-profile-set-owner"></a><h3>modulemd_profile_set_owner ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_profile_set_owner (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> *self</code></em>,
+                            <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *owner</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-profile-set-owner.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Profile.html#ModulemdProfile"><span class="type">ModulemdProfile</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>owner</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> that will own this profile. Used to look up
+translations internally.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch11.html#api-index-2.6">2.6</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

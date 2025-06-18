@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.TranslationEntry: Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch01.html" title="Modulemd 2.0 Public API">
+<link rel="prev" href="modulemd-2.0-Modulemd.Translation.html" title="Modulemd.Translation">
+<link rel="next" href="modulemd-2.0-Modulemd.Obsoletes.html" title="Modulemd.Obsoletes">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.TranslationEntry.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.TranslationEntry.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.TranslationEntry.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.Translation.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.Obsoletes.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.TranslationEntry"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.TranslationEntry.top_of_page"></a>Modulemd.TranslationEntry</span></h2>
+<p>Modulemd.TranslationEntry — Contains the translated strings of a module stream for a specific locale.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.stability-level"></a><h2>Stability Level</h2>
+<acronym title="The intention of a Stable interface is to enable arbitrary third parties to
+develop applications to these interfaces, release them, and have confidence that
+they will run on all minor releases of the product (after the one in which the
+interface was introduced, and within the same major release). Even at a major
+release, incompatible changes are expected to be rare, and to have strong
+justifications.
+"><span class="acronym">Stable</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="returnvalue">ModulemdTranslationEntry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-new" title="modulemd_translation_entry_new ()">modulemd_translation_entry_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="returnvalue">ModulemdTranslationEntry</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-copy" title="modulemd_translation_entry_copy ()">modulemd_translation_entry_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-locale" title="modulemd_translation_entry_get_locale ()">modulemd_translation_entry_get_locale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-summary" title="modulemd_translation_entry_set_summary ()">modulemd_translation_entry_set_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-summary" title="modulemd_translation_entry_get_summary ()">modulemd_translation_entry_get_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-description" title="modulemd_translation_entry_set_description ()">modulemd_translation_entry_set_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-description" title="modulemd_translation_entry_get_description ()">modulemd_translation_entry_get_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-profiles-as-strv" title="modulemd_translation_entry_get_profiles_as_strv ()">modulemd_translation_entry_get_profiles_as_strv</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-set-profile-description" title="modulemd_translation_entry_set_profile_description ()">modulemd_translation_entry_set_profile_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#modulemd-translation-entry-get-profile-description" title="modulemd_translation_entry_get_profile_description ()">modulemd_translation_entry_get_profile_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--description" title="The “description” property">description</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--locale" title="The “locale” property">locale</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry--summary" title="The “summary” property">summary</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="ModulemdTranslationEntry"></a><div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#MODULEMD-TYPE-TRANSLATION-ENTRY:CAPS" title="MODULEMD_TYPE_TRANSLATION_ENTRY">MODULEMD_TYPE_TRANSLATION_ENTRY</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry-struct" title="ModulemdTranslationEntry">ModulemdTranslationEntry</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> ModulemdTranslationEntry
+</pre>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-translation-entry-new"></a><h3>modulemd_translation_entry_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="returnvalue">ModulemdTranslationEntry</span></a> *
+modulemd_translation_entry_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *locale</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-translation-entry-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>locale</p></td>
+<td class="parameter_description"><p>The locale for this translation entry.
+It must correspond to the format specified by libc locale names. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL must not be passed as the value in, out, in-out; or as a return value."><span class="acronym">not nullable</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-translation-entry-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a>
+object. This object must be freed with <a href="https://developer.gnome.org/gobject/stable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-copy"></a><h3>modulemd_translation_entry_copy ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="returnvalue">ModulemdTranslationEntry</span></a> *
+modulemd_translation_entry_copy (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>);</pre>
+<p>Create a copy of this <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p>
+<div class="refsect3">
+<a name="modulemd-translation-entry-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-translation-entry-copy.returns"></a><h4>Returns</h4>
+<p>The copied <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-get-locale"></a><h3>modulemd_translation_entry_get_locale ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_translation_entry_get_locale (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>);</pre>
+<p>Get the locale of this translation entry.</p>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-locale.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-locale.returns"></a><h4>Returns</h4>
+<p>The locale of this translation entry. This is a pointer
+to the internal memory location and must not be freed. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-set-summary"></a><h3>modulemd_translation_entry_set_summary ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_translation_entry_set_summary
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *summary</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-translation-entry-set-summary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>summary</p></td>
+<td class="parameter_description"><p>The summary of this module translated appropriately
+for this locale. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-get-summary"></a><h3>modulemd_translation_entry_get_summary ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_translation_entry_get_summary
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>);</pre>
+<p>Get the summary of this translation entry.</p>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-summary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-summary.returns"></a><h4>Returns</h4>
+<p>The summary of this module stream translated into
+the language specified by locale. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-set-description"></a><h3>modulemd_translation_entry_set_description ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_translation_entry_set_description
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *description</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-translation-entry-set-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>The description of this module stream translated
+into the language specified by locale. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-get-description"></a><h3>modulemd_translation_entry_get_description ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_translation_entry_get_description
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>);</pre>
+<p>Get the description of this translation entry.</p>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-description.returns"></a><h4>Returns</h4>
+<p>The description of this module stream translated
+into the language specified by locale. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-get-profiles-as-strv"></a><h3>modulemd_translation_entry_get_profiles_as_strv ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="returnvalue">GStrv</span></a>
+modulemd_translation_entry_get_profiles_as_strv
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>);</pre>
+<p>Get a list of profiles that have descriptions.</p>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> modulemd_translation_entry_get_profiles]</span></p>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-profiles-as-strv.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-translation-entry-get-profiles-as-strv.returns"></a><h4>Returns</h4>
+<p>An ordered <a href="https://developer.gnome.org/glib/stable/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a> list of profiles for which
+descriptions have been translated for this locale. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-set-profile-description"></a><h3>modulemd_translation_entry_set_profile_description ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_translation_entry_set_profile_description
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *profile_name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *profile_description</code></em>);</pre>
+<p>Adds a profile name translation.</p>
+<div class="refsect3">
+<a name="modulemd-translation-entry-set-profile-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile_name</p></td>
+<td class="parameter_description"><p>The name of the profile.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile_description</p></td>
+<td class="parameter_description"><p>The translated description of the profile. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-translation-entry-get-profile-description"></a><h3>modulemd_translation_entry_get_profile_description ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+modulemd_translation_entry_get_profile_description
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.TranslationEntry.html#ModulemdTranslationEntry"><span class="type">ModulemdTranslationEntry</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *profile_name</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MODULEMD-TYPE-TRANSLATION-ENTRY:CAPS"></a><h3>MODULEMD_TYPE_TRANSLATION_ENTRY</h3>
+<pre class="programlisting">#define             MODULEMD_TYPE_TRANSLATION_ENTRY</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdTranslationEntry-struct"></a><h3>ModulemdTranslationEntry</h3>
+<pre class="programlisting">typedef struct _ModulemdTranslationEntry ModulemdTranslationEntry;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.TranslationEntry.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="ModulemdTranslationEntry--description"></a><h3>The <code class="literal">“description”</code> property</h3>
+<pre class="programlisting">  “description”              <span class="type">char</span> *</pre>
+<p>The description of this module stream translated into the language specified by locale.</p>
+<p>Owner: ModulemdTranslationEntry</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "__LOCALE_UNSET__"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdTranslationEntry--locale"></a><h3>The <code class="literal">“locale”</code> property</h3>
+<pre class="programlisting">  “locale”                   <span class="type">char</span> *</pre>
+<p>The locale for this translation entry. It must correspond to the format specified by libc locale names. This field may only be set on object construction and is immutable afterwards.</p>
+<p>Owner: ModulemdTranslationEntry</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: "__LOCALE_UNSET__"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ModulemdTranslationEntry--summary"></a><h3>The <code class="literal">“summary”</code> property</h3>
+<pre class="programlisting">  “summary”                  <span class="type">char</span> *</pre>
+<p>The summary of this module stream translated into the language specified by locale.</p>
+<p>Owner: ModulemdTranslationEntry</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "__LOCALE_UNSET__"</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Modulemd.Module (Private): Modulemd Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Modulemd Reference Manual">
+<link rel="up" href="ch02.html" title="Modulemd 2.0 Private Object Methods">
+<link rel="prev" href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html" title="Modulemd.DefaultsV1 (Private)">
+<link rel="next" href="modulemd-2.0-Modulemd.ModuleIndex-(Private).html" title="Modulemd.ModuleIndex (Private)">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#modulemd-2.0-Modulemd.Module-(Private).description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="modulemd-2.0-Modulemd.DefaultsV1-(Private).html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="modulemd-2.0-Modulemd.ModuleIndex-(Private).html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="modulemd-2.0-Modulemd.Module-(Private)"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="modulemd-2.0-Modulemd.Module-(Private).top_of_page"></a>Modulemd.Module (Private)</span></h2>
+<p>Modulemd.Module (Private) — <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> methods that should be used only
+by internal consumers.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module-(Private).stability-level"></a><h2>Stability Level</h2>
+<acronym title="An interface that can be used within the GNOME stack itself, but that is not
+documented for end-users.  Such functions should only be used in specified and
+documented ways.
+"><span class="acronym">Private</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module-(Private).functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-new" title="modulemd_module_new ()">modulemd_module_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="returnvalue">ModulemdDefaultsVersionEnum</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-set-defaults" title="modulemd_module_set_defaults ()">modulemd_module_set_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-translation" title="modulemd_module_add_translation ()">modulemd_module_add_translation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-get-translated-streams" title="modulemd_module_get_translated_streams ()">modulemd_module_get_translated_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-obsoletes" title="modulemd_module_add_obsoletes ()">modulemd_module_add_obsoletes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-add-stream" title="modulemd_module_add_stream ()">modulemd_module_add_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="modulemd-2.0-Modulemd.Module-(Private).html#modulemd-module-upgrade-streams" title="modulemd_module_upgrade_streams ()">modulemd_module_upgrade_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module-(Private).description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="modulemd-2.0-Modulemd.Module-(Private).functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="modulemd-module-new"></a><h3>modulemd_module_new ()</h3>
+<pre class="programlisting"><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="returnvalue">ModulemdModule</span></a> *
+modulemd_module_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_name</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>module_name</p></td>
+<td class="parameter_description"><p>The name of the module. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL must not be passed as the value in, out, in-out; or as a return value."><span class="acronym">not nullable</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-new.returns"></a><h4>Returns</h4>
+<p>A newly-allocated <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-set-defaults"></a><h3>modulemd_module_set_defaults ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="returnvalue">ModulemdDefaultsVersionEnum</span></a>
+modulemd_module_set_defaults (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                              <em class="parameter"><code><a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> *defaults</code></em>,
+                              <em class="parameter"><code><a class="link" href="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="type">ModulemdDefaultsVersionEnum</span></a> index_mdversion</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>This function takes a <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object, upgrades it to
+<em class="parameter"><code>index_mdversion</code></em>
+ if its version is lower and adds it to the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>
+object. If <em class="parameter"><code>defaults</code></em>
+ cannot be upgraded safely or the <em class="parameter"><code>defaults</code></em>
+ are not for <em class="parameter"><code>self</code></em>
+
+module, it will return an appropriate error.</p>
+<p>(A use case is upgrading defaults of modules in a <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> to
+the highest defaults version added so far in the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a>.)</p>
+<div class="refsect3">
+<a name="modulemd-module-set-defaults.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>defaults</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ModulemdDefaults.html" title="Modulemd.Defaults"><span class="type">ModulemdDefaults</span></a> object whose copy to
+associate with this <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>. A module name in <em class="parameter"><code>defaults</code></em>
+should
+match a name in the <em class="parameter"><code>self</code></em>
+module. Pass <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to unset the defaults. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_mdversion</p></td>
+<td class="parameter_description"><p>A minimal <a class="link" href="ModulemdDefaults.html#ModulemdDefaultsVersionEnum" title="enum ModulemdDefaultsVersionEnum"><span class="type">ModulemdDefaultsVersionEnum</span></a> version to
+upgrade <em class="parameter"><code>defaults</code></em>
+before adding them. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing information about why this function
+failed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-set-defaults.returns"></a><h4>Returns</h4>
+<p> The upgraded version of the defaults that were added. Or
+<a class="link" href="ModulemdDefaults.html#MD-DEFAULTS-VERSION-UNSET:CAPS"><code class="literal">MD_DEFAULTS_VERSION_UNSET</code></a> if <em class="parameter"><code>defaults</code></em>
+was <a href="https://developer.gnome.org/glib/stable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. Returns
+<a class="link" href="ModulemdDefaults.html#MD-DEFAULTS-VERSION-ERROR:CAPS"><code class="literal">MD_DEFAULTS_VERSION_ERROR</code></a> and sets <em class="parameter"><code>error</code></em>
+if the defaults name didn't
+match or the defaults object couldn't be upgraded successfully to
+the <em class="parameter"><code>index_mdversion</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-add-translation"></a><h3>modulemd_module_add_translation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_add_translation (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                 <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> *translation</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-add-translation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>translation</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Translation.html#ModulemdTranslation"><span class="type">ModulemdTranslation</span></a> object which is copied into the
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-get-translated-streams"></a><h3>modulemd_module_get_translated_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *
+modulemd_module_get_translated_streams
+                               (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-get-translated-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-get-translated-streams.returns"></a><h4>Returns</h4>
+<p>A list of streams for which translations have
+been added, sorted by stream name. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-add-obsoletes"></a><h3>modulemd_module_add_obsoletes ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+modulemd_module_add_obsoletes (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                               <em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> *obsoletes</code></em>);</pre>
+<p>This function copies the <em class="parameter"><code>obsoletes</code></em>
+ object into <em class="parameter"><code>self</code></em>
+. In addition if <em class="parameter"><code>obsoletes</code></em>
+ is
+the newest active obsoletes for existing <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> in <em class="parameter"><code>self</code></em>
+, the stream is
+upgraded to at least version two and <em class="parameter"><code>obsoletes</code></em>
+ is associated with it.</p>
+<div class="refsect3">
+<a name="modulemd-module-add-obsoletes.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>obsoletes</p></td>
+<td class="parameter_description"><p>A <a class="link" href="modulemd-2.0-Modulemd.Obsoletes.html#ModulemdObsoletes"><span class="type">ModulemdObsoletes</span></a> object which is copied into the
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ch15.html#api-index-2.10">2.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-add-stream"></a><h3>modulemd_module_add_stream ()</h3>
+<pre class="programlisting"><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="returnvalue">ModulemdModuleStreamVersionEnum</span></a>
+modulemd_module_add_stream (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                            <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> *stream</code></em>,
+                            <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> index_mdversion</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>This function takes a stream object, upgrades it to index_mdversion if
+needed (if the module contains active obsoletes for this <em class="parameter"><code>stream</code></em>
+ it is upgraded
+to at least version two) and then adds it to the <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>. If it cannot upgrade it
+safely or the defaults are not for this module, it will return an
+appropriate error.</p>
+<div class="refsect3">
+<a name="modulemd-module-add-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>A <a class="link" href="ModulemdModuleStream.html" title="Modulemd.ModuleStream"><span class="type">ModulemdModuleStream</span></a> object to associate with this
+<a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a>. A stream added to a <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> must have a module
+name and stream name set on it or it will be rejected. If the module name
+does not match this module, it will also be rejected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index_mdversion</p></td>
+<td class="parameter_description"><p>The <a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> stream_mdversion
+of the <a class="link" href="modulemd-2.0-Modulemd.ModuleIndex.html#ModulemdModuleIndex"><span class="type">ModulemdModuleIndex</span></a> to which <em class="parameter"><code>stream</code></em>
+is being added. If the version
+of <em class="parameter"><code>stream</code></em>
+is less than <em class="parameter"><code>index_mdversion</code></em>
+, an upgrade to this version will be
+performed while adding <em class="parameter"><code>stream</code></em>
+to <em class="parameter"><code>self</code></em>
+. If <em class="parameter"><code>stream</code></em>
+already has the same
+version, it is just copied. When obsoletes is present for <em class="parameter"><code>stream</code></em>
+it must be
+set to at least version two. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for input. Default is transfer none."><span class="acronym">in</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing information about why this function
+failed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-add-stream.returns"></a><h4>Returns</h4>
+<p> The mdversion of the stream that was added, which will be
+<em class="parameter"><code>index_mdversion</code></em>
+unless an error occurred. Returns
+<a class="link" href="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-ERROR:CAPS"><code class="literal">MD_MODULESTREAM_VERSION_ERROR</code></a> and sets <em class="parameter"><code>error</code></em>
+if the module name didn't
+match, the module and stream names were unset or the stream object couldn't
+be upgraded successfully to the <em class="parameter"><code>index_mdversion</code></em>
+. Returns
+<a class="link" href="ModulemdModuleStream.html#MD-MODULESTREAM-VERSION-UNSET:CAPS"><code class="literal">MD_MODULESTREAM_VERSION_UNSET</code></a> if <em class="parameter"><code>stream</code></em>
+was NULL.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="modulemd-module-upgrade-streams"></a><h3>modulemd_module_upgrade_streams ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/stable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+modulemd_module_upgrade_streams (<em class="parameter"><code><a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> *self</code></em>,
+                                 <em class="parameter"><code><a class="link" href="ModulemdModuleStream.html#ModulemdModuleStreamVersionEnum" title="enum ModulemdModuleStreamVersionEnum"><span class="type">ModulemdModuleStreamVersionEnum</span></a> mdversion</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<div class="refsect3">
+<a name="modulemd-module-upgrade-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>This <a class="link" href="modulemd-2.0-Modulemd.Module.html#ModulemdModule"><span class="type">ModulemdModule</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mdversion</p></td>
+<td class="parameter_description"><p>The metadata version to upgrade to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/glib/stable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> containing the reason a stream failed to upgrade. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="modulemd-module-upgrade-streams.returns"></a><h4>Returns</h4>
+<p> TRUE if all upgrades completed successfully. FALSE and sets <em class="parameter"><code>error</code></em>
+if an upgrade error occurs, including attempts to downgrade a stream.</p>
+</div>
+<p class="since">Since: <a class="link" href="ch05.html#api-index-2.0">2.0</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>
